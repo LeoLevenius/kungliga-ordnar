@@ -1,0 +1,9 @@
+cache/
+_site/
+.quarto/
+.Rhistory
+.RData
+person/*.qmd
+
+/.quarto/
+**/*.quarto_ipynb

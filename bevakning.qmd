@@ -1,0 +1,19 @@
+---
+title: "Bevakning"
+---
+
+```{r}
+source("R/common.R")
+logg <- load_logg()
+```
+
+Atom-flödet med nya tilldelningar finns i [feed.xml](feed.xml).
+
+## Ändringslogg
+
+```{r}
+setorder(logg, -datum)
+reactable(as.data.frame(logg), columns = list(datum = colDef(name = "Datum"),
+          id = colDef(name = "Id"), andring = colDef(name = "Ändring")),
+          searchable = TRUE, defaultPageSize = 50, compact = TRUE)
+```

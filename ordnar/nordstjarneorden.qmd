@@ -1,0 +1,20 @@
+---
+title: "Nordstjärneorden"
+---
+
+```{r}
+source(if (file.exists("R/common.R")) "R/common.R" else "../R/common.R")
+t <- load_tilldelningar()
+```
+
+::: {.intro}
+Nordstjärneorden instiftades 1748 tillsammans med Serafimerorden och Svärdsorden ([Wikipedia](https://sv.wikipedia.org/wiki/Nordstj%C3%A4rneorden)). Utmärkelser tilldelas personer som gjort personliga insatser för Sverige eller svenska intressen, särskilt inom offentlig verksamhet, samt för väl förrättade allmänna värv och uppdrag ([stadgarna 30 §](https://kungligmajestatsorden.se/download/18.516d7c47186a1c5d5561fdc3/1678188499162/Ordensstadgar.pdf/)). Orden har fem värdigheter, från kommendör med stora korset till riddare (31 §).
+
+Enligt prop. 2021/22:232 kan utmärkelserna delas ut till både svenska och utländska medborgare. Förordningen (2022:1800) trädde i kraft 1 februari 2023 ([SFS 2022:1800](https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/forordning-20221800-om-sveriges-framsta_sfs-2022-1800/)).
+:::
+
+## Mottagare
+
+```{r}
+order_section("Nordstjärneorden", t, pfx = "../")
+```

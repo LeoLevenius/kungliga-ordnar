@@ -1,0 +1,75 @@
+---
+title: "Statistik"
+---
+
+```{r}
+source("R/common.R")
+library(ggplot2)
+t <- load_tilldelningar()
+p <- unique(t[, .(person_id, orden, grad, kon_txt, land_txt, kategori)])
+```
+
+Antal levande mottagare per orden. En person räknas en gång per orden. Kön och land hämtas från källor eller Wikidata; där uppgiften saknas står "uppgift saknas".
+
+## Totalt per orden
+
+```{r}
+tot <- p[, .(mottagare = uniqueN(person_id)), by = orden]
+tot <- tot[match(ORDNAR, orden)]
+tot[is.na(mottagare), mottagare := 0L]
+reactable(as.data.frame(tot), columns = list(orden = colDef(name = "Orden"),
+          mottagare = colDef(name = "Mottagare")), pagination = FALSE, compact = TRUE, searchable = FALSE)
+```
+
+```{r}
+#| fig-cap: "Mottagare per orden"
+ggplot(tot, aes(x = factor(orden, levels = ORDNAR), y = mottagare)) +
+  geom_col(fill = "#3b5b7a") +
+  labs(x = NULL, y = "Antal mottagare") +
+  theme_minimal(base_size = 13)
+```
+
+## Per grad
+
+```{r}
+pg <- p[, .(mottagare = uniqueN(person_id)), by = .(orden, grad)]
+reactable(as.data.frame(pg), columns = list(orden = colDef(name = "Orden"),
+          grad = colDef(name = "Grad"), mottagare = colDef(name = "Mottagare")),
+          groupBy = "orden", defaultPageSize = 50, compact = TRUE, searchable = TRUE)
+```
+
+```{r}
+#| fig-cap: "Mottagare per grad"
+ggplot(pg, aes(x = grad, y = mottagare, fill = orden)) +
+  geom_col() +
+  coord_flip() +
+  labs(x = NULL, y = "Antal mottagare", fill = "Orden") +
+  theme_minimal(base_size = 12)
+```
+
+## Per kön
+
+```{r}
+pk <- p[, .(mottagare = uniqueN(person_id)), by = .(orden, kon_txt)]
+reactable(as.data.frame(pk), columns = list(orden = colDef(name = "Orden"),
+          kon_txt = colDef(name = "Kön"), mottagare = colDef(name = "Mottagare")),
+          compact = TRUE, searchable = TRUE)
+```
+
+```{r}
+#| fig-cap: "Mottagare per kön och orden"
+ggplot(pk, aes(x = orden, y = mottagare, fill = kon_txt)) +
+  geom_col(position = "stack") +
+  labs(x = NULL, y = "Antal mottagare", fill = "Kön") +
+  theme_minimal(base_size = 13)
+```
+
+## Per land (utländska mottagare)
+
+```{r}
+pl <- p[kategori == "utländsk", .(mottagare = uniqueN(person_id)), by = .(orden, land_txt)]
+setorder(pl, orden, -mottagare)
+reactable(as.data.frame(pl), columns = list(orden = colDef(name = "Orden"),
+          land_txt = colDef(name = "Land"), mottagare = colDef(name = "Mottagare")),
+          groupBy = "orden", compact = TRUE, searchable = TRUE)
+```

@@ -1,0 +1,43 @@
+body {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+.kalltyp {
+  display: inline-block;
+  font-size: 0.75em;
+  padding: 1px 6px;
+  border-radius: 4px;
+  background: #e8ecf2;
+  color: #333;
+  white-space: nowrap;
+}
+
+.intro {
+  max-width: 75ch;
+}
+
+.saknas {
+  color: #777;
+  font-style: italic;
+}
+
+table.person-tabell {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table.person-tabell th,
+table.person-tabell td {
+  text-align: left;
+  padding: 6px 8px;
+  border-bottom: 1px solid #ddd;
+  vertical-align: top;
+}
+
+@media (max-width: 600px) {
+  body {
+    padding: 0 16px;
+  }
+}

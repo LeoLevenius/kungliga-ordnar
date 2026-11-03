@@ -1,0 +1,13 @@
+---
+title: "Öppna data"
+---
+
+Alla filer nedan innehåller bara levande mottagare. Avlidna mottagare tas bort från exporten men finns kvar i den interna datakällan.
+
+- [tilldelningar.csv](data/tilldelningar.csv): en rad per tilldelning
+- [tilldelningar.json](data/tilldelningar.json): samma data som JSON
+- [grader.csv](data/grader.csv): ordenens grader med förkortningar och bärordning
+- [andringslogg.csv](data/andringslogg.csv): ändringslogg
+- [feed.xml](feed.xml): Atom-flöde med de senaste tilldelningarna
+
+Filen tilldelningar.csv är UTF-8 med BOM.

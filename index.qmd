@@ -1,0 +1,44 @@
+---
+title: "Kungliga ordnar"
+---
+
+```{r}
+source("R/common.R")
+t <- load_tilldelningar()
+```
+
+Den här webbplatsen listar levande mottagare av de fyra kungliga riddarordnarna: Serafimerorden, Svärdsorden, Nordstjärneorden och Vasaorden. Carl XIII:s orden ingår inte. Avlidna mottagare visas inte.
+
+## Antal levande mottagare per orden
+
+```{r}
+summ <- t[, .(mottagare = uniqueN(person_id),
+              svenskar = uniqueN(person_id[kategori == "svensk"]),
+              utlänningar = uniqueN(person_id[kategori == "utländsk"])), by = orden]
+summ <- summ[match(ORDNAR, orden)]
+summ[is.na(mottagare), `:=`(mottagare = 0L, svenskar = 0L, utlänningar = 0L)]
+summ[, sida := paste0('<a href="', SLUG[orden], '.html">', orden, "</a>")]
+reactable(as.data.frame(summ)[, c("sida", "mottagare", "svenskar", "utlänningar")],
+          columns = list(sida = colDef(name = "Orden", html = TRUE),
+                         mottagare = colDef(name = "Mottagare"),
+                         svenskar = colDef(name = "Svenskar"),
+                         utlänningar = colDef(name = "Utlänningar")),
+          searchable = FALSE, sortable = FALSE, pagination = FALSE, compact = TRUE)
+```
+
+Sidorna för varje orden ligger under `ordnar/`. Vi har ännu inte samlat in alla fas 1–3-uppgifter, så siffrorna är ofullständiga.
+
+## Senast tillagda
+
+```{r}
+senaste <- t[order(-as.Date(datum), id)][seq_len(min(10, .N))]
+senaste[, namn_html := link_person(person_id, namn, pfx = "")]
+senaste[, kalla_html := source_html(kalla_url, kalltyp)]
+reactable(as.data.frame(senaste)[, c("namn_html", "orden", "grad", "datum_txt", "kalla_html")],
+          columns = list(namn_html = colDef(name = "Namn", html = TRUE),
+                         orden = colDef(name = "Orden"),
+                         grad = colDef(name = "Grad"),
+                         datum_txt = colDef(name = "Datum"),
+                         kalla_html = colDef(name = "Källa", html = TRUE)),
+          searchable = FALSE, sortable = FALSE, pagination = FALSE, compact = TRUE)
+```

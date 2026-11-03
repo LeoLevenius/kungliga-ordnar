@@ -1,0 +1,20 @@
+---
+title: "Vasaorden"
+---
+
+```{r}
+source(if (file.exists("R/common.R")) "R/common.R" else "../R/common.R")
+t <- load_tilldelningar()
+```
+
+::: {.intro}
+Vasaorden instiftades 1772 av kung Gustav III ([Kungl. Maj:ts Orden](https://kungligmajestatsorden.se/english/orders/the-order-of-vasa)). Orden skapades för att belöna förtjänst inom områden som Svärdsorden och Nordstjärneorden inte täckte. Utmärkelser kan tilldelas personer som gjort personliga insatser för Sverige eller svenska intressen, särskilt inom icke offentlig verksamhet, samt för väl förrättade allmänna värv och uppdrag ([stadgarna 32 §](https://kungligmajestatsorden.se/download/18.516d7c47186a1c5d5561fdc3/1678188499162/Ordensstadgar.pdf/)). Orden har fem värdigheter (33 §). Kragen kan tilldelas utländska medborgare som särskild utmärkelse.
+
+Enligt prop. 2021/22:232 kan utmärkelserna delas ut till både svenska och utländska medborgare. Förordningen (2022:1800) trädde i kraft 1 februari 2023 ([SFS 2022:1800](https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/forordning-20221800-om-sveriges-framsta_sfs-2022-1800/)).
+:::
+
+## Mottagare
+
+```{r}
+order_section("Vasaorden", t, pfx = "../")
+```

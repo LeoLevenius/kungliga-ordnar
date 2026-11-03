@@ -1,0 +1,43 @@
+project:
+  type: website
+  output-dir: _site
+  pre-render: Rscript R/build_persons.R
+  post-render: Rscript R/export.R
+
+website:
+  title: "Kungliga ordnar"
+  navbar:
+    left:
+      - text: Start
+        href: index.qmd
+      - text: Serafimerorden
+        href: ordnar/serafimerorden.qmd
+      - text: Svärdsorden
+        href: ordnar/svardsorden.qmd
+      - text: Nordstjärneorden
+        href: ordnar/nordstjarneorden.qmd
+      - text: Vasaorden
+        href: ordnar/vasaorden.qmd
+      - text: Statistik
+        href: statistik.qmd
+      - text: Ordensguide
+        href: ordensguide.qmd
+      - text: Öppna data
+        href: oppna-data.qmd
+      - text: Bevakning
+        href: bevakning.qmd
+  page-footer: "Källor: kungahuset.se, regeringen.se, kungligmajestatsorden.se. Avlidna mottagare visas inte."
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    lang: sv
+    toc: false
+
+lang: sv
+
+execute:
+  echo: false
+  warning: true
+  message: false

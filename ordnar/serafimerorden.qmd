@@ -1,0 +1,20 @@
+---
+title: "Serafimerorden"
+---
+
+```{r}
+source(if (file.exists("R/common.R")) "R/common.R" else "../R/common.R")
+t <- load_tilldelningar()
+```
+
+::: {.intro}
+Serafimerorden instiftades den 23 februari 1748 av kung Fredrik I ([Wikipedia](https://sv.wikipedia.org/wiki/Serafimerorden)). Orden har en enda klass, värdigheten riddare. Enligt stadgarna tilldelas den främst medlemmar av det svenska kungahuset samt statschefer och därmed jämställda personer ([stadgarna 25 §](https://kungligmajestatsorden.se/download/18.516d7c47186a1c5d5561fdc3/1678188499162/Ordensstadgar.pdf/)). Arvsberättigade prinsar och prinsessor är riddare från födseln.
+
+**Sköldarna i Riddarholmskyrkan.** Varje riddare får en vapensköld som målas under livstiden. Efter avlidandet hängs den upp i Riddarholmskyrkan. Levande riddares sköldar visas också i Serafimersalen ([Kungl. Maj:ts Orden](https://kungligmajestatsorden.se/english/orders/the-order-of-the-seraphim)). Bilder av sköldar visas här endast när de är fritt licensierade.
+:::
+
+## Mottagare
+
+```{r}
+order_section("Serafimerorden", t, pfx = "../")
+```

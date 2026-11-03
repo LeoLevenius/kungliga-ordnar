@@ -1,0 +1,37 @@
+---
+title: "Ordensguide"
+---
+
+```{r}
+source("R/common.R")
+g <- load_grader()
+```
+
+Graderna listas med förkortningar och bärordning. Förkortningarna kommer från en inofficiell källa och är inte kontrollerade mot Kungl. Maj:ts Orden. Källan anges per rad. Tomma förkortningar står för att ingen källa hittats.
+
+Bärordningen gäller ordnarna i ordning: Serafimerorden, Svärdsorden, Nordstjärneorden, Vasaorden ([heraldik.se](https://heraldik.se/artiklar/ordnar-och-medaljer/sa-bar-du-ordnar-och-medaljer-i-sverige/)).
+
+```{r}
+for (o in ORDNAR) {
+  cat("\n\n## ", o, "\n\n", sep = "")
+  d <- g[orden == o]
+  print(reactable(as.data.frame(d)[, c("grad", "forkortning", "forkortning_kalla", "barordning_plats")],
+    columns = list(grad = colDef(name = "Grad"),
+                   forkortning = colDef(name = "Förkortning", cell = function(v) if (is.na(v) || v == "") "uppgift saknas" else v),
+                   forkortning_kalla = colDef(name = "Källa till förkortning", minWidth = 260),
+                   barordning_plats = colDef(name = "Bärordning, plats")),
+    pagination = FALSE, compact = TRUE, searchable = FALSE, sortable = FALSE))
+}
+```
+
+## Insignier
+
+**Serafimerorden.** Ordenstecknet är ett vitemaljerat, i guld infattat åttaflikigt kors med en blå glob med guldkant, krönt med en kunglig krona. Kedjan består av elva serafer av guld och elva blå patriarkalkors. Kraschan är ett åttaflikigt silverkors med en glob. ([Instruktion för Kungl. Maj:ts Orden, 2023](https://kungligmajestatsorden.se/download/18.948412019c47af39bcd3a34/1771230440986/Instruktion.pdf))
+
+**Svärdsorden.** Kommendörstecknet är ett vitemaljerat, i guld infattat snedställt åttaflikigt kors med öppna kronor i vinklarna. På mitten finns en blå glob med ett uppåtriktat svärd omgivet av Sveriges tre kronor. Kedjan är av guld och består av elva svärd i slida. ([Instruktion, 2023](https://kungligmajestatsorden.se/download/18.948412019c47af39bcd3a34/1771230440986/Instruktion.pdf))
+
+**Nordstjärneorden.** Kommendörstecknet är ett vitemaljerat åttaflikigt kors i guld, med öppna kronor i vinklarna. På mitten finns en blå glob med en vit femuddig stjärna och omskriften NESCIT OCCASUM. Kedjan består av elva par blå ryggställda F och tolv vita nordstjärnor. ([Instruktion, 2023](https://kungligmajestatsorden.se/download/18.948412019c47af39bcd3a34/1771230440986/Instruktion.pdf))
+
+**Vasaorden.** Kommendörstecknet är ett vitemaljerat åttaflikigt kors med öppna kronor i vinklarna. På mitten finns en vas av guld omgiven av en röd, guldkantad bård med inskriften GUSTAF D. III INSTIKTARE MDCCLXXII. Kedjan består av fyra vasar och fyra holsteinska nässelblad samt åtta blå sköldar. ([Instruktion, 2023](https://kungligmajestatsorden.se/download/18.948412019c47af39bcd3a34/1771230440986/Instruktion.pdf))
+
+Bilder av ordenstecknen är ännu inte tillagda.

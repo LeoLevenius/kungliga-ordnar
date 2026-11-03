@@ -1,0 +1,20 @@
+---
+title: "Svärdsorden"
+---
+
+```{r}
+source(if (file.exists("R/common.R")) "R/common.R" else "../R/common.R")
+t <- load_tilldelningar()
+```
+
+::: {.intro}
+Svärdsorden instiftades 1748 ([Kungl. Maj:ts Orden](https://kungligmajestatsorden.se/english/orders/the-order-of-the-sword)). Utmärkelser inom orden kan tilldelas militär personal som gjort personliga insatser för Sverige eller svenska intressen inom det militära området ([stadgarna 27 §](https://kungligmajestatsorden.se/download/18.516d7c47186a1c5d5561fdc3/1678188499162/Ordensstadgar.pdf/)). Orden har sju värdigheter. Värdigheten riddare med stora korset utdelas endast för gärningar under krig eller krigsliknande förhållanden (28 §). Till orden hör även Militärkorset.
+
+Enligt prop. 2021/22:232 kan utmärkelserna delas ut till både svenska och utländska medborgare. Förordningen (2022:1800) trädde i kraft 1 februari 2023 ([SFS 2022:1800](https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/forordning-20221800-om-sveriges-framsta_sfs-2022-1800/)).
+:::
+
+## Mottagare
+
+```{r}
+order_section("Svärdsorden", t, pfx = "../")
+```
