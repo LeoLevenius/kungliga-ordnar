@@ -9,7 +9,8 @@ data_dir <- if (dir.exists("data")) "data" else "../data"
 ORDNAR <- c("Serafimerorden", "Svärdsorden", "Nordstjärneorden", "Vasaorden")
 
 FLAGGA_TEXT <- c(
-  kategori_utan_individuell_kalla = "Kategori (svensk/utländsk) är inte angiven för den enskilda personen i källan",
+  kategori_utan_individuell_kalla = "Kategori (svensk/utländsk) är inte angiven för den enskilda personen i källan och kunde inte kontrolleras i Wikidata",
+  kategori_fran_wikidata_p27 = "Kategori och land är hämtade från medborgarskap i Wikidata (P27); källan anger inte detta per person",
   motivering_formulering_skiljer = "Källorna formulerar motiveringen olika",
   beslutsdatum_ej_angivet = "Beslutsdatum saknas i källan; datumet är datumet för offentliggörandet"
 )
