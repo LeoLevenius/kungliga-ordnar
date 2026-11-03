@@ -12,16 +12,18 @@ Graderna listas med förkortningar och bärordning. Förkortningarna kommer frå
 Bärordningen gäller ordnarna i ordning: Serafimerorden, Svärdsorden, Nordstjärneorden, Vasaorden ([heraldik.se](https://heraldik.se/artiklar/ordnar-och-medaljer/sa-bar-du-ordnar-och-medaljer-i-sverige/)).
 
 ```{r}
-for (o in ORDNAR) {
-  cat("\n\n## ", o, "\n\n", sep = "")
+tagList(lapply(ORDNAR, function(o) {
   d <- g[orden == o]
-  print(reactable(as.data.frame(d)[, c("grad", "forkortning", "forkortning_kalla", "barordning_plats")],
-    columns = list(grad = colDef(name = "Grad"),
-                   forkortning = colDef(name = "Förkortning", cell = function(v) if (is.na(v) || v == "") "uppgift saknas" else v),
-                   forkortning_kalla = colDef(name = "Källa till förkortning", minWidth = 260),
-                   barordning_plats = colDef(name = "Bärordning, plats")),
-    pagination = FALSE, compact = TRUE, searchable = FALSE, sortable = FALSE))
-}
+  tagList(
+    h2(o),
+    reactable(as.data.frame(d)[, c("grad", "forkortning", "forkortning_kalla", "barordning_plats")],
+      columns = list(grad = colDef(name = "Grad"),
+                     forkortning = colDef(name = "Förkortning", cell = function(v) if (is.na(v) || v == "") "uppgift saknas" else v),
+                     forkortning_kalla = colDef(name = "Källa till förkortning", minWidth = 260),
+                     barordning_plats = colDef(name = "Bärordning, plats")),
+      pagination = FALSE, compact = TRUE, searchable = FALSE, sortable = FALSE)
+  )
+}))
 ```
 
 ## Insignier
