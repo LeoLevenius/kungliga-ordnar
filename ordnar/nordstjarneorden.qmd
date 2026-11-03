@@ -1,19 +1,29 @@
 ---
 title: "Nordstjärneorden"
+description: "Levande mottagare av Nordstjärneorden, med grad, motivering och källa."
 ---
 
 ```{r}
 source(if (file.exists("R/common.R")) "R/common.R" else "../R/common.R")
 t <- load_tilldelningar()
+n <- t[orden == "Nordstjärneorden"]
 ```
 
 ::: {.intro}
-Nordstjärneorden instiftades 1748 tillsammans med Serafimerorden och Svärdsorden ([Wikipedia](https://sv.wikipedia.org/wiki/Nordstj%C3%A4rneorden)). Utmärkelser tilldelas personer som gjort personliga insatser för Sverige eller svenska intressen, särskilt inom offentlig verksamhet, samt för väl förrättade allmänna värv och uppdrag ([stadgarna 30 §](https://kungligmajestatsorden.se/download/18.516d7c47186a1c5d5561fdc3/1678188499162/Ordensstadgar.pdf/)). Orden har fem värdigheter, från kommendör med stora korset till riddare (31 §).
+Nordstjärneorden instiftades 1748 tillsammans med Serafimerorden och Svärdsorden ([Wikipedia](https://sv.wikipedia.org/wiki/Nordstj%C3%A4rneorden)). Utmärkelser tilldelas personer som gjort personliga insatser för Sverige eller svenska intressen, särskilt inom offentlig verksamhet, samt för väl förrättade allmänna värv och uppdrag ([stadgarna 30 §](https://kungligmajestatsorden.se/download/18.516d7c47186a1c5d5561fdc3/1678188499162/Ordensstadgar.pdf/)). Orden har fem värdigheter, från kommendör med stora korset till riddare ([stadgarna 31 §](https://kungligmajestatsorden.se/download/18.516d7c47186a1c5d5561fdc3/1678188499162/Ordensstadgar.pdf/)).
 
 Enligt prop. 2021/22:232 kan utmärkelserna delas ut till både svenska och utländska medborgare. Förordningen (2022:1800) trädde i kraft 1 februari 2023 ([SFS 2022:1800](https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/forordning-20221800-om-sveriges-framsta_sfs-2022-1800/)).
+
+Se även [ordensguiden](../ordensguide.qmd), [Serafimerorden](serafimerorden.qmd), [Svärdsorden](svardsorden.qmd) och [Vasaorden](vasaorden.qmd).
 :::
 
 ## Mottagare
+
+```{r}
+#| output: asis
+cat(sprintf("Listan omfattar %d levande mottagare som tilldelats orden %d–%d. Datum avser beslutsdatum om inget annat anges under Notering; yrke och titel anges enligt källan.\n",
+            nrow(n), min(as.integer(substr(n$datum, 1, 4))), max(as.integer(substr(n$datum, 1, 4)))))
+```
 
 ```{r}
 order_section("Nordstjärneorden", t, pfx = "../")

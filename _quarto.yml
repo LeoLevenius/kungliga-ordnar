@@ -33,6 +33,9 @@ format:
     theme: cosmo
     css: styles.css
     lang: sv
+    page-layout: full
+    language:
+      skip-to-content: "Hoppa till huvudinnehållet"
     toc: false
 
 lang: sv

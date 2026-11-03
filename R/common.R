@@ -10,6 +10,41 @@ ORDNAR <- c("Serafimerorden", "Svärdsorden", "Nordstjärneorden", "Vasaorden")
 
 datum_date <- function(x) as.Date(ifelse(nchar(x) == 4, paste0(x, "-01-01"), x))
 
+MANADER <- c("januari", "februari", "mars", "april", "maj", "juni", "juli",
+             "augusti", "september", "oktober", "november", "december")
+
+fmt_datum <- function(x) {
+  ok <- !is.na(x) & grepl("^[0-9]{4}(-[0-9]{2}(-[0-9]{2})?)?$", x)
+  y <- substr(x, 1, 4)
+  m <- MANADER[as.integer(substr(x, 6, 7))]
+  d <- as.integer(substr(x, 9, 10))
+  out <- fifelse(nchar(x) == 4, y, fifelse(nchar(x) == 7, paste(m, y), paste(d, m, y)))
+  fifelse(ok, out, x)
+}
+
+sortnyckel <- function(x) tolower(chartr("ÅÄÖåäö", "{|}{|}", x))
+
+LANG_SV <- reactableLang(
+  searchPlaceholder = "Sök",
+  searchLabel = "Sök",
+  noData = "Inga rader hittades",
+  pageNext = "Nästa",
+  pagePrevious = "Föregående",
+  pageNumbers = "{page} av {pages}",
+  pageInfo = "{rowStart}–{rowEnd} av {rows} rader",
+  pageSizeOptions = "Visa {rows}",
+  pageNextLabel = "Nästa sida",
+  pagePreviousLabel = "Föregående sida",
+  pageNumberLabel = "Sida {page}",
+  pageJumpLabel = "Gå till sida",
+  pageSizeOptionsLabel = "Rader per sida",
+  sortLabel = "Sortera {name}",
+  filterPlaceholder = "",
+  filterLabel = "Filtrera {name}",
+  groupExpandLabel = "Visa eller dölj grupp",
+  detailsExpandLabel = "Visa eller dölj detaljer"
+)
+
 FLAGGA_TEXT <- c(
   kategori_utan_individuell_kalla = "Kategori (svensk/utländsk) är inte angiven för den enskilda personen i källan och kunde inte kontrolleras i Wikidata",
   kategori_fran_wikidata_p27 = "Kategori och land är hämtade från medborgarskap i Wikidata (P27); källan anger inte detta per person",
@@ -60,8 +95,10 @@ load_tilldelningar <- function() {
   t[, kunglig_txt := fifelse(kunglig == "TRUE", "Ja", "Nej")]
   t[, kon_txt := fifelse(is.na(kon), "uppgift saknas", kon)]
   t[, land_txt := fifelse(is.na(land), "uppgift saknas", land)]
-  t[, yrke_txt := fifelse(is.na(yrke), "", yrke)]
-  t[, motivering_txt := fifelse(is.na(motivering), "", motivering)]
+  t[, yrke_txt := fifelse(is.na(yrke), "uppgift saknas", yrke)]
+  t[, motivering_txt := fifelse(is.na(motivering), "uppgift saknas", motivering)]
+  t[, flagga_txt := fifelse(is.na(flagga), "", unname(FLAGGA_TEXT[sub(":.*", "", flagga)]))]
+  t[is.na(flagga_txt), flagga_txt := "Se personsidan"]
   t[, datum_txt := fifelse(is.na(datum), "uppgift saknas", datum)]
   t[is.na(dod)]
 }
@@ -84,18 +121,19 @@ link_person <- function(id, namn, pfx = "") {
   sprintf('<a href="%sperson/%s.html">%s</a>', pfx, id, htmlEscape(namn))
 }
 
-source_html <- function(url, typ) {
+source_html <- function(url, typ, namn = NULL) {
   label <- KALLTYP[typ]
   label[is.na(label)] <- ""
-  sprintf('<a href="%s" target="_blank" rel="noopener">Källa</a> <span class="kalltyp">%s</span>',
-          htmlEscape(url), htmlEscape(label))
+  aria <- if (is.null(namn)) "" else sprintf(' aria-label="Källa för %s"', htmlEscape(namn))
+  sprintf('<a href="%s" target="_blank" rel="noopener"%s>Källa</a> <span class="kalltyp">%s</span>',
+          htmlEscape(url), aria, htmlEscape(label))
 }
 
 select_filter <- function(tid) {
   function(values, name) {
     tags$select(
       onchange = sprintf("Reactable.setFilter('%s', '%s', event.target.value)", tid, name),
-      `aria-label` = "Filtrera på kungligheter",
+      `aria-label` = "Filtrera på kunglig",
       tags$option(value = "", "Alla"),
       tags$option(value = "Ja", "Ja"),
       tags$option(value = "Nej", "Nej")
@@ -107,25 +145,27 @@ order_table <- function(t, orden, kat, pfx = "", tid) {
   o <- orden
   k <- kat
   d <- t[orden == o & kategori == k]
-  setorder(d, rang, namn)
+  d[, sortnamn := sortnyckel(namn)]
+  setorderv(d, c("rang", "sortnamn"))
   d[, namn_html := link_person(person_id, namn, pfx)]
-  d[, kalla_html := source_html(kalla_url, kalltyp)]
+  d[, kalla_html := source_html(kalla_url, kalltyp, namn)]
   cols <- list(
-    grad = colDef(name = "Grad"),
-    namn_html = colDef(name = "Namn", html = TRUE, minWidth = 160),
-    yrke_txt = colDef(name = "Yrke/titel", minWidth = 140),
-    datum_txt = colDef(name = "Datum", minWidth = 110),
-    motivering_txt = colDef(name = "Motivering", minWidth = 280),
-    kalla_html = colDef(name = "Källa", html = TRUE, minWidth = 150),
-    kunglig_txt = colDef(name = "Kungligt", filterable = TRUE, filterInput = select_filter(tid), minWidth = 110)
+    grad = colDef(name = "Grad", minWidth = 120),
+    namn_html = colDef(name = "Namn", html = TRUE, minWidth = 150),
+    yrke_txt = colDef(name = "Yrke/titel", minWidth = 130),
+    land_txt = colDef(name = "Land", minWidth = 100),
+    datum_txt = colDef(name = "Datum", minWidth = 120, cell = fmt_datum),
+    motivering_txt = colDef(name = "Motivering", minWidth = 220),
+    kalla_html = colDef(name = "Källa", html = TRUE, minWidth = 120),
+    kunglig_txt = colDef(name = "Kunglig", filterable = TRUE, filterInput = select_filter(tid), minWidth = 100),
+    flagga_txt = colDef(name = "Notering", minWidth = 200, class = "saknas")
   )
   keep <- c("grad", "namn_html", "yrke_txt")
-  if (kat == "utländsk") {
-    keep <- c(keep, "land_txt")
-    cols$land_txt <- colDef(name = "Land", minWidth = 120)
-  }
-  keep <- c(keep, "datum_txt", "motivering_txt", "kalla_html", "kunglig_txt")
-  reactable(
+  if (kat == "utländsk") keep <- c(keep, "land_txt")
+  keep <- c(keep, "datum_txt", "motivering_txt", "kalla_html")
+  if (any(d$kunglig_txt == "Ja")) keep <- c(keep, "kunglig_txt")
+  if (any(nzchar(d$flagga_txt))) keep <- c(keep, "flagga_txt")
+  rt <- reactable(
     as.data.frame(d)[, keep],
     groupBy = "grad",
     columns = cols[keep],
@@ -136,16 +176,31 @@ order_table <- function(t, orden, kat, pfx = "", tid) {
     elementId = tid,
     striped = TRUE,
     compact = TRUE,
-    defaultExpanded = TRUE
+    defaultExpanded = TRUE,
+    language = LANG_SV
   )
+  labels <- vapply(cols[keep], function(cd) cd$name, character(1))
+  celler <- function(i) lapply(keep, function(col) {
+    v <- d[[col]][i]
+    tags$td(switch(col,
+      namn_html = , kalla_html = HTML(v),
+      datum_txt = fmt_datum(v),
+      v))
+  })
+  statisk <- tags$noscript(tags$table(
+    class = "person-tabell",
+    tags$thead(tags$tr(lapply(unname(labels), tags$th))),
+    tags$tbody(lapply(seq_len(nrow(d)), function(i) tags$tr(celler(i))))
+  ))
+  tagList(rt, statisk)
 }
 
 order_section <- function(orden, t, pfx = "") {
   slug <- SLUG[[orden]]
   tagList(
-    h2("Svenska mottagare"),
+    h3("Svenska mottagare"),
     order_table(t, orden, "svensk", pfx, paste0("tbl-", slug, "-svensk")),
-    h2("Utländska mottagare"),
+    h3("Utländska mottagare"),
     order_table(t, orden, "utländsk", pfx, paste0("tbl-", slug, "-utlandsk"))
   )
 }
@@ -160,7 +215,7 @@ person_page <- function(t, id, pfx = "../") {
     tags$tr(
       tags$td(r$orden),
       tags$td(r$grad),
-      tags$td(r$datum_txt),
+      tags$td(fmt_datum(r$datum_txt)),
       tags$td(r$motivering_txt),
       tags$td(tags$a(href = r$kalla_url, target = "_blank", rel = "noopener", "Källa"),
               " ", tags$span(class = "kalltyp", KALLTYP[r$kalltyp])),

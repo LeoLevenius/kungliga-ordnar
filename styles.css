@@ -1,7 +1,10 @@
-body {
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 0 16px;
+html body .page-columns {
+  grid-template-columns:
+    [screen-start] 1.5em
+    [screen-start-inset page-start page-start-inset body-start-outset body-start body-content-start]
+    minmax(0, 1fr)
+    [body-content-end body-end body-end-outset page-end-inset page-end screen-end-inset]
+    1.5em [screen-end];
 }
 
 .kalltyp {
@@ -36,8 +39,12 @@ table.person-tabell td {
   vertical-align: top;
 }
 
+.reactable {
+  font-size: 0.9rem;
+}
+
 @media (max-width: 600px) {
-  body {
-    padding: 0 16px;
+  .reactable {
+    font-size: 0.8rem;
   }
 }
