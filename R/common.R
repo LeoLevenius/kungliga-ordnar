@@ -8,11 +8,19 @@ data_dir <- if (dir.exists("data")) "data" else "../data"
 
 ORDNAR <- c("Serafimerorden", "Svärdsorden", "Nordstjärneorden", "Vasaorden")
 
+datum_date <- function(x) as.Date(ifelse(nchar(x) == 4, paste0(x, "-01-01"), x))
+
 FLAGGA_TEXT <- c(
   kategori_utan_individuell_kalla = "Kategori (svensk/utländsk) är inte angiven för den enskilda personen i källan och kunde inte kontrolleras i Wikidata",
   kategori_fran_wikidata_p27 = "Kategori och land är hämtade från medborgarskap i Wikidata (P27); källan anger inte detta per person",
   motivering_formulering_skiljer = "Källorna formulerar motiveringen olika",
-  beslutsdatum_ej_angivet = "Beslutsdatum saknas i källan; datumet är datumet för offentliggörandet"
+  beslutsdatum_ej_angivet = "Beslutsdatum saknas i källan; datumet är datumet för offentliggörandet",
+  datum_fodelse_stadgar_25 = "Datum är födelsedatum: arvsberättigade prinsar och prinsessor är riddare från födseln enligt stadgarna 25 §",
+  datum_vigsel_wikidata = "Datum är vigseldatum från Wikidata; källan anger inte datumet",
+  datum_fodelse_kungahuset_visar_dop_1946_06_07 = "Datum är födelsedatum; kungahuset.se anger att insignierna överlämnades vid dopet 7 juni 1946",
+  datum_avviker_fran_vigsel_eller_fodelse = "Datum från svensk Wikipedia (6 maj 1976) avviker från födelse- och vigseldatum",
+  flera_medborgarskap = "Flera medborgarskap i Wikidata; land är inte angivet",
+  land_wikidata_ej_verifierat = "Land i Wikidata är uppenbart felaktigt eller ej verifierat; land är inte angivet"
 )
 
 SLUG <- c(
