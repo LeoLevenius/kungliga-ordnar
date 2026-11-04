@@ -288,7 +288,8 @@ order_table <- function(t, orden, kat, pfx = "", tid, kungl = FALSE) {
   } else {
     d[, visningsnamn := efternamn_forst(namn)]
   }
-  setorderv(d, c("rang", "sortnamn"))
+  d[, datumnyckel := fifelse(grepl("^[0-9]{4}", datum), datum, "9999")]
+  setorderv(d, c("rang", "datumnyckel", "sortnamn"))
   d[, namn_html := link_person(person_id, visningsnamn, pfx)]
   d[, kalla_html := source_html(kalla_url, kalltyp, namn)]
   d[, skold_html := fifelse(!is.na(bild_url),
