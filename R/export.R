@@ -15,7 +15,7 @@ invisible(file.copy(file.path(data_dir, "andringslogg.csv"), file.path(out, "dat
 invisible(file.copy(file.path(data_dir, "bilder.csv"), file.path(out, "data", "bilder.csv"), overwrite = TRUE))
 
 base <- Sys.getenv("SITE_URL", "")
-latest <- t[order(-datum_date(datum), id)][seq_len(min(50, .N))]
+latest <- t[!is.na(datum)][order(-datum_date(datum), id)][seq_len(min(50, .N))]
 esc <- function(x) gsub(">", "&gt;", gsub("<", "&lt;", gsub("&", "&amp;", x, fixed = TRUE), fixed = TRUE), fixed = TRUE)
 entries <- sprintf(
   "  <entry>\n    <title>%s – %s, %s</title>\n    <id>tag:kungliga-ordnar,%s:%s</id>\n    <link href=\"%sperson/%s.html\"/>\n    <updated>%sT00:00:00Z</updated>\n    <summary>%s</summary>\n  </entry>",
@@ -27,7 +27,7 @@ feed <- c(
   '<feed xmlns="http://www.w3.org/2005/Atom">',
   '  <title>Kungliga ordnar: nya tilldelningar</title>',
   sprintf('  <id>tag:kungliga-ordnar,feed</id>'),
-  sprintf('  <updated>%sT00:00:00Z</updated>', as.character(max(datum_date(t$datum)))),
+  sprintf('  <updated>%sT00:00:00Z</updated>', as.character(max(datum_date(t$datum), na.rm = TRUE))),
   sprintf('  <link rel="self" href="%sfeed.xml"/>', base),
   entries,
   '</feed>'

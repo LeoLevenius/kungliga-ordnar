@@ -39,7 +39,9 @@ cat(sprintf("Rader i tilldelningar.csv: %d\n\n", nrow(t)))
 
 kontroll("id är unika och ifyllda", !is.na(t$id) & !duplicated(t$id), t$id)
 kontroll("varje grad finns i grader.csv för sin orden", paste(t$orden, t$grad) %in% paste(g$orden, g$grad), paste(t$orden, t$grad))
-kontroll("alla datum går att tolka enligt datum_precision", datum_ok(t$datum_tilldelning, t$datum_precision), paste(t$id, t$datum_tilldelning, t$datum_precision))
+kontroll("alla datum går att tolka enligt datum_precision (okänt datum: båda tomma)",
+         datum_ok(t$datum_tilldelning, t$datum_precision) | (is.na(t$datum_tilldelning) & is.na(t$datum_precision)),
+         paste(t$id, t$datum_tilldelning, t$datum_precision))
 nyck <- paste(nyckel(t$namn), t$orden, t$grad, t$datum_tilldelning)
 kontroll("inga dubbletter (normaliserat namn + orden + grad + datum)", !duplicated(nyck) & !duplicated(nyck, fromLast = TRUE), t$id)
 kontroll("ingen rad saknar källa_url", !is.na(t[["källa_url"]]) & grepl("^https?://", t[["källa_url"]]), t$id)
