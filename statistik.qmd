@@ -5,6 +5,21 @@ title: "Statistik"
 ```{r}
 source("R/common.R")
 library(ggplot2)
+MARIN <- "#14284b"; GULD <- "#b8934a"; LINJE <- "#d9dde5"
+PAL_ORDEN <- c(Serafimerorden = MARIN, Svärdsorden = GULD, Nordstjärneorden = "#4f7cac", Vasaorden = "#8a94a6")
+PAL_KON <- c(man = MARIN, kvinna = GULD, "uppgift saknas" = "#c3c9d4")
+theme_ordnar <- function(base_size = 13) {
+  theme_minimal(base_size = base_size) +
+    theme(text = element_text(colour = "#1f2430"),
+          axis.text = element_text(colour = "#5b6270"),
+          axis.title = element_text(colour = MARIN),
+          panel.grid.minor = element_blank(),
+          panel.grid.major.x = element_blank(),
+          panel.grid.major.y = element_line(colour = LINJE, linewidth = 0.4),
+          legend.position = "bottom",
+          legend.title = element_text(colour = MARIN, face = "bold"),
+          plot.margin = margin(8, 12, 8, 8))
+}
 t <- load_tilldelningar()
 h <- t[grad != "Herre och mästare"]
 setorderv(h, "rang")
@@ -26,9 +41,9 @@ reactable(as.data.frame(tot), columns = list(orden = colDef(name = "Orden"),
 ```{r}
 #| fig-cap: "Mottagare per orden"
 ggplot(tot, aes(x = factor(orden, levels = ORDNAR), y = mottagare)) +
-  geom_col(fill = "#3b5b7a") +
+  geom_col(fill = MARIN, width = 0.65) +
   labs(x = NULL, y = "Antal mottagare") +
-  theme_minimal(base_size = 13)
+  theme_ordnar()
 ```
 
 ## Per grad
@@ -42,11 +57,15 @@ reactable(as.data.frame(pg), columns = list(orden = colDef(name = "Orden"),
 
 ```{r}
 #| fig-cap: "Mottagare per grad"
-ggplot(pg, aes(x = grad, y = mottagare, fill = orden)) +
-  geom_col() +
+ggplot(pg, aes(x = grad, y = mottagare, fill = factor(orden, levels = ORDNAR))) +
+  geom_col(width = 0.7) +
   coord_flip() +
+  scale_fill_manual(values = PAL_ORDEN) +
   labs(x = NULL, y = "Antal mottagare", fill = "Orden") +
-  theme_minimal(base_size = 12)
+  guides(fill = guide_legend(nrow = 2)) +
+  theme_ordnar(12) +
+  theme(panel.grid.major.x = element_line(colour = LINJE, linewidth = 0.4),
+        panel.grid.major.y = element_blank())
 ```
 
 ## Per kön
@@ -60,10 +79,11 @@ reactable(as.data.frame(pk), columns = list(orden = colDef(name = "Orden"),
 
 ```{r}
 #| fig-cap: "Mottagare per kön och orden"
-ggplot(pk, aes(x = orden, y = mottagare, fill = kon_txt)) +
-  geom_col(position = "stack") +
+ggplot(pk, aes(x = factor(orden, levels = ORDNAR), y = mottagare, fill = factor(kon_txt, levels = names(PAL_KON)))) +
+  geom_col(position = "stack", width = 0.65) +
+  scale_fill_manual(values = PAL_KON) +
   labs(x = NULL, y = "Antal mottagare", fill = "Kön") +
-  theme_minimal(base_size = 13)
+  theme_ordnar()
 ```
 
 ## Per land (utländska mottagare)
