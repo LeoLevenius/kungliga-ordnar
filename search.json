@@ -1,5 +1,40 @@
 [
   {
+    "objectID": "statistik.html",
+    "href": "statistik.html",
+    "title": "Statistik",
+    "section": "",
+    "text": "Antal levande mottagare per orden. En person räknas en gång per orden. Kön och land hämtas från källor eller Wikidata; där uppgiften saknas står “uppgift saknas”."
+  },
+  {
+    "objectID": "statistik.html#totalt-per-orden",
+    "href": "statistik.html#totalt-per-orden",
+    "title": "Statistik",
+    "section": "Totalt per orden",
+    "text": "Totalt per orden\n\n\n\n\n\n\n\n\n\n\n\nMottagare per orden"
+  },
+  {
+    "objectID": "statistik.html#per-grad",
+    "href": "statistik.html#per-grad",
+    "title": "Statistik",
+    "section": "Per grad",
+    "text": "Per grad\n\n\n\n\n\n\n\n\n\n\n\nMottagare per grad"
+  },
+  {
+    "objectID": "statistik.html#per-kön",
+    "href": "statistik.html#per-kön",
+    "title": "Statistik",
+    "section": "Per kön",
+    "text": "Per kön\n\n\n\n\n\n\n\n\n\n\n\nMottagare per kön och orden"
+  },
+  {
+    "objectID": "statistik.html#per-land-utländska-mottagare",
+    "href": "statistik.html#per-land-utländska-mottagare",
+    "title": "Statistik",
+    "section": "Per land (utländska mottagare)",
+    "text": "Per land (utländska mottagare)"
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Kungliga ordnar",
@@ -21,18 +56,18 @@
     "text": "Senast tillagda"
   },
   {
-    "objectID": "bevakning.html",
-    "href": "bevakning.html",
-    "title": "Bevakning",
+    "objectID": "ordnar/nordstjarneorden.html",
+    "href": "ordnar/nordstjarneorden.html",
+    "title": "Nordstjärneorden",
     "section": "",
-    "text": "Atom-flödet med nya tilldelningar finns i feed.xml."
+    "text": "Nordstjärneorden instiftades 1748 tillsammans med Serafimerorden och Svärdsorden (Wikipedia). Utmärkelser tilldelas personer som gjort personliga insatser för Sverige eller svenska intressen, särskilt inom offentlig verksamhet, samt för väl förrättade allmänna värv och uppdrag (stadgarna 30 §). Orden har fem värdigheter, från kommendör med stora korset till riddare (stadgarna 31 §).\nEnligt prop. 2021/22:232 kan utmärkelserna delas ut till både svenska och utländska medborgare. Förordningen (2022:1800) trädde i kraft 1 februari 2023 (SFS 2022:1800).\nSe även ordensguiden, Serafimerorden, Svärdsorden och Vasaorden."
   },
   {
-    "objectID": "bevakning.html#ändringslogg",
-    "href": "bevakning.html#ändringslogg",
-    "title": "Bevakning",
-    "section": "Ändringslogg",
-    "text": "Ändringslogg"
+    "objectID": "ordnar/nordstjarneorden.html#mottagare",
+    "href": "ordnar/nordstjarneorden.html#mottagare",
+    "title": "Nordstjärneorden",
+    "section": "Mottagare",
+    "text": "Mottagare\nListan omfattar 59 levande mottagare som tilldelats orden 1973–2026. Datum avser beslutsdatum om inget annat anges under Notering; yrke och titel anges enligt källan.\n\n\nSvenska mottagare\n\n\n\n\n\n\n\nGrad\nNamn\nYrke/titel\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nKommendör med stora korset\nAnne L'Huillier Wahlström\nProfessor\n21 mars 2024\nFör utomordentliga forskningsinsatser\nKälla Kungahuset.se\nKategori (svensk/utländsk) är inte angiven för den enskilda personen i källan och kunde inte kontrolleras i Wikidata\n\n\nKommendör med stora korset\nBertil Bengtsson\nTidigare justitieråd\n30 april 2025\nFör en utomordentlig livsgärning inom svenskt rättsväsende\nKälla Kungahuset.se\nKategori (svensk/utländsk) är inte angiven för den enskilda personen i källan och kunde inte kontrolleras i Wikidata\n\n\nKommendör med stora korset\nSvante Pääbo\nProfessor\n21 mars 2024\nFör utomordentliga forskningsinsatser\nKälla Kungahuset.se\nKategori och land är hämtade från medborgarskap i Wikidata (P27); källan anger inte detta per person\n\n\nKommendör av första klassen\nErik Norberg\nTidigare riksarkivarie\n30 april 2025\nFör mycket framstående insatser som riksarkivarie och inom akademiväsendet\nKälla Kungahuset.se\nKategori (svensk/utländsk) är inte angiven för den enskilda personen i källan och kunde inte kontrolleras i Wikidata\n\n\nRiddare av första klassen\nAgneta Wikman\nLäkare\n30 april 2025\nFör betydelsefulla insatser som transfusionsspecialist inom militär sjukvård\nKälla Kungahuset.se\nKategori (svensk/utländsk) är inte angiven för den enskilda personen i källan och kunde inte kontrolleras i Wikidata\n\n\nRiddare av första klassen\nMajvor Östergren\nTidigare länsantikvarie\n30 april 2025\nFör betydelsefulla insatser för att värna det gotländska kulturarvet\nKälla Kungahuset.se\nKategori och land är hämtade från medborgarskap i Wikidata (P27); källan anger inte detta per person\n\n\nRiddare\nCatarina Wingren\nTredje ambassadsekreterare\n21 mars 2024\nFör avgörande engagemang i samband med svenska internationella fredsinsatser i Mali\nKälla Kungahuset.se\nKategori (svensk/utländsk) är inte angiven för den enskilda personen i källan och kunde inte kontrolleras i Wikidata\n\n\nRiddare\nSara Ålbrink\nStrategisk inköpare\n30 april 2025\nFör viktiga insatser för Försvarsmaktens strategiska transporter\nKälla Kungahuset.se\nKategori (svensk/utländsk) är inte angiven för den enskilda personen i källan och kunde inte kontrolleras i Wikidata\n\n\nRiddare\nStig Strömholm\nuppgift saknas\n1973\nuppgift saknas\nKälla Wikipedia\n\n\n\n\n\n\nUtländska mottagare\n\n\n\n\n\n\n\nGrad\nNamn\nYrke/titel\nLand\nDatum\nMotivering\nKälla\nKunglig\nNotering\n\n\n\n\nKommendör med stora korset\nAntony Blinken\nUtrikesminister\nUSA\n22 oktober 2024\nFör extraordinära insatser för svenska intressen\nKälla Regeringen.se\nNej\nKällorna formulerar motiveringen olika\n\n\nKommendör med stora korset\nArvo Pärt\nuppgift saknas\nuppgift saknas\nmaj 2023\nuppgift saknas\nKälla Tidning\nNej\n\n\n\nKommendör med stora korset\nBjörn Skúlason\nuppgift saknas\nIsland\n6 maj 2025\nuppgift saknas\nKälla Kungahuset.se\nNej\n\n\n\nKommendör med stora korset\nBrigitte Macron\nuppgift saknas\nFrankrike\njanuari 2024\nuppgift saknas\nKälla Kungahuset.se\nNej\n\n\n\nKommendör med stora korset\nDana Firas\nuppgift saknas\nJordanien\nnovember 2022\nuppgift saknas\nKälla Kungahuset.se\nJa\n\n\n\nKommendör med stora korset\nGhida Talal\nuppgift saknas\nLibanon\nnovember 2022\nuppgift saknas\nKälla Kungahuset.se\nJa\n\n\n\nKommendör med stora korset\nGiorgos Papandreou\nuppgift saknas\nuppgift saknas\n1999\nuppgift saknas\nKälla Wikipedia\nNej\n\n\n\nKommendör med stora korset\nHussein bin Abdullah\nuppgift saknas\nJordanien\nnovember 2022\nuppgift saknas\nKälla Kungahuset.se\nJa\n\n\n\nKommendör med stora korset\nJacob Sullivan\nNationell säkerhetsrådgivare\nUSA\n22 oktober 2024\nFör extraordinära insatser för svenska intressen\nKälla Regeringen.se\nNej\n\n\n\nKommendör med stora korset\nJens Stoltenberg\nTidigare generalsekreterare för Nato\nNorge\n22 oktober 2024\nFör extraordinära insatser för svenska intressen\nKälla Regeringen.se\nNej\nKällorna formulerar motiveringen olika\n\n\nKommendör med stora korset\nMired bin Ra'ad\nuppgift saknas\nJordanien\nnovember 2022\nuppgift saknas\nKälla Kungahuset.se\nJa\n\n\n\nKommendör med stora korset\nMuna al-Hussein\nuppgift saknas\nuppgift saknas\nnovember 2022\nuppgift saknas\nKälla Kungahuset.se\nJa\n\n\n\nKommendör med stora korset\nMáxima av Nederländerna\nuppgift saknas\nuppgift saknas\n2009\nuppgift saknas\nKälla Kungahuset.se\nJa\n\n\n\nKommendör med stora korset\nNarendra Modi\nIndiens premiärminister\nIndien\n17 maj 2026\nuppgift saknas\nKälla Regeringen.se\nNej\nBeslutsdatum saknas i källan; datumet är datumet för offentliggörandet\n\n\nKommendör med stora korset\nPekka Haavisto\nTidigare utrikesminister\nFinland\n22 oktober 2024\nFör extraordinära insatser för svenska intressen\nKälla Regeringen.se\nNej\nKällorna formulerar motiveringen olika\n\n\nKommendör med stora korset\nRicardo Antonio Merlo\nuppgift saknas\nItalien\n13 november 2018\nuppgift saknas\nKälla Wikipedia\nNej\n\n\n\nKommendör med stora korset\nRym Ali\nuppgift saknas\nuppgift saknas\nnovember 2022\nuppgift saknas\nKälla Kungahuset.se\nJa\n\n\n\nKommendör med stora korset\nSanna Marin\nTidigare statsminister\nFinland\n22 oktober 2024\nFör extraordinära insatser för svenska intressen\nKälla Regeringen.se\nNej\nKällorna formulerar motiveringen olika\n\n\nKommendör med stora korset\nSirje Karis\nuppgift saknas\nEstland\nmaj 2023\nuppgift saknas\nKälla Kungahuset.se\nNej\n\n\n\nKommendör med stora korset\nSumaya bint El Hassan\nuppgift saknas\nJordanien\nnovember 2022\nuppgift saknas\nKälla Kungahuset.se\nJa\n\n\n\nKommendör med stora korset\nSuzanne Innes-Stubb\nuppgift saknas\nuppgift saknas\n23 april 2024\nuppgift saknas\nKälla Kungahuset.se\nNej\n\n\n\nKommendör med stora korset\nTalal bin Muhammad\nuppgift saknas\nJordanien\nnovember 2022\nuppgift saknas\nKälla Kungahuset.se\nJa\n\n\n\nKommendör med stora korset\nTimo Kivinen\nuppgift saknas\nFinland\n17 september 2021\nGeneral Timo Kivinen har både i sin nuvarande roll som kommendör för Finlands försvarsmakt, och i sin tidigare roll som försvarsmaktens strategichef bidragit till en mycket positiv utveckling av det finsk-svenska försvarssamarbetet.\nKälla Kungahuset.se\nNej\n\n\n\nKommendör av första klassen\nAmanda Sloat\nTidigare senior avdelningschef\nUSA\n22 oktober 2024\nFör extraordinära insatser för svenska intressen\nKälla Regeringen.se\nNej\n\n\n\nKommendör av första klassen\nJarmo Lindberg\nuppgift saknas\nFinland\n19 mars 2018\nSom erkänsla för förtjänstfulla insatser inom det militära samarbetet mellan Finland och Sverige har H.M. Konungen behagat utnämna Kommendören av Finlands Försvarsmakt general Jarmo Lindberg till Kommendör Första klassen av Kungl. Nordstjärneorden.\nKälla Kungahuset.se\nNej\n\n\n\nKommendör av första klassen\nJeffry Flake\nAmbassadör\nUSA\n22 oktober 2024\nFör extraordinära insatser för svenska intressen\nKälla Regeringen.se\nNej\n\n\n\nKommendör av första klassen\nJennifer Granholm\nuppgift saknas\nUSA\n21 oktober 2010\nuppgift saknas\nKälla Kungahuset.se\nNej\n\n\n\nKommendör av första klassen\nJulianne Smith\nAmbassadör\nUSA\n22 oktober 2024\nFör extraordinära insatser för svenska intressen\nKälla Regeringen.se\nNej\n\n\n\nKommendör av första klassen\nPetri Hakkarainen\nUtrikesråd\nFinland\n22 oktober 2024\nFör extraordinära insatser för svenska intressen\nKälla Regeringen.se\nNej\nKällorna formulerar motiveringen olika\n\n\nKommendör av första klassen\nStian Jenssen\nTidigare stabschef\nNorge\n22 oktober 2024\nFör extraordinära insatser för svenska intressen\nKälla Regeringen.se\nNej\n\n\n\nKommendör av första klassen\nToomas Asser\nuppgift saknas\nEstland\nmaj 2023\nuppgift saknas\nKälla Officiell publikation\nNej\n\n\n\nKommendör\nAdam Daniel Rotfeld\nuppgift saknas\nPolen\n2001\nuppgift saknas\nKälla Wikipedia\nNej\n\n\n\nKommendör\nCamilla Gunell\nuppgift saknas\nFinland\njuni 2022\nuppgift saknas\nKälla Wikipedia\nNej\n\n\n\nKommendör\nHenrik Meinander\nuppgift saknas\nFinland\n2017\nuppgift saknas\nKälla Wikipedia\nNej\n\n\n\nKommendör\nKatrin Sjögren\nuppgift saknas\nFinland\njuni 2022\nuppgift saknas\nKälla Wikipedia\nNej\n\n\n\nKommendör\nKonstantin Kosasjev\nuppgift saknas\nRyssland\n2004\nuppgift saknas\nKälla Wikipedia\nNej\n\n\n\nKommendör\nLaura Codruța Kövesi\nuppgift saknas\nRumänien\n2016\nuppgift saknas\nKälla Wikipedia\nNej\n\n\n\nKommendör\nMarģers Krams\nuppgift saknas\nLettland\n2014\nuppgift saknas\nKälla Regeringen.se\nNej\n\n\n\nKommendör\nMichael Kaiser\nuppgift saknas\nUSA\n2013\nuppgift saknas\nKälla Wikipedia\nNej\n\n\n\nKommendör\nRaul Eamets\nuppgift saknas\nEstland\nmaj 2023\nuppgift saknas\nKälla Officiell publikation\nNej\n\n\n\nKommendör\nVeronica Thörnroos\nuppgift saknas\nFinland\njuni 2022\nuppgift saknas\nKälla Wikipedia\nNej\n\n\n\nRiddare av första klassen\nAnnette Koch Byrdal\nuppgift saknas\nDanmark\n13 april 2026\nuppgift saknas\nKälla Officiell publikation\nNej\n\n\n\nRiddare av första klassen\nEsa Kärnä\nuppgift saknas\nFinland\n13 april 2026\nuppgift saknas\nKälla Officiell publikation\nNej\n\n\n\nRiddare av första klassen\nGeorgios Tselios\nuppgift saknas\nGrekland\n13 april 2026\nuppgift saknas\nKälla Officiell publikation\nNej\n\n\n\nRiddare av första klassen\nHenry Peter\nuppgift saknas\nuppgift saknas\n2005\nuppgift saknas\nKälla Wikipedia\nNej\n\n\n\nRiddare av första klassen\nMarek Czernis\nuppgift saknas\nPolen\n13 april 2026\nuppgift saknas\nKälla Officiell publikation\nNej\n\n\n\nRiddare av första klassen\nMikael Reuter\nuppgift saknas\nFinland\n2006\nuppgift saknas\nKälla Wikipedia\nNej\n\n\n\nRiddare av första klassen\nSiegfried Loch\nuppgift saknas\nTyskland\n2010\nuppgift saknas\nKälla Wikipedia\nNej\n\n\n\nRiddare\nHanna Gronkiewicz-Waltz\nuppgift saknas\nPolen\n2011\nuppgift saknas\nKälla Wikipedia\nNej\n\n\n\nRiddare\nRaimonds Pauls\nuppgift saknas\nuppgift saknas\n12 oktober 1995\nuppgift saknas\nKälla Wikipedia\nNej"
   },
   {
     "objectID": "ordnar/vasaorden.html",
@@ -49,32 +84,179 @@
     "text": "Mottagare\n\n\nSvenska mottagare\n\n\n\n\n\n\n\nGrad\nNamn\nYrke/titel\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nKommendör med stora korset\nAntonia Ax:son Johnson\nDirektör\n21 mars 2024\nFör utomordentliga insatser inom näringsliv och andra samhällssektorer\nKälla Kungahuset.se\nKategori och land är hämtade från medborgarskap i Wikidata (P27); källan anger inte detta per person\n\n\nKommendör av första klassen\nAgnetha Fältskog\nuppgift saknas\n21 mars 2024\nFör mycket framstående insatser inom svenskt och internationellt musikliv\nKälla Kungahuset.se\nKategori och land är hämtade från medborgarskap i Wikidata (P27); källan anger inte detta per person\n\n\nKommendör av första klassen\nAnni-Frid Reuss\nuppgift saknas\n21 mars 2024\nFör mycket framstående insatser inom svenskt och internationellt musikliv\nKälla Kungahuset.se\nKategori (svensk/utländsk) är inte angiven för den enskilda personen i källan och kunde inte kontrolleras i Wikidata\n\n\nKommendör av första klassen\nBenny Andersson\nuppgift saknas\n21 mars 2024\nFör mycket framstående insatser inom svenskt och internationellt musikliv\nKälla Kungahuset.se\nKategori (svensk/utländsk) är inte angiven för den enskilda personen i källan och kunde inte kontrolleras i Wikidata\n\n\nKommendör av första klassen\nBjörn Ulvaeus\nuppgift saknas\n21 mars 2024\nFör mycket framstående insatser inom svenskt och internationellt musikliv\nKälla Kungahuset.se\nKategori och land är hämtade från medborgarskap i Wikidata (P27); källan anger inte detta per person\n\n\nKommendör av första klassen\nMarie Ehrling\nDirektör\n30 april 2025\nFör mycket framstående insatser inom svenskt näringsliv\nKälla Kungahuset.se\nKategori och land är hämtade från medborgarskap i Wikidata (P27); källan anger inte detta per person\n\n\nKommendör av första klassen\nNina Stemme\nHovsångerska\n30 april 2025\nFör mycket framstående insatser som operasångerska\nKälla Kungahuset.se\nKategori och land är hämtade från medborgarskap i Wikidata (P27); källan anger inte detta per person\n\n\nKommendör\nCrister Stark\nDirektör\n30 april 2025\nFör framstående insatser inom näringslivet och jordbrukssektorn\nKälla Kungahuset.se\nKategori (svensk/utländsk) är inte angiven för den enskilda personen i källan och kunde inte kontrolleras i Wikidata\n\n\nKommendör\nEva Rydberg\nSkådespelare\n21 mars 2024\nFör långt och framgångsrikt engagemang inom scenkonsten\nKälla Kungahuset.se\nKategori och land är hämtade från medborgarskap i Wikidata (P27); källan anger inte detta per person\n\n\nKommendör\nGunilla Arhén\nDirektör\n30 april 2025\nFör framstående insatser för kvinnors ledarskap\nKälla Kungahuset.se\nKategori och land är hämtade från medborgarskap i Wikidata (P27); källan anger inte detta per person\n\n\nKommendör\nHåkan Lans\nTeknologie hedersdoktor\n30 april 2025\nFör framstående insatser som uppfinnare\nKälla Kungahuset.se\nKategori och land är hämtade från medborgarskap i Wikidata (P27); källan anger inte detta per person\n\n\nKommendör\nMarie Göranzon Malmsjö\nSkådespelerska\n30 april 2025\nFör framstående insatser som skådespelerska\nKälla Kungahuset.se\nKategori (svensk/utländsk) är inte angiven för den enskilda personen i källan och kunde inte kontrolleras i Wikidata\n\n\nRiddare av första klassen\nBettan Byvald\nSocionom\n21 mars 2024\nFör mångårigt betydande socialt arbete\nKälla Kungahuset.se\nKategori och land är hämtade från medborgarskap i Wikidata (P27); källan anger inte detta per person\n\n\nRiddare av första klassen\nKarin Bodin\nDirektör\n30 april 2025\nFör betydelsefulla insatser inom svenskt näringsliv\nKälla Kungahuset.se\nKategori och land är hämtade från medborgarskap i Wikidata (P27); källan anger inte detta per person\n\n\nRiddare av första klassen\nUlf Elfving\nJournalist\n30 april 2025\nFör betydelsefulla insatser som journalist och programledare\nKälla Kungahuset.se\nKategori och land är hämtade från medborgarskap i Wikidata (P27); källan anger inte detta per person\n\n\nRiddare\nIngrid Le Roux\nLäkare\n30 april 2025\nFör viktiga insatser för spridningen av svenskt kunnande inom hälsovård för utsatta kvinnor och barn\nKälla Kungahuset.se\nKategori (svensk/utländsk) är inte angiven för den enskilda personen i källan och kunde inte kontrolleras i Wikidata\n\n\nRiddare\nThomas Sjöström\nAffärsområdeschef\n21 mars 2024\nFör stort personligt mod vid den svenska evakueringen från Kabul\nKälla Kungahuset.se\nKategori (svensk/utländsk) är inte angiven för den enskilda personen i källan och kunde inte kontrolleras i Wikidata\n\n\n\n\n\nUtländska mottagare\n\n\n\n\n\n\n\nGrad\nNamn\nYrke/titel\nLand\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nKommendör\nOle Wiggo Bang\nTidigare operachef\nNorge\n30 april 2025\nFör framstående insatser som ledare för Wermland Opera\nKälla Kungahuset.se\nKategori och land är hämtade från medborgarskap i Wikidata (P27); källan anger inte detta per person"
   },
   {
-    "objectID": "ordnar/nordstjarneorden.html",
-    "href": "ordnar/nordstjarneorden.html",
-    "title": "Nordstjärneorden",
+    "objectID": "bevakning.html",
+    "href": "bevakning.html",
+    "title": "Bevakning",
     "section": "",
-    "text": "Nordstjärneorden instiftades 1748 tillsammans med Serafimerorden och Svärdsorden (Wikipedia). Utmärkelser tilldelas personer som gjort personliga insatser för Sverige eller svenska intressen, särskilt inom offentlig verksamhet, samt för väl förrättade allmänna värv och uppdrag (stadgarna 30 §). Orden har fem värdigheter, från kommendör med stora korset till riddare (stadgarna 31 §).\nEnligt prop. 2021/22:232 kan utmärkelserna delas ut till både svenska och utländska medborgare. Förordningen (2022:1800) trädde i kraft 1 februari 2023 (SFS 2022:1800).\nSe även ordensguiden, Serafimerorden, Svärdsorden och Vasaorden."
+    "text": "Atom-flödet med nya tilldelningar finns i feed.xml."
   },
   {
-    "objectID": "ordnar/nordstjarneorden.html#mottagare",
-    "href": "ordnar/nordstjarneorden.html#mottagare",
-    "title": "Nordstjärneorden",
-    "section": "Mottagare",
-    "text": "Mottagare\nListan omfattar 59 levande mottagare som tilldelats orden 1973–2026. Datum avser beslutsdatum om inget annat anges under Notering; yrke och titel anges enligt källan.\n\n\nSvenska mottagare\n\n\n\n\n\n\n\nGrad\nNamn\nYrke/titel\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nKommendör med stora korset\nAnne L'Huillier Wahlström\nProfessor\n21 mars 2024\nFör utomordentliga forskningsinsatser\nKälla Kungahuset.se\nKategori (svensk/utländsk) är inte angiven för den enskilda personen i källan och kunde inte kontrolleras i Wikidata\n\n\nKommendör med stora korset\nBertil Bengtsson\nTidigare justitieråd\n30 april 2025\nFör en utomordentlig livsgärning inom svenskt rättsväsende\nKälla Kungahuset.se\nKategori (svensk/utländsk) är inte angiven för den enskilda personen i källan och kunde inte kontrolleras i Wikidata\n\n\nKommendör med stora korset\nSvante Pääbo\nProfessor\n21 mars 2024\nFör utomordentliga forskningsinsatser\nKälla Kungahuset.se\nKategori och land är hämtade från medborgarskap i Wikidata (P27); källan anger inte detta per person\n\n\nKommendör av första klassen\nErik Norberg\nTidigare riksarkivarie\n30 april 2025\nFör mycket framstående insatser som riksarkivarie och inom akademiväsendet\nKälla Kungahuset.se\nKategori (svensk/utländsk) är inte angiven för den enskilda personen i källan och kunde inte kontrolleras i Wikidata\n\n\nRiddare av första klassen\nAgneta Wikman\nLäkare\n30 april 2025\nFör betydelsefulla insatser som transfusionsspecialist inom militär sjukvård\nKälla Kungahuset.se\nKategori (svensk/utländsk) är inte angiven för den enskilda personen i källan och kunde inte kontrolleras i Wikidata\n\n\nRiddare av första klassen\nMajvor Östergren\nTidigare länsantikvarie\n30 april 2025\nFör betydelsefulla insatser för att värna det gotländska kulturarvet\nKälla Kungahuset.se\nKategori och land är hämtade från medborgarskap i Wikidata (P27); källan anger inte detta per person\n\n\nRiddare\nCatarina Wingren\nTredje ambassadsekreterare\n21 mars 2024\nFör avgörande engagemang i samband med svenska internationella fredsinsatser i Mali\nKälla Kungahuset.se\nKategori (svensk/utländsk) är inte angiven för den enskilda personen i källan och kunde inte kontrolleras i Wikidata\n\n\nRiddare\nSara Ålbrink\nStrategisk inköpare\n30 april 2025\nFör viktiga insatser för Försvarsmaktens strategiska transporter\nKälla Kungahuset.se\nKategori (svensk/utländsk) är inte angiven för den enskilda personen i källan och kunde inte kontrolleras i Wikidata\n\n\nRiddare\nStig Strömholm\nuppgift saknas\n1973\nuppgift saknas\nKälla Wikipedia\n\n\n\n\n\n\nUtländska mottagare\n\n\n\n\n\n\n\nGrad\nNamn\nYrke/titel\nLand\nDatum\nMotivering\nKälla\nKunglig\nNotering\n\n\n\n\nKommendör med stora korset\nAntony Blinken\nUtrikesminister\nUSA\n22 oktober 2024\nFör extraordinära insatser för svenska intressen\nKälla Regeringen.se\nNej\nKällorna formulerar motiveringen olika\n\n\nKommendör med stora korset\nArvo Pärt\nuppgift saknas\nuppgift saknas\nmaj 2023\nuppgift saknas\nKälla Tidning\nNej\n\n\n\nKommendör med stora korset\nBjörn Skúlason\nuppgift saknas\nIsland\n6 maj 2025\nuppgift saknas\nKälla Kungahuset.se\nNej\n\n\n\nKommendör med stora korset\nBrigitte Macron\nuppgift saknas\nFrankrike\njanuari 2024\nuppgift saknas\nKälla Kungahuset.se\nNej\n\n\n\nKommendör med stora korset\nDana Firas\nuppgift saknas\nJordanien\nnovember 2022\nuppgift saknas\nKälla Kungahuset.se\nJa\n\n\n\nKommendör med stora korset\nGhida Talal\nuppgift saknas\nLibanon\nnovember 2022\nuppgift saknas\nKälla Kungahuset.se\nJa\n\n\n\nKommendör med stora korset\nGiorgos Papandreou\nuppgift saknas\nuppgift saknas\n1999\nuppgift saknas\nKälla Wikipedia\nNej\n\n\n\nKommendör med stora korset\nHussein bin Abdullah\nuppgift saknas\nJordanien\nnovember 2022\nuppgift saknas\nKälla Kungahuset.se\nJa\n\n\n\nKommendör med stora korset\nJacob Sullivan\nNationell säkerhetsrådgivare\nUSA\n22 oktober 2024\nFör extraordinära insatser för svenska intressen\nKälla Regeringen.se\nNej\n\n\n\nKommendör med stora korset\nJens Stoltenberg\nTidigare generalsekreterare för Nato\nNorge\n22 oktober 2024\nFör extraordinära insatser för svenska intressen\nKälla Regeringen.se\nNej\nKällorna formulerar motiveringen olika\n\n\nKommendör med stora korset\nMired bin Ra'ad\nuppgift saknas\nJordanien\nnovember 2022\nuppgift saknas\nKälla Kungahuset.se\nJa\n\n\n\nKommendör med stora korset\nMuna al-Hussein\nuppgift saknas\nuppgift saknas\nnovember 2022\nuppgift saknas\nKälla Kungahuset.se\nJa\n\n\n\nKommendör med stora korset\nMáxima av Nederländerna\nuppgift saknas\nuppgift saknas\n2009\nuppgift saknas\nKälla Kungahuset.se\nJa\n\n\n\nKommendör med stora korset\nNarendra Modi\nIndiens premiärminister\nIndien\n17 maj 2026\nuppgift saknas\nKälla Regeringen.se\nNej\nBeslutsdatum saknas i källan; datumet är datumet för offentliggörandet\n\n\nKommendör med stora korset\nPekka Haavisto\nTidigare utrikesminister\nFinland\n22 oktober 2024\nFör extraordinära insatser för svenska intressen\nKälla Regeringen.se\nNej\nKällorna formulerar motiveringen olika\n\n\nKommendör med stora korset\nRicardo Antonio Merlo\nuppgift saknas\nItalien\n13 november 2018\nuppgift saknas\nKälla Wikipedia\nNej\n\n\n\nKommendör med stora korset\nRym Ali\nuppgift saknas\nuppgift saknas\nnovember 2022\nuppgift saknas\nKälla Kungahuset.se\nJa\n\n\n\nKommendör med stora korset\nSanna Marin\nTidigare statsminister\nFinland\n22 oktober 2024\nFör extraordinära insatser för svenska intressen\nKälla Regeringen.se\nNej\nKällorna formulerar motiveringen olika\n\n\nKommendör med stora korset\nSirje Karis\nuppgift saknas\nEstland\nmaj 2023\nuppgift saknas\nKälla Kungahuset.se\nNej\n\n\n\nKommendör med stora korset\nSumaya bint El Hassan\nuppgift saknas\nJordanien\nnovember 2022\nuppgift saknas\nKälla Kungahuset.se\nJa\n\n\n\nKommendör med stora korset\nSuzanne Innes-Stubb\nuppgift saknas\nuppgift saknas\n23 april 2024\nuppgift saknas\nKälla Kungahuset.se\nNej\n\n\n\nKommendör med stora korset\nTalal bin Muhammad\nuppgift saknas\nJordanien\nnovember 2022\nuppgift saknas\nKälla Kungahuset.se\nJa\n\n\n\nKommendör med stora korset\nTimo Kivinen\nuppgift saknas\nFinland\n17 september 2021\nGeneral Timo Kivinen har både i sin nuvarande roll som kommendör för Finlands försvarsmakt, och i sin tidigare roll som försvarsmaktens strategichef bidragit till en mycket positiv utveckling av det finsk-svenska försvarssamarbetet.\nKälla Kungahuset.se\nNej\n\n\n\nKommendör av första klassen\nAmanda Sloat\nTidigare senior avdelningschef\nUSA\n22 oktober 2024\nFör extraordinära insatser för svenska intressen\nKälla Regeringen.se\nNej\n\n\n\nKommendör av första klassen\nJarmo Lindberg\nuppgift saknas\nFinland\n19 mars 2018\nSom erkänsla för förtjänstfulla insatser inom det militära samarbetet mellan Finland och Sverige har H.M. Konungen behagat utnämna Kommendören av Finlands Försvarsmakt general Jarmo Lindberg till Kommendör Första klassen av Kungl. Nordstjärneorden.\nKälla Kungahuset.se\nNej\n\n\n\nKommendör av första klassen\nJeffry Flake\nAmbassadör\nUSA\n22 oktober 2024\nFör extraordinära insatser för svenska intressen\nKälla Regeringen.se\nNej\n\n\n\nKommendör av första klassen\nJennifer Granholm\nuppgift saknas\nUSA\n21 oktober 2010\nuppgift saknas\nKälla Kungahuset.se\nNej\n\n\n\nKommendör av första klassen\nJulianne Smith\nAmbassadör\nUSA\n22 oktober 2024\nFör extraordinära insatser för svenska intressen\nKälla Regeringen.se\nNej\n\n\n\nKommendör av första klassen\nPetri Hakkarainen\nUtrikesråd\nFinland\n22 oktober 2024\nFör extraordinära insatser för svenska intressen\nKälla Regeringen.se\nNej\nKällorna formulerar motiveringen olika\n\n\nKommendör av första klassen\nStian Jenssen\nTidigare stabschef\nNorge\n22 oktober 2024\nFör extraordinära insatser för svenska intressen\nKälla Regeringen.se\nNej\n\n\n\nKommendör av första klassen\nToomas Asser\nuppgift saknas\nEstland\nmaj 2023\nuppgift saknas\nKälla Officiell publikation\nNej\n\n\n\nKommendör\nAdam Daniel Rotfeld\nuppgift saknas\nPolen\n2001\nuppgift saknas\nKälla Wikipedia\nNej\n\n\n\nKommendör\nCamilla Gunell\nuppgift saknas\nFinland\njuni 2022\nuppgift saknas\nKälla Wikipedia\nNej\n\n\n\nKommendör\nHenrik Meinander\nuppgift saknas\nFinland\n2017\nuppgift saknas\nKälla Wikipedia\nNej\n\n\n\nKommendör\nKatrin Sjögren\nuppgift saknas\nFinland\njuni 2022\nuppgift saknas\nKälla Wikipedia\nNej\n\n\n\nKommendör\nKonstantin Kosasjev\nuppgift saknas\nRyssland\n2004\nuppgift saknas\nKälla Wikipedia\nNej\n\n\n\nKommendör\nLaura Codruța Kövesi\nuppgift saknas\nRumänien\n2016\nuppgift saknas\nKälla Wikipedia\nNej\n\n\n\nKommendör\nMarģers Krams\nuppgift saknas\nLettland\n2014\nuppgift saknas\nKälla Regeringen.se\nNej\n\n\n\nKommendör\nMichael Kaiser\nuppgift saknas\nUSA\n2013\nuppgift saknas\nKälla Wikipedia\nNej\n\n\n\nKommendör\nRaul Eamets\nuppgift saknas\nEstland\nmaj 2023\nuppgift saknas\nKälla Officiell publikation\nNej\n\n\n\nKommendör\nVeronica Thörnroos\nuppgift saknas\nFinland\njuni 2022\nuppgift saknas\nKälla Wikipedia\nNej\n\n\n\nRiddare av första klassen\nAnnette Koch Byrdal\nuppgift saknas\nDanmark\n13 april 2026\nuppgift saknas\nKälla Officiell publikation\nNej\n\n\n\nRiddare av första klassen\nEsa Kärnä\nuppgift saknas\nFinland\n13 april 2026\nuppgift saknas\nKälla Officiell publikation\nNej\n\n\n\nRiddare av första klassen\nGeorgios Tselios\nuppgift saknas\nGrekland\n13 april 2026\nuppgift saknas\nKälla Officiell publikation\nNej\n\n\n\nRiddare av första klassen\nHenry Peter\nuppgift saknas\nuppgift saknas\n2005\nuppgift saknas\nKälla Wikipedia\nNej\n\n\n\nRiddare av första klassen\nMarek Czernis\nuppgift saknas\nPolen\n13 april 2026\nuppgift saknas\nKälla Officiell publikation\nNej\n\n\n\nRiddare av första klassen\nMikael Reuter\nuppgift saknas\nFinland\n2006\nuppgift saknas\nKälla Wikipedia\nNej\n\n\n\nRiddare av första klassen\nSiegfried Loch\nuppgift saknas\nTyskland\n2010\nuppgift saknas\nKälla Wikipedia\nNej\n\n\n\nRiddare\nHanna Gronkiewicz-Waltz\nuppgift saknas\nPolen\n2011\nuppgift saknas\nKälla Wikipedia\nNej\n\n\n\nRiddare\nRaimonds Pauls\nuppgift saknas\nuppgift saknas\n12 oktober 1995\nuppgift saknas\nKälla Wikipedia\nNej"
+    "objectID": "bevakning.html#ändringslogg",
+    "href": "bevakning.html#ändringslogg",
+    "title": "Bevakning",
+    "section": "Ändringslogg",
+    "text": "Ändringslogg"
   },
   {
-    "objectID": "person/veronica-thornroos.html",
-    "href": "person/veronica-thornroos.html",
-    "title": "Veronica Thörnroos",
+    "objectID": "person/michiko.html",
+    "href": "person/michiko.html",
+    "title": "Michiko",
     "section": "",
-    "text": "Kön: \nkvinna\n\nKategori: \nutländsk\n\nLand: \nFinland\n\nKunglig: \nNej\n\nWikidata: \nQ4982779\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nNordstjärneorden\nKommendör\njuni 2022\nuppgift saknas\nKälla Wikipedia"
+    "text": "Kön: \nkvinna\n\nKategori: \nutländsk\n\nLand: \nJapan\n\nKunglig: \nJa\n\nWikidata: \nQ87610\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nSerafimerorden\nLedamot\n18 maj 2000\nuppgift saknas\nKälla Wikipedia"
   },
   {
-    "objectID": "person/brigitte-macron.html",
-    "href": "person/brigitte-macron.html",
-    "title": "Brigitte Macron",
+    "objectID": "person/torsten-petre.html",
+    "href": "person/torsten-petre.html",
+    "title": "Torsten Petré",
     "section": "",
-    "text": "Kön: \nkvinna\n\nKategori: \nutländsk\n\nLand: \nFrankrike\n\nKunglig: \nNej\n\nWikidata: \nQ21511883\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nNordstjärneorden\nKommendör med stora korset\njanuari 2024\nuppgift saknas\nKälla Kungahuset.se"
+    "text": "Kön: \nman\n\nKategori: \nsvensk\n\nLand: \nSverige\n\nKunglig: \nNej\n\nWikidata: \nQ134800325\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nSvärdsorden\nRiddare av första klassen\n1974\nuppgift saknas\nKälla Officiell publikation"
+  },
+  {
+    "objectID": "person/karin-bodin.html",
+    "href": "person/karin-bodin.html",
+    "title": "Karin Bodin",
+    "section": "",
+    "text": "Kön: \nuppgift saknas\n\nKategori: \nsvensk\n\nLand: \nuppgift saknas\n\nKunglig: \nNej\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nVasaorden\nRiddare av första klassen\n30 april 2025\nFör betydelsefulla insatser inom svenskt näringsliv\nKälla Kungahuset.se\nKategori och land är hämtade från medborgarskap i Wikidata (P27); källan anger inte detta per person"
+  },
+  {
+    "objectID": "person/willem-alexander-av-nederlanderna.html",
+    "href": "person/willem-alexander-av-nederlanderna.html",
+    "title": "Willem-Alexander av Nederländerna",
+    "section": "",
+    "text": "Kön: \nman\n\nKategori: \nutländsk\n\nLand: \nNederländerna\n\nKunglig: \nJa\n\nWikidata: \nQ154952\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nSerafimerorden\nLedamot med kedja\n11 oktober 2022\nuppgift saknas\nKälla Kungahuset.se\n\n\n\nSerafimerorden\nLedamot\n1993\nuppgift saknas\nKälla Kungahuset.se"
+  },
+  {
+    "objectID": "person/esa-karna.html",
+    "href": "person/esa-karna.html",
+    "title": "Esa Kärnä",
+    "section": "",
+    "text": "Kön: \nuppgift saknas\n\nKategori: \nutländsk\n\nLand: \nFinland\n\nKunglig: \nNej\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nNordstjärneorden\nRiddare av första klassen\n13 april 2026\nuppgift saknas\nKälla Officiell publikation"
+  },
+  {
+    "objectID": "person/juan-carlos-i-av-spanien.html",
+    "href": "person/juan-carlos-i-av-spanien.html",
+    "title": "Juan Carlos I av Spanien",
+    "section": "",
+    "text": "Kön: \nman\n\nKategori: \nutländsk\n\nLand: \nSpanien\n\nKunglig: \nJa\n\nWikidata: \nQ19943\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nSerafimerorden\nLedamot\n5 oktober 1979\nuppgift saknas\nKälla Wikipedia"
+  },
+  {
+    "objectID": "person/maria-teresa-av-luxemburg.html",
+    "href": "person/maria-teresa-av-luxemburg.html",
+    "title": "Maria Teresa av Luxemburg",
+    "section": "",
+    "text": "Kön: \nkvinna\n\nKategori: \nutländsk\n\nLand: \nLuxemburg\n\nKunglig: \nJa\n\nWikidata: \nQ230644\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nSerafimerorden\nLedamot\n15 april 2008\nuppgift saknas\nKälla Wikipedia"
+  },
+  {
+    "objectID": "person/raimonds-pauls.html",
+    "href": "person/raimonds-pauls.html",
+    "title": "Raimonds Pauls",
+    "section": "",
+    "text": "Kön: \nman\n\nKategori: \nutländsk\n\nLand: \nuppgift saknas\n\nKunglig: \nNej\n\nWikidata: \nQ178708\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nNordstjärneorden\nRiddare\n12 oktober 1995\nuppgift saknas\nKälla Wikipedia"
+  },
+  {
+    "objectID": "person/mikael-reuter.html",
+    "href": "person/mikael-reuter.html",
+    "title": "Mikael Reuter",
+    "section": "",
+    "text": "Kön: \nman\n\nKategori: \nutländsk\n\nLand: \nFinland\n\nKunglig: \nNej\n\nWikidata: \nQ6068829\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nNordstjärneorden\nRiddare av första klassen\n2006\nuppgift saknas\nKälla Wikipedia"
+  },
+  {
+    "objectID": "person/anibal-cavaco-silva.html",
+    "href": "person/anibal-cavaco-silva.html",
+    "title": "Aníbal Cavaco Silva",
+    "section": "",
+    "text": "Kön: \nman\n\nKategori: \nutländsk\n\nLand: \nPortugal\n\nKunglig: \nNej\n\nWikidata: \nQ57398\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nSerafimerorden\nLedamot\n2008\nuppgift saknas\nKälla Wikipedia"
+  },
+  {
+    "objectID": "person/antony-blinken.html",
+    "href": "person/antony-blinken.html",
+    "title": "Antony Blinken",
+    "section": "",
+    "text": "Kön: \nuppgift saknas\n\nKategori: \nutländsk\n\nLand: \nUSA\n\nKunglig: \nNej\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nNordstjärneorden\nKommendör med stora korset\n22 oktober 2024\nFör extraordinära insatser för svenska intressen\nKälla Regeringen.se\nKällorna formulerar motiveringen olika"
+  },
+  {
+    "objectID": "person/agneta-wikman.html",
+    "href": "person/agneta-wikman.html",
+    "title": "Agneta Wikman",
+    "section": "",
+    "text": "Kön: \nuppgift saknas\n\nKategori: \nsvensk\n\nLand: \nuppgift saknas\n\nKunglig: \nNej\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nNordstjärneorden\nRiddare av första klassen\n30 april 2025\nFör betydelsefulla insatser som transfusionsspecialist inom militär sjukvård\nKälla Kungahuset.se\nKategori (svensk/utländsk) är inte angiven för den enskilda personen i källan och kunde inte kontrolleras i Wikidata"
+  },
+  {
+    "objectID": "person/vaira-vike-freiberga.html",
+    "href": "person/vaira-vike-freiberga.html",
+    "title": "Vaira Vīķe-Freiberga",
+    "section": "",
+    "text": "Kön: \nkvinna\n\nKategori: \nutländsk\n\nLand: \nuppgift saknas\n\nKunglig: \nNej\n\nWikidata: \nQ151301\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nSerafimerorden\nLedamot\n2005\nuppgift saknas\nKälla Wikipedia\nFlera medborgarskap i Wikidata; land är inte angivet"
+  },
+  {
+    "objectID": "person/majvor-ostergren.html",
+    "href": "person/majvor-ostergren.html",
+    "title": "Majvor Östergren",
+    "section": "",
+    "text": "Kön: \nuppgift saknas\n\nKategori: \nsvensk\n\nLand: \nuppgift saknas\n\nKunglig: \nNej\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nNordstjärneorden\nRiddare av första klassen\n30 april 2025\nFör betydelsefulla insatser för att värna det gotländska kulturarvet\nKälla Kungahuset.se\nKategori och land är hämtade från medborgarskap i Wikidata (P27); källan anger inte detta per person"
+  },
+  {
+    "objectID": "person/carl-xvi-gustaf.html",
+    "href": "person/carl-xvi-gustaf.html",
+    "title": "Carl XVI Gustaf",
+    "section": "",
+    "text": "Kön: \nman\n\nKategori: \nsvensk\n\nLand: \nSverige\n\nKunglig: \nJa\n\nWikidata: \nQ45068\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nSerafimerorden\nLedamot\n30 april 1946\nuppgift saknas\nKälla Kungahuset.se\nDatum är födelsedatum; kungahuset.se anger att insignierna överlämnades vid dopet 7 juni 1946"
+  },
+  {
+    "objectID": "person/naruhito.html",
+    "href": "person/naruhito.html",
+    "title": "Naruhito",
+    "section": "",
+    "text": "Kön: \nman\n\nKategori: \nutländsk\n\nLand: \nJapan\n\nKunglig: \nJa\n\nWikidata: \nQ217096\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nSerafimerorden\nLedamot\n26 mars 2003\nuppgift saknas\nKälla Wikipedia"
+  },
+  {
+    "objectID": "person/prinsessan-estelle.html",
+    "href": "person/prinsessan-estelle.html",
+    "title": "Prinsessan Estelle",
+    "section": "",
+    "text": "Kön: \nkvinna\n\nKategori: \nsvensk\n\nLand: \nSverige\n\nKunglig: \nJa\n\nWikidata: \nQ214025\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nSerafimerorden\nLedamot\n23 februari 2012\nuppgift saknas\nKälla Wikipedia\nDatum är födelsedatum: arvsberättigade prinsar och prinsessor är riddare från födseln enligt stadgarna 25 §"
+  },
+  {
+    "objectID": "person/prinsessan-maxima.html",
+    "href": "person/prinsessan-maxima.html",
+    "title": "Prinsessan Máxima",
+    "section": "",
+    "text": "Kön: \nkvinna\n\nKategori: \nutländsk\n\nLand: \nuppgift saknas\n\nKunglig: \nJa\n\nWikidata: \nQ460960\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nNordstjärneorden\nKommendör med stora korset\n2009\nuppgift saknas\nKälla Kungahuset.se\n\n\n\nSerafimerorden\nLedamot\n11 oktober 2022\nuppgift saknas\nKälla Kungahuset.se\nFlera medborgarskap i Wikidata; land är inte angivet"
+  },
+  {
+    "objectID": "person/chulabhorn-walailak.html",
+    "href": "person/chulabhorn-walailak.html",
+    "title": "Chulabhorn Walailak",
+    "section": "",
+    "text": "Kön: \nkvinna\n\nKategori: \nutländsk\n\nLand: \nThailand\n\nKunglig: \nJa\n\nWikidata: \nQ1089410\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nSerafimerorden\nLedamot\n2003\nuppgift saknas\nKälla Wikipedia"
+  },
+  {
+    "objectID": "person/michelle-bachelet.html",
+    "href": "person/michelle-bachelet.html",
+    "title": "Michelle Bachelet",
+    "section": "",
+    "text": "Kön: \nkvinna\n\nKategori: \nutländsk\n\nLand: \nChile\n\nKunglig: \nNej\n\nWikidata: \nQ320\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nSerafimerorden\nLedamot\n2016\nuppgift saknas\nKälla Wikipedia"
+  },
+  {
+    "objectID": "person/ole-wiggo-bang.html",
+    "href": "person/ole-wiggo-bang.html",
+    "title": "Ole Wiggo Bang",
+    "section": "",
+    "text": "Kön: \nuppgift saknas\n\nKategori: \nutländsk\n\nLand: \nNorge\n\nKunglig: \nNej\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nVasaorden\nKommendör\n30 april 2025\nFör framstående insatser som ledare för Wermland Opera\nKälla Kungahuset.se\nKategori och land är hämtade från medborgarskap i Wikidata (P27); källan anger inte detta per person"
+  },
+  {
+    "objectID": "person/dana-firas.html",
+    "href": "person/dana-firas.html",
+    "title": "Dana Firas",
+    "section": "",
+    "text": "Kön: \nkvinna\n\nKategori: \nutländsk\n\nLand: \nJordanien\n\nKunglig: \nJa\n\nWikidata: \nQ35497945\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nNordstjärneorden\nKommendör med stora korset\nnovember 2022\nuppgift saknas\nKälla Kungahuset.se"
+  },
+  {
+    "objectID": "person/jennifer-granholm.html",
+    "href": "person/jennifer-granholm.html",
+    "title": "Jennifer Granholm",
+    "section": "",
+    "text": "Kön: \nkvinna\n\nKategori: \nutländsk\n\nLand: \nUSA\n\nKunglig: \nNej\n\nWikidata: \nQ234994\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nNordstjärneorden\nKommendör av första klassen\n21 oktober 2010\nuppgift saknas\nKälla Kungahuset.se"
   },
   {
     "objectID": "person/felipe-vi-av-spanien.html",
@@ -84,123 +266,11 @@
     "text": "Kön: \nman\n\nKategori: \nutländsk\n\nLand: \nSpanien\n\nKunglig: \nJa\n\nWikidata: \nQ191045\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nSerafimerorden\nLedamot med kedja\n24 november 2021\nuppgift saknas\nKälla Kungahuset.se\n\n\n\nSerafimerorden\nLedamot\n1991\nuppgift saknas\nKälla Kungahuset.se"
   },
   {
-    "objectID": "person/prinsessan-margaretha.html",
-    "href": "person/prinsessan-margaretha.html",
-    "title": "Prinsessan Margaretha",
+    "objectID": "person/catarina-wingren.html",
+    "href": "person/catarina-wingren.html",
+    "title": "Catarina Wingren",
     "section": "",
-    "text": "Kön: \nkvinna\n\nKategori: \nsvensk\n\nLand: \nSverige\n\nKunglig: \nJa\n\nWikidata: \nQ2266804\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nSerafimerorden\nLedamot\n30 juni 1964\nuppgift saknas\nKälla Wikipedia\nDatum är vigseldatum från Wikidata; källan anger inte datumet"
-  },
-  {
-    "objectID": "person/ulf-elfving.html",
-    "href": "person/ulf-elfving.html",
-    "title": "Ulf Elfving",
-    "section": "",
-    "text": "Kön: \nuppgift saknas\n\nKategori: \nsvensk\n\nLand: \nuppgift saknas\n\nKunglig: \nNej\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nVasaorden\nRiddare av första klassen\n30 april 2025\nFör betydelsefulla insatser som journalist och programledare\nKälla Kungahuset.se\nKategori och land är hämtade från medborgarskap i Wikidata (P27); källan anger inte detta per person"
-  },
-  {
-    "objectID": "person/queen-saleha-of-brunei.html",
-    "href": "person/queen-saleha-of-brunei.html",
-    "title": "Queen Saleha of Brunei",
-    "section": "",
-    "text": "Kön: \nkvinna\n\nKategori: \nutländsk\n\nLand: \nBrunei\n\nKunglig: \nJa\n\nWikidata: \nQ468528\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nSerafimerorden\nLedamot\n8 februari 2004\nuppgift saknas\nKälla Wikipedia"
-  },
-  {
-    "objectID": "person/farah-pahlavi.html",
-    "href": "person/farah-pahlavi.html",
-    "title": "Farah Pahlavi",
-    "section": "",
-    "text": "Kön: \nkvinna\n\nKategori: \nutländsk\n\nLand: \nuppgift saknas\n\nKunglig: \nJa\n\nWikidata: \nQ164111\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nSerafimerorden\nLedamot\n1960\nuppgift saknas\nKälla Wikipedia\nFlera medborgarskap i Wikidata; land är inte angivet"
-  },
-  {
-    "objectID": "person/guntis-ulmanis.html",
-    "href": "person/guntis-ulmanis.html",
-    "title": "Guntis Ulmanis",
-    "section": "",
-    "text": "Kön: \nman\n\nKategori: \nutländsk\n\nLand: \nLettland\n\nKunglig: \nNej\n\nWikidata: \nQ60106\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nSerafimerorden\nLedamot\n12 oktober 1995\nuppgift saknas\nKälla Wikipedia"
-  },
-  {
-    "objectID": "person/stian-jenssen.html",
-    "href": "person/stian-jenssen.html",
-    "title": "Stian Jenssen",
-    "section": "",
-    "text": "Kön: \nuppgift saknas\n\nKategori: \nutländsk\n\nLand: \nNorge\n\nKunglig: \nNej\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nNordstjärneorden\nKommendör av första klassen\n22 oktober 2024\nFör extraordinära insatser för svenska intressen\nKälla Regeringen.se"
-  },
-  {
-    "objectID": "person/hanna-gronkiewicz-waltz.html",
-    "href": "person/hanna-gronkiewicz-waltz.html",
-    "title": "Hanna Gronkiewicz-Waltz",
-    "section": "",
-    "text": "Kön: \nkvinna\n\nKategori: \nutländsk\n\nLand: \nPolen\n\nKunglig: \nNej\n\nWikidata: \nQ271902\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nNordstjärneorden\nRiddare\n2011\nuppgift saknas\nKälla Wikipedia"
-  },
-  {
-    "objectID": "person/sergio-mattarella.html",
-    "href": "person/sergio-mattarella.html",
-    "title": "Sergio Mattarella",
-    "section": "",
-    "text": "Kön: \nman\n\nKategori: \nutländsk\n\nLand: \nItalien\n\nKunglig: \nNej\n\nWikidata: \nQ3956186\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nSerafimerorden\nLedamot\n2018\nuppgift saknas\nKälla Wikipedia"
-  },
-  {
-    "objectID": "person/julianne-smith.html",
-    "href": "person/julianne-smith.html",
-    "title": "Julianne Smith",
-    "section": "",
-    "text": "Kön: \nuppgift saknas\n\nKategori: \nutländsk\n\nLand: \nUSA\n\nKunglig: \nNej\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nNordstjärneorden\nKommendör av första klassen\n22 oktober 2024\nFör extraordinära insatser för svenska intressen\nKälla Regeringen.se"
-  },
-  {
-    "objectID": "person/abdullah-ii-av-jordanien.html",
-    "href": "person/abdullah-ii-av-jordanien.html",
-    "title": "Abdullah II av Jordanien",
-    "section": "",
-    "text": "Kön: \nman\n\nKategori: \nutländsk\n\nLand: \nJordanien\n\nKunglig: \nJa\n\nWikidata: \nQ57464\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nSerafimerorden\nLedamot\n2003\nuppgift saknas\nKälla Officiell publikation"
-  },
-  {
-    "objectID": "person/rania-av-jordanien.html",
-    "href": "person/rania-av-jordanien.html",
-    "title": "Rania av Jordanien",
-    "section": "",
-    "text": "Kön: \nkvinna\n\nKategori: \nutländsk\n\nLand: \nuppgift saknas\n\nKunglig: \nJa\n\nWikidata: \nQ200678\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nSerafimerorden\nLedamot\n2003\nuppgift saknas\nKälla Wikipedia\nFlera medborgarskap i Wikidata; land är inte angivet"
-  },
-  {
-    "objectID": "person/tuanku-syed-sirajuddin.html",
-    "href": "person/tuanku-syed-sirajuddin.html",
-    "title": "Tuanku Syed Sirajuddin",
-    "section": "",
-    "text": "Kön: \nman\n\nKategori: \nutländsk\n\nLand: \nMalaysia\n\nKunglig: \nJa\n\nWikidata: \nQ460568\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nSerafimerorden\nLedamot\n14 september 2005\nuppgift saknas\nKälla Wikipedia"
-  },
-  {
-    "objectID": "person/prins-daniel.html",
-    "href": "person/prins-daniel.html",
-    "title": "Prins Daniel",
-    "section": "",
-    "text": "Kön: \nman\n\nKategori: \nsvensk\n\nLand: \nSverige\n\nKunglig: \nJa\n\nWikidata: \nQ209449\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nSerafimerorden\nLedamot\n19 juni 2010\nuppgift saknas\nKälla Wikipedia\nDatum är vigseldatum från Wikidata; källan anger inte datumet"
-  },
-  {
-    "objectID": "person/vicente-fox.html",
-    "href": "person/vicente-fox.html",
-    "title": "Vicente Fox",
-    "section": "",
-    "text": "Kön: \nman\n\nKategori: \nutländsk\n\nLand: \nMexiko\n\nKunglig: \nNej\n\nWikidata: \nQ190572\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nSerafimerorden\nLedamot\n22 oktober 2002\nuppgift saknas\nKälla Wikipedia"
-  },
-  {
-    "objectID": "person/vigdis-finnbogadottir.html",
-    "href": "person/vigdis-finnbogadottir.html",
-    "title": "Vigdís Finnbogadóttir",
-    "section": "",
-    "text": "Kön: \nkvinna\n\nKategori: \nutländsk\n\nLand: \nIsland\n\nKunglig: \nNej\n\nWikidata: \nQ189797\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nSerafimerorden\nLedamot\n8 oktober 1981\nuppgift saknas\nKälla Wikipedia"
-  },
-  {
-    "objectID": "person/talal-bin-muhammad.html",
-    "href": "person/talal-bin-muhammad.html",
-    "title": "Talal bin Muhammad",
-    "section": "",
-    "text": "Kön: \nman\n\nKategori: \nutländsk\n\nLand: \nJordanien\n\nKunglig: \nJa\n\nWikidata: \nQ7244259\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nNordstjärneorden\nKommendör med stora korset\nnovember 2022\nuppgift saknas\nKälla Kungahuset.se"
-  },
-  {
-    "objectID": "person/goran-wallen.html",
-    "href": "person/goran-wallen.html",
-    "title": "Göran Wallén",
-    "section": "",
-    "text": "Kön: \nman\n\nKategori: \nsvensk\n\nLand: \nSverige\n\nKunglig: \nNej\n\nWikidata: \nQ56301440\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nSvärdsorden\nRiddare\n6 juni 1973\nuppgift saknas\nKälla Officiell publikation"
+    "text": "Kön: \nuppgift saknas\n\nKategori: \nsvensk\n\nLand: \nuppgift saknas\n\nKunglig: \nNej\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nNordstjärneorden\nRiddare\n21 mars 2024\nFör avgörande engagemang i samband med svenska internationella fredsinsatser i Mali\nKälla Kungahuset.se\nKategori (svensk/utländsk) är inte angiven för den enskilda personen i källan och kunde inte kontrolleras i Wikidata"
   },
   {
     "objectID": "person/thomas-sjostrom.html",
@@ -217,270 +287,11 @@
     "text": "Kön: \nman\n\nKategori: \nsvensk\n\nLand: \nSverige\n\nKunglig: \nJa\n\nWikidata: \nQ106239013\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nSerafimerorden\nLedamot\n26 mars 2021\nuppgift saknas\nKälla Wikipedia"
   },
   {
-    "objectID": "person/suzanne-innes-stubb.html",
-    "href": "person/suzanne-innes-stubb.html",
-    "title": "Suzanne Innes-Stubb",
+    "objectID": "person/joachim-gauck.html",
+    "href": "person/joachim-gauck.html",
+    "title": "Joachim Gauck",
     "section": "",
-    "text": "Kön: \nkvinna\n\nKategori: \nutländsk\n\nLand: \nuppgift saknas\n\nKunglig: \nNej\n\nWikidata: \nQ17278098\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nNordstjärneorden\nKommendör med stora korset\n23 april 2024\nuppgift saknas\nKälla Kungahuset.se"
-  },
-  {
-    "objectID": "person/dennis-gyllensporre.html",
-    "href": "person/dennis-gyllensporre.html",
-    "title": "Dennis Gyllensporre",
-    "section": "",
-    "text": "Kön: \nuppgift saknas\n\nKategori: \nsvensk\n\nLand: \nuppgift saknas\n\nKunglig: \nNej\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nSvärdsorden\nKommendör med stora korset\n21 mars 2024\nFör utomordentligt ledarskap under krigsliknande förhållanden i Mali\nKälla Kungahuset.se\nKategori och land är hämtade från medborgarskap i Wikidata (P27); källan anger inte detta per person"
-  },
-  {
-    "objectID": "person/prins-alexander.html",
-    "href": "person/prins-alexander.html",
-    "title": "Prins Alexander",
-    "section": "",
-    "text": "Kön: \nman\n\nKategori: \nsvensk\n\nLand: \nSverige\n\nKunglig: \nJa\n\nWikidata: \nQ23891303\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nSerafimerorden\nLedamot\n19 april 2016\nuppgift saknas\nKälla Wikipedia\nDatum är födelsedatum: arvsberättigade prinsar och prinsessor är riddare från födseln enligt stadgarna 25 §"
-  },
-  {
-    "objectID": "person/charles-iii-av-storbritannien.html",
-    "href": "person/charles-iii-av-storbritannien.html",
-    "title": "Charles III av Storbritannien",
-    "section": "",
-    "text": "Kön: \nman\n\nKategori: \nutländsk\n\nLand: \nStorbritannien\n\nKunglig: \nJa\n\nWikidata: \nQ43274\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nSerafimerorden\nLedamot\n23 maj 1975\nuppgift saknas\nKälla Wikipedia"
-  },
-  {
-    "objectID": "person/prinsessan-estelle.html",
-    "href": "person/prinsessan-estelle.html",
-    "title": "Prinsessan Estelle",
-    "section": "",
-    "text": "Kön: \nkvinna\n\nKategori: \nsvensk\n\nLand: \nSverige\n\nKunglig: \nJa\n\nWikidata: \nQ214025\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nSerafimerorden\nLedamot\n23 februari 2012\nuppgift saknas\nKälla Wikipedia\nDatum är födelsedatum: arvsberättigade prinsar och prinsessor är riddare från födseln enligt stadgarna 25 §"
-  },
-  {
-    "objectID": "person/willem-alexander-av-nederlanderna.html",
-    "href": "person/willem-alexander-av-nederlanderna.html",
-    "title": "Willem-Alexander av Nederländerna",
-    "section": "",
-    "text": "Kön: \nman\n\nKategori: \nutländsk\n\nLand: \nNederländerna\n\nKunglig: \nJa\n\nWikidata: \nQ154952\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nSerafimerorden\nLedamot med kedja\n11 oktober 2022\nuppgift saknas\nKälla Kungahuset.se\n\n\n\nSerafimerorden\nLedamot\n1993\nuppgift saknas\nKälla Kungahuset.se"
-  },
-  {
-    "objectID": "person/muna-al-hussein.html",
-    "href": "person/muna-al-hussein.html",
-    "title": "Muna al-Hussein",
-    "section": "",
-    "text": "Kön: \nkvinna\n\nKategori: \nutländsk\n\nLand: \nuppgift saknas\n\nKunglig: \nJa\n\nWikidata: \nQ269898\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nNordstjärneorden\nKommendör med stora korset\nnovember 2022\nuppgift saknas\nKälla Kungahuset.se"
-  },
-  {
-    "objectID": "person/toomas-hendrik-ilves.html",
-    "href": "person/toomas-hendrik-ilves.html",
-    "title": "Toomas Hendrik Ilves",
-    "section": "",
-    "text": "Kön: \nman\n\nKategori: \nutländsk\n\nLand: \nEstland\n\nKunglig: \nNej\n\nWikidata: \nQ57289\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nSerafimerorden\nLedamot\n2011\nuppgift saknas\nKälla Wikipedia"
-  },
-  {
-    "objectID": "person/crister-stark.html",
-    "href": "person/crister-stark.html",
-    "title": "Crister Stark",
-    "section": "",
-    "text": "Kön: \nuppgift saknas\n\nKategori: \nsvensk\n\nLand: \nuppgift saknas\n\nKunglig: \nNej\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nVasaorden\nKommendör\n30 april 2025\nFör framstående insatser inom näringslivet och jordbrukssektorn\nKälla Kungahuset.se\nKategori (svensk/utländsk) är inte angiven för den enskilda personen i källan och kunde inte kontrolleras i Wikidata"
-  },
-  {
-    "objectID": "person/alessandro-luccetti.html",
-    "href": "person/alessandro-luccetti.html",
-    "title": "Alessandro Luccetti",
-    "section": "",
-    "text": "Kön: \nuppgift saknas\n\nKategori: \nutländsk\n\nLand: \nItalien\n\nKunglig: \nNej\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nSvärdsorden\nKommendör\n13 april 2026\nuppgift saknas\nKälla Officiell publikation"
-  },
-  {
-    "objectID": "person/petri-hakkarainen.html",
-    "href": "person/petri-hakkarainen.html",
-    "title": "Petri Hakkarainen",
-    "section": "",
-    "text": "Kön: \nuppgift saknas\n\nKategori: \nutländsk\n\nLand: \nFinland\n\nKunglig: \nNej\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nNordstjärneorden\nKommendör av första klassen\n22 oktober 2024\nFör extraordinära insatser för svenska intressen\nKälla Regeringen.se\nKällorna formulerar motiveringen olika"
-  },
-  {
-    "objectID": "person/lech-waesa.html",
-    "href": "person/lech-waesa.html",
-    "title": "Lech Wałęsa",
-    "section": "",
-    "text": "Kön: \nman\n\nKategori: \nutländsk\n\nLand: \nPolen\n\nKunglig: \nNej\n\nWikidata: \nQ444\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nSerafimerorden\nLedamot\n16 september 1993\nuppgift saknas\nKälla Wikipedia"
-  },
-  {
-    "objectID": "person/sonja-av-norge.html",
-    "href": "person/sonja-av-norge.html",
-    "title": "Sonja av Norge",
-    "section": "",
-    "text": "Kön: \nkvinna\n\nKategori: \nutländsk\n\nLand: \nNorge\n\nKunglig: \nJa\n\nWikidata: \nQ131045\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nSerafimerorden\nLedamot\n26 december 1974\nuppgift saknas\nKälla Wikipedia"
-  },
-  {
-    "objectID": "person/traian-basescu.html",
-    "href": "person/traian-basescu.html",
-    "title": "Traian Băsescu",
-    "section": "",
-    "text": "Kön: \nman\n\nKategori: \nutländsk\n\nLand: \nRumänien\n\nKunglig: \nNej\n\nWikidata: \nQ57279\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nSerafimerorden\nLedamot\n11 mars 2008\nuppgift saknas\nKälla Wikipedia"
-  },
-  {
-    "objectID": "person/jennifer-granholm.html",
-    "href": "person/jennifer-granholm.html",
-    "title": "Jennifer Granholm",
-    "section": "",
-    "text": "Kön: \nkvinna\n\nKategori: \nutländsk\n\nLand: \nUSA\n\nKunglig: \nNej\n\nWikidata: \nQ234994\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nNordstjärneorden\nKommendör av första klassen\n21 oktober 2010\nuppgift saknas\nKälla Kungahuset.se"
-  },
-  {
-    "objectID": "person/paola-av-belgien.html",
-    "href": "person/paola-av-belgien.html",
-    "title": "Paola av Belgien",
-    "section": "",
-    "text": "Kön: \nkvinna\n\nKategori: \nutländsk\n\nLand: \nuppgift saknas\n\nKunglig: \nJa\n\nWikidata: \nQ31129\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nSerafimerorden\nLedamot\n1994\nuppgift saknas\nKälla Wikipedia\nFlera medborgarskap i Wikidata; land är inte angivet"
-  },
-  {
-    "objectID": "person/prinsessan-adrienne.html",
-    "href": "person/prinsessan-adrienne.html",
-    "title": "Prinsessan Adrienne",
-    "section": "",
-    "text": "Kön: \nkvinna\n\nKategori: \nsvensk\n\nLand: \nSverige\n\nKunglig: \nJa\n\nWikidata: \nQ50411737\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nSerafimerorden\nLedamot\n9 mars 2018\nuppgift saknas\nKälla Wikipedia\nDatum är födelsedatum: arvsberättigade prinsar och prinsessor är riddare från födseln enligt stadgarna 25 §"
-  },
-  {
-    "objectID": "person/harald-glans.html",
-    "href": "person/harald-glans.html",
-    "title": "Harald Glans",
-    "section": "",
-    "text": "Kön: \nuppgift saknas\n\nKategori: \nsvensk\n\nLand: \nuppgift saknas\n\nKunglig: \nNej\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nSvärdsorden\nRiddare av första klassen\n30 april 2025\nFör betydelsefulla insatser i samband med jordbävningskatastrofen i Turkiet 2023\nKälla Kungahuset.se\nKategori (svensk/utländsk) är inte angiven för den enskilda personen i källan och kunde inte kontrolleras i Wikidata"
-  },
-  {
-    "objectID": "person/annette-koch-byrdal.html",
-    "href": "person/annette-koch-byrdal.html",
-    "title": "Annette Koch Byrdal",
-    "section": "",
-    "text": "Kön: \nuppgift saknas\n\nKategori: \nutländsk\n\nLand: \nDanmark\n\nKunglig: \nNej\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nNordstjärneorden\nRiddare av första klassen\n13 april 2026\nuppgift saknas\nKälla Officiell publikation"
-  },
-  {
-    "objectID": "person/margers-krams.html",
-    "href": "person/margers-krams.html",
-    "title": "Marģers Krams",
-    "section": "",
-    "text": "Kön: \nman\n\nKategori: \nutländsk\n\nLand: \nLettland\n\nKunglig: \nNej\n\nWikidata: \nQ112592732\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nNordstjärneorden\nKommendör\n2014\nuppgift saknas\nKälla Regeringen.se"
-  },
-  {
-    "objectID": "person/pekka-haavisto.html",
-    "href": "person/pekka-haavisto.html",
-    "title": "Pekka Haavisto",
-    "section": "",
-    "text": "Kön: \nuppgift saknas\n\nKategori: \nutländsk\n\nLand: \nFinland\n\nKunglig: \nNej\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nNordstjärneorden\nKommendör med stora korset\n22 oktober 2024\nFör extraordinära insatser för svenska intressen\nKälla Regeringen.se\nKällorna formulerar motiveringen olika"
-  },
-  {
-    "objectID": "person/narendra-modi.html",
-    "href": "person/narendra-modi.html",
-    "title": "Narendra Modi",
-    "section": "",
-    "text": "Kön: \nuppgift saknas\n\nKategori: \nutländsk\n\nLand: \nIndien\n\nKunglig: \nNej\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nNordstjärneorden\nKommendör med stora korset\n17 maj 2026\nuppgift saknas\nKälla Regeringen.se\nBeslutsdatum saknas i källan; datumet är datumet för offentliggörandet"
-  },
-  {
-    "objectID": "person/henry-peter.html",
-    "href": "person/henry-peter.html",
-    "title": "Henry Peter",
-    "section": "",
-    "text": "Kön: \nman\n\nKategori: \nutländsk\n\nLand: \nuppgift saknas\n\nKunglig: \nNej\n\nWikidata: \nQ83274868\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nNordstjärneorden\nRiddare av första klassen\n2005\nuppgift saknas\nKälla Wikipedia"
-  },
-  {
-    "objectID": "person/francois-hollande.html",
-    "href": "person/francois-hollande.html",
-    "title": "François Hollande",
-    "section": "",
-    "text": "Kön: \nman\n\nKategori: \nutländsk\n\nLand: \nFrankrike\n\nKunglig: \nNej\n\nWikidata: \nQ157\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nSerafimerorden\nLedamot\n2 december 2014\nuppgift saknas\nKälla Wikipedia"
-  },
-  {
-    "objectID": "person/jarmo-lindberg.html",
-    "href": "person/jarmo-lindberg.html",
-    "title": "Jarmo Lindberg",
-    "section": "",
-    "text": "Kön: \nman\n\nKategori: \nutländsk\n\nLand: \nFinland\n\nKunglig: \nNej\n\nWikidata: \nQ11866170\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nNordstjärneorden\nKommendör av första klassen\n19 mars 2018\nSom erkänsla för förtjänstfulla insatser inom det militära samarbetet mellan Finland och Sverige har H.M. Konungen behagat utnämna Kommendören av Finlands Försvarsmakt general Jarmo Lindberg till Kommendör Första klassen av Kungl. Nordstjärneorden.\nKälla Kungahuset.se"
-  },
-  {
-    "objectID": "person/sophia-av-grekland.html",
-    "href": "person/sophia-av-grekland.html",
-    "title": "Sophia av Grekland",
-    "section": "",
-    "text": "Kön: \nkvinna\n\nKategori: \nutländsk\n\nLand: \nSpanien\n\nKunglig: \nJa\n\nWikidata: \nQ156548\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nSerafimerorden\nLedamot\n5 oktober 1979\nuppgift saknas\nKälla Wikipedia"
-  },
-  {
-    "objectID": "person/marcus-sandqvist.html",
-    "href": "person/marcus-sandqvist.html",
-    "title": "Marcus Sandqvist",
-    "section": "",
-    "text": "Kön: \nuppgift saknas\n\nKategori: \nsvensk\n\nLand: \nuppgift saknas\n\nKunglig: \nNej\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nSvärdsorden\nRiddare av första klassen\n30 april 2025\nFör betydelsefulla insatser under pågående krig som bitr. försvarsattaché till Ukraina\nKälla Kungahuset.se\nKategori (svensk/utländsk) är inte angiven för den enskilda personen i källan och kunde inte kontrolleras i Wikidata"
-  },
-  {
-    "objectID": "person/ricardo-antonio-merlo.html",
-    "href": "person/ricardo-antonio-merlo.html",
-    "title": "Ricardo Antonio Merlo",
-    "section": "",
-    "text": "Kön: \nman\n\nKategori: \nutländsk\n\nLand: \nItalien\n\nKunglig: \nNej\n\nWikidata: \nQ3934279\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nNordstjärneorden\nKommendör med stora korset\n13 november 2018\nuppgift saknas\nKälla Wikipedia"
-  },
-  {
-    "objectID": "person/prinsessan-ines.html",
-    "href": "person/prinsessan-ines.html",
-    "title": "Prinsessan Ines",
-    "section": "",
-    "text": "Kön: \nkvinna\n\nKategori: \nsvensk\n\nLand: \nSverige\n\nKunglig: \nJa\n\nWikidata: \nQ132174048\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nSerafimerorden\nRiddare\n7 februari 2025\nuppgift saknas\nKälla Kungahuset.se"
-  },
-  {
-    "objectID": "person/maria-teresa-av-luxemburg.html",
-    "href": "person/maria-teresa-av-luxemburg.html",
-    "title": "Maria Teresa av Luxemburg",
-    "section": "",
-    "text": "Kön: \nkvinna\n\nKategori: \nutländsk\n\nLand: \nLuxemburg\n\nKunglig: \nJa\n\nWikidata: \nQ230644\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nSerafimerorden\nLedamot\n15 april 2008\nuppgift saknas\nKälla Wikipedia"
-  },
-  {
-    "objectID": "person/dalia-grybauskaite.html",
-    "href": "person/dalia-grybauskaite.html",
-    "title": "Dalia Grybauskaitė",
-    "section": "",
-    "text": "Kön: \nkvinna\n\nKategori: \nutländsk\n\nLand: \nLitauen\n\nKunglig: \nNej\n\nWikidata: \nQ57379\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nSerafimerorden\nLedamot\n7 oktober 2015\nuppgift saknas\nKälla Wikipedia"
-  },
-  {
-    "objectID": "person/rudolf-schuster.html",
-    "href": "person/rudolf-schuster.html",
-    "title": "Rudolf Schuster",
-    "section": "",
-    "text": "Kön: \nman\n\nKategori: \nutländsk\n\nLand: \nSlovakien\n\nKunglig: \nNej\n\nWikidata: \nQ163813\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nSerafimerorden\nLedamot\n2002\nuppgift saknas\nKälla Officiell publikation"
-  },
-  {
-    "objectID": "person/prins-oscar.html",
-    "href": "person/prins-oscar.html",
-    "title": "Prins Oscar",
-    "section": "",
-    "text": "Kön: \nman\n\nKategori: \nsvensk\n\nLand: \nSverige\n\nKunglig: \nJa\n\nWikidata: \nQ22997937\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nSerafimerorden\nLedamot\n2 mars 2016\nuppgift saknas\nKälla Kungahuset.se"
-  },
-  {
-    "objectID": "person/toomas-asser.html",
-    "href": "person/toomas-asser.html",
-    "title": "Toomas Asser",
-    "section": "",
-    "text": "Kön: \nman\n\nKategori: \nutländsk\n\nLand: \nEstland\n\nKunglig: \nNej\n\nWikidata: \nQ16404350\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nNordstjärneorden\nKommendör av första klassen\nmaj 2023\nuppgift saknas\nKälla Officiell publikation"
-  },
-  {
-    "objectID": "person/ole-wiggo-bang.html",
-    "href": "person/ole-wiggo-bang.html",
-    "title": "Ole Wiggo Bang",
-    "section": "",
-    "text": "Kön: \nuppgift saknas\n\nKategori: \nutländsk\n\nLand: \nNorge\n\nKunglig: \nNej\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nVasaorden\nKommendör\n30 april 2025\nFör framstående insatser som ledare för Wermland Opera\nKälla Kungahuset.se\nKategori och land är hämtade från medborgarskap i Wikidata (P27); källan anger inte detta per person"
-  },
-  {
-    "objectID": "person/laura-codruta-kovesi.html",
-    "href": "person/laura-codruta-kovesi.html",
-    "title": "Laura Codruța Kövesi",
-    "section": "",
-    "text": "Kön: \nkvinna\n\nKategori: \nutländsk\n\nLand: \nRumänien\n\nKunglig: \nNej\n\nWikidata: \nQ6498808\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nNordstjärneorden\nKommendör\n2016\nuppgift saknas\nKälla Wikipedia"
-  },
-  {
-    "objectID": "person/hussein-bin-abdullah.html",
-    "href": "person/hussein-bin-abdullah.html",
-    "title": "Hussein bin Abdullah",
-    "section": "",
-    "text": "Kön: \nman\n\nKategori: \nutländsk\n\nLand: \nJordanien\n\nKunglig: \nJa\n\nWikidata: \nQ981927\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nNordstjärneorden\nKommendör med stora korset\nnovember 2022\nuppgift saknas\nKälla Kungahuset.se"
-  },
-  {
-    "objectID": "person/bertil-bengtsson.html",
-    "href": "person/bertil-bengtsson.html",
-    "title": "Bertil Bengtsson",
-    "section": "",
-    "text": "Kön: \nuppgift saknas\n\nKategori: \nsvensk\n\nLand: \nuppgift saknas\n\nKunglig: \nNej\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nNordstjärneorden\nKommendör med stora korset\n30 april 2025\nFör en utomordentlig livsgärning inom svenskt rättsväsende\nKälla Kungahuset.se\nKategori (svensk/utländsk) är inte angiven för den enskilda personen i källan och kunde inte kontrolleras i Wikidata"
+    "text": "Kön: \nman\n\nKategori: \nutländsk\n\nLand: \nTyskland\n\nKunglig: \nNej\n\nWikidata: \nQ2538\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nSerafimerorden\nLedamot\n5 oktober 2016\nuppgift saknas\nKälla Wikipedia"
   },
   {
     "objectID": "person/prinsessan-madeleine.html",
@@ -490,102 +301,39 @@
     "text": "Kön: \nkvinna\n\nKategori: \nsvensk\n\nLand: \nSverige\n\nKunglig: \nJa\n\nWikidata: \nQ212035\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nSerafimerorden\nLedamot\n8 juni 2013\nuppgift saknas\nKälla Wikipedia\nDatum är vigseldatum från Wikidata; källan anger inte datumet"
   },
   {
-    "objectID": "person/nina-stemme.html",
-    "href": "person/nina-stemme.html",
-    "title": "Nina Stemme",
+    "objectID": "person/reza-pahlavi.html",
+    "href": "person/reza-pahlavi.html",
+    "title": "Reza Pahlavi",
     "section": "",
-    "text": "Kön: \nuppgift saknas\n\nKategori: \nsvensk\n\nLand: \nuppgift saknas\n\nKunglig: \nNej\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nVasaorden\nKommendör av första klassen\n30 april 2025\nFör mycket framstående insatser som operasångerska\nKälla Kungahuset.se\nKategori och land är hämtade från medborgarskap i Wikidata (P27); källan anger inte detta per person"
+    "text": "Kön: \nman\n\nKategori: \nutländsk\n\nLand: \nuppgift saknas\n\nKunglig: \nJa\n\nWikidata: \nQ334871\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nSerafimerorden\nLedamot\n24 augusti 1970\nuppgift saknas\nKälla Wikipedia"
   },
   {
-    "objectID": "person/ryan-s-sweeney.html",
-    "href": "person/ryan-s-sweeney.html",
-    "title": "Ryan S. Sweeney",
+    "objectID": "person/beatrix-av-nederlanderna.html",
+    "href": "person/beatrix-av-nederlanderna.html",
+    "title": "Beatrix av Nederländerna",
     "section": "",
-    "text": "Kön: \nman\n\nKategori: \nutländsk\n\nLand: \nUSA\n\nKunglig: \nNej\n\nWikidata: \nQ122884202\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nSvärdsorden\nKommendör\n29 september 2023\nuppgift saknas\nKälla Tidning"
+    "text": "Kön: \nkvinna\n\nKategori: \nutländsk\n\nLand: \nNederländerna\n\nKunglig: \nJa\n\nWikidata: \nQ29574\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nSerafimerorden\nLedamot\n6 oktober 1976\nuppgift saknas\nKälla Wikipedia"
   },
   {
-    "objectID": "person/joko-widodo.html",
-    "href": "person/joko-widodo.html",
-    "title": "Joko Widodo",
+    "objectID": "person/bertil-bengtsson.html",
+    "href": "person/bertil-bengtsson.html",
+    "title": "Bertil Bengtsson",
     "section": "",
-    "text": "Kön: \nman\n\nKategori: \nutländsk\n\nLand: \nuppgift saknas\n\nKunglig: \nNej\n\nWikidata: \nQ3318231\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nSerafimerorden\nLedamot\n22 maj 2017\nuppgift saknas\nKälla Wikipedia\nLand i Wikidata är uppenbart felaktigt eller ej verifierat; land är inte angivet"
+    "text": "Kön: \nuppgift saknas\n\nKategori: \nsvensk\n\nLand: \nuppgift saknas\n\nKunglig: \nNej\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nNordstjärneorden\nKommendör med stora korset\n30 april 2025\nFör en utomordentlig livsgärning inom svenskt rättsväsende\nKälla Kungahuset.se\nKategori (svensk/utländsk) är inte angiven för den enskilda personen i källan och kunde inte kontrolleras i Wikidata"
   },
   {
-    "objectID": "person/alar-karis.html",
-    "href": "person/alar-karis.html",
-    "title": "Alar Karis",
+    "objectID": "person/goran-wallen.html",
+    "href": "person/goran-wallen.html",
+    "title": "Göran Wallén",
     "section": "",
-    "text": "Kön: \nman\n\nKategori: \nutländsk\n\nLand: \nuppgift saknas\n\nKunglig: \nNej\n\nWikidata: \nQ12358575\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nSerafimerorden\nRiddare\nmaj 2023\nuppgift saknas\nKälla Kungahuset.se\nLand i Wikidata är uppenbart felaktigt eller ej verifierat; land är inte angivet"
+    "text": "Kön: \nman\n\nKategori: \nsvensk\n\nLand: \nSverige\n\nKunglig: \nNej\n\nWikidata: \nQ56301440\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nSvärdsorden\nRiddare\n6 juni 1973\nuppgift saknas\nKälla Officiell publikation"
   },
   {
-    "objectID": "person/andris-berzins.html",
-    "href": "person/andris-berzins.html",
-    "title": "Andris Bērziņš",
+    "objectID": "person/sonja-av-norge.html",
+    "href": "person/sonja-av-norge.html",
+    "title": "Sonja av Norge",
     "section": "",
-    "text": "Kön: \nman\n\nKategori: \nutländsk\n\nLand: \nLettland\n\nKunglig: \nNej\n\nWikidata: \nQ57506\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nSerafimerorden\nLedamot\n26 mars 2014\nuppgift saknas\nKälla Wikipedia"
-  },
-  {
-    "objectID": "person/henri-av-luxemburg.html",
-    "href": "person/henri-av-luxemburg.html",
-    "title": "Henri av Luxemburg",
-    "section": "",
-    "text": "Kön: \nman\n\nKategori: \nutländsk\n\nLand: \nLuxemburg\n\nKunglig: \nJa\n\nWikidata: \nQ16004\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nSerafimerorden\nLedamot\n12 september 1983\nuppgift saknas\nKälla Wikipedia"
-  },
-  {
-    "objectID": "person/mired-bin-ra-ad.html",
-    "href": "person/mired-bin-ra-ad.html",
-    "title": "Mired bin Ra’ad",
-    "section": "",
-    "text": "Kön: \nman\n\nKategori: \nutländsk\n\nLand: \nJordanien\n\nKunglig: \nJa\n\nWikidata: \nQ20774336\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nNordstjärneorden\nKommendör med stora korset\nnovember 2022\nuppgift saknas\nKälla Kungahuset.se"
-  },
-  {
-    "objectID": "person/maha-chakri-sirindhorn.html",
-    "href": "person/maha-chakri-sirindhorn.html",
-    "title": "Maha Chakri Sirindhorn",
-    "section": "",
-    "text": "Kön: \nkvinna\n\nKategori: \nutländsk\n\nLand: \nThailand\n\nKunglig: \nJa\n\nWikidata: \nQ1884754\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nSerafimerorden\nLedamot\n2003\nuppgift saknas\nKälla Wikipedia"
-  },
-  {
-    "objectID": "person/agneta-wikman.html",
-    "href": "person/agneta-wikman.html",
-    "title": "Agneta Wikman",
-    "section": "",
-    "text": "Kön: \nuppgift saknas\n\nKategori: \nsvensk\n\nLand: \nuppgift saknas\n\nKunglig: \nNej\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nNordstjärneorden\nRiddare av första klassen\n30 april 2025\nFör betydelsefulla insatser som transfusionsspecialist inom militär sjukvård\nKälla Kungahuset.se\nKategori (svensk/utländsk) är inte angiven för den enskilda personen i källan och kunde inte kontrolleras i Wikidata"
-  },
-  {
-    "objectID": "person/sumaya-bint-el-hassan.html",
-    "href": "person/sumaya-bint-el-hassan.html",
-    "title": "Sumaya bint El Hassan",
-    "section": "",
-    "text": "Kön: \nkvinna\n\nKategori: \nutländsk\n\nLand: \nJordanien\n\nKunglig: \nJa\n\nWikidata: \nQ7637027\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nNordstjärneorden\nKommendör med stora korset\nnovember 2022\nuppgift saknas\nKälla Kungahuset.se"
-  },
-  {
-    "objectID": "person/olafur-ragnar-grimsson.html",
-    "href": "person/olafur-ragnar-grimsson.html",
-    "title": "Ólafur Ragnar Grímsson",
-    "section": "",
-    "text": "Kön: \nman\n\nKategori: \nutländsk\n\nLand: \nIsland\n\nKunglig: \nNej\n\nWikidata: \nQ57284\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nSerafimerorden\nLedamot\n19 november 1998\nuppgift saknas\nKälla Wikipedia"
-  },
-  {
-    "objectID": "person/chulabhorn-walailak.html",
-    "href": "person/chulabhorn-walailak.html",
-    "title": "Chulabhorn Walailak",
-    "section": "",
-    "text": "Kön: \nkvinna\n\nKategori: \nutländsk\n\nLand: \nThailand\n\nKunglig: \nJa\n\nWikidata: \nQ1089410\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nSerafimerorden\nLedamot\n2003\nuppgift saknas\nKälla Wikipedia"
-  },
-  {
-    "objectID": "person/albert-ii-av-belgien.html",
-    "href": "person/albert-ii-av-belgien.html",
-    "title": "Albert II av Belgien",
-    "section": "",
-    "text": "Kön: \nman\n\nKategori: \nutländsk\n\nLand: \nBelgien\n\nKunglig: \nJa\n\nWikidata: \nQ3911\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nSerafimerorden\nLedamot\n31 mars 1966\nuppgift saknas\nKälla Wikipedia"
-  },
-  {
-    "objectID": "person/sara-albrink.html",
-    "href": "person/sara-albrink.html",
-    "title": "Sara Ålbrink",
-    "section": "",
-    "text": "Kön: \nuppgift saknas\n\nKategori: \nsvensk\n\nLand: \nuppgift saknas\n\nKunglig: \nNej\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nNordstjärneorden\nRiddare\n30 april 2025\nFör viktiga insatser för Försvarsmaktens strategiska transporter\nKälla Kungahuset.se\nKategori (svensk/utländsk) är inte angiven för den enskilda personen i källan och kunde inte kontrolleras i Wikidata"
+    "text": "Kön: \nkvinna\n\nKategori: \nutländsk\n\nLand: \nNorge\n\nKunglig: \nJa\n\nWikidata: \nQ131045\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nSerafimerorden\nLedamot\n26 december 1974\nuppgift saknas\nKälla Wikipedia"
   },
   {
     "objectID": "person/georgios-tselios.html",
@@ -595,25 +343,25 @@
     "text": "Kön: \nuppgift saknas\n\nKategori: \nutländsk\n\nLand: \nGrekland\n\nKunglig: \nNej\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nNordstjärneorden\nRiddare av första klassen\n13 april 2026\nuppgift saknas\nKälla Officiell publikation"
   },
   {
-    "objectID": "person/juha-kilpi.html",
-    "href": "person/juha-kilpi.html",
-    "title": "Juha Kilpi",
+    "objectID": "person/toomas-hendrik-ilves.html",
+    "href": "person/toomas-hendrik-ilves.html",
+    "title": "Toomas Hendrik Ilves",
     "section": "",
-    "text": "Kön: \nman\n\nKategori: \nutländsk\n\nLand: \nFinland\n\nKunglig: \nNej\n\nWikidata: \nQ131927859\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nSvärdsorden\nKommendör\n13 april 2026\nuppgift saknas\nKälla Officiell publikation"
+    "text": "Kön: \nman\n\nKategori: \nutländsk\n\nLand: \nEstland\n\nKunglig: \nNej\n\nWikidata: \nQ57289\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nSerafimerorden\nLedamot\n2011\nuppgift saknas\nKälla Wikipedia"
   },
   {
-    "objectID": "person/jacob-sullivan.html",
-    "href": "person/jacob-sullivan.html",
-    "title": "Jacob Sullivan",
+    "objectID": "person/mired-bin-ra-ad.html",
+    "href": "person/mired-bin-ra-ad.html",
+    "title": "Mired bin Ra’ad",
     "section": "",
-    "text": "Kön: \nuppgift saknas\n\nKategori: \nutländsk\n\nLand: \nUSA\n\nKunglig: \nNej\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nNordstjärneorden\nKommendör med stora korset\n22 oktober 2024\nFör extraordinära insatser för svenska intressen\nKälla Regeringen.se"
+    "text": "Kön: \nman\n\nKategori: \nutländsk\n\nLand: \nJordanien\n\nKunglig: \nJa\n\nWikidata: \nQ20774336\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nNordstjärneorden\nKommendör med stora korset\nnovember 2022\nuppgift saknas\nKälla Kungahuset.se"
   },
   {
-    "objectID": "person/prins-carl-philip.html",
-    "href": "person/prins-carl-philip.html",
-    "title": "Prins Carl Philip",
+    "objectID": "person/halla-tomasdottir.html",
+    "href": "person/halla-tomasdottir.html",
+    "title": "Halla Tómasdóttir",
     "section": "",
-    "text": "Kön: \nman\n\nKategori: \nsvensk\n\nLand: \nSverige\n\nKunglig: \nJa\n\nWikidata: \nQ214704\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nSerafimerorden\nLedamot\n13 maj 1979\nuppgift saknas\nKälla Wikipedia\nDatum är födelsedatum: arvsberättigade prinsar och prinsessor är riddare från födseln enligt stadgarna 25 §"
+    "text": "Kön: \nkvinna\n\nKategori: \nutländsk\n\nLand: \nIsland\n\nKunglig: \nNej\n\nWikidata: \nQ24494577\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nSerafimerorden\nRiddare\n6 maj 2025\nuppgift saknas\nKälla Kungahuset.se"
   },
   {
     "objectID": "person/sanna-marin.html",
@@ -623,11 +371,207 @@
     "text": "Kön: \nuppgift saknas\n\nKategori: \nutländsk\n\nLand: \nFinland\n\nKunglig: \nNej\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nNordstjärneorden\nKommendör med stora korset\n22 oktober 2024\nFör extraordinära insatser för svenska intressen\nKälla Regeringen.se\nKällorna formulerar motiveringen olika"
   },
   {
+    "objectID": "person/konstantin-kosasjev.html",
+    "href": "person/konstantin-kosasjev.html",
+    "title": "Konstantin Kosasjev",
+    "section": "",
+    "text": "Kön: \nman\n\nKategori: \nutländsk\n\nLand: \nRyssland\n\nKunglig: \nNej\n\nWikidata: \nQ736840\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nNordstjärneorden\nKommendör\n2004\nuppgift saknas\nKälla Wikipedia"
+  },
+  {
+    "objectID": "person/guni-johannesson.html",
+    "href": "person/guni-johannesson.html",
+    "title": "Guðni Jóhannesson",
+    "section": "",
+    "text": "Kön: \nman\n\nKategori: \nutländsk\n\nLand: \nIsland\n\nKunglig: \nNej\n\nWikidata: \nQ24045706\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nSerafimerorden\nLedamot\n17 januari 2018\nuppgift saknas\nKälla Wikipedia"
+  },
+  {
+    "objectID": "person/abdullah-gul.html",
+    "href": "person/abdullah-gul.html",
+    "title": "Abdullah Gül",
+    "section": "",
+    "text": "Kön: \nman\n\nKategori: \nutländsk\n\nLand: \nTurkiet\n\nKunglig: \nNej\n\nWikidata: \nQ42852\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nSerafimerorden\nLedamot\n11 mars 2013\nuppgift saknas\nKälla Wikipedia"
+  },
+  {
+    "objectID": "person/katrin-sjogren.html",
+    "href": "person/katrin-sjogren.html",
+    "title": "Katrin Sjögren",
+    "section": "",
+    "text": "Kön: \nkvinna\n\nKategori: \nutländsk\n\nLand: \nFinland\n\nKunglig: \nNej\n\nWikidata: \nQ2269243\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nNordstjärneorden\nKommendör\njuni 2022\nuppgift saknas\nKälla Wikipedia"
+  },
+  {
+    "objectID": "person/guntis-ulmanis.html",
+    "href": "person/guntis-ulmanis.html",
+    "title": "Guntis Ulmanis",
+    "section": "",
+    "text": "Kön: \nman\n\nKategori: \nutländsk\n\nLand: \nLettland\n\nKunglig: \nNej\n\nWikidata: \nQ60106\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nSerafimerorden\nLedamot\n12 oktober 1995\nuppgift saknas\nKälla Wikipedia"
+  },
+  {
+    "objectID": "person/alexander-stubb.html",
+    "href": "person/alexander-stubb.html",
+    "title": "Alexander Stubb",
+    "section": "",
+    "text": "Kön: \nman\n\nKategori: \nutländsk\n\nLand: \nFinland\n\nKunglig: \nNej\n\nWikidata: \nQ503143\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nSerafimerorden\nRiddare\n23 april 2024\nuppgift saknas\nKälla Kungahuset.se"
+  },
+  {
+    "objectID": "person/queen-saleha-of-brunei.html",
+    "href": "person/queen-saleha-of-brunei.html",
+    "title": "Queen Saleha of Brunei",
+    "section": "",
+    "text": "Kön: \nkvinna\n\nKategori: \nutländsk\n\nLand: \nBrunei\n\nKunglig: \nJa\n\nWikidata: \nQ468528\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nSerafimerorden\nLedamot\n8 februari 2004\nuppgift saknas\nKälla Wikipedia"
+  },
+  {
+    "objectID": "person/amanda-sloat.html",
+    "href": "person/amanda-sloat.html",
+    "title": "Amanda Sloat",
+    "section": "",
+    "text": "Kön: \nuppgift saknas\n\nKategori: \nutländsk\n\nLand: \nUSA\n\nKunglig: \nNej\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nNordstjärneorden\nKommendör av första klassen\n22 oktober 2024\nFör extraordinära insatser för svenska intressen\nKälla Regeringen.se"
+  },
+  {
+    "objectID": "person/rania-av-jordanien.html",
+    "href": "person/rania-av-jordanien.html",
+    "title": "Rania av Jordanien",
+    "section": "",
+    "text": "Kön: \nkvinna\n\nKategori: \nutländsk\n\nLand: \nuppgift saknas\n\nKunglig: \nJa\n\nWikidata: \nQ200678\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nSerafimerorden\nLedamot\n2003\nuppgift saknas\nKälla Wikipedia\nFlera medborgarskap i Wikidata; land är inte angivet"
+  },
+  {
+    "objectID": "person/dennis-gyllensporre.html",
+    "href": "person/dennis-gyllensporre.html",
+    "title": "Dennis Gyllensporre",
+    "section": "",
+    "text": "Kön: \nuppgift saknas\n\nKategori: \nsvensk\n\nLand: \nuppgift saknas\n\nKunglig: \nNej\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nSvärdsorden\nKommendör med stora korset\n21 mars 2024\nFör utomordentligt ledarskap under krigsliknande förhållanden i Mali\nKälla Kungahuset.se\nKategori och land är hämtade från medborgarskap i Wikidata (P27); källan anger inte detta per person"
+  },
+  {
+    "objectID": "person/harald-glans.html",
+    "href": "person/harald-glans.html",
+    "title": "Harald Glans",
+    "section": "",
+    "text": "Kön: \nuppgift saknas\n\nKategori: \nsvensk\n\nLand: \nuppgift saknas\n\nKunglig: \nNej\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nSvärdsorden\nRiddare av första klassen\n30 april 2025\nFör betydelsefulla insatser i samband med jordbävningskatastrofen i Turkiet 2023\nKälla Kungahuset.se\nKategori (svensk/utländsk) är inte angiven för den enskilda personen i källan och kunde inte kontrolleras i Wikidata"
+  },
+  {
+    "objectID": "person/ryan-s-sweeney.html",
+    "href": "person/ryan-s-sweeney.html",
+    "title": "Ryan S. Sweeney",
+    "section": "",
+    "text": "Kön: \nman\n\nKategori: \nutländsk\n\nLand: \nUSA\n\nKunglig: \nNej\n\nWikidata: \nQ122884202\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nSvärdsorden\nKommendör\n29 september 2023\nuppgift saknas\nKälla Tidning"
+  },
+  {
+    "objectID": "person/prins-oscar.html",
+    "href": "person/prins-oscar.html",
+    "title": "Prins Oscar",
+    "section": "",
+    "text": "Kön: \nman\n\nKategori: \nsvensk\n\nLand: \nSverige\n\nKunglig: \nJa\n\nWikidata: \nQ22997937\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nSerafimerorden\nLedamot\n2 mars 2016\nuppgift saknas\nKälla Kungahuset.se"
+  },
+  {
+    "objectID": "person/haakon-viii-av-norge.html",
+    "href": "person/haakon-viii-av-norge.html",
+    "title": "Haakon VIII av Norge",
+    "section": "",
+    "text": "Kön: \nman\n\nKategori: \nutländsk\n\nLand: \nNorge\n\nKunglig: \nJa\n\nWikidata: \nQ165241\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nSerafimerorden\nLedamot\n1993\nuppgift saknas\nKälla Wikipedia"
+  },
+  {
+    "objectID": "person/viktor-jusjtjenko.html",
+    "href": "person/viktor-jusjtjenko.html",
+    "title": "Viktor Jusjtjenko",
+    "section": "",
+    "text": "Kön: \nman\n\nKategori: \nutländsk\n\nLand: \nUkraina\n\nKunglig: \nNej\n\nWikidata: \nQ1459699\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nSerafimerorden\nLedamot\n2008\nuppgift saknas\nKälla Wikipedia"
+  },
+  {
     "objectID": "person/henrik-meinander.html",
     "href": "person/henrik-meinander.html",
     "title": "Henrik Meinander",
     "section": "",
     "text": "Kön: \nman\n\nKategori: \nutländsk\n\nLand: \nFinland\n\nKunglig: \nNej\n\nWikidata: \nQ2576494\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nNordstjärneorden\nKommendör\n2017\nuppgift saknas\nKälla Wikipedia"
+  },
+  {
+    "objectID": "person/rym-ali.html",
+    "href": "person/rym-ali.html",
+    "title": "Rym Ali",
+    "section": "",
+    "text": "Kön: \nkvinna\n\nKategori: \nutländsk\n\nLand: \nuppgift saknas\n\nKunglig: \nJa\n\nWikidata: \nQ177715\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nNordstjärneorden\nKommendör med stora korset\nnovember 2022\nuppgift saknas\nKälla Kungahuset.se"
+  },
+  {
+    "objectID": "person/joko-widodo.html",
+    "href": "person/joko-widodo.html",
+    "title": "Joko Widodo",
+    "section": "",
+    "text": "Kön: \nman\n\nKategori: \nutländsk\n\nLand: \nuppgift saknas\n\nKunglig: \nNej\n\nWikidata: \nQ3318231\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nSerafimerorden\nLedamot\n22 maj 2017\nuppgift saknas\nKälla Wikipedia\nLand i Wikidata är uppenbart felaktigt eller ej verifierat; land är inte angivet"
+  },
+  {
+    "objectID": "person/prins-daniel.html",
+    "href": "person/prins-daniel.html",
+    "title": "Prins Daniel",
+    "section": "",
+    "text": "Kön: \nman\n\nKategori: \nsvensk\n\nLand: \nSverige\n\nKunglig: \nJa\n\nWikidata: \nQ209449\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nSerafimerorden\nLedamot\n19 juni 2010\nuppgift saknas\nKälla Wikipedia\nDatum är vigseldatum från Wikidata; källan anger inte datumet"
+  },
+  {
+    "objectID": "person/marie-ehrling.html",
+    "href": "person/marie-ehrling.html",
+    "title": "Marie Ehrling",
+    "section": "",
+    "text": "Kön: \nuppgift saknas\n\nKategori: \nsvensk\n\nLand: \nuppgift saknas\n\nKunglig: \nNej\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nVasaorden\nKommendör av första klassen\n30 april 2025\nFör mycket framstående insatser inom svenskt näringsliv\nKälla Kungahuset.se\nKategori och land är hämtade från medborgarskap i Wikidata (P27); källan anger inte detta per person"
+  },
+  {
+    "objectID": "person/marcus-sandqvist.html",
+    "href": "person/marcus-sandqvist.html",
+    "title": "Marcus Sandqvist",
+    "section": "",
+    "text": "Kön: \nuppgift saknas\n\nKategori: \nsvensk\n\nLand: \nuppgift saknas\n\nKunglig: \nNej\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nSvärdsorden\nRiddare av första klassen\n30 april 2025\nFör betydelsefulla insatser under pågående krig som bitr. försvarsattaché till Ukraina\nKälla Kungahuset.se\nKategori (svensk/utländsk) är inte angiven för den enskilda personen i källan och kunde inte kontrolleras i Wikidata"
+  },
+  {
+    "objectID": "person/benny-andersson.html",
+    "href": "person/benny-andersson.html",
+    "title": "Benny Andersson",
+    "section": "",
+    "text": "Kön: \nuppgift saknas\n\nKategori: \nsvensk\n\nLand: \nuppgift saknas\n\nKunglig: \nNej\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nVasaorden\nKommendör av första klassen\n21 mars 2024\nFör mycket framstående insatser inom svenskt och internationellt musikliv\nKälla Kungahuset.se\nKategori (svensk/utländsk) är inte angiven för den enskilda personen i källan och kunde inte kontrolleras i Wikidata"
+  },
+  {
+    "objectID": "person/crister-stark.html",
+    "href": "person/crister-stark.html",
+    "title": "Crister Stark",
+    "section": "",
+    "text": "Kön: \nuppgift saknas\n\nKategori: \nsvensk\n\nLand: \nuppgift saknas\n\nKunglig: \nNej\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nVasaorden\nKommendör\n30 april 2025\nFör framstående insatser inom näringslivet och jordbrukssektorn\nKälla Kungahuset.se\nKategori (svensk/utländsk) är inte angiven för den enskilda personen i källan och kunde inte kontrolleras i Wikidata"
+  },
+  {
+    "objectID": "person/jens-stoltenberg.html",
+    "href": "person/jens-stoltenberg.html",
+    "title": "Jens Stoltenberg",
+    "section": "",
+    "text": "Kön: \nuppgift saknas\n\nKategori: \nutländsk\n\nLand: \nNorge\n\nKunglig: \nNej\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nNordstjärneorden\nKommendör med stora korset\n22 oktober 2024\nFör extraordinära insatser för svenska intressen\nKälla Regeringen.se\nKällorna formulerar motiveringen olika"
+  },
+  {
+    "objectID": "person/ghida-talal.html",
+    "href": "person/ghida-talal.html",
+    "title": "Ghida Talal",
+    "section": "",
+    "text": "Kön: \nkvinna\n\nKategori: \nutländsk\n\nLand: \nLibanon\n\nKunglig: \nJa\n\nWikidata: \nQ16195076\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nNordstjärneorden\nKommendör med stora korset\nnovember 2022\nuppgift saknas\nKälla Kungahuset.se"
+  },
+  {
+    "objectID": "person/tarja-halonen.html",
+    "href": "person/tarja-halonen.html",
+    "title": "Tarja Halonen",
+    "section": "",
+    "text": "Kön: \nkvinna\n\nKategori: \nutländsk\n\nLand: \nFinland\n\nKunglig: \nNej\n\nWikidata: \nQ29213\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nSerafimerorden\nLedamot\n2000\nuppgift saknas\nKälla Wikipedia"
+  },
+  {
+    "objectID": "person/akihito.html",
+    "href": "person/akihito.html",
+    "title": "Akihito",
+    "section": "",
+    "text": "Kön: \nman\n\nKategori: \nutländsk\n\nLand: \nJapan\n\nKunglig: \nJa\n\nWikidata: \nQ37979\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nSerafimerorden\nLedamot\n30 september 1952\nuppgift saknas\nKälla Wikipedia"
+  },
+  {
+    "objectID": "person/ulf-elfving.html",
+    "href": "person/ulf-elfving.html",
+    "title": "Ulf Elfving",
+    "section": "",
+    "text": "Kön: \nuppgift saknas\n\nKategori: \nsvensk\n\nLand: \nuppgift saknas\n\nKunglig: \nNej\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nVasaorden\nRiddare av första klassen\n30 april 2025\nFör betydelsefulla insatser som journalist och programledare\nKälla Kungahuset.se\nKategori och land är hämtade från medborgarskap i Wikidata (P27); källan anger inte detta per person"
+  },
+  {
+    "objectID": "person/maha-chakri-sirindhorn.html",
+    "href": "person/maha-chakri-sirindhorn.html",
+    "title": "Maha Chakri Sirindhorn",
+    "section": "",
+    "text": "Kön: \nkvinna\n\nKategori: \nutländsk\n\nLand: \nThailand\n\nKunglig: \nJa\n\nWikidata: \nQ1884754\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nSerafimerorden\nLedamot\n2003\nuppgift saknas\nKälla Wikipedia"
   },
   {
     "objectID": "person/erik-norberg.html",
@@ -637,11 +581,130 @@
     "text": "Kön: \nuppgift saknas\n\nKategori: \nsvensk\n\nLand: \nuppgift saknas\n\nKunglig: \nNej\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nNordstjärneorden\nKommendör av första klassen\n30 april 2025\nFör mycket framstående insatser som riksarkivarie och inom akademiväsendet\nKälla Kungahuset.se\nKategori (svensk/utländsk) är inte angiven för den enskilda personen i källan och kunde inte kontrolleras i Wikidata"
   },
   {
-    "objectID": "person/karin-bodin.html",
-    "href": "person/karin-bodin.html",
-    "title": "Karin Bodin",
+    "objectID": "person/andris-berzins.html",
+    "href": "person/andris-berzins.html",
+    "title": "Andris Bērziņš",
     "section": "",
-    "text": "Kön: \nuppgift saknas\n\nKategori: \nsvensk\n\nLand: \nuppgift saknas\n\nKunglig: \nNej\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nVasaorden\nRiddare av första klassen\n30 april 2025\nFör betydelsefulla insatser inom svenskt näringsliv\nKälla Kungahuset.se\nKategori och land är hämtade från medborgarskap i Wikidata (P27); källan anger inte detta per person"
+    "text": "Kön: \nman\n\nKategori: \nutländsk\n\nLand: \nLettland\n\nKunglig: \nNej\n\nWikidata: \nQ57506\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nSerafimerorden\nLedamot\n26 mars 2014\nuppgift saknas\nKälla Wikipedia"
+  },
+  {
+    "objectID": "person/prins-alexander.html",
+    "href": "person/prins-alexander.html",
+    "title": "Prins Alexander",
+    "section": "",
+    "text": "Kön: \nman\n\nKategori: \nsvensk\n\nLand: \nSverige\n\nKunglig: \nJa\n\nWikidata: \nQ23891303\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nSerafimerorden\nLedamot\n19 april 2016\nuppgift saknas\nKälla Wikipedia\nDatum är födelsedatum: arvsberättigade prinsar och prinsessor är riddare från födseln enligt stadgarna 25 §"
+  },
+  {
+    "objectID": "person/henry-peter.html",
+    "href": "person/henry-peter.html",
+    "title": "Henry Peter",
+    "section": "",
+    "text": "Kön: \nman\n\nKategori: \nutländsk\n\nLand: \nuppgift saknas\n\nKunglig: \nNej\n\nWikidata: \nQ83274868\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nNordstjärneorden\nRiddare av första klassen\n2005\nuppgift saknas\nKälla Wikipedia"
+  },
+  {
+    "objectID": "person/kronprinsessan-victoria.html",
+    "href": "person/kronprinsessan-victoria.html",
+    "title": "Kronprinsessan Victoria",
+    "section": "",
+    "text": "Kön: \nkvinna\n\nKategori: \nsvensk\n\nLand: \nSverige\n\nKunglig: \nJa\n\nWikidata: \nQ156390\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nSerafimerorden\nLedamot\n14 juli 1977\nuppgift saknas\nKälla Wikipedia\nDatum är födelsedatum: arvsberättigade prinsar och prinsessor är riddare från födseln enligt stadgarna 25 §"
+  },
+  {
+    "objectID": "person/sauli-niinisto.html",
+    "href": "person/sauli-niinisto.html",
+    "title": "Sauli Niinistö",
+    "section": "",
+    "text": "Kön: \nman\n\nKategori: \nutländsk\n\nLand: \nFinland\n\nKunglig: \nNej\n\nWikidata: \nQ29207\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nSerafimerorden\nLedamot\n12 april 2012\nuppgift saknas\nKälla Wikipedia"
+  },
+  {
+    "objectID": "person/stian-jenssen.html",
+    "href": "person/stian-jenssen.html",
+    "title": "Stian Jenssen",
+    "section": "",
+    "text": "Kön: \nuppgift saknas\n\nKategori: \nutländsk\n\nLand: \nNorge\n\nKunglig: \nNej\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nNordstjärneorden\nKommendör av första klassen\n22 oktober 2024\nFör extraordinära insatser för svenska intressen\nKälla Regeringen.se"
+  },
+  {
+    "objectID": "person/brigitte-macron.html",
+    "href": "person/brigitte-macron.html",
+    "title": "Brigitte Macron",
+    "section": "",
+    "text": "Kön: \nkvinna\n\nKategori: \nutländsk\n\nLand: \nFrankrike\n\nKunglig: \nNej\n\nWikidata: \nQ21511883\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nNordstjärneorden\nKommendör med stora korset\njanuari 2024\nuppgift saknas\nKälla Kungahuset.se"
+  },
+  {
+    "objectID": "person/marie-goranzon-malmsjo.html",
+    "href": "person/marie-goranzon-malmsjo.html",
+    "title": "Marie Göranzon Malmsjö",
+    "section": "",
+    "text": "Kön: \nuppgift saknas\n\nKategori: \nsvensk\n\nLand: \nuppgift saknas\n\nKunglig: \nNej\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nVasaorden\nKommendör\n30 april 2025\nFör framstående insatser som skådespelerska\nKälla Kungahuset.se\nKategori (svensk/utländsk) är inte angiven för den enskilda personen i källan och kunde inte kontrolleras i Wikidata"
+  },
+  {
+    "objectID": "person/prinsessan-ines.html",
+    "href": "person/prinsessan-ines.html",
+    "title": "Prinsessan Ines",
+    "section": "",
+    "text": "Kön: \nkvinna\n\nKategori: \nsvensk\n\nLand: \nSverige\n\nKunglig: \nJa\n\nWikidata: \nQ132174048\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nSerafimerorden\nRiddare\n7 februari 2025\nuppgift saknas\nKälla Kungahuset.se"
+  },
+  {
+    "objectID": "person/letizia-av-spanien.html",
+    "href": "person/letizia-av-spanien.html",
+    "title": "Letizia av Spanien",
+    "section": "",
+    "text": "Kön: \nkvinna\n\nKategori: \nutländsk\n\nLand: \nSpanien\n\nKunglig: \nJa\n\nWikidata: \nQ201589\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nSerafimerorden\nLedamot\n24 november 2021\nuppgift saknas\nKälla Kungahuset.se"
+  },
+  {
+    "objectID": "person/vigdis-finnbogadottir.html",
+    "href": "person/vigdis-finnbogadottir.html",
+    "title": "Vigdís Finnbogadóttir",
+    "section": "",
+    "text": "Kön: \nkvinna\n\nKategori: \nutländsk\n\nLand: \nIsland\n\nKunglig: \nNej\n\nWikidata: \nQ189797\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nSerafimerorden\nLedamot\n8 oktober 1981\nuppgift saknas\nKälla Wikipedia"
+  },
+  {
+    "objectID": "person/timo-kivinen.html",
+    "href": "person/timo-kivinen.html",
+    "title": "Timo Kivinen",
+    "section": "",
+    "text": "Kön: \nman\n\nKategori: \nutländsk\n\nLand: \nFinland\n\nKunglig: \nNej\n\nWikidata: \nQ16299896\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nNordstjärneorden\nKommendör med stora korset\n17 september 2021\nGeneral Timo Kivinen har både i sin nuvarande roll som kommendör för Finlands försvarsmakt, och i sin tidigare roll som försvarsmaktens strategichef bidragit till en mycket positiv utveckling av det finsk-svenska försvarssamarbetet.\nKälla Kungahuset.se"
+  },
+  {
+    "objectID": "person/moon-jae-in.html",
+    "href": "person/moon-jae-in.html",
+    "title": "Moon Jae-in",
+    "section": "",
+    "text": "Kön: \nman\n\nKategori: \nutländsk\n\nLand: \nSydkorea\n\nKunglig: \nNej\n\nWikidata: \nQ21001\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nSerafimerorden\nLedamot\n14 juni 2019\nuppgift saknas\nKälla Wikipedia"
+  },
+  {
+    "objectID": "person/petri-hakkarainen.html",
+    "href": "person/petri-hakkarainen.html",
+    "title": "Petri Hakkarainen",
+    "section": "",
+    "text": "Kön: \nuppgift saknas\n\nKategori: \nutländsk\n\nLand: \nFinland\n\nKunglig: \nNej\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nNordstjärneorden\nKommendör av första klassen\n22 oktober 2024\nFör extraordinära insatser för svenska intressen\nKälla Regeringen.se\nKällorna formulerar motiveringen olika"
+  },
+  {
+    "objectID": "person/prins-carl-philip.html",
+    "href": "person/prins-carl-philip.html",
+    "title": "Prins Carl Philip",
+    "section": "",
+    "text": "Kön: \nman\n\nKategori: \nsvensk\n\nLand: \nSverige\n\nKunglig: \nJa\n\nWikidata: \nQ214704\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nSerafimerorden\nLedamot\n13 maj 1979\nuppgift saknas\nKälla Wikipedia\nDatum är födelsedatum: arvsberättigade prinsar och prinsessor är riddare från födseln enligt stadgarna 25 §"
+  },
+  {
+    "objectID": "person/alar-karis.html",
+    "href": "person/alar-karis.html",
+    "title": "Alar Karis",
+    "section": "",
+    "text": "Kön: \nman\n\nKategori: \nutländsk\n\nLand: \nuppgift saknas\n\nKunglig: \nNej\n\nWikidata: \nQ12358575\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nSerafimerorden\nRiddare\nmaj 2023\nuppgift saknas\nKälla Kungahuset.se\nLand i Wikidata är uppenbart felaktigt eller ej verifierat; land är inte angivet"
+  },
+  {
+    "objectID": "person/olafur-ragnar-grimsson.html",
+    "href": "person/olafur-ragnar-grimsson.html",
+    "title": "Ólafur Ragnar Grímsson",
+    "section": "",
+    "text": "Kön: \nman\n\nKategori: \nutländsk\n\nLand: \nIsland\n\nKunglig: \nNej\n\nWikidata: \nQ57284\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nSerafimerorden\nLedamot\n19 november 1998\nuppgift saknas\nKälla Wikipedia"
+  },
+  {
+    "objectID": "person/sergio-mattarella.html",
+    "href": "person/sergio-mattarella.html",
+    "title": "Sergio Mattarella",
+    "section": "",
+    "text": "Kön: \nman\n\nKategori: \nutländsk\n\nLand: \nItalien\n\nKunglig: \nNej\n\nWikidata: \nQ3956186\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nSerafimerorden\nLedamot\n2018\nuppgift saknas\nKälla Wikipedia"
   },
   {
     "objectID": "person/prinsessan-sofia.html",
@@ -651,11 +714,578 @@
     "text": "Kön: \nkvinna\n\nKategori: \nsvensk\n\nLand: \nSverige\n\nKunglig: \nJa\n\nWikidata: \nQ4988701\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nSerafimerorden\nLedamot\n13 juni 2015\nuppgift saknas\nKälla Wikipedia"
   },
   {
+    "objectID": "person/traian-basescu.html",
+    "href": "person/traian-basescu.html",
+    "title": "Traian Băsescu",
+    "section": "",
+    "text": "Kön: \nman\n\nKategori: \nutländsk\n\nLand: \nRumänien\n\nKunglig: \nNej\n\nWikidata: \nQ57279\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nSerafimerorden\nLedamot\n11 mars 2008\nuppgift saknas\nKälla Wikipedia"
+  },
+  {
+    "objectID": "person/raul-eamets.html",
+    "href": "person/raul-eamets.html",
+    "title": "Raul Eamets",
+    "section": "",
+    "text": "Kön: \nman\n\nKategori: \nutländsk\n\nLand: \nEstland\n\nKunglig: \nNej\n\nWikidata: \nQ16403742\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nNordstjärneorden\nKommendör\nmaj 2023\nuppgift saknas\nKälla Officiell publikation"
+  },
+  {
+    "objectID": "person/lee-myung-bak.html",
+    "href": "person/lee-myung-bak.html",
+    "title": "Lee Myung-bak",
+    "section": "",
+    "text": "Kön: \nman\n\nKategori: \nutländsk\n\nLand: \nSydkorea\n\nKunglig: \nNej\n\nWikidata: \nQ14342\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nSerafimerorden\nLedamot\n30 maj 2012\nuppgift saknas\nKälla Kungahuset.se"
+  },
+  {
+    "objectID": "person/anni-frid-reuss.html",
+    "href": "person/anni-frid-reuss.html",
+    "title": "Anni-Frid Reuss",
+    "section": "",
+    "text": "Kön: \nuppgift saknas\n\nKategori: \nsvensk\n\nLand: \nuppgift saknas\n\nKunglig: \nNej\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nVasaorden\nKommendör av första klassen\n21 mars 2024\nFör mycket framstående insatser inom svenskt och internationellt musikliv\nKälla Kungahuset.se\nKategori (svensk/utländsk) är inte angiven för den enskilda personen i källan och kunde inte kontrolleras i Wikidata"
+  },
+  {
+    "objectID": "person/hassanal-bolkiah.html",
+    "href": "person/hassanal-bolkiah.html",
+    "title": "Hassanal Bolkiah",
+    "section": "",
+    "text": "Kön: \nman\n\nKategori: \nutländsk\n\nLand: \nBrunei\n\nKunglig: \nJa\n\nWikidata: \nQ57327\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nSerafimerorden\nLedamot\n7 februari 2004\nuppgift saknas\nKälla Wikipedia"
+  },
+  {
+    "objectID": "person/gunilla-arhen.html",
+    "href": "person/gunilla-arhen.html",
+    "title": "Gunilla Arhén",
+    "section": "",
+    "text": "Kön: \nuppgift saknas\n\nKategori: \nsvensk\n\nLand: \nuppgift saknas\n\nKunglig: \nNej\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nVasaorden\nKommendör\n30 april 2025\nFör framstående insatser för kvinnors ledarskap\nKälla Kungahuset.se\nKategori och land är hämtade från medborgarskap i Wikidata (P27); källan anger inte detta per person"
+  },
+  {
+    "objectID": "person/bjrn-stai.html",
+    "href": "person/bjrn-stai.html",
+    "title": "Bjørn Stai",
+    "section": "",
+    "text": "Kön: \nuppgift saknas\n\nKategori: \nutländsk\n\nLand: \nNorge\n\nKunglig: \nNej\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nSvärdsorden\nKommendör\n14 oktober 2024\nuppgift saknas\nKälla Tidning"
+  },
+  {
+    "objectID": "person/noor-av-jordanien.html",
+    "href": "person/noor-av-jordanien.html",
+    "title": "Noor av Jordanien",
+    "section": "",
+    "text": "Kön: \nkvinna\n\nKategori: \nutländsk\n\nLand: \nJordanien\n\nKunglig: \nJa\n\nWikidata: \nQ240575\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nSerafimerorden\nLedamot\n15 september 1989\nuppgift saknas\nKälla Wikipedia"
+  },
+  {
+    "objectID": "person/margrethe-ii-av-danmark.html",
+    "href": "person/margrethe-ii-av-danmark.html",
+    "title": "Margrethe II av Danmark",
+    "section": "",
+    "text": "Kön: \nkvinna\n\nKategori: \nutländsk\n\nLand: \nDanmark\n\nKunglig: \nJa\n\nWikidata: \nQ102139\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nSerafimerorden\nLedamot\n10 april 1958\nuppgift saknas\nKälla Wikipedia"
+  },
+  {
+    "objectID": "person/hakan-lans.html",
+    "href": "person/hakan-lans.html",
+    "title": "Håkan Lans",
+    "section": "",
+    "text": "Kön: \nuppgift saknas\n\nKategori: \nsvensk\n\nLand: \nuppgift saknas\n\nKunglig: \nNej\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nVasaorden\nKommendör\n30 april 2025\nFör framstående insatser som uppfinnare\nKälla Kungahuset.se\nKategori och land är hämtade från medborgarskap i Wikidata (P27); källan anger inte detta per person"
+  },
+  {
+    "objectID": "person/heinz-fischer.html",
+    "href": "person/heinz-fischer.html",
+    "title": "Heinz Fischer",
+    "section": "",
+    "text": "Kön: \nman\n\nKategori: \nutländsk\n\nLand: \nÖsterrike\n\nKunglig: \nNej\n\nWikidata: \nQ11753\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nSerafimerorden\nLedamot\n20 november 2007\nuppgift saknas\nKälla Wikipedia"
+  },
+  {
+    "objectID": "person/paola-av-belgien.html",
+    "href": "person/paola-av-belgien.html",
+    "title": "Paola av Belgien",
+    "section": "",
+    "text": "Kön: \nkvinna\n\nKategori: \nutländsk\n\nLand: \nuppgift saknas\n\nKunglig: \nJa\n\nWikidata: \nQ31129\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nSerafimerorden\nLedamot\n1994\nuppgift saknas\nKälla Wikipedia\nFlera medborgarskap i Wikidata; land är inte angivet"
+  },
+  {
+    "objectID": "person/tuanku-syed-sirajuddin.html",
+    "href": "person/tuanku-syed-sirajuddin.html",
+    "title": "Tuanku Syed Sirajuddin",
+    "section": "",
+    "text": "Kön: \nman\n\nKategori: \nutländsk\n\nLand: \nMalaysia\n\nKunglig: \nJa\n\nWikidata: \nQ460568\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nSerafimerorden\nLedamot\n14 september 2005\nuppgift saknas\nKälla Wikipedia"
+  },
+  {
+    "objectID": "person/bjorn-skulason.html",
+    "href": "person/bjorn-skulason.html",
+    "title": "Björn Skúlason",
+    "section": "",
+    "text": "Kön: \nman\n\nKategori: \nutländsk\n\nLand: \nIsland\n\nKunglig: \nNej\n\nWikidata: \nQ130550240\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nNordstjärneorden\nKommendör med stora korset\n6 maj 2025\nuppgift saknas\nKälla Kungahuset.se"
+  },
+  {
+    "objectID": "person/drottning-silvia.html",
+    "href": "person/drottning-silvia.html",
+    "title": "Drottning Silvia",
+    "section": "",
+    "text": "Kön: \nkvinna\n\nKategori: \nsvensk\n\nLand: \nSverige\n\nKunglig: \nJa\n\nWikidata: \nQ152308\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nSerafimerorden\nLedamot\n6 maj 1976\nuppgift saknas\nKälla Wikipedia\nDatum från svensk Wikipedia (6 maj 1976) avviker från födelse- och vigseldatum"
+  },
+  {
+    "objectID": "person/bronisaw-komorowski.html",
+    "href": "person/bronisaw-komorowski.html",
+    "title": "Bronisław Komorowski",
+    "section": "",
+    "text": "Kön: \nman\n\nKategori: \nutländsk\n\nLand: \nPolen\n\nKunglig: \nNej\n\nWikidata: \nQ42939\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nSerafimerorden\nLedamot\n2011\nuppgift saknas\nKälla Wikipedia"
+  },
+  {
+    "objectID": "person/sumaya-bint-el-hassan.html",
+    "href": "person/sumaya-bint-el-hassan.html",
+    "title": "Sumaya bint El Hassan",
+    "section": "",
+    "text": "Kön: \nkvinna\n\nKategori: \nutländsk\n\nLand: \nJordanien\n\nKunglig: \nJa\n\nWikidata: \nQ7637027\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nNordstjärneorden\nKommendör med stora korset\nnovember 2022\nuppgift saknas\nKälla Kungahuset.se"
+  },
+  {
+    "objectID": "person/veronica-thornroos.html",
+    "href": "person/veronica-thornroos.html",
+    "title": "Veronica Thörnroos",
+    "section": "",
+    "text": "Kön: \nkvinna\n\nKategori: \nutländsk\n\nLand: \nFinland\n\nKunglig: \nNej\n\nWikidata: \nQ4982779\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nNordstjärneorden\nKommendör\njuni 2022\nuppgift saknas\nKälla Wikipedia"
+  },
+  {
+    "objectID": "person/prinsessan-leonore.html",
+    "href": "person/prinsessan-leonore.html",
+    "title": "Prinsessan Leonore",
+    "section": "",
+    "text": "Kön: \nkvinna\n\nKategori: \nsvensk\n\nLand: \nSverige\n\nKunglig: \nJa\n\nWikidata: \nQ15768416\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nSerafimerorden\nLedamot\n20 februari 2014\nuppgift saknas\nKälla Wikipedia\nDatum är födelsedatum: arvsberättigade prinsar och prinsessor är riddare från födseln enligt stadgarna 25 §"
+  },
+  {
+    "objectID": "person/adam-daniel-rotfeld.html",
+    "href": "person/adam-daniel-rotfeld.html",
+    "title": "Adam Daniel Rotfeld",
+    "section": "",
+    "text": "Kön: \nman\n\nKategori: \nutländsk\n\nLand: \nPolen\n\nKunglig: \nNej\n\nWikidata: \nQ319551\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nNordstjärneorden\nKommendör\n2001\nuppgift saknas\nKälla Wikipedia"
+  },
+  {
+    "objectID": "person/rudolf-schuster.html",
+    "href": "person/rudolf-schuster.html",
+    "title": "Rudolf Schuster",
+    "section": "",
+    "text": "Kön: \nman\n\nKategori: \nutländsk\n\nLand: \nSlovakien\n\nKunglig: \nNej\n\nWikidata: \nQ163813\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nSerafimerorden\nLedamot\n2002\nuppgift saknas\nKälla Officiell publikation"
+  },
+  {
+    "objectID": "person/hanna-gronkiewicz-waltz.html",
+    "href": "person/hanna-gronkiewicz-waltz.html",
+    "title": "Hanna Gronkiewicz-Waltz",
+    "section": "",
+    "text": "Kön: \nkvinna\n\nKategori: \nutländsk\n\nLand: \nPolen\n\nKunglig: \nNej\n\nWikidata: \nQ271902\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nNordstjärneorden\nRiddare\n2011\nuppgift saknas\nKälla Wikipedia"
+  },
+  {
+    "objectID": "person/abdullah-ii-av-jordanien.html",
+    "href": "person/abdullah-ii-av-jordanien.html",
+    "title": "Abdullah II av Jordanien",
+    "section": "",
+    "text": "Kön: \nman\n\nKategori: \nutländsk\n\nLand: \nJordanien\n\nKunglig: \nJa\n\nWikidata: \nQ57464\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nSerafimerorden\nLedamot\n2003\nuppgift saknas\nKälla Officiell publikation"
+  },
+  {
+    "objectID": "person/suzanne-innes-stubb.html",
+    "href": "person/suzanne-innes-stubb.html",
+    "title": "Suzanne Innes-Stubb",
+    "section": "",
+    "text": "Kön: \nkvinna\n\nKategori: \nutländsk\n\nLand: \nuppgift saknas\n\nKunglig: \nNej\n\nWikidata: \nQ17278098\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nNordstjärneorden\nKommendör med stora korset\n23 april 2024\nuppgift saknas\nKälla Kungahuset.se"
+  },
+  {
+    "objectID": "person/arvo-part.html",
+    "href": "person/arvo-part.html",
+    "title": "Arvo Pärt",
+    "section": "",
+    "text": "Kön: \nman\n\nKategori: \nutländsk\n\nLand: \nuppgift saknas\n\nKunglig: \nNej\n\nWikidata: \nQ189534\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nNordstjärneorden\nKommendör med stora korset\nmaj 2023\nuppgift saknas\nKälla Tidning"
+  },
+  {
+    "objectID": "person/prins-gabriel.html",
+    "href": "person/prins-gabriel.html",
+    "title": "Prins Gabriel",
+    "section": "",
+    "text": "Kön: \nman\n\nKategori: \nsvensk\n\nLand: \nSverige\n\nKunglig: \nJa\n\nWikidata: \nQ38579198\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nSerafimerorden\nLedamot\n31 augusti 2017\nuppgift saknas\nKälla Wikipedia\nDatum är födelsedatum: arvsberättigade prinsar och prinsessor är riddare från födseln enligt stadgarna 25 §"
+  },
+  {
+    "objectID": "person/henri-av-luxemburg.html",
+    "href": "person/henri-av-luxemburg.html",
+    "title": "Henri av Luxemburg",
+    "section": "",
+    "text": "Kön: \nman\n\nKategori: \nutländsk\n\nLand: \nLuxemburg\n\nKunglig: \nJa\n\nWikidata: \nQ16004\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nSerafimerorden\nLedamot\n12 september 1983\nuppgift saknas\nKälla Wikipedia"
+  },
+  {
+    "objectID": "person/sara-albrink.html",
+    "href": "person/sara-albrink.html",
+    "title": "Sara Ålbrink",
+    "section": "",
+    "text": "Kön: \nuppgift saknas\n\nKategori: \nsvensk\n\nLand: \nuppgift saknas\n\nKunglig: \nNej\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nNordstjärneorden\nRiddare\n30 april 2025\nFör viktiga insatser för Försvarsmaktens strategiska transporter\nKälla Kungahuset.se\nKategori (svensk/utländsk) är inte angiven för den enskilda personen i källan och kunde inte kontrolleras i Wikidata"
+  },
+  {
+    "objectID": "person/annette-koch-byrdal.html",
+    "href": "person/annette-koch-byrdal.html",
+    "title": "Annette Koch Byrdal",
+    "section": "",
+    "text": "Kön: \nuppgift saknas\n\nKategori: \nutländsk\n\nLand: \nDanmark\n\nKunglig: \nNej\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nNordstjärneorden\nRiddare av första klassen\n13 april 2026\nuppgift saknas\nKälla Officiell publikation"
+  },
+  {
+    "objectID": "person/albert-ii-av-belgien.html",
+    "href": "person/albert-ii-av-belgien.html",
+    "title": "Albert II av Belgien",
+    "section": "",
+    "text": "Kön: \nman\n\nKategori: \nutländsk\n\nLand: \nBelgien\n\nKunglig: \nJa\n\nWikidata: \nQ3911\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nSerafimerorden\nLedamot\n31 mars 1966\nuppgift saknas\nKälla Wikipedia"
+  },
+  {
+    "objectID": "person/eva-rydberg.html",
+    "href": "person/eva-rydberg.html",
+    "title": "Eva Rydberg",
+    "section": "",
+    "text": "Kön: \nuppgift saknas\n\nKategori: \nsvensk\n\nLand: \nuppgift saknas\n\nKunglig: \nNej\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nVasaorden\nKommendör\n21 mars 2024\nFör långt och framgångsrikt engagemang inom scenkonsten\nKälla Kungahuset.se\nKategori och land är hämtade från medborgarskap i Wikidata (P27); källan anger inte detta per person"
+  },
+  {
+    "objectID": "person/jeffry-flake.html",
+    "href": "person/jeffry-flake.html",
+    "title": "Jeffry Flake",
+    "section": "",
+    "text": "Kön: \nuppgift saknas\n\nKategori: \nutländsk\n\nLand: \nUSA\n\nKunglig: \nNej\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nNordstjärneorden\nKommendör av första klassen\n22 oktober 2024\nFör extraordinära insatser för svenska intressen\nKälla Regeringen.se"
+  },
+  {
+    "objectID": "person/anne-lhuillier-wahlstrom.html",
+    "href": "person/anne-lhuillier-wahlstrom.html",
+    "title": "Anne L’Huillier Wahlström",
+    "section": "",
+    "text": "Kön: \nuppgift saknas\n\nKategori: \nsvensk\n\nLand: \nuppgift saknas\n\nKunglig: \nNej\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nNordstjärneorden\nKommendör med stora korset\n21 mars 2024\nFör utomordentliga forskningsinsatser\nKälla Kungahuset.se\nKategori (svensk/utländsk) är inte angiven för den enskilda personen i källan och kunde inte kontrolleras i Wikidata"
+  },
+  {
+    "objectID": "person/laura-codruta-kovesi.html",
+    "href": "person/laura-codruta-kovesi.html",
+    "title": "Laura Codruța Kövesi",
+    "section": "",
+    "text": "Kön: \nkvinna\n\nKategori: \nutländsk\n\nLand: \nRumänien\n\nKunglig: \nNej\n\nWikidata: \nQ6498808\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nNordstjärneorden\nKommendör\n2016\nuppgift saknas\nKälla Wikipedia"
+  },
+  {
+    "objectID": "person/emmanuel-macron.html",
+    "href": "person/emmanuel-macron.html",
+    "title": "Emmanuel Macron",
+    "section": "",
+    "text": "Kön: \nman\n\nKategori: \nutländsk\n\nLand: \nFrankrike\n\nKunglig: \nNej\n\nWikidata: \nQ3052772\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nSerafimerorden\nRiddare\n30 januari 2024\nuppgift saknas\nKälla Kungahuset.se"
+  },
+  {
+    "objectID": "person/alessandro-luccetti.html",
+    "href": "person/alessandro-luccetti.html",
+    "title": "Alessandro Luccetti",
+    "section": "",
+    "text": "Kön: \nuppgift saknas\n\nKategori: \nutländsk\n\nLand: \nItalien\n\nKunglig: \nNej\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nSvärdsorden\nKommendör\n13 april 2026\nuppgift saknas\nKälla Officiell publikation"
+  },
+  {
+    "objectID": "person/leonid-kutjma.html",
+    "href": "person/leonid-kutjma.html",
+    "title": "Leonid Kutjma",
+    "section": "",
+    "text": "Kön: \nman\n\nKategori: \nutländsk\n\nLand: \nUkraina\n\nKunglig: \nNej\n\nWikidata: \nQ629702\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nSerafimerorden\nLedamot\n1999\nuppgift saknas\nKälla Wikipedia"
+  },
+  {
+    "objectID": "person/prinsessan-adrienne.html",
+    "href": "person/prinsessan-adrienne.html",
+    "title": "Prinsessan Adrienne",
+    "section": "",
+    "text": "Kön: \nkvinna\n\nKategori: \nsvensk\n\nLand: \nSverige\n\nKunglig: \nJa\n\nWikidata: \nQ50411737\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nSerafimerorden\nLedamot\n9 mars 2018\nuppgift saknas\nKälla Wikipedia\nDatum är födelsedatum: arvsberättigade prinsar och prinsessor är riddare från födseln enligt stadgarna 25 §"
+  },
+  {
+    "objectID": "person/julianne-smith.html",
+    "href": "person/julianne-smith.html",
+    "title": "Julianne Smith",
+    "section": "",
+    "text": "Kön: \nuppgift saknas\n\nKategori: \nutländsk\n\nLand: \nUSA\n\nKunglig: \nNej\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nNordstjärneorden\nKommendör av första klassen\n22 oktober 2024\nFör extraordinära insatser för svenska intressen\nKälla Regeringen.se"
+  },
+  {
+    "objectID": "person/bjorn-ulvaeus.html",
+    "href": "person/bjorn-ulvaeus.html",
+    "title": "Björn Ulvaeus",
+    "section": "",
+    "text": "Kön: \nuppgift saknas\n\nKategori: \nsvensk\n\nLand: \nuppgift saknas\n\nKunglig: \nNej\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nVasaorden\nKommendör av första klassen\n21 mars 2024\nFör mycket framstående insatser inom svenskt och internationellt musikliv\nKälla Kungahuset.se\nKategori och land är hämtade från medborgarskap i Wikidata (P27); källan anger inte detta per person"
+  },
+  {
+    "objectID": "person/agnetha-faltskog.html",
+    "href": "person/agnetha-faltskog.html",
+    "title": "Agnetha Fältskog",
+    "section": "",
+    "text": "Kön: \nuppgift saknas\n\nKategori: \nsvensk\n\nLand: \nuppgift saknas\n\nKunglig: \nNej\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nVasaorden\nKommendör av första klassen\n21 mars 2024\nFör mycket framstående insatser inom svenskt och internationellt musikliv\nKälla Kungahuset.se\nKategori och land är hämtade från medborgarskap i Wikidata (P27); källan anger inte detta per person"
+  },
+  {
+    "objectID": "person/frederik-x-av-danmark.html",
+    "href": "person/frederik-x-av-danmark.html",
+    "title": "Frederik X av Danmark",
+    "section": "",
+    "text": "Kön: \nman\n\nKategori: \nutländsk\n\nLand: \nuppgift saknas\n\nKunglig: \nJa\n\nWikidata: \nQ1004037\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nSerafimerorden\nRiddare med kedja\n6 maj 2024\nuppgift saknas\nKälla Kungahuset.se\n\n\n\nSerafimerorden\nLedamot\n1993\nuppgift saknas\nKälla Kungahuset.se\nFlera medborgarskap i Wikidata; land är inte angivet"
+  },
+  {
+    "objectID": "person/jarmo-lindberg.html",
+    "href": "person/jarmo-lindberg.html",
+    "title": "Jarmo Lindberg",
+    "section": "",
+    "text": "Kön: \nman\n\nKategori: \nutländsk\n\nLand: \nFinland\n\nKunglig: \nNej\n\nWikidata: \nQ11866170\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nNordstjärneorden\nKommendör av första klassen\n19 mars 2018\nSom erkänsla för förtjänstfulla insatser inom det militära samarbetet mellan Finland och Sverige har H.M. Konungen behagat utnämna Kommendören av Finlands Försvarsmakt general Jarmo Lindberg till Kommendör Första klassen av Kungl. Nordstjärneorden.\nKälla Kungahuset.se"
+  },
+  {
+    "objectID": "person/jacob-sullivan.html",
+    "href": "person/jacob-sullivan.html",
+    "title": "Jacob Sullivan",
+    "section": "",
+    "text": "Kön: \nuppgift saknas\n\nKategori: \nutländsk\n\nLand: \nUSA\n\nKunglig: \nNej\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nNordstjärneorden\nKommendör med stora korset\n22 oktober 2024\nFör extraordinära insatser för svenska intressen\nKälla Regeringen.se"
+  },
+  {
+    "objectID": "person/margers-krams.html",
+    "href": "person/margers-krams.html",
+    "title": "Marģers Krams",
+    "section": "",
+    "text": "Kön: \nman\n\nKategori: \nutländsk\n\nLand: \nLettland\n\nKunglig: \nNej\n\nWikidata: \nQ112592732\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nNordstjärneorden\nKommendör\n2014\nuppgift saknas\nKälla Regeringen.se"
+  },
+  {
+    "objectID": "person/francois-hollande.html",
+    "href": "person/francois-hollande.html",
+    "title": "François Hollande",
+    "section": "",
+    "text": "Kön: \nman\n\nKategori: \nutländsk\n\nLand: \nFrankrike\n\nKunglig: \nNej\n\nWikidata: \nQ157\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nSerafimerorden\nLedamot\n2 december 2014\nuppgift saknas\nKälla Wikipedia"
+  },
+  {
+    "objectID": "person/marek-czernis.html",
+    "href": "person/marek-czernis.html",
+    "title": "Marek Czernis",
+    "section": "",
+    "text": "Kön: \nuppgift saknas\n\nKategori: \nutländsk\n\nLand: \nPolen\n\nKunglig: \nNej\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nNordstjärneorden\nRiddare av första klassen\n13 april 2026\nuppgift saknas\nKälla Officiell publikation"
+  },
+  {
+    "objectID": "person/prinsessan-christina-fru-magnuson.html",
+    "href": "person/prinsessan-christina-fru-magnuson.html",
+    "title": "Prinsessan Christina, fru Magnuson",
+    "section": "",
+    "text": "Kön: \nkvinna\n\nKategori: \nsvensk\n\nLand: \nSverige\n\nKunglig: \nJa\n\nWikidata: \nQ2268637\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nSerafimerorden\nLedamot\n15 juni 1974\nuppgift saknas\nKälla Wikipedia\nDatum är vigseldatum från Wikidata; källan anger inte datumet"
+  },
+  {
+    "objectID": "person/prins-nicolas.html",
+    "href": "person/prins-nicolas.html",
+    "title": "Prins Nicolas",
+    "section": "",
+    "text": "Kön: \nman\n\nKategori: \nsvensk\n\nLand: \nSverige\n\nKunglig: \nJa\n\nWikidata: \nQ20107429\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nSerafimerorden\nLedamot\n15 juni 2015\nuppgift saknas\nKälla Wikipedia\nDatum är födelsedatum: arvsberättigade prinsar och prinsessor är riddare från födseln enligt stadgarna 25 §"
+  },
+  {
+    "objectID": "person/michael-kaiser.html",
+    "href": "person/michael-kaiser.html",
+    "title": "Michael Kaiser",
+    "section": "",
+    "text": "Kön: \nman\n\nKategori: \nutländsk\n\nLand: \nUSA\n\nKunglig: \nNej\n\nWikidata: \nQ14905183\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nNordstjärneorden\nKommendör\n2013\nuppgift saknas\nKälla Wikipedia"
+  },
+  {
+    "objectID": "person/maha-vajiralongkorn.html",
+    "href": "person/maha-vajiralongkorn.html",
+    "title": "Maha Vajiralongkorn",
+    "section": "",
+    "text": "Kön: \nman\n\nKategori: \nutländsk\n\nLand: \nThailand\n\nKunglig: \nJa\n\nWikidata: \nQ548733\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nSerafimerorden\nLedamot\n2003\nuppgift saknas\nKälla Officiell publikation"
+  },
+  {
+    "objectID": "person/charles-iii-av-storbritannien.html",
+    "href": "person/charles-iii-av-storbritannien.html",
+    "title": "Charles III av Storbritannien",
+    "section": "",
+    "text": "Kön: \nman\n\nKategori: \nutländsk\n\nLand: \nStorbritannien\n\nKunglig: \nJa\n\nWikidata: \nQ43274\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nSerafimerorden\nLedamot\n23 maj 1975\nuppgift saknas\nKälla Wikipedia"
+  },
+  {
+    "objectID": "person/ricardo-antonio-merlo.html",
+    "href": "person/ricardo-antonio-merlo.html",
+    "title": "Ricardo Antonio Merlo",
+    "section": "",
+    "text": "Kön: \nman\n\nKategori: \nutländsk\n\nLand: \nItalien\n\nKunglig: \nNej\n\nWikidata: \nQ3934279\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nNordstjärneorden\nKommendör med stora korset\n13 november 2018\nuppgift saknas\nKälla Wikipedia"
+  },
+  {
+    "objectID": "person/ingrid-le-roux.html",
+    "href": "person/ingrid-le-roux.html",
+    "title": "Ingrid Le Roux",
+    "section": "",
+    "text": "Kön: \nuppgift saknas\n\nKategori: \nsvensk\n\nLand: \nuppgift saknas\n\nKunglig: \nNej\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nVasaorden\nRiddare\n30 april 2025\nFör viktiga insatser för spridningen av svenskt kunnande inom hälsovård för utsatta kvinnor och barn\nKälla Kungahuset.se\nKategori (svensk/utländsk) är inte angiven för den enskilda personen i källan och kunde inte kontrolleras i Wikidata"
+  },
+  {
+    "objectID": "person/talal-bin-muhammad.html",
+    "href": "person/talal-bin-muhammad.html",
+    "title": "Talal bin Muhammad",
+    "section": "",
+    "text": "Kön: \nman\n\nKategori: \nutländsk\n\nLand: \nJordanien\n\nKunglig: \nJa\n\nWikidata: \nQ7244259\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nNordstjärneorden\nKommendör med stora korset\nnovember 2022\nuppgift saknas\nKälla Kungahuset.se"
+  },
+  {
+    "objectID": "person/bettan-byvald.html",
+    "href": "person/bettan-byvald.html",
+    "title": "Bettan Byvald",
+    "section": "",
+    "text": "Kön: \nuppgift saknas\n\nKategori: \nsvensk\n\nLand: \nuppgift saknas\n\nKunglig: \nNej\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nVasaorden\nRiddare av första klassen\n21 mars 2024\nFör mångårigt betydande socialt arbete\nKälla Kungahuset.se\nKategori och land är hämtade från medborgarskap i Wikidata (P27); källan anger inte detta per person"
+  },
+  {
+    "objectID": "person/sophia-av-grekland.html",
+    "href": "person/sophia-av-grekland.html",
+    "title": "Sophia av Grekland",
+    "section": "",
+    "text": "Kön: \nkvinna\n\nKategori: \nutländsk\n\nLand: \nSpanien\n\nKunglig: \nJa\n\nWikidata: \nQ156548\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nSerafimerorden\nLedamot\n5 oktober 1979\nuppgift saknas\nKälla Wikipedia"
+  },
+  {
+    "objectID": "person/vicente-fox.html",
+    "href": "person/vicente-fox.html",
+    "title": "Vicente Fox",
+    "section": "",
+    "text": "Kön: \nman\n\nKategori: \nutländsk\n\nLand: \nMexiko\n\nKunglig: \nNej\n\nWikidata: \nQ190572\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nSerafimerorden\nLedamot\n22 oktober 2002\nuppgift saknas\nKälla Wikipedia"
+  },
+  {
+    "objectID": "person/dalia-grybauskaite.html",
+    "href": "person/dalia-grybauskaite.html",
+    "title": "Dalia Grybauskaitė",
+    "section": "",
+    "text": "Kön: \nkvinna\n\nKategori: \nutländsk\n\nLand: \nLitauen\n\nKunglig: \nNej\n\nWikidata: \nQ57379\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nSerafimerorden\nLedamot\n7 oktober 2015\nuppgift saknas\nKälla Wikipedia"
+  },
+  {
+    "objectID": "person/juha-kilpi.html",
+    "href": "person/juha-kilpi.html",
+    "title": "Juha Kilpi",
+    "section": "",
+    "text": "Kön: \nman\n\nKategori: \nutländsk\n\nLand: \nFinland\n\nKunglig: \nNej\n\nWikidata: \nQ131927859\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nSvärdsorden\nKommendör\n13 april 2026\nuppgift saknas\nKälla Officiell publikation"
+  },
+  {
     "objectID": "person/eduardo-frei-ruiz-tagle.html",
     "href": "person/eduardo-frei-ruiz-tagle.html",
     "title": "Eduardo Frei Ruiz-Tagle",
     "section": "",
     "text": "Kön: \nman\n\nKategori: \nutländsk\n\nLand: \nChile\n\nKunglig: \nNej\n\nWikidata: \nQ326\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nSerafimerorden\nLedamot\n15 november 1996\nuppgift saknas\nKälla Wikipedia"
+  },
+  {
+    "objectID": "person/prinsessan-margaretha.html",
+    "href": "person/prinsessan-margaretha.html",
+    "title": "Prinsessan Margaretha",
+    "section": "",
+    "text": "Kön: \nkvinna\n\nKategori: \nsvensk\n\nLand: \nSverige\n\nKunglig: \nJa\n\nWikidata: \nQ2266804\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nSerafimerorden\nLedamot\n30 juni 1964\nuppgift saknas\nKälla Wikipedia\nDatum är vigseldatum från Wikidata; källan anger inte datumet"
+  },
+  {
+    "objectID": "person/muna-al-hussein.html",
+    "href": "person/muna-al-hussein.html",
+    "title": "Muna al-Hussein",
+    "section": "",
+    "text": "Kön: \nkvinna\n\nKategori: \nutländsk\n\nLand: \nuppgift saknas\n\nKunglig: \nJa\n\nWikidata: \nQ269898\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nNordstjärneorden\nKommendör med stora korset\nnovember 2022\nuppgift saknas\nKälla Kungahuset.se"
+  },
+  {
+    "objectID": "person/pekka-haavisto.html",
+    "href": "person/pekka-haavisto.html",
+    "title": "Pekka Haavisto",
+    "section": "",
+    "text": "Kön: \nuppgift saknas\n\nKategori: \nutländsk\n\nLand: \nFinland\n\nKunglig: \nNej\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nNordstjärneorden\nKommendör med stora korset\n22 oktober 2024\nFör extraordinära insatser för svenska intressen\nKälla Regeringen.se\nKällorna formulerar motiveringen olika"
+  },
+  {
+    "objectID": "person/toomas-asser.html",
+    "href": "person/toomas-asser.html",
+    "title": "Toomas Asser",
+    "section": "",
+    "text": "Kön: \nman\n\nKategori: \nutländsk\n\nLand: \nEstland\n\nKunglig: \nNej\n\nWikidata: \nQ16404350\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nNordstjärneorden\nKommendör av första klassen\nmaj 2023\nuppgift saknas\nKälla Officiell publikation"
+  },
+  {
+    "objectID": "person/sirje-karis.html",
+    "href": "person/sirje-karis.html",
+    "title": "Sirje Karis",
+    "section": "",
+    "text": "Kön: \nkvinna\n\nKategori: \nutländsk\n\nLand: \nEstland\n\nKunglig: \nNej\n\nWikidata: \nQ108296358\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nNordstjärneorden\nKommendör med stora korset\nmaj 2023\nuppgift saknas\nKälla Kungahuset.se"
+  },
+  {
+    "objectID": "person/siegfried-loch.html",
+    "href": "person/siegfried-loch.html",
+    "title": "Siegfried Loch",
+    "section": "",
+    "text": "Kön: \nman\n\nKategori: \nutländsk\n\nLand: \nTyskland\n\nKunglig: \nNej\n\nWikidata: \nQ1650966\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nNordstjärneorden\nRiddare av första klassen\n2010\nuppgift saknas\nKälla Wikipedia"
+  },
+  {
+    "objectID": "person/nina-stemme.html",
+    "href": "person/nina-stemme.html",
+    "title": "Nina Stemme",
+    "section": "",
+    "text": "Kön: \nuppgift saknas\n\nKategori: \nsvensk\n\nLand: \nuppgift saknas\n\nKunglig: \nNej\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nVasaorden\nKommendör av första klassen\n30 april 2025\nFör mycket framstående insatser som operasångerska\nKälla Kungahuset.se\nKategori och land är hämtade från medborgarskap i Wikidata (P27); källan anger inte detta per person"
+  },
+  {
+    "objectID": "person/hussein-bin-abdullah.html",
+    "href": "person/hussein-bin-abdullah.html",
+    "title": "Hussein bin Abdullah",
+    "section": "",
+    "text": "Kön: \nman\n\nKategori: \nutländsk\n\nLand: \nJordanien\n\nKunglig: \nJa\n\nWikidata: \nQ981927\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nNordstjärneorden\nKommendör med stora korset\nnovember 2022\nuppgift saknas\nKälla Kungahuset.se"
+  },
+  {
+    "objectID": "person/svante-paabo.html",
+    "href": "person/svante-paabo.html",
+    "title": "Svante Pääbo",
+    "section": "",
+    "text": "Kön: \nuppgift saknas\n\nKategori: \nsvensk\n\nLand: \nuppgift saknas\n\nKunglig: \nNej\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nNordstjärneorden\nKommendör med stora korset\n21 mars 2024\nFör utomordentliga forskningsinsatser\nKälla Kungahuset.se\nKategori och land är hämtade från medborgarskap i Wikidata (P27); källan anger inte detta per person"
+  },
+  {
+    "objectID": "person/frank-walter-steinmeier.html",
+    "href": "person/frank-walter-steinmeier.html",
+    "title": "Frank-Walter Steinmeier",
+    "section": "",
+    "text": "Kön: \nman\n\nKategori: \nutländsk\n\nLand: \nTyskland\n\nKunglig: \nNej\n\nWikidata: \nQ76658\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nSerafimerorden\nLedamot\n7 september 2021\nuppgift saknas\nKälla Wikipedia"
+  },
+  {
+    "objectID": "person/philippe-av-belgien.html",
+    "href": "person/philippe-av-belgien.html",
+    "title": "Philippe av Belgien",
+    "section": "",
+    "text": "Kön: \nman\n\nKategori: \nutländsk\n\nLand: \nBelgien\n\nKunglig: \nJa\n\nWikidata: \nQ155004\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nSerafimerorden\nLedamot\n2001\nuppgift saknas\nKälla Officiell publikation"
+  },
+  {
+    "objectID": "person/stig-stromholm.html",
+    "href": "person/stig-stromholm.html",
+    "title": "Stig Strömholm",
+    "section": "",
+    "text": "Kön: \nman\n\nKategori: \nsvensk\n\nLand: \nSverige\n\nKunglig: \nNej\n\nWikidata: \nQ446338\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nNordstjärneorden\nRiddare\n1973\nuppgift saknas\nKälla Wikipedia"
+  },
+  {
+    "objectID": "person/narendra-modi.html",
+    "href": "person/narendra-modi.html",
+    "title": "Narendra Modi",
+    "section": "",
+    "text": "Kön: \nuppgift saknas\n\nKategori: \nutländsk\n\nLand: \nIndien\n\nKunglig: \nNej\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nNordstjärneorden\nKommendör med stora korset\n17 maj 2026\nuppgift saknas\nKälla Regeringen.se\nBeslutsdatum saknas i källan; datumet är datumet för offentliggörandet"
+  },
+  {
+    "objectID": "person/lech-waesa.html",
+    "href": "person/lech-waesa.html",
+    "title": "Lech Wałęsa",
+    "section": "",
+    "text": "Kön: \nman\n\nKategori: \nutländsk\n\nLand: \nPolen\n\nKunglig: \nNej\n\nWikidata: \nQ444\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nSerafimerorden\nLedamot\n16 september 1993\nuppgift saknas\nKälla Wikipedia"
+  },
+  {
+    "objectID": "person/petar-stojanov.html",
+    "href": "person/petar-stojanov.html",
+    "title": "Petăr Stojanov",
+    "section": "",
+    "text": "Kön: \nman\n\nKategori: \nutländsk\n\nLand: \nBulgarien\n\nKunglig: \nNej\n\nWikidata: \nQ81215\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nSerafimerorden\nLedamot\n27 oktober 2000\nuppgift saknas\nKälla Wikipedia"
+  },
+  {
+    "objectID": "person/camilla-gunell.html",
+    "href": "person/camilla-gunell.html",
+    "title": "Camilla Gunell",
+    "section": "",
+    "text": "Kön: \nkvinna\n\nKategori: \nutländsk\n\nLand: \nFinland\n\nKunglig: \nNej\n\nWikidata: \nQ2270164\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nNordstjärneorden\nKommendör\njuni 2022\nuppgift saknas\nKälla Wikipedia"
+  },
+  {
+    "objectID": "person/giorgos-papandreou.html",
+    "href": "person/giorgos-papandreou.html",
+    "title": "Giorgos Papandreou",
+    "section": "",
+    "text": "Kön: \nman\n\nKategori: \nutländsk\n\nLand: \nuppgift saknas\n\nKunglig: \nNej\n\nWikidata: \nQ151917\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nNordstjärneorden\nKommendör med stora korset\n1999\nuppgift saknas\nKälla Wikipedia"
+  },
+  {
+    "objectID": "person/antonia-axson-johnson.html",
+    "href": "person/antonia-axson-johnson.html",
+    "title": "Antonia Ax:son Johnson",
+    "section": "",
+    "text": "Kön: \nuppgift saknas\n\nKategori: \nsvensk\n\nLand: \nuppgift saknas\n\nKunglig: \nNej\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nVasaorden\nKommendör med stora korset\n21 mars 2024\nFör utomordentliga insatser inom näringsliv och andra samhällssektorer\nKälla Kungahuset.se\nKategori och land är hämtade från medborgarskap i Wikidata (P27); källan anger inte detta per person"
+  },
+  {
+    "objectID": "person/mary-av-danmark.html",
+    "href": "person/mary-av-danmark.html",
+    "title": "Mary av Danmark",
+    "section": "",
+    "text": "Kön: \nkvinna\n\nKategori: \nutländsk\n\nLand: \nuppgift saknas\n\nKunglig: \nJa\n\nWikidata: \nQ208615\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nSerafimerorden\nRiddare\n6 maj 2024\nuppgift saknas\nKälla Kungahuset.se"
+  },
+  {
+    "objectID": "person/farah-pahlavi.html",
+    "href": "person/farah-pahlavi.html",
+    "title": "Farah Pahlavi",
+    "section": "",
+    "text": "Kön: \nkvinna\n\nKategori: \nutländsk\n\nLand: \nuppgift saknas\n\nKunglig: \nJa\n\nWikidata: \nQ164111\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nSerafimerorden\nLedamot\n1960\nuppgift saknas\nKälla Wikipedia\nFlera medborgarskap i Wikidata; land är inte angivet"
+  },
+  {
+    "objectID": "person/ulf-henricsson.html",
+    "href": "person/ulf-henricsson.html",
+    "title": "Ulf Henricsson",
+    "section": "",
+    "text": "Kön: \nuppgift saknas\n\nKategori: \nsvensk\n\nLand: \nuppgift saknas\n\nKunglig: \nNej\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nSvärdsorden\nKommendör av första klassen\n21 mars 2024\nFör mycket föredömligt ledarskap under krigsliknande förhållanden i forna Jugoslavien\nKälla Kungahuset.se\nKategori (svensk/utländsk) är inte angiven för den enskilda personen i källan och kunde inte kontrolleras i Wikidata"
   },
   {
     "objectID": "ordensguide.html",
@@ -670,664 +1300,6 @@
     "title": "Ordensguide",
     "section": "Insignier",
     "text": "Insignier\nSerafimerorden. Ordenstecknet är ett vitemaljerat, i guld infattat åttaflikigt kors med en blå glob med guldkant, krönt med en kunglig krona. Kedjan består av elva serafer av guld och elva blå patriarkalkors. Kraschan är ett åttaflikigt silverkors med en glob. (Instruktion för Kungl. Maj:ts Orden, 2023)\nSvärdsorden. Kommendörstecknet är ett vitemaljerat, i guld infattat snedställt åttaflikigt kors med öppna kronor i vinklarna. På mitten finns en blå glob med ett uppåtriktat svärd omgivet av Sveriges tre kronor. Kedjan är av guld och består av elva svärd i slida. (Instruktion, 2023)\nNordstjärneorden. Kommendörstecknet är ett vitemaljerat åttaflikigt kors i guld, med öppna kronor i vinklarna. På mitten finns en blå glob med en vit femuddig stjärna och omskriften NESCIT OCCASUM. Kedjan består av elva par blå ryggställda F och tolv vita nordstjärnor. (Instruktion, 2023)\nVasaorden. Kommendörstecknet är ett vitemaljerat åttaflikigt kors med öppna kronor i vinklarna. På mitten finns en vas av guld omgiven av en röd, guldkantad bård med inskriften GUSTAF D. III INSTIKTARE MDCCLXXII. Kedjan består av fyra vasar och fyra holsteinska nässelblad samt åtta blå sköldar. (Instruktion, 2023)\nBilder av ordenstecknen är ännu inte tillagda."
-  },
-  {
-    "objectID": "cache/phase23/BRIEF.html",
-    "href": "cache/phase23/BRIEF.html",
-    "title": "Gemensam instruktion för insamlingsagenter, fas 2 och 3",
-    "section": "",
-    "text": "Projekt: /home/lele5873/workspace/kungliga-ordnar. Webbplats över LEVANDE mottagare av de fyra svenska kungliga riddarordnarna: Serafimerorden, Svärdsorden, Nordstjärneorden, Vasaorden. Carl XIII:s orden ingår INTE. Idag är 2026-11-03.\n\n\n\nFas 1: alla levande ledamöter av Serafimerorden, samt alla tilldelningar av Nordstjärne-/Svärds-/Vasaorden från 2023-02-01 (reformen trädde i kraft) fram till idag, svenskar och utlänningar.\nFas 2: levande mottagare av Nordstjärneorden, Svärdsorden och Vasaorden som fick dem 1975-01-01 till och med 2023-01-31, inklusive utlänningar och svenska kungligheter.\nFas 3: levande svenska och utländska mottagare som fick NÅGON av de fyra ordnarna före 1975-01-01. Det är tilldelningen (orden + grad + datum) som är raden. En person kan ha flera tilldelningar (olika grader/år): lista varje särskilt.\n\n\n\n\n\nMedaljer och tecken: Vasatecknet, Svärdstecknet, Nordstjärnetecknet, Svärdsmedaljen, Nordstjärnemedaljen, Vasamedaljen, Serafimermedaljen, Militärkorset, Konungens medalj, kedjor som insignier. Bara ordensgrader.\nUtländska ordnar (Elefantorden, Sankt Olavs orden, Finlands Vita Ros m.fl.). Wikipedia-listor över utmärkelser blandar svenska och utländska ordnar: kontrollera att just den SVENSKA orden avses. Namnen på engelska: Royal Order of the Seraphim, Royal Order of the Sword, Royal Order of the Polar Star, Royal Order of Vasa.\nAvlidna personer (se nedan).\n\n\n\n\nEn person är levande om Wikidata saknar dödsdatum (P570) OCH inte artikelns text anger dödsfall. Kontrollera P570 via Wikidata för varje kandidat. Rader för avlidna ska ändå med i din utdata med fältet dodsdatum ifyllt, så att vi vet att de är bortsorterade. Vid minsta tvekan om att personen lever: konfidens=låg och anm.\n\n\n\nSerafimerorden: Riddare. Svärdsorden: Riddare med stora korset av första klassen; Riddare med stora korset av andra klassen; Kommendör med stora korset; Kommendör av första klassen; Kommendör; Riddare av första klassen; Riddare. Nordstjärneorden och Vasaorden: Kommendör med stora korset; Kommendör av första klassen; Kommendör; Riddare av första klassen; Riddare. Äldre gradnamn (t.ex. “Storkors”, “Kommendör av 1. klass”, “Ledamot”) ska mappas till närmaste grad ovan; skriv originalet i anm och sätt konfidens=medel om mappningen inte är entydig. Om graden inte framgår: lämna grad tom.\n\n\n\nkungahuset.se &gt; regeringen.se &gt; annan officiell publikation (statskalender, Riksdagen m.m.) &gt; etablerad tidning &gt; Wikipedia. Wikipedia används som belägg ENDAST om inget annat finns. Wikidata (P166, kvalifikator P585 för datum) får användas för att hitta kandidater samt för kön (P21), land (P27) och dödsdatum (P570) men räknas inte som belägg: varje rad MÅSTE ha en källa_url vars innehåll nämner både personen och ordern. KORSKONTROLL: försök hitta minst två oberoende källor per kandidat (t.ex. Wikidata P166 + svensk Wikipedia + engelsk Wikipedia + kungahuset.se/regeringen.se/statskalender). Ange den starkaste som källa_url och övriga i other_sources. Om källor motsäger varandra (grad eller år): ange båda i other_sources, sätt konfidens=låg och beskriv i anm. Hitta INTE på något. Skriv hellre en tom ruta än en gissning. Gissa aldrig kön utifrån namn.\n\n\n\n\nRespektera robots.txt. Vänta minst 3 sekunder mellan anrop till samma värd (flera agenter kör samtidigt). Generisk User-Agent: “kungliga-ordnar-research/0.1 (generic client)”. Inga personuppgifter eller e-postadress i anrop.\nVid HTTP 429/503: vänta 30–120 s och försök igen (max 5 gånger), därefter hoppa över och notera det.\nOm en källa blockerar eller kräver JavaScript efter 3 försök: hoppa över, notera i rapporten, gå vidare.\nWikipedia: använd API (action=query&prop=extracts&explaintext=1) eller action=parse. Wikidata: wbgetentities/wbsearchentities eller SPARQL (https://query.wikidata.org/sparql, Accept: text/csv eller application/sparql-results+json, håll frågor små; en tung fråga ger timeout, dela upp). Redan cachade svar finns i /home/lele5873/workspace/kungliga-ordnar/cache/wiki och cache/wd (återanvänd).\nSpara råsvar i /home/lele5873/workspace/kungliga-ordnar/cache/phase23//raw/ så att inget hämtas två gånger.\nDu har Bash (curl, python3, Rscript), WebFetch och WebSearch. Skriv gärna egna skript i /tmp/claude-501128/-home-lele5873-workspace/a278dedb-eb1d-4997-ba5c-b1265380d7f8/scratchpad// (inte i projektmappen).\n\n\n\n\n\nSkriv ENDAST i /home/lele5873/workspace/kungliga-ordnar/cache/phase23// och din utdatafil (se nedan). Ändra inte data/, R/, *.qmd, _quarto.yml, scraper/, tests/. Kör inte git, quarto render eller något publicerande. Lägg inte till R-paket.\nPython-skript som läser hämtad data: kör med python3 -I från en annan katalog än där datan ligger.\n\n\n\n\nEn CSV i UTF-8: /home/lele5873/workspace/kungliga-ordnar/cache/phase23/.csv med exakt dessa kolumner (en rad per tilldelning): qid, namn, kon, land, kategori, kunglig, orden, grad, datum, datum_precision, motivering, statsbesok, kalla_url, kalltyp, evidence, other_sources, dodsdatum, konfidens, anm - qid: Wikidata-ID. kon: man|kvinna|tomt (Wikidata P21). land: landets svenska namn när exakt ett P27-värde finns eller källan anger det, annars tomt. kategori: svensk om P27 innehåller Sverige (Q34), annars utländsk; tomt om P27 saknas. kunglig: TRUE om personen är monark eller medlem av ett kungahus, annars FALSE. - datum: YYYY-MM-DD, YYYY-MM eller YYYY (endast det som står i källan; tomt om okänt). datum_precision: dag|månad|år. motivering: ENDAST officiell text från kungahuset.se/regeringen.se, annars tomt. statsbesok: “Land år” bara om källan säger att ordern gavs under ett statsbesök. - kalltyp: kungahuset|regeringen|officiell_publikation|tidning|wikipedia. evidence: kort citat (max 200 tecken) ur källan där både personen och ordern nämns. other_sources: “url|kalltyp” separerade med semikolon. konfidens: hög (flera källor eniga) | medel | låg. Skriv också en kort rapport (max 400 ord) som ditt slutsvar: antal rader per orden/fas, vad som är verifierat med minst två källor, vilka källor som fanns respektive inte gick att nå (med skäl), och vilka luckor som återstår."
-  },
-  {
-    "objectID": "cache/phase23/BRIEF.html#omfattning",
-    "href": "cache/phase23/BRIEF.html#omfattning",
-    "title": "Gemensam instruktion för insamlingsagenter, fas 2 och 3",
-    "section": "",
-    "text": "Fas 1: alla levande ledamöter av Serafimerorden, samt alla tilldelningar av Nordstjärne-/Svärds-/Vasaorden från 2023-02-01 (reformen trädde i kraft) fram till idag, svenskar och utlänningar.\nFas 2: levande mottagare av Nordstjärneorden, Svärdsorden och Vasaorden som fick dem 1975-01-01 till och med 2023-01-31, inklusive utlänningar och svenska kungligheter.\nFas 3: levande svenska och utländska mottagare som fick NÅGON av de fyra ordnarna före 1975-01-01. Det är tilldelningen (orden + grad + datum) som är raden. En person kan ha flera tilldelningar (olika grader/år): lista varje särskilt."
-  },
-  {
-    "objectID": "cache/phase23/BRIEF.html#vad-som-inte-räknas",
-    "href": "cache/phase23/BRIEF.html#vad-som-inte-räknas",
-    "title": "Gemensam instruktion för insamlingsagenter, fas 2 och 3",
-    "section": "",
-    "text": "Medaljer och tecken: Vasatecknet, Svärdstecknet, Nordstjärnetecknet, Svärdsmedaljen, Nordstjärnemedaljen, Vasamedaljen, Serafimermedaljen, Militärkorset, Konungens medalj, kedjor som insignier. Bara ordensgrader.\nUtländska ordnar (Elefantorden, Sankt Olavs orden, Finlands Vita Ros m.fl.). Wikipedia-listor över utmärkelser blandar svenska och utländska ordnar: kontrollera att just den SVENSKA orden avses. Namnen på engelska: Royal Order of the Seraphim, Royal Order of the Sword, Royal Order of the Polar Star, Royal Order of Vasa.\nAvlidna personer (se nedan)."
-  },
-  {
-    "objectID": "cache/phase23/BRIEF.html#levande",
-    "href": "cache/phase23/BRIEF.html#levande",
-    "title": "Gemensam instruktion för insamlingsagenter, fas 2 och 3",
-    "section": "",
-    "text": "En person är levande om Wikidata saknar dödsdatum (P570) OCH inte artikelns text anger dödsfall. Kontrollera P570 via Wikidata för varje kandidat. Rader för avlidna ska ändå med i din utdata med fältet dodsdatum ifyllt, så att vi vet att de är bortsorterade. Vid minsta tvekan om att personen lever: konfidens=låg och anm."
-  },
-  {
-    "objectID": "cache/phase23/BRIEF.html#grader-exakt-stavning-från-datagrader.csv",
-    "href": "cache/phase23/BRIEF.html#grader-exakt-stavning-från-datagrader.csv",
-    "title": "Gemensam instruktion för insamlingsagenter, fas 2 och 3",
-    "section": "",
-    "text": "Serafimerorden: Riddare. Svärdsorden: Riddare med stora korset av första klassen; Riddare med stora korset av andra klassen; Kommendör med stora korset; Kommendör av första klassen; Kommendör; Riddare av första klassen; Riddare. Nordstjärneorden och Vasaorden: Kommendör med stora korset; Kommendör av första klassen; Kommendör; Riddare av första klassen; Riddare. Äldre gradnamn (t.ex. “Storkors”, “Kommendör av 1. klass”, “Ledamot”) ska mappas till närmaste grad ovan; skriv originalet i anm och sätt konfidens=medel om mappningen inte är entydig. Om graden inte framgår: lämna grad tom."
-  },
-  {
-    "objectID": "cache/phase23/BRIEF.html#källor-och-källprioritet",
-    "href": "cache/phase23/BRIEF.html#källor-och-källprioritet",
-    "title": "Gemensam instruktion för insamlingsagenter, fas 2 och 3",
-    "section": "",
-    "text": "kungahuset.se &gt; regeringen.se &gt; annan officiell publikation (statskalender, Riksdagen m.m.) &gt; etablerad tidning &gt; Wikipedia. Wikipedia används som belägg ENDAST om inget annat finns. Wikidata (P166, kvalifikator P585 för datum) får användas för att hitta kandidater samt för kön (P21), land (P27) och dödsdatum (P570) men räknas inte som belägg: varje rad MÅSTE ha en källa_url vars innehåll nämner både personen och ordern. KORSKONTROLL: försök hitta minst två oberoende källor per kandidat (t.ex. Wikidata P166 + svensk Wikipedia + engelsk Wikipedia + kungahuset.se/regeringen.se/statskalender). Ange den starkaste som källa_url och övriga i other_sources. Om källor motsäger varandra (grad eller år): ange båda i other_sources, sätt konfidens=låg och beskriv i anm. Hitta INTE på något. Skriv hellre en tom ruta än en gissning. Gissa aldrig kön utifrån namn."
-  },
-  {
-    "objectID": "cache/phase23/BRIEF.html#hur-man-får-tag-i-data-regler-vid-nätanrop",
-    "href": "cache/phase23/BRIEF.html#hur-man-får-tag-i-data-regler-vid-nätanrop",
-    "title": "Gemensam instruktion för insamlingsagenter, fas 2 och 3",
-    "section": "",
-    "text": "Respektera robots.txt. Vänta minst 3 sekunder mellan anrop till samma värd (flera agenter kör samtidigt). Generisk User-Agent: “kungliga-ordnar-research/0.1 (generic client)”. Inga personuppgifter eller e-postadress i anrop.\nVid HTTP 429/503: vänta 30–120 s och försök igen (max 5 gånger), därefter hoppa över och notera det.\nOm en källa blockerar eller kräver JavaScript efter 3 försök: hoppa över, notera i rapporten, gå vidare.\nWikipedia: använd API (action=query&prop=extracts&explaintext=1) eller action=parse. Wikidata: wbgetentities/wbsearchentities eller SPARQL (https://query.wikidata.org/sparql, Accept: text/csv eller application/sparql-results+json, håll frågor små; en tung fråga ger timeout, dela upp). Redan cachade svar finns i /home/lele5873/workspace/kungliga-ordnar/cache/wiki och cache/wd (återanvänd).\nSpara råsvar i /home/lele5873/workspace/kungliga-ordnar/cache/phase23//raw/ så att inget hämtas två gånger.\nDu har Bash (curl, python3, Rscript), WebFetch och WebSearch. Skriv gärna egna skript i /tmp/claude-501128/-home-lele5873-workspace/a278dedb-eb1d-4997-ba5c-b1265380d7f8/scratchpad// (inte i projektmappen)."
-  },
-  {
-    "objectID": "cache/phase23/BRIEF.html#vad-du-får-och-inte-får-göra",
-    "href": "cache/phase23/BRIEF.html#vad-du-får-och-inte-får-göra",
-    "title": "Gemensam instruktion för insamlingsagenter, fas 2 och 3",
-    "section": "",
-    "text": "Skriv ENDAST i /home/lele5873/workspace/kungliga-ordnar/cache/phase23// och din utdatafil (se nedan). Ändra inte data/, R/, *.qmd, _quarto.yml, scraper/, tests/. Kör inte git, quarto render eller något publicerande. Lägg inte till R-paket.\nPython-skript som läser hämtad data: kör med python3 -I från en annan katalog än där datan ligger."
-  },
-  {
-    "objectID": "cache/phase23/BRIEF.html#utdata",
-    "href": "cache/phase23/BRIEF.html#utdata",
-    "title": "Gemensam instruktion för insamlingsagenter, fas 2 och 3",
-    "section": "",
-    "text": "En CSV i UTF-8: /home/lele5873/workspace/kungliga-ordnar/cache/phase23/.csv med exakt dessa kolumner (en rad per tilldelning): qid, namn, kon, land, kategori, kunglig, orden, grad, datum, datum_precision, motivering, statsbesok, kalla_url, kalltyp, evidence, other_sources, dodsdatum, konfidens, anm - qid: Wikidata-ID. kon: man|kvinna|tomt (Wikidata P21). land: landets svenska namn när exakt ett P27-värde finns eller källan anger det, annars tomt. kategori: svensk om P27 innehåller Sverige (Q34), annars utländsk; tomt om P27 saknas. kunglig: TRUE om personen är monark eller medlem av ett kungahus, annars FALSE. - datum: YYYY-MM-DD, YYYY-MM eller YYYY (endast det som står i källan; tomt om okänt). datum_precision: dag|månad|år. motivering: ENDAST officiell text från kungahuset.se/regeringen.se, annars tomt. statsbesok: “Land år” bara om källan säger att ordern gavs under ett statsbesök. - kalltyp: kungahuset|regeringen|officiell_publikation|tidning|wikipedia. evidence: kort citat (max 200 tecken) ur källan där både personen och ordern nämns. other_sources: “url|kalltyp” separerade med semikolon. konfidens: hög (flera källor eniga) | medel | låg. Skriv också en kort rapport (max 400 ord) som ditt slutsvar: antal rader per orden/fas, vad som är verifierat med minst två källor, vilka källor som fanns respektive inte gick att nå (med skäl), och vilka luckor som återstår."
-  },
-  {
-    "objectID": "person/marie-ehrling.html",
-    "href": "person/marie-ehrling.html",
-    "title": "Marie Ehrling",
-    "section": "",
-    "text": "Kön: \nuppgift saknas\n\nKategori: \nsvensk\n\nLand: \nuppgift saknas\n\nKunglig: \nNej\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nVasaorden\nKommendör av första klassen\n30 april 2025\nFör mycket framstående insatser inom svenskt näringsliv\nKälla Kungahuset.se\nKategori och land är hämtade från medborgarskap i Wikidata (P27); källan anger inte detta per person"
-  },
-  {
-    "objectID": "person/emmanuel-macron.html",
-    "href": "person/emmanuel-macron.html",
-    "title": "Emmanuel Macron",
-    "section": "",
-    "text": "Kön: \nman\n\nKategori: \nutländsk\n\nLand: \nFrankrike\n\nKunglig: \nNej\n\nWikidata: \nQ3052772\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nSerafimerorden\nRiddare\n30 januari 2024\nuppgift saknas\nKälla Kungahuset.se"
-  },
-  {
-    "objectID": "person/prinsessan-leonore.html",
-    "href": "person/prinsessan-leonore.html",
-    "title": "Prinsessan Leonore",
-    "section": "",
-    "text": "Kön: \nkvinna\n\nKategori: \nsvensk\n\nLand: \nSverige\n\nKunglig: \nJa\n\nWikidata: \nQ15768416\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nSerafimerorden\nLedamot\n20 februari 2014\nuppgift saknas\nKälla Wikipedia\nDatum är födelsedatum: arvsberättigade prinsar och prinsessor är riddare från födseln enligt stadgarna 25 §"
-  },
-  {
-    "objectID": "person/sauli-niinisto.html",
-    "href": "person/sauli-niinisto.html",
-    "title": "Sauli Niinistö",
-    "section": "",
-    "text": "Kön: \nman\n\nKategori: \nutländsk\n\nLand: \nFinland\n\nKunglig: \nNej\n\nWikidata: \nQ29207\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nSerafimerorden\nLedamot\n12 april 2012\nuppgift saknas\nKälla Wikipedia"
-  },
-  {
-    "objectID": "person/agnetha-faltskog.html",
-    "href": "person/agnetha-faltskog.html",
-    "title": "Agnetha Fältskog",
-    "section": "",
-    "text": "Kön: \nuppgift saknas\n\nKategori: \nsvensk\n\nLand: \nuppgift saknas\n\nKunglig: \nNej\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nVasaorden\nKommendör av första klassen\n21 mars 2024\nFör mycket framstående insatser inom svenskt och internationellt musikliv\nKälla Kungahuset.se\nKategori och land är hämtade från medborgarskap i Wikidata (P27); källan anger inte detta per person"
-  },
-  {
-    "objectID": "person/frank-walter-steinmeier.html",
-    "href": "person/frank-walter-steinmeier.html",
-    "title": "Frank-Walter Steinmeier",
-    "section": "",
-    "text": "Kön: \nman\n\nKategori: \nutländsk\n\nLand: \nTyskland\n\nKunglig: \nNej\n\nWikidata: \nQ76658\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nSerafimerorden\nLedamot\n7 september 2021\nuppgift saknas\nKälla Wikipedia"
-  },
-  {
-    "objectID": "person/alexander-stubb.html",
-    "href": "person/alexander-stubb.html",
-    "title": "Alexander Stubb",
-    "section": "",
-    "text": "Kön: \nman\n\nKategori: \nutländsk\n\nLand: \nFinland\n\nKunglig: \nNej\n\nWikidata: \nQ503143\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nSerafimerorden\nRiddare\n23 april 2024\nuppgift saknas\nKälla Kungahuset.se"
-  },
-  {
-    "objectID": "person/jeffry-flake.html",
-    "href": "person/jeffry-flake.html",
-    "title": "Jeffry Flake",
-    "section": "",
-    "text": "Kön: \nuppgift saknas\n\nKategori: \nutländsk\n\nLand: \nUSA\n\nKunglig: \nNej\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nNordstjärneorden\nKommendör av första klassen\n22 oktober 2024\nFör extraordinära insatser för svenska intressen\nKälla Regeringen.se"
-  },
-  {
-    "objectID": "person/catarina-wingren.html",
-    "href": "person/catarina-wingren.html",
-    "title": "Catarina Wingren",
-    "section": "",
-    "text": "Kön: \nuppgift saknas\n\nKategori: \nsvensk\n\nLand: \nuppgift saknas\n\nKunglig: \nNej\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nNordstjärneorden\nRiddare\n21 mars 2024\nFör avgörande engagemang i samband med svenska internationella fredsinsatser i Mali\nKälla Kungahuset.se\nKategori (svensk/utländsk) är inte angiven för den enskilda personen i källan och kunde inte kontrolleras i Wikidata"
-  },
-  {
-    "objectID": "person/anibal-cavaco-silva.html",
-    "href": "person/anibal-cavaco-silva.html",
-    "title": "Aníbal Cavaco Silva",
-    "section": "",
-    "text": "Kön: \nman\n\nKategori: \nutländsk\n\nLand: \nPortugal\n\nKunglig: \nNej\n\nWikidata: \nQ57398\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nSerafimerorden\nLedamot\n2008\nuppgift saknas\nKälla Wikipedia"
-  },
-  {
-    "objectID": "person/bronisaw-komorowski.html",
-    "href": "person/bronisaw-komorowski.html",
-    "title": "Bronisław Komorowski",
-    "section": "",
-    "text": "Kön: \nman\n\nKategori: \nutländsk\n\nLand: \nPolen\n\nKunglig: \nNej\n\nWikidata: \nQ42939\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nSerafimerorden\nLedamot\n2011\nuppgift saknas\nKälla Wikipedia"
-  },
-  {
-    "objectID": "person/joachim-gauck.html",
-    "href": "person/joachim-gauck.html",
-    "title": "Joachim Gauck",
-    "section": "",
-    "text": "Kön: \nman\n\nKategori: \nutländsk\n\nLand: \nTyskland\n\nKunglig: \nNej\n\nWikidata: \nQ2538\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nSerafimerorden\nLedamot\n5 oktober 2016\nuppgift saknas\nKälla Wikipedia"
-  },
-  {
-    "objectID": "person/bjorn-skulason.html",
-    "href": "person/bjorn-skulason.html",
-    "title": "Björn Skúlason",
-    "section": "",
-    "text": "Kön: \nman\n\nKategori: \nutländsk\n\nLand: \nIsland\n\nKunglig: \nNej\n\nWikidata: \nQ130550240\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nNordstjärneorden\nKommendör med stora korset\n6 maj 2025\nuppgift saknas\nKälla Kungahuset.se"
-  },
-  {
-    "objectID": "person/esa-karna.html",
-    "href": "person/esa-karna.html",
-    "title": "Esa Kärnä",
-    "section": "",
-    "text": "Kön: \nuppgift saknas\n\nKategori: \nutländsk\n\nLand: \nFinland\n\nKunglig: \nNej\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nNordstjärneorden\nRiddare av första klassen\n13 april 2026\nuppgift saknas\nKälla Officiell publikation"
-  },
-  {
-    "objectID": "person/lee-myung-bak.html",
-    "href": "person/lee-myung-bak.html",
-    "title": "Lee Myung-bak",
-    "section": "",
-    "text": "Kön: \nman\n\nKategori: \nutländsk\n\nLand: \nSydkorea\n\nKunglig: \nNej\n\nWikidata: \nQ14342\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nSerafimerorden\nLedamot\n30 maj 2012\nuppgift saknas\nKälla Kungahuset.se"
-  },
-  {
-    "objectID": "person/eva-rydberg.html",
-    "href": "person/eva-rydberg.html",
-    "title": "Eva Rydberg",
-    "section": "",
-    "text": "Kön: \nuppgift saknas\n\nKategori: \nsvensk\n\nLand: \nuppgift saknas\n\nKunglig: \nNej\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nVasaorden\nKommendör\n21 mars 2024\nFör långt och framgångsrikt engagemang inom scenkonsten\nKälla Kungahuset.se\nKategori och land är hämtade från medborgarskap i Wikidata (P27); källan anger inte detta per person"
-  },
-  {
-    "objectID": "person/noor-av-jordanien.html",
-    "href": "person/noor-av-jordanien.html",
-    "title": "Noor av Jordanien",
-    "section": "",
-    "text": "Kön: \nkvinna\n\nKategori: \nutländsk\n\nLand: \nJordanien\n\nKunglig: \nJa\n\nWikidata: \nQ240575\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nSerafimerorden\nLedamot\n15 september 1989\nuppgift saknas\nKälla Wikipedia"
-  },
-  {
-    "objectID": "person/bettan-byvald.html",
-    "href": "person/bettan-byvald.html",
-    "title": "Bettan Byvald",
-    "section": "",
-    "text": "Kön: \nuppgift saknas\n\nKategori: \nsvensk\n\nLand: \nuppgift saknas\n\nKunglig: \nNej\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nVasaorden\nRiddare av första klassen\n21 mars 2024\nFör mångårigt betydande socialt arbete\nKälla Kungahuset.se\nKategori och land är hämtade från medborgarskap i Wikidata (P27); källan anger inte detta per person"
-  },
-  {
-    "objectID": "person/leonid-kutjma.html",
-    "href": "person/leonid-kutjma.html",
-    "title": "Leonid Kutjma",
-    "section": "",
-    "text": "Kön: \nman\n\nKategori: \nutländsk\n\nLand: \nUkraina\n\nKunglig: \nNej\n\nWikidata: \nQ629702\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nSerafimerorden\nLedamot\n1999\nuppgift saknas\nKälla Wikipedia"
-  },
-  {
-    "objectID": "person/ingrid-le-roux.html",
-    "href": "person/ingrid-le-roux.html",
-    "title": "Ingrid Le Roux",
-    "section": "",
-    "text": "Kön: \nuppgift saknas\n\nKategori: \nsvensk\n\nLand: \nuppgift saknas\n\nKunglig: \nNej\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nVasaorden\nRiddare\n30 april 2025\nFör viktiga insatser för spridningen av svenskt kunnande inom hälsovård för utsatta kvinnor och barn\nKälla Kungahuset.se\nKategori (svensk/utländsk) är inte angiven för den enskilda personen i källan och kunde inte kontrolleras i Wikidata"
-  },
-  {
-    "objectID": "person/raimonds-pauls.html",
-    "href": "person/raimonds-pauls.html",
-    "title": "Raimonds Pauls",
-    "section": "",
-    "text": "Kön: \nman\n\nKategori: \nutländsk\n\nLand: \nuppgift saknas\n\nKunglig: \nNej\n\nWikidata: \nQ178708\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nNordstjärneorden\nRiddare\n12 oktober 1995\nuppgift saknas\nKälla Wikipedia"
-  },
-  {
-    "objectID": "person/guni-johannesson.html",
-    "href": "person/guni-johannesson.html",
-    "title": "Guðni Jóhannesson",
-    "section": "",
-    "text": "Kön: \nman\n\nKategori: \nutländsk\n\nLand: \nIsland\n\nKunglig: \nNej\n\nWikidata: \nQ24045706\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nSerafimerorden\nLedamot\n17 januari 2018\nuppgift saknas\nKälla Wikipedia"
-  },
-  {
-    "objectID": "person/naruhito.html",
-    "href": "person/naruhito.html",
-    "title": "Naruhito",
-    "section": "",
-    "text": "Kön: \nman\n\nKategori: \nutländsk\n\nLand: \nJapan\n\nKunglig: \nJa\n\nWikidata: \nQ217096\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nSerafimerorden\nLedamot\n26 mars 2003\nuppgift saknas\nKälla Wikipedia"
-  },
-  {
-    "objectID": "person/giorgos-papandreou.html",
-    "href": "person/giorgos-papandreou.html",
-    "title": "Giorgos Papandreou",
-    "section": "",
-    "text": "Kön: \nman\n\nKategori: \nutländsk\n\nLand: \nuppgift saknas\n\nKunglig: \nNej\n\nWikidata: \nQ151917\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nNordstjärneorden\nKommendör med stora korset\n1999\nuppgift saknas\nKälla Wikipedia"
-  },
-  {
-    "objectID": "person/akihito.html",
-    "href": "person/akihito.html",
-    "title": "Akihito",
-    "section": "",
-    "text": "Kön: \nman\n\nKategori: \nutländsk\n\nLand: \nJapan\n\nKunglig: \nJa\n\nWikidata: \nQ37979\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nSerafimerorden\nLedamot\n30 september 1952\nuppgift saknas\nKälla Wikipedia"
-  },
-  {
-    "objectID": "person/vaira-vike-freiberga.html",
-    "href": "person/vaira-vike-freiberga.html",
-    "title": "Vaira Vīķe-Freiberga",
-    "section": "",
-    "text": "Kön: \nkvinna\n\nKategori: \nutländsk\n\nLand: \nuppgift saknas\n\nKunglig: \nNej\n\nWikidata: \nQ151301\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nSerafimerorden\nLedamot\n2005\nuppgift saknas\nKälla Wikipedia\nFlera medborgarskap i Wikidata; land är inte angivet"
-  },
-  {
-    "objectID": "person/sirje-karis.html",
-    "href": "person/sirje-karis.html",
-    "title": "Sirje Karis",
-    "section": "",
-    "text": "Kön: \nkvinna\n\nKategori: \nutländsk\n\nLand: \nEstland\n\nKunglig: \nNej\n\nWikidata: \nQ108296358\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nNordstjärneorden\nKommendör med stora korset\nmaj 2023\nuppgift saknas\nKälla Kungahuset.se"
-  },
-  {
-    "objectID": "person/prins-gabriel.html",
-    "href": "person/prins-gabriel.html",
-    "title": "Prins Gabriel",
-    "section": "",
-    "text": "Kön: \nman\n\nKategori: \nsvensk\n\nLand: \nSverige\n\nKunglig: \nJa\n\nWikidata: \nQ38579198\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nSerafimerorden\nLedamot\n31 augusti 2017\nuppgift saknas\nKälla Wikipedia\nDatum är födelsedatum: arvsberättigade prinsar och prinsessor är riddare från födseln enligt stadgarna 25 §"
-  },
-  {
-    "objectID": "person/anni-frid-reuss.html",
-    "href": "person/anni-frid-reuss.html",
-    "title": "Anni-Frid Reuss",
-    "section": "",
-    "text": "Kön: \nuppgift saknas\n\nKategori: \nsvensk\n\nLand: \nuppgift saknas\n\nKunglig: \nNej\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nVasaorden\nKommendör av första klassen\n21 mars 2024\nFör mycket framstående insatser inom svenskt och internationellt musikliv\nKälla Kungahuset.se\nKategori (svensk/utländsk) är inte angiven för den enskilda personen i källan och kunde inte kontrolleras i Wikidata"
-  },
-  {
-    "objectID": "person/rym-ali.html",
-    "href": "person/rym-ali.html",
-    "title": "Rym Ali",
-    "section": "",
-    "text": "Kön: \nkvinna\n\nKategori: \nutländsk\n\nLand: \nuppgift saknas\n\nKunglig: \nJa\n\nWikidata: \nQ177715\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nNordstjärneorden\nKommendör med stora korset\nnovember 2022\nuppgift saknas\nKälla Kungahuset.se"
-  },
-  {
-    "objectID": "person/jens-stoltenberg.html",
-    "href": "person/jens-stoltenberg.html",
-    "title": "Jens Stoltenberg",
-    "section": "",
-    "text": "Kön: \nuppgift saknas\n\nKategori: \nutländsk\n\nLand: \nNorge\n\nKunglig: \nNej\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nNordstjärneorden\nKommendör med stora korset\n22 oktober 2024\nFör extraordinära insatser för svenska intressen\nKälla Regeringen.se\nKällorna formulerar motiveringen olika"
-  },
-  {
-    "objectID": "person/siegfried-loch.html",
-    "href": "person/siegfried-loch.html",
-    "title": "Siegfried Loch",
-    "section": "",
-    "text": "Kön: \nman\n\nKategori: \nutländsk\n\nLand: \nTyskland\n\nKunglig: \nNej\n\nWikidata: \nQ1650966\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nNordstjärneorden\nRiddare av första klassen\n2010\nuppgift saknas\nKälla Wikipedia"
-  },
-  {
-    "objectID": "person/philippe-av-belgien.html",
-    "href": "person/philippe-av-belgien.html",
-    "title": "Philippe av Belgien",
-    "section": "",
-    "text": "Kön: \nman\n\nKategori: \nutländsk\n\nLand: \nBelgien\n\nKunglig: \nJa\n\nWikidata: \nQ155004\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nSerafimerorden\nLedamot\n2001\nuppgift saknas\nKälla Officiell publikation"
-  },
-  {
-    "objectID": "person/dana-firas.html",
-    "href": "person/dana-firas.html",
-    "title": "Dana Firas",
-    "section": "",
-    "text": "Kön: \nkvinna\n\nKategori: \nutländsk\n\nLand: \nJordanien\n\nKunglig: \nJa\n\nWikidata: \nQ35497945\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nNordstjärneorden\nKommendör med stora korset\nnovember 2022\nuppgift saknas\nKälla Kungahuset.se"
-  },
-  {
-    "objectID": "person/konstantin-kosasjev.html",
-    "href": "person/konstantin-kosasjev.html",
-    "title": "Konstantin Kosasjev",
-    "section": "",
-    "text": "Kön: \nman\n\nKategori: \nutländsk\n\nLand: \nRyssland\n\nKunglig: \nNej\n\nWikidata: \nQ736840\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nNordstjärneorden\nKommendör\n2004\nuppgift saknas\nKälla Wikipedia"
-  },
-  {
-    "objectID": "person/heinz-fischer.html",
-    "href": "person/heinz-fischer.html",
-    "title": "Heinz Fischer",
-    "section": "",
-    "text": "Kön: \nman\n\nKategori: \nutländsk\n\nLand: \nÖsterrike\n\nKunglig: \nNej\n\nWikidata: \nQ11753\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nSerafimerorden\nLedamot\n20 november 2007\nuppgift saknas\nKälla Wikipedia"
-  },
-  {
-    "objectID": "person/haakon-viii-av-norge.html",
-    "href": "person/haakon-viii-av-norge.html",
-    "title": "Haakon VIII av Norge",
-    "section": "",
-    "text": "Kön: \nman\n\nKategori: \nutländsk\n\nLand: \nNorge\n\nKunglig: \nJa\n\nWikidata: \nQ165241\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nSerafimerorden\nLedamot\n1993\nuppgift saknas\nKälla Wikipedia"
-  },
-  {
-    "objectID": "person/mary-av-danmark.html",
-    "href": "person/mary-av-danmark.html",
-    "title": "Mary av Danmark",
-    "section": "",
-    "text": "Kön: \nkvinna\n\nKategori: \nutländsk\n\nLand: \nuppgift saknas\n\nKunglig: \nJa\n\nWikidata: \nQ208615\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nSerafimerorden\nRiddare\n6 maj 2024\nuppgift saknas\nKälla Kungahuset.se"
-  },
-  {
-    "objectID": "person/katrin-sjogren.html",
-    "href": "person/katrin-sjogren.html",
-    "title": "Katrin Sjögren",
-    "section": "",
-    "text": "Kön: \nkvinna\n\nKategori: \nutländsk\n\nLand: \nFinland\n\nKunglig: \nNej\n\nWikidata: \nQ2269243\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nNordstjärneorden\nKommendör\njuni 2022\nuppgift saknas\nKälla Wikipedia"
-  },
-  {
-    "objectID": "person/prins-nicolas.html",
-    "href": "person/prins-nicolas.html",
-    "title": "Prins Nicolas",
-    "section": "",
-    "text": "Kön: \nman\n\nKategori: \nsvensk\n\nLand: \nSverige\n\nKunglig: \nJa\n\nWikidata: \nQ20107429\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nSerafimerorden\nLedamot\n15 juni 2015\nuppgift saknas\nKälla Wikipedia\nDatum är födelsedatum: arvsberättigade prinsar och prinsessor är riddare från födseln enligt stadgarna 25 §"
-  },
-  {
-    "objectID": "person/marek-czernis.html",
-    "href": "person/marek-czernis.html",
-    "title": "Marek Czernis",
-    "section": "",
-    "text": "Kön: \nuppgift saknas\n\nKategori: \nutländsk\n\nLand: \nPolen\n\nKunglig: \nNej\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nNordstjärneorden\nRiddare av första klassen\n13 april 2026\nuppgift saknas\nKälla Officiell publikation"
-  },
-  {
-    "objectID": "person/kronprinsessan-victoria.html",
-    "href": "person/kronprinsessan-victoria.html",
-    "title": "Kronprinsessan Victoria",
-    "section": "",
-    "text": "Kön: \nkvinna\n\nKategori: \nsvensk\n\nLand: \nSverige\n\nKunglig: \nJa\n\nWikidata: \nQ156390\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nSerafimerorden\nLedamot\n14 juli 1977\nuppgift saknas\nKälla Wikipedia\nDatum är födelsedatum: arvsberättigade prinsar och prinsessor är riddare från födseln enligt stadgarna 25 §"
-  },
-  {
-    "objectID": "person/reza-pahlavi.html",
-    "href": "person/reza-pahlavi.html",
-    "title": "Reza Pahlavi",
-    "section": "",
-    "text": "Kön: \nman\n\nKategori: \nutländsk\n\nLand: \nuppgift saknas\n\nKunglig: \nJa\n\nWikidata: \nQ334871\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nSerafimerorden\nLedamot\n24 augusti 1970\nuppgift saknas\nKälla Wikipedia"
-  },
-  {
-    "objectID": "person/amanda-sloat.html",
-    "href": "person/amanda-sloat.html",
-    "title": "Amanda Sloat",
-    "section": "",
-    "text": "Kön: \nuppgift saknas\n\nKategori: \nutländsk\n\nLand: \nUSA\n\nKunglig: \nNej\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nNordstjärneorden\nKommendör av första klassen\n22 oktober 2024\nFör extraordinära insatser för svenska intressen\nKälla Regeringen.se"
-  },
-  {
-    "objectID": "person/moon-jae-in.html",
-    "href": "person/moon-jae-in.html",
-    "title": "Moon Jae-in",
-    "section": "",
-    "text": "Kön: \nman\n\nKategori: \nutländsk\n\nLand: \nSydkorea\n\nKunglig: \nNej\n\nWikidata: \nQ21001\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nSerafimerorden\nLedamot\n14 juni 2019\nuppgift saknas\nKälla Wikipedia"
-  },
-  {
-    "objectID": "person/maha-vajiralongkorn.html",
-    "href": "person/maha-vajiralongkorn.html",
-    "title": "Maha Vajiralongkorn",
-    "section": "",
-    "text": "Kön: \nman\n\nKategori: \nutländsk\n\nLand: \nThailand\n\nKunglig: \nJa\n\nWikidata: \nQ548733\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nSerafimerorden\nLedamot\n2003\nuppgift saknas\nKälla Officiell publikation"
-  },
-  {
-    "objectID": "person/juan-carlos-i-av-spanien.html",
-    "href": "person/juan-carlos-i-av-spanien.html",
-    "title": "Juan Carlos I av Spanien",
-    "section": "",
-    "text": "Kön: \nman\n\nKategori: \nutländsk\n\nLand: \nSpanien\n\nKunglig: \nJa\n\nWikidata: \nQ19943\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nSerafimerorden\nLedamot\n5 oktober 1979\nuppgift saknas\nKälla Wikipedia"
-  },
-  {
-    "objectID": "person/michelle-bachelet.html",
-    "href": "person/michelle-bachelet.html",
-    "title": "Michelle Bachelet",
-    "section": "",
-    "text": "Kön: \nkvinna\n\nKategori: \nutländsk\n\nLand: \nChile\n\nKunglig: \nNej\n\nWikidata: \nQ320\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nSerafimerorden\nLedamot\n2016\nuppgift saknas\nKälla Wikipedia"
-  },
-  {
-    "objectID": "person/halla-tomasdottir.html",
-    "href": "person/halla-tomasdottir.html",
-    "title": "Halla Tómasdóttir",
-    "section": "",
-    "text": "Kön: \nkvinna\n\nKategori: \nutländsk\n\nLand: \nIsland\n\nKunglig: \nNej\n\nWikidata: \nQ24494577\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nSerafimerorden\nRiddare\n6 maj 2025\nuppgift saknas\nKälla Kungahuset.se"
-  },
-  {
-    "objectID": "person/carl-xvi-gustaf.html",
-    "href": "person/carl-xvi-gustaf.html",
-    "title": "Carl XVI Gustaf",
-    "section": "",
-    "text": "Kön: \nman\n\nKategori: \nsvensk\n\nLand: \nSverige\n\nKunglig: \nJa\n\nWikidata: \nQ45068\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nSerafimerorden\nLedamot\n30 april 1946\nuppgift saknas\nKälla Kungahuset.se\nDatum är födelsedatum; kungahuset.se anger att insignierna överlämnades vid dopet 7 juni 1946"
-  },
-  {
-    "objectID": "person/ulf-henricsson.html",
-    "href": "person/ulf-henricsson.html",
-    "title": "Ulf Henricsson",
-    "section": "",
-    "text": "Kön: \nuppgift saknas\n\nKategori: \nsvensk\n\nLand: \nuppgift saknas\n\nKunglig: \nNej\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nSvärdsorden\nKommendör av första klassen\n21 mars 2024\nFör mycket föredömligt ledarskap under krigsliknande förhållanden i forna Jugoslavien\nKälla Kungahuset.se\nKategori (svensk/utländsk) är inte angiven för den enskilda personen i källan och kunde inte kontrolleras i Wikidata"
-  },
-  {
-    "objectID": "person/margrethe-ii-av-danmark.html",
-    "href": "person/margrethe-ii-av-danmark.html",
-    "title": "Margrethe II av Danmark",
-    "section": "",
-    "text": "Kön: \nkvinna\n\nKategori: \nutländsk\n\nLand: \nDanmark\n\nKunglig: \nJa\n\nWikidata: \nQ102139\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nSerafimerorden\nLedamot\n10 april 1958\nuppgift saknas\nKälla Wikipedia"
-  },
-  {
-    "objectID": "person/beatrix-av-nederlanderna.html",
-    "href": "person/beatrix-av-nederlanderna.html",
-    "title": "Beatrix av Nederländerna",
-    "section": "",
-    "text": "Kön: \nkvinna\n\nKategori: \nutländsk\n\nLand: \nNederländerna\n\nKunglig: \nJa\n\nWikidata: \nQ29574\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nSerafimerorden\nLedamot\n6 oktober 1976\nuppgift saknas\nKälla Wikipedia"
-  },
-  {
-    "objectID": "person/torsten-petre.html",
-    "href": "person/torsten-petre.html",
-    "title": "Torsten Petré",
-    "section": "",
-    "text": "Kön: \nman\n\nKategori: \nsvensk\n\nLand: \nSverige\n\nKunglig: \nNej\n\nWikidata: \nQ134800325\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nSvärdsorden\nRiddare av första klassen\n1974\nuppgift saknas\nKälla Officiell publikation"
-  },
-  {
-    "objectID": "person/antonia-axson-johnson.html",
-    "href": "person/antonia-axson-johnson.html",
-    "title": "Antonia Ax:son Johnson",
-    "section": "",
-    "text": "Kön: \nuppgift saknas\n\nKategori: \nsvensk\n\nLand: \nuppgift saknas\n\nKunglig: \nNej\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nVasaorden\nKommendör med stora korset\n21 mars 2024\nFör utomordentliga insatser inom näringsliv och andra samhällssektorer\nKälla Kungahuset.se\nKategori och land är hämtade från medborgarskap i Wikidata (P27); källan anger inte detta per person"
-  },
-  {
-    "objectID": "person/majvor-ostergren.html",
-    "href": "person/majvor-ostergren.html",
-    "title": "Majvor Östergren",
-    "section": "",
-    "text": "Kön: \nuppgift saknas\n\nKategori: \nsvensk\n\nLand: \nuppgift saknas\n\nKunglig: \nNej\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nNordstjärneorden\nRiddare av första klassen\n30 april 2025\nFör betydelsefulla insatser för att värna det gotländska kulturarvet\nKälla Kungahuset.se\nKategori och land är hämtade från medborgarskap i Wikidata (P27); källan anger inte detta per person"
-  },
-  {
-    "objectID": "person/bjorn-ulvaeus.html",
-    "href": "person/bjorn-ulvaeus.html",
-    "title": "Björn Ulvaeus",
-    "section": "",
-    "text": "Kön: \nuppgift saknas\n\nKategori: \nsvensk\n\nLand: \nuppgift saknas\n\nKunglig: \nNej\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nVasaorden\nKommendör av första klassen\n21 mars 2024\nFör mycket framstående insatser inom svenskt och internationellt musikliv\nKälla Kungahuset.se\nKategori och land är hämtade från medborgarskap i Wikidata (P27); källan anger inte detta per person"
-  },
-  {
-    "objectID": "person/petar-stojanov.html",
-    "href": "person/petar-stojanov.html",
-    "title": "Petăr Stojanov",
-    "section": "",
-    "text": "Kön: \nman\n\nKategori: \nutländsk\n\nLand: \nBulgarien\n\nKunglig: \nNej\n\nWikidata: \nQ81215\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nSerafimerorden\nLedamot\n27 oktober 2000\nuppgift saknas\nKälla Wikipedia"
-  },
-  {
-    "objectID": "person/arvo-part.html",
-    "href": "person/arvo-part.html",
-    "title": "Arvo Pärt",
-    "section": "",
-    "text": "Kön: \nman\n\nKategori: \nutländsk\n\nLand: \nuppgift saknas\n\nKunglig: \nNej\n\nWikidata: \nQ189534\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nNordstjärneorden\nKommendör med stora korset\nmaj 2023\nuppgift saknas\nKälla Tidning"
-  },
-  {
-    "objectID": "person/svante-paabo.html",
-    "href": "person/svante-paabo.html",
-    "title": "Svante Pääbo",
-    "section": "",
-    "text": "Kön: \nuppgift saknas\n\nKategori: \nsvensk\n\nLand: \nuppgift saknas\n\nKunglig: \nNej\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nNordstjärneorden\nKommendör med stora korset\n21 mars 2024\nFör utomordentliga forskningsinsatser\nKälla Kungahuset.se\nKategori och land är hämtade från medborgarskap i Wikidata (P27); källan anger inte detta per person"
-  },
-  {
-    "objectID": "person/ghida-talal.html",
-    "href": "person/ghida-talal.html",
-    "title": "Ghida Talal",
-    "section": "",
-    "text": "Kön: \nkvinna\n\nKategori: \nutländsk\n\nLand: \nLibanon\n\nKunglig: \nJa\n\nWikidata: \nQ16195076\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nNordstjärneorden\nKommendör med stora korset\nnovember 2022\nuppgift saknas\nKälla Kungahuset.se"
-  },
-  {
-    "objectID": "person/prinsessan-maxima.html",
-    "href": "person/prinsessan-maxima.html",
-    "title": "Prinsessan Máxima",
-    "section": "",
-    "text": "Kön: \nkvinna\n\nKategori: \nutländsk\n\nLand: \nuppgift saknas\n\nKunglig: \nJa\n\nWikidata: \nQ460960\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nNordstjärneorden\nKommendör med stora korset\n2009\nuppgift saknas\nKälla Kungahuset.se\n\n\n\nSerafimerorden\nLedamot\n11 oktober 2022\nuppgift saknas\nKälla Kungahuset.se\nFlera medborgarskap i Wikidata; land är inte angivet"
-  },
-  {
-    "objectID": "person/marie-goranzon-malmsjo.html",
-    "href": "person/marie-goranzon-malmsjo.html",
-    "title": "Marie Göranzon Malmsjö",
-    "section": "",
-    "text": "Kön: \nuppgift saknas\n\nKategori: \nsvensk\n\nLand: \nuppgift saknas\n\nKunglig: \nNej\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nVasaorden\nKommendör\n30 april 2025\nFör framstående insatser som skådespelerska\nKälla Kungahuset.se\nKategori (svensk/utländsk) är inte angiven för den enskilda personen i källan och kunde inte kontrolleras i Wikidata"
-  },
-  {
-    "objectID": "person/michiko.html",
-    "href": "person/michiko.html",
-    "title": "Michiko",
-    "section": "",
-    "text": "Kön: \nkvinna\n\nKategori: \nutländsk\n\nLand: \nJapan\n\nKunglig: \nJa\n\nWikidata: \nQ87610\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nSerafimerorden\nLedamot\n18 maj 2000\nuppgift saknas\nKälla Wikipedia"
-  },
-  {
-    "objectID": "person/timo-kivinen.html",
-    "href": "person/timo-kivinen.html",
-    "title": "Timo Kivinen",
-    "section": "",
-    "text": "Kön: \nman\n\nKategori: \nutländsk\n\nLand: \nFinland\n\nKunglig: \nNej\n\nWikidata: \nQ16299896\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nNordstjärneorden\nKommendör med stora korset\n17 september 2021\nGeneral Timo Kivinen har både i sin nuvarande roll som kommendör för Finlands försvarsmakt, och i sin tidigare roll som försvarsmaktens strategichef bidragit till en mycket positiv utveckling av det finsk-svenska försvarssamarbetet.\nKälla Kungahuset.se"
-  },
-  {
-    "objectID": "person/hassanal-bolkiah.html",
-    "href": "person/hassanal-bolkiah.html",
-    "title": "Hassanal Bolkiah",
-    "section": "",
-    "text": "Kön: \nman\n\nKategori: \nutländsk\n\nLand: \nBrunei\n\nKunglig: \nJa\n\nWikidata: \nQ57327\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nSerafimerorden\nLedamot\n7 februari 2004\nuppgift saknas\nKälla Wikipedia"
-  },
-  {
-    "objectID": "person/hakan-lans.html",
-    "href": "person/hakan-lans.html",
-    "title": "Håkan Lans",
-    "section": "",
-    "text": "Kön: \nuppgift saknas\n\nKategori: \nsvensk\n\nLand: \nuppgift saknas\n\nKunglig: \nNej\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nVasaorden\nKommendör\n30 april 2025\nFör framstående insatser som uppfinnare\nKälla Kungahuset.se\nKategori och land är hämtade från medborgarskap i Wikidata (P27); källan anger inte detta per person"
-  },
-  {
-    "objectID": "person/tarja-halonen.html",
-    "href": "person/tarja-halonen.html",
-    "title": "Tarja Halonen",
-    "section": "",
-    "text": "Kön: \nkvinna\n\nKategori: \nutländsk\n\nLand: \nFinland\n\nKunglig: \nNej\n\nWikidata: \nQ29213\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nSerafimerorden\nLedamot\n2000\nuppgift saknas\nKälla Wikipedia"
-  },
-  {
-    "objectID": "person/mikael-reuter.html",
-    "href": "person/mikael-reuter.html",
-    "title": "Mikael Reuter",
-    "section": "",
-    "text": "Kön: \nman\n\nKategori: \nutländsk\n\nLand: \nFinland\n\nKunglig: \nNej\n\nWikidata: \nQ6068829\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nNordstjärneorden\nRiddare av första klassen\n2006\nuppgift saknas\nKälla Wikipedia"
-  },
-  {
-    "objectID": "person/antony-blinken.html",
-    "href": "person/antony-blinken.html",
-    "title": "Antony Blinken",
-    "section": "",
-    "text": "Kön: \nuppgift saknas\n\nKategori: \nutländsk\n\nLand: \nUSA\n\nKunglig: \nNej\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nNordstjärneorden\nKommendör med stora korset\n22 oktober 2024\nFör extraordinära insatser för svenska intressen\nKälla Regeringen.se\nKällorna formulerar motiveringen olika"
-  },
-  {
-    "objectID": "person/michael-kaiser.html",
-    "href": "person/michael-kaiser.html",
-    "title": "Michael Kaiser",
-    "section": "",
-    "text": "Kön: \nman\n\nKategori: \nutländsk\n\nLand: \nUSA\n\nKunglig: \nNej\n\nWikidata: \nQ14905183\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nNordstjärneorden\nKommendör\n2013\nuppgift saknas\nKälla Wikipedia"
-  },
-  {
-    "objectID": "person/letizia-av-spanien.html",
-    "href": "person/letizia-av-spanien.html",
-    "title": "Letizia av Spanien",
-    "section": "",
-    "text": "Kön: \nkvinna\n\nKategori: \nutländsk\n\nLand: \nSpanien\n\nKunglig: \nJa\n\nWikidata: \nQ201589\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nSerafimerorden\nLedamot\n24 november 2021\nuppgift saknas\nKälla Kungahuset.se"
-  },
-  {
-    "objectID": "person/drottning-silvia.html",
-    "href": "person/drottning-silvia.html",
-    "title": "Drottning Silvia",
-    "section": "",
-    "text": "Kön: \nkvinna\n\nKategori: \nsvensk\n\nLand: \nSverige\n\nKunglig: \nJa\n\nWikidata: \nQ152308\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nSerafimerorden\nLedamot\n6 maj 1976\nuppgift saknas\nKälla Wikipedia\nDatum från svensk Wikipedia (6 maj 1976) avviker från födelse- och vigseldatum"
-  },
-  {
-    "objectID": "person/frederik-x-av-danmark.html",
-    "href": "person/frederik-x-av-danmark.html",
-    "title": "Frederik X av Danmark",
-    "section": "",
-    "text": "Kön: \nman\n\nKategori: \nutländsk\n\nLand: \nuppgift saknas\n\nKunglig: \nJa\n\nWikidata: \nQ1004037\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nSerafimerorden\nRiddare med kedja\n6 maj 2024\nuppgift saknas\nKälla Kungahuset.se\n\n\n\nSerafimerorden\nLedamot\n1993\nuppgift saknas\nKälla Kungahuset.se\nFlera medborgarskap i Wikidata; land är inte angivet"
-  },
-  {
-    "objectID": "person/bjrn-stai.html",
-    "href": "person/bjrn-stai.html",
-    "title": "Bjørn Stai",
-    "section": "",
-    "text": "Kön: \nuppgift saknas\n\nKategori: \nutländsk\n\nLand: \nNorge\n\nKunglig: \nNej\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nSvärdsorden\nKommendör\n14 oktober 2024\nuppgift saknas\nKälla Tidning"
-  },
-  {
-    "objectID": "person/abdullah-gul.html",
-    "href": "person/abdullah-gul.html",
-    "title": "Abdullah Gül",
-    "section": "",
-    "text": "Kön: \nman\n\nKategori: \nutländsk\n\nLand: \nTurkiet\n\nKunglig: \nNej\n\nWikidata: \nQ42852\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nSerafimerorden\nLedamot\n11 mars 2013\nuppgift saknas\nKälla Wikipedia"
-  },
-  {
-    "objectID": "person/stig-stromholm.html",
-    "href": "person/stig-stromholm.html",
-    "title": "Stig Strömholm",
-    "section": "",
-    "text": "Kön: \nman\n\nKategori: \nsvensk\n\nLand: \nSverige\n\nKunglig: \nNej\n\nWikidata: \nQ446338\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nNordstjärneorden\nRiddare\n1973\nuppgift saknas\nKälla Wikipedia"
-  },
-  {
-    "objectID": "person/gunilla-arhen.html",
-    "href": "person/gunilla-arhen.html",
-    "title": "Gunilla Arhén",
-    "section": "",
-    "text": "Kön: \nuppgift saknas\n\nKategori: \nsvensk\n\nLand: \nuppgift saknas\n\nKunglig: \nNej\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nVasaorden\nKommendör\n30 april 2025\nFör framstående insatser för kvinnors ledarskap\nKälla Kungahuset.se\nKategori och land är hämtade från medborgarskap i Wikidata (P27); källan anger inte detta per person"
-  },
-  {
-    "objectID": "person/prinsessan-christina-fru-magnuson.html",
-    "href": "person/prinsessan-christina-fru-magnuson.html",
-    "title": "Prinsessan Christina, fru Magnuson",
-    "section": "",
-    "text": "Kön: \nkvinna\n\nKategori: \nsvensk\n\nLand: \nSverige\n\nKunglig: \nJa\n\nWikidata: \nQ2268637\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nSerafimerorden\nLedamot\n15 juni 1974\nuppgift saknas\nKälla Wikipedia\nDatum är vigseldatum från Wikidata; källan anger inte datumet"
-  },
-  {
-    "objectID": "person/anne-lhuillier-wahlstrom.html",
-    "href": "person/anne-lhuillier-wahlstrom.html",
-    "title": "Anne L’Huillier Wahlström",
-    "section": "",
-    "text": "Kön: \nuppgift saknas\n\nKategori: \nsvensk\n\nLand: \nuppgift saknas\n\nKunglig: \nNej\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nNordstjärneorden\nKommendör med stora korset\n21 mars 2024\nFör utomordentliga forskningsinsatser\nKälla Kungahuset.se\nKategori (svensk/utländsk) är inte angiven för den enskilda personen i källan och kunde inte kontrolleras i Wikidata"
-  },
-  {
-    "objectID": "person/raul-eamets.html",
-    "href": "person/raul-eamets.html",
-    "title": "Raul Eamets",
-    "section": "",
-    "text": "Kön: \nman\n\nKategori: \nutländsk\n\nLand: \nEstland\n\nKunglig: \nNej\n\nWikidata: \nQ16403742\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nNordstjärneorden\nKommendör\nmaj 2023\nuppgift saknas\nKälla Officiell publikation"
-  },
-  {
-    "objectID": "person/camilla-gunell.html",
-    "href": "person/camilla-gunell.html",
-    "title": "Camilla Gunell",
-    "section": "",
-    "text": "Kön: \nkvinna\n\nKategori: \nutländsk\n\nLand: \nFinland\n\nKunglig: \nNej\n\nWikidata: \nQ2270164\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nNordstjärneorden\nKommendör\njuni 2022\nuppgift saknas\nKälla Wikipedia"
-  },
-  {
-    "objectID": "person/adam-daniel-rotfeld.html",
-    "href": "person/adam-daniel-rotfeld.html",
-    "title": "Adam Daniel Rotfeld",
-    "section": "",
-    "text": "Kön: \nman\n\nKategori: \nutländsk\n\nLand: \nPolen\n\nKunglig: \nNej\n\nWikidata: \nQ319551\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nNordstjärneorden\nKommendör\n2001\nuppgift saknas\nKälla Wikipedia"
-  },
-  {
-    "objectID": "person/viktor-jusjtjenko.html",
-    "href": "person/viktor-jusjtjenko.html",
-    "title": "Viktor Jusjtjenko",
-    "section": "",
-    "text": "Kön: \nman\n\nKategori: \nutländsk\n\nLand: \nUkraina\n\nKunglig: \nNej\n\nWikidata: \nQ1459699\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nSerafimerorden\nLedamot\n2008\nuppgift saknas\nKälla Wikipedia"
-  },
-  {
-    "objectID": "person/benny-andersson.html",
-    "href": "person/benny-andersson.html",
-    "title": "Benny Andersson",
-    "section": "",
-    "text": "Kön: \nuppgift saknas\n\nKategori: \nsvensk\n\nLand: \nuppgift saknas\n\nKunglig: \nNej\n\n\n\n\n\nOrden\nGrad\nDatum\nMotivering\nKälla\nNotering\n\n\n\n\nVasaorden\nKommendör av första klassen\n21 mars 2024\nFör mycket framstående insatser inom svenskt och internationellt musikliv\nKälla Kungahuset.se\nKategori (svensk/utländsk) är inte angiven för den enskilda personen i källan och kunde inte kontrolleras i Wikidata"
   },
   {
     "objectID": "ordnar/svardsorden.html",
@@ -1363,40 +1335,5 @@
     "title": "Öppna data",
     "section": "",
     "text": "Alla filer nedan innehåller bara levande mottagare. Avlidna mottagare tas bort från exporten men finns kvar i den interna datakällan.\n\ntilldelningar.csv: en rad per tilldelning\ntilldelningar.json: samma data som JSON\ngrader.csv: ordenens grader med förkortningar och bärordning\nandringslogg.csv: ändringslogg\nfeed.xml: Atom-flöde med de senaste tilldelningarna\n\nFilen tilldelningar.csv är UTF-8 med BOM."
-  },
-  {
-    "objectID": "statistik.html",
-    "href": "statistik.html",
-    "title": "Statistik",
-    "section": "",
-    "text": "Antal levande mottagare per orden. En person räknas en gång per orden. Kön och land hämtas från källor eller Wikidata; där uppgiften saknas står “uppgift saknas”."
-  },
-  {
-    "objectID": "statistik.html#totalt-per-orden",
-    "href": "statistik.html#totalt-per-orden",
-    "title": "Statistik",
-    "section": "Totalt per orden",
-    "text": "Totalt per orden\n\n\n\n\n\n\n\n\n\n\n\nMottagare per orden"
-  },
-  {
-    "objectID": "statistik.html#per-grad",
-    "href": "statistik.html#per-grad",
-    "title": "Statistik",
-    "section": "Per grad",
-    "text": "Per grad\n\n\n\n\n\n\n\n\n\n\n\nMottagare per grad"
-  },
-  {
-    "objectID": "statistik.html#per-kön",
-    "href": "statistik.html#per-kön",
-    "title": "Statistik",
-    "section": "Per kön",
-    "text": "Per kön\n\n\n\n\n\n\n\n\n\n\n\nMottagare per kön och orden"
-  },
-  {
-    "objectID": "statistik.html#per-land-utländska-mottagare",
-    "href": "statistik.html#per-land-utländska-mottagare",
-    "title": "Statistik",
-    "section": "Per land (utländska mottagare)",
-    "text": "Per land (utländska mottagare)"
   }
 ]
