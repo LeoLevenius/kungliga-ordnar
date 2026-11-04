@@ -1,3 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&display=swap");
+
+:root {
+  --marin: #14284b;
+  --marin-mork: #0d1b33;
+  --guld: #b8934a;
+  --guld-ljus: #e6d3a3;
+  --pergament: #f7f4ec;
+  --bla-ton: #eef2f8;
+  --linje: #d9dde5;
+  --text: #1f2430;
+  --text-dampad: #5b6270;
+  --serif: "Cormorant Garamond", "Iowan Old Style", Georgia, serif;
+}
+
+html body {
+  color: var(--text);
+  background: #fff;
+}
+
+html body a {
+  color: var(--marin);
+  text-decoration-color: var(--guld);
+  text-underline-offset: 2px;
+}
+
+html body a:hover {
+  color: var(--guld);
+}
+
+.navbar {
+  background: var(--marin) !important;
+  border-bottom: 3px solid var(--guld);
+}
+
+.navbar .navbar-brand,
+.navbar .navbar-brand .navbar-title {
+  font-family: var(--serif);
+  font-size: 1.55rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  color: #fff !important;
+}
+
+.navbar .nav-link,
+.navbar .navbar-nav .nav-link {
+  color: rgba(255, 255, 255, 0.78) !important;
+  border-bottom: 2px solid transparent;
+  padding-bottom: 0.3rem;
+}
+
+.navbar .nav-link:hover {
+  color: #fff !important;
+  border-bottom-color: var(--guld-ljus);
+}
+
+.navbar .nav-link.active,
+.navbar .nav-link.active:hover {
+  color: #fff !important;
+  border-bottom-color: var(--guld);
+}
+
+.navbar .quarto-navbar-tools a,
+.navbar #quarto-search .aa-DetachedSearchButton,
+.navbar .aa-DetachedSearchButton .aa-DetachedSearchButtonIcon {
+  color: rgba(255, 255, 255, 0.85) !important;
+}
+
+.navbar #quarto-search .aa-DetachedSearchButton,
+.navbar #quarto-search .aa-DetachedSearchButton:hover {
+  opacity: 1;
+}
+
+.navbar #quarto-search svg,
+.navbar #quarto-search .aa-SubmitIcon {
+  color: #fff !important;
+  fill: #fff;
+}
+
+.navbar-toggler {
+  border-color: rgba(255, 255, 255, 0.4);
+}
+
+.navbar-toggler-icon {
+  filter: invert(1);
+}
+
+#title-block-header {
+  margin-bottom: 1.4rem;
+}
+
+h1.title,
+h2,
+h3 {
+  font-family: var(--serif);
+  color: var(--marin);
+  letter-spacing: 0.005em;
+}
+
+h1.title {
+  font-size: 2.9rem;
+  font-weight: 700;
+  padding-bottom: 0.45rem;
+  margin-bottom: 0;
+  position: relative;
+}
+
+h1.title::after {
+  content: "";
+  display: block;
+  width: 72px;
+  height: 3px;
+  margin-top: 0.5rem;
+  background: var(--guld);
+}
+
+h2 {
+  font-size: 1.85rem;
+  font-weight: 700;
+  margin-top: 2.6rem;
+  padding-bottom: 0.3rem;
+  border-bottom: 1px solid var(--linje);
+}
+
+h3 {
+  font-size: 1.45rem;
+  font-weight: 700;
+}
+
+main.content {
+  padding-top: 1.2rem;
+  padding-bottom: 3rem;
+}
+
+.nav-footer {
+  background: var(--marin-mork);
+  color: rgba(255, 255, 255, 0.72);
+  border-top: 3px solid var(--guld);
+  font-size: 0.85rem;
+  padding: 1.1rem 0;
+}
+
+.nav-footer a {
+  color: var(--guld-ljus);
+}
+
 html body .page-columns {
   grid-template-columns:
     [screen-start] 1.5em
@@ -9,20 +155,32 @@ html body .page-columns {
 
 .kalltyp {
   display: inline-block;
-  font-size: 0.75em;
-  padding: 1px 6px;
-  border-radius: 4px;
-  background: #e8ecf2;
-  color: #333;
+  font-size: 0.72em;
+  padding: 1px 8px;
+  border-radius: 999px;
+  background: var(--bla-ton);
+  color: var(--marin);
+  border: 1px solid var(--linje);
   white-space: nowrap;
 }
 
 .intro {
   max-width: 75ch;
+  font-size: 1.05rem;
+  line-height: 1.65;
+  padding: 1.1rem 1.4rem;
+  background: var(--pergament);
+  border-left: 4px solid var(--guld);
+  border-radius: 0 6px 6px 0;
+  margin-bottom: 1.6rem;
+}
+
+.intro p:last-child {
+  margin-bottom: 0;
 }
 
 .saknas {
-  color: #777;
+  color: var(--text-dampad);
   font-style: italic;
 }
 
@@ -31,28 +189,58 @@ table.person-tabell {
   border-collapse: collapse;
 }
 
-table.person-tabell th,
+table.person-tabell th {
+  text-align: left;
+  padding: 8px 10px;
+  background: var(--bla-ton);
+  color: var(--marin);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  border-bottom: 2px solid var(--guld);
+  vertical-align: bottom;
+}
+
 table.person-tabell td {
   text-align: left;
-  padding: 6px 8px;
-  border-bottom: 1px solid #ddd;
+  padding: 8px 10px;
+  border-bottom: 1px solid var(--linje);
   vertical-align: top;
 }
 
+table.person-tabell.table-striped > tbody > tr:nth-of-type(odd) > * {
+  --bs-table-bg-type: transparent;
+  background: #fff;
+}
+
+table.person-tabell tbody tr:hover td {
+  background: var(--pergament);
+}
+
 figure.bild {
-  margin: 0 0 1rem;
-  max-width: 420px;
+  margin: 0 0 1.4rem;
+  max-width: 340px;
+  padding: 10px 10px 8px;
+  background: #fff;
+  border: 1px solid var(--linje);
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(20, 40, 75, 0.08);
 }
 
 figure.bild img {
+  display: block;
   max-width: 100%;
   height: auto;
-  border: 1px solid #ddd;
+  margin: 0 auto;
+  border-radius: 4px;
 }
 
 figure.bild figcaption {
+  margin-top: 0.5rem;
   font-size: 0.8rem;
-  color: #444;
+  line-height: 1.4;
+  color: var(--text-dampad);
 }
 
 .bildgrid {
@@ -63,6 +251,8 @@ figure.bild figcaption {
 }
 
 img.skold {
+  display: block;
+  margin: 0 auto;
   height: 56px;
   width: auto;
   max-width: 64px;
@@ -70,15 +260,55 @@ img.skold {
 }
 
 .verifierad {
+  display: inline-block;
+  padding: 0.35rem 0.8rem;
+  background: #eaf5ee;
+  border: 1px solid #b9dcc6;
+  border-radius: 6px;
   color: #1a6b3c;
 }
 
 .bildkredit {
-  color: #555;
+  color: var(--text-dampad);
+}
+
+.html-widget {
+  margin-bottom: 1.2rem;
 }
 
 .reactable {
-  font-size: 0.9rem;
+  font-size: 0.92rem;
+  border: 1px solid var(--linje);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.reactable .rt-thead .rt-th,
+.reactable .rt-thead .rt-td {
+  background: var(--bla-ton);
+  color: var(--marin);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  border-bottom: 2px solid var(--guld) !important;
+}
+
+.reactable .rt-tbody .rt-tr:hover {
+  background: var(--pergament) !important;
+}
+
+.reactable .rt-tbody .rt-tr-group {
+  border-bottom-color: var(--linje);
+}
+
+.reactable .rt-search {
+  border-color: var(--linje);
+}
+
+.reactable .rt-page-button-current,
+.reactable .rt-page-button:hover {
+  color: var(--marin);
 }
 
 @media (max-width: 600px) {
@@ -86,4 +316,3 @@ img.skold {
     font-size: 0.8rem;
   }
 }
-img.skold{display:block;margin:0 auto;}
