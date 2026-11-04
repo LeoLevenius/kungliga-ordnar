@@ -5,6 +5,7 @@ project:
   post-render: Rscript R/export.R
   resources:
     - img
+    - redigera.js
 
 website:
   title: "Kungliga ordnar"
@@ -28,7 +29,11 @@ website:
         href: oppna-data.qmd
       - text: Bevakning
         href: bevakning.qmd
-  page-footer: "Källor: kungahuset.se, regeringen.se, kungligmajestatsorden.se. Avlidna mottagare visas inte."
+  page-footer:
+    left: "Källor: kungahuset.se, regeringen.se, kungligmajestatsorden.se. Avlidna mottagare visas inte."
+    right:
+      - text: Redigera
+        href: redigera.qmd
 
 format:
   html:
@@ -39,6 +44,9 @@ format:
     language:
       skip-to-content: "Hoppa till huvudinnehållet"
     toc: false
+    include-in-header:
+      - text: |
+          <script>try{if(localStorage.getItem("kungliga-ordnar-token"))document.documentElement.classList.add("redigerare")}catch(e){}</script>
 
 lang: sv
 

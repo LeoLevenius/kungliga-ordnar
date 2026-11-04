@@ -1,0 +1,11 @@
+---
+title: "Redigera"
+include-in-header:
+  - text: |
+      <meta name="robots" content="noindex, nofollow">
+---
+
+```{=html}
+<div id="redigera" class="redigera"><noscript>Redigeringen kräver JavaScript.</noscript></div>
+<script src="redigera.js"></script>
+```

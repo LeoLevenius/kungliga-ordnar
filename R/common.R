@@ -413,6 +413,7 @@ person_page <- function(t, id, pfx = "../") {
       tags$thead(tags$tr(tags$th("Orden"), tags$th("Grad"), tags$th("Yrke/titel"), tags$th("Datum"),
                          tags$th("Motivering"), tags$th("Källa"), tags$th("Notering"),
                          tags$th("Kungl. Maj:ts Orden"))),
-      tags$tbody(rows))
+      tags$tbody(rows)),
+    tags$p(class = "redigera-lank", tags$a(href = paste0(pfx, "redigera.html#person=", pid), "Redigera personen"))
   )
 }
