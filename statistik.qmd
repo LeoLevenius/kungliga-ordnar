@@ -6,7 +6,9 @@ title: "Statistik"
 source("R/common.R")
 library(ggplot2)
 t <- load_tilldelningar()
-p <- unique(t[grad != "Herre och mästare", .(person_id, orden, grad, kon_txt, land_txt, kategori)])
+h <- t[grad != "Herre och mästare"]
+setorderv(h, "rang")
+p <- h[!duplicated(paste(person_id, orden)), .(person_id, orden, grad, kon_txt, land_txt, kategori)]
 ```
 
 Antal levande mottagare per orden. En person räknas en gång per orden. Kön och land hämtas från källor eller Wikidata; där uppgiften saknas står "uppgift saknas".

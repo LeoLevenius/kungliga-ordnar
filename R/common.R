@@ -22,7 +22,81 @@ fmt_datum <- function(x) {
   fifelse(ok, out, x)
 }
 
-sortnyckel <- function(x) tolower(chartr("ÅÄÖåäö", "{|}{|}", x))
+sortnyckel <- function(x) {
+  par <- c("Å" = "{", "å" = "{", "Ä" = "|", "ä" = "|", "Æ" = "|", "æ" = "|",
+           "Ö" = "}", "ö" = "}", "Ø" = "}", "ø" = "}",
+           "Á" = "A", "À" = "A", "Â" = "A", "Ã" = "A", "á" = "a", "à" = "a", "â" = "a", "ã" = "a",
+           "É" = "E", "È" = "E", "Ê" = "E", "Ë" = "E", "é" = "e", "è" = "e", "ê" = "e", "ë" = "e",
+           "Í" = "I", "Ì" = "I", "Î" = "I", "Ï" = "I", "í" = "i", "ì" = "i", "î" = "i", "ï" = "i",
+           "Ó" = "O", "Ò" = "O", "Ô" = "O", "Õ" = "O", "ó" = "o", "ò" = "o", "ô" = "o", "õ" = "o",
+           "Ú" = "U", "Ù" = "U", "Û" = "U", "Ü" = "U", "ú" = "u", "ù" = "u", "û" = "u", "ü" = "u",
+           "Ý" = "Y", "ý" = "y", "ÿ" = "y", "Ñ" = "N", "ñ" = "n", "Ç" = "C", "ç" = "c",
+           "Š" = "S", "š" = "s", "Ž" = "Z", "ž" = "z", "Ł" = "L", "ł" = "l", "Ć" = "C", "ć" = "c",
+           "Ń" = "N", "ń" = "n", "Ś" = "S", "ś" = "s", "Ź" = "Z", "ź" = "z", "Ż" = "Z", "ż" = "z",
+           "Č" = "C", "č" = "c", "Ř" = "R", "ř" = "r", "Ě" = "E", "ě" = "e", "Ő" = "O", "ő" = "o",
+           "Ð" = "D", "ð" = "d", "Þ" = "T", "þ" = "t", "Ğ" = "G", "ğ" = "g", "ı" = "i",
+           "ā" = "a", "ē" = "e", "ī" = "i", "ū" = "u", "ķ" = "k", "ģ" = "g", "ļ" = "l", "ņ" = "n",
+           "ė" = "e", "ų" = "u", "ą" = "a", "ę" = "e", "į" = "i", "ž" = "z", "’" = "'")
+  tolower(chartr(paste(names(par), collapse = ""), paste(par, collapse = ""), x))
+}
+
+EFTERNAMN_OVERSTYR <- c(
+  "Anne L'Huillier Wahlström" = "L'Huillier Wahlström, Anne",
+  "Anne L’Huillier Wahlström" = "L'Huillier Wahlström, Anne",
+  "Antonia Ax:son Johnson" = "Ax:son Johnson, Antonia",
+  "Aníbal Cavaco Silva" = "Cavaco Silva, Aníbal",
+  "Maria Cavaco Silva" = "Cavaco Silva, Maria",
+  "Eduardo Frei Ruiz-Tagle" = "Frei Ruiz-Tagle, Eduardo",
+  "Marie Göranzon Malmsjö" = "Göranzon Malmsjö, Marie",
+  "Lee Myung-bak" = "Lee, Myung-bak",
+  "Moon Jae-in" = "Moon, Jae-in",
+  "Kwek Siew Jin" = "Kwek, Siew Jin",
+  "Jaime Carvajal y Urquijo, 5:e markis av Isasi" = "Carvajal y Urquijo, Jaime",
+  "George Leonard Carey, Baron Carey of Clifton, PC FRSA FKC" = "Carey, George Leonard",
+  "Edmundo Pérez Yoma" = "Pérez Yoma, Edmundo",
+  "Feliciano Barrios Pintado" = "Barrios Pintado, Feliciano",
+  "Lorenzo Vignal Seelbach" = "Vignal Seelbach, Lorenzo",
+  "Pedro Joaquín Coldwell" = "Joaquín Coldwell, Pedro",
+  "Luis Francisco García Cerezo" = "García Cerezo, Luis Francisco",
+  "Luigi Guidobono Cavalchini Garofoli" = "Guidobono Cavalchini Garofoli, Luigi",
+  "Antonio Martins da Cruz" = "Martins da Cruz, Antonio",
+  "Estela Barnes de Carlotto" = "Barnes de Carlotto, Estela",
+  "François Polge de Combret" = "Polge de Combret, François",
+  "Véronique Paulus de Châtelet" = "Paulus de Châtelet, Véronique",
+  "Ingrid Le Roux" = "Le Roux, Ingrid",
+  "Anders Fogh Rasmussen" = "Fogh Rasmussen, Anders",
+  "Jørgen Ørstrøm Møller" = "Ørstrøm Møller, Jørgen",
+  "Annette Koch Byrdal" = "Koch Byrdal, Annette",
+  "Else Bugge Fougner" = "Bugge Fougner, Else",
+  "Susan Weber Soros" = "Weber Soros, Susan"
+)
+
+PARTIKLAR <- c("von", "van", "de", "der", "den", "af", "la", "le", "el", "al", "di", "da",
+               "dos", "du", "des", "del", "della", "ter", "zu", "vom")
+
+efternamn_forst <- function(namn) {
+  vapply(namn, function(n) {
+    o <- EFTERNAMN_OVERSTYR[n]
+    if (!is.na(o)) return(unname(o))
+    fodd <- ""
+    if (grepl(" f\\. ", n)) {
+      fodd <- sub(" (DBE|CBE|OBE|KBE)$", "", sub("^.* f\\. ", "", n))
+      n <- sub(" f\\. .*$", "", n)
+    }
+    t <- strsplit(trimws(n), "\\s+")[[1]]
+    if (length(t) < 2) return(n)
+    efter <- t[length(t)]
+    fore <- t[-length(t)]
+    part <- character()
+    while (length(fore) && tolower(fore[length(fore)]) %in% PARTIKLAR) {
+      part <- c(fore[length(fore)], part)
+      fore <- fore[-length(fore)]
+    }
+    res <- paste0(efter, ", ", paste(c(fore, part), collapse = " "))
+    if (nzchar(fodd)) res <- paste0(res, " (f. ", fodd, ")")
+    res
+  }, character(1), USE.NAMES = FALSE)
+}
 
 LANG_SV <- reactableLang(
   searchPlaceholder = "Sök",
@@ -189,25 +263,16 @@ source_html <- function(url, typ, namn = NULL) {
           htmlEscape(url), aria, htmlEscape(label))
 }
 
-select_filter <- function(tid) {
-  function(values, name) {
-    tags$select(
-      onchange = sprintf("Reactable.setFilter('%s', '%s', event.target.value)", tid, name),
-      `aria-label` = "Filtrera på kunglig",
-      tags$option(value = "", "Alla"),
-      tags$option(value = "Ja", "Ja"),
-      tags$option(value = "Nej", "Nej")
-    )
-  }
-}
-
-order_table <- function(t, orden, kat, pfx = "", tid) {
+order_table <- function(t, orden, kat, pfx = "", tid, kungl = FALSE) {
   o <- orden
   k <- kat
-  d <- t[orden == o & kategori == k & grad != "Herre och mästare"]
-  d[, sortnamn := sortnyckel(namn)]
+  d <- t[orden == o & kategori == k & (kunglig == "TRUE") == kungl & grad != "Herre och mästare"]
+  setorderv(d, "rang")
+  d <- d[!duplicated(person_id)]
+  d[, visningsnamn := if (kungl) namn else efternamn_forst(namn)]
+  d[, sortnamn := sortnyckel(visningsnamn)]
   setorderv(d, c("rang", "sortnamn"))
-  d[, namn_html := link_person(person_id, namn, pfx)]
+  d[, namn_html := link_person(person_id, visningsnamn, pfx)]
   d[, kalla_html := source_html(kalla_url, kalltyp, namn)]
   d[, skold_html := fifelse(!is.na(bild_url),
     sprintf('<a href="%sperson/%s.html"><img class="skold" src="%s%s" alt="Vapensköld för %s" loading="lazy"></a>',
@@ -221,7 +286,6 @@ order_table <- function(t, orden, kat, pfx = "", tid) {
     datum_txt = colDef(name = "Datum", minWidth = 120, cell = fmt_datum),
     motivering_txt = colDef(name = "Motivering", minWidth = 220),
     kalla_html = colDef(name = "Källa", html = TRUE, minWidth = 120),
-    kunglig_txt = colDef(name = "Kunglig", filterable = TRUE, filterInput = select_filter(tid), minWidth = 100),
     flagga_txt = colDef(name = "Notering", minWidth = 200, class = "saknas")
   )
   keep <- c("grad", "namn_html")
@@ -229,7 +293,6 @@ order_table <- function(t, orden, kat, pfx = "", tid) {
   keep <- c(keep, "yrke_txt")
   if (kat == "utländsk") keep <- c(keep, "land_txt")
   keep <- c(keep, "datum_txt", "motivering_txt", "kalla_html")
-  if (any(d$kunglig_txt == "Ja")) keep <- c(keep, "kunglig_txt")
   if (any(nzchar(d$flagga_txt))) keep <- c(keep, "flagga_txt")
   rt <- reactable(
     as.data.frame(d)[, keep],
@@ -263,11 +326,21 @@ order_table <- function(t, orden, kat, pfx = "", tid) {
 
 order_section <- function(orden, t, pfx = "") {
   slug <- SLUG[[orden]]
+  o <- orden
+  finns <- function(kat, kungl) {
+    nrow(t[orden == o & kategori == kat & (kunglig == "TRUE") == kungl & grad != "Herre och mästare"]) > 0
+  }
   tagList(
     h3("Svenska mottagare"),
     order_table(t, orden, "svensk", pfx, paste0("tbl-", slug, "-svensk")),
     h3("Utländska mottagare"),
-    order_table(t, orden, "utländsk", pfx, paste0("tbl-", slug, "-utlandsk"))
+    order_table(t, orden, "utländsk", pfx, paste0("tbl-", slug, "-utlandsk")),
+    if (finns("svensk", TRUE)) tagList(
+      h3("Svenska kungligheter"),
+      order_table(t, orden, "svensk", pfx, paste0("tbl-", slug, "-svensk-kunglig"), kungl = TRUE)),
+    if (finns("utländsk", TRUE)) tagList(
+      h3("Utländska kungligheter"),
+      order_table(t, orden, "utländsk", pfx, paste0("tbl-", slug, "-utlandsk-kunglig"), kungl = TRUE))
   )
 }
 

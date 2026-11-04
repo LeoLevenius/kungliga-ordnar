@@ -26,7 +26,7 @@ ordenstecken_figur("Nordstjärneorden", pfx = "../")
 ```{r}
 #| output: asis
 cat(sprintf("Listan omfattar %d levande mottagare som tilldelats orden %d–%d. Datum avser beslutsdatum om inget annat anges under Notering; yrke och titel anges enligt källan.\n",
-            nrow(n), min(as.integer(substr(n$datum, 1, 4))), max(as.integer(substr(n$datum, 1, 4)))))
+            uniqueN(n$person_id), min(as.integer(substr(n$datum, 1, 4)), na.rm = TRUE), max(as.integer(substr(n$datum, 1, 4)), na.rm = TRUE)))
 ```
 
 ```{r}
