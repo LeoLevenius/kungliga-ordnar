@@ -16,8 +16,8 @@ MANADER <- c("januari", "februari", "mars", "april", "maj", "juni", "juli",
 fmt_datum <- function(x) {
   ok <- !is.na(x) & grepl("^[0-9]{4}(-[0-9]{2}(-[0-9]{2})?)?$", x)
   y <- substr(x, 1, 4)
-  m <- MANADER[as.integer(substr(x, 6, 7))]
-  d <- as.integer(substr(x, 9, 10))
+  m <- MANADER[suppressWarnings(as.integer(ifelse(ok, substr(x, 6, 7), NA)))]
+  d <- suppressWarnings(as.integer(ifelse(ok, substr(x, 9, 10), NA)))
   out <- fifelse(nchar(x) == 4, y, fifelse(nchar(x) == 7, paste(m, y), paste(d, m, y)))
   fifelse(ok, out, x)
 }
@@ -300,7 +300,8 @@ order_table <- function(t, orden, kat, pfx = "", tid, kungl = FALSE) {
     flagga_txt = colDef(name = "Notering", minWidth = 200, class = "saknas")
   )
   keep <- c("grad", "namn_html")
-  if (o == "Serafimerorden" && any(!is.na(d$bild_url))) keep <- c(keep, "skold_html")
+  d[, skold_html := fifelse(!is.na(bild_url) & grepl("^img/skold-", bild_url), skold_html, "–")]
+  if ((o == "Serafimerorden" || (kungl && kat == "svensk")) && any(d$skold_html != "–")) keep <- c(keep, "skold_html")
   keep <- c(keep, "yrke_txt")
   if (kat == "utländsk") keep <- c(keep, "land_txt")
   keep <- c(keep, "datum_txt", "motivering_txt", "kalla_html")
