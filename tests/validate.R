@@ -64,6 +64,10 @@ kontroll("bilder.csv: endast fria licenser, upphovsperson och fil finns",
          b$licens %in% c("CC0", "Public domain", "CC BY-SA 2.5", "CC BY-SA 3.0", "CC BY-SA 4.0", "CC BY 2.5", "CC BY 3.0", "CC BY 4.0") &
            !is.na(b$upphov) & file.exists(file.path("img", b$fil)), b$fil)
 
+kv <- fread("data/kmo_verifierade.csv", encoding = "UTF-8", colClasses = "character", na.strings = "")
+kontroll("kmo_verifierade.csv: id och person_id finns i tilldelningar.csv, med länk",
+         kv$id %in% t$id & kv$person_id == t$person_id[match(kv$id, t$id)] & grepl("^https://kungligmajestatsorden.se/", kv$kmo_url) & !duplicated(kv$id), kv$id)
+
 l <- fread("data/andringslogg.csv", encoding = "UTF-8", colClasses = "character", na.strings = "")
 kontroll("ändringsloggen har datum, id och andring", all(c("datum", "id", "andring") %in% names(l)) & all(l$andring %in% c("tillagd", "ändrad")), l$id)
 

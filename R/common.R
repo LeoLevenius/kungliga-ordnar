@@ -130,6 +130,7 @@ FLAGGA_TEXT <- c(
   datum_avviker_fran_vigsel_eller_fodelse = "Datum från svensk Wikipedia (6 maj 1976) avviker från födelse- och vigseldatum",
   datum_fran_fodelsen_kalla = "Källan anger att graden gäller från födseln; datumet är födelsedatum",
   datum_saknas_sedan_tidigare = "Källan anger att hon sedan tidigare har graden (före 6 maj 2024); datum saknas",
+  nationalitet_enligt_kmo = "Nationalitet enligt Kungl. Maj:ts Ordens förläningsdatabas; avviker från tidigare uppgift",
   flera_medborgarskap = "Flera medborgarskap i Wikidata; land är inte angivet",
   land_wikidata_ej_verifierat = "Land i Wikidata är uppenbart felaktigt eller ej verifierat; land är inte angivet",
   grad_konflikt_kallor = "Källorna anger olika grad; den andra källan anges i flaggan i datafilen",
@@ -204,6 +205,15 @@ load_grader <- function() {
 load_logg <- function() {
   fread(file.path(data_dir, "andringslogg.csv"), encoding = "UTF-8",
         colClasses = "character", na.strings = "")
+}
+
+load_kmo_verifierade <- function() {
+  f <- file.path(data_dir, "kmo_verifierade.csv")
+  if (file.exists(f)) {
+    fread(f, encoding = "UTF-8", colClasses = "character", na.strings = "")
+  } else {
+    data.table(id = character(), kmo_url = character())
+  }
 }
 
 load_bilder <- function() {
@@ -350,6 +360,17 @@ person_page <- function(t, id, pfx = "../") {
   d[, orden_nr := match(orden, ORDNAR)]
   setorderv(d, c("orden_nr", "rang"))
   first <- d[1]
+  ids <- d$id
+  kv <- load_kmo_verifierade()[id %in% ids]
+  kmo_cell <- function(rid) {
+    x <- kv[id == rid]
+    if (nrow(x)) {
+      tags$a(href = paste0("https://kungligmajestatsorden.se", sub("^https://kungligmajestatsorden.se", "", x$kmo_url[1])),
+             target = "_blank", rel = "noopener", "✓ Verifierad")
+    } else {
+      "–"
+    }
+  }
   rows <- lapply(seq_len(nrow(d)), function(i) {
     r <- d[i]
     tags$tr(
@@ -360,9 +381,14 @@ person_page <- function(t, id, pfx = "../") {
       tags$td(r$motivering_txt),
       tags$td(tags$a(href = r$kalla_url, target = "_blank", rel = "noopener", "Källa"),
               " ", tags$span(class = "kalltyp", KALLTYP[r$kalltyp])),
-      tags$td(if (!is.na(r$flagga)) tags$span(class = "saknas", flagga_text(r$flagga)) else "")
+      tags$td(if (!is.na(r$flagga)) tags$span(class = "saknas", flagga_text(r$flagga)) else ""),
+      tags$td(kmo_cell(r$id))
     )
   })
+  verifierad <- if (nrow(kv)) {
+    tags$p(class = "verifierad", "✓ ", tags$strong("Verifierad mot Kungl. Maj:ts Ordens förläningsdatabas"),
+           paste0(" (", nrow(kv), " av ", nrow(d), if (nrow(d) == 1) " tilldelning)" else " tilldelningar)"))
+  }
   med_bild <- d[!is.na(bild_url)]
   bild <- if (nrow(med_bild)) {
     b <- load_bilder()[fil == basename(med_bild$bild_url[1])]
@@ -375,10 +401,12 @@ person_page <- function(t, id, pfx = "../") {
            tags$br(), tags$strong("Kunglig: "), first$kunglig_txt,
            if (!is.na(first$qid)) tagList(tags$br(), tags$strong("Wikidata: "),
              tags$a(href = paste0("https://www.wikidata.org/wiki/", first$qid), first$qid))),
+    verifierad,
     bild,
     tags$table(class = "person-tabell",
       tags$thead(tags$tr(tags$th("Orden"), tags$th("Grad"), tags$th("Yrke/titel"), tags$th("Datum"),
-                         tags$th("Motivering"), tags$th("Källa"), tags$th("Notering"))),
+                         tags$th("Motivering"), tags$th("Källa"), tags$th("Notering"),
+                         tags$th("Kungl. Maj:ts Orden"))),
       tags$tbody(rows))
   )
 }

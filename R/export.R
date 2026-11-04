@@ -13,6 +13,7 @@ write_json(as.data.frame(raw), file.path(out, "data", "tilldelningar.json"), pre
 invisible(file.copy(file.path(data_dir, "grader.csv"), file.path(out, "data", "grader.csv"), overwrite = TRUE))
 invisible(file.copy(file.path(data_dir, "andringslogg.csv"), file.path(out, "data", "andringslogg.csv"), overwrite = TRUE))
 invisible(file.copy(file.path(data_dir, "bilder.csv"), file.path(out, "data", "bilder.csv"), overwrite = TRUE))
+invisible(file.copy(file.path(data_dir, "kmo_verifierade.csv"), file.path(out, "data", "kmo_verifierade.csv"), overwrite = TRUE))
 
 base <- Sys.getenv("SITE_URL", "")
 latest <- t[!is.na(datum)][order(-datum_date(datum), id)][seq_len(min(50, .N))]

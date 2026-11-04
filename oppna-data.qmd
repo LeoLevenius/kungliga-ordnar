@@ -9,6 +9,7 @@ Alla filer nedan innehåller bara levande mottagare. Avlidna mottagare tas bort 
 - [grader.csv](data/grader.csv): ordenens grader med förkortningar och bärordning
 - [andringslogg.csv](data/andringslogg.csv): ändringslogg
 - [bilder.csv](data/bilder.csv): fritt licensierade bilder med upphovsperson och licens
+- [kmo_verifierade.csv](data/kmo_verifierade.csv): tilldelningar som verifierats mot Kungl. Maj:ts Ordens förläningsdatabas, med länk till posten
 - [feed.xml](feed.xml): Atom-flöde med de senaste tilldelningarna
 
 Filen tilldelningar.csv är UTF-8 med BOM.
