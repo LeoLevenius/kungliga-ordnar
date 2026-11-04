@@ -69,6 +69,10 @@ img.skold {
   object-fit: contain;
 }
 
+.verifierad {
+  color: #1a6b3c;
+}
+
 .bildkredit {
   color: #555;
 }
