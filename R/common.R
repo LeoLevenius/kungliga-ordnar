@@ -408,7 +408,7 @@ person_page <- function(t, id, pfx = "../") {
              tags$a(href = paste0("https://www.wikidata.org/wiki/", first$qid), first$qid))),
     verifierad,
     bild,
-    tags$table(class = "person-tabell",
+    tags$table(class = "person-tabell table table-sm table-striped small",
       tags$thead(tags$tr(tags$th("Orden"), tags$th("Grad"), tags$th("Yrke/titel"), tags$th("Datum"),
                          tags$th("Motivering"), tags$th("Källa"), tags$th("Notering"),
                          tags$th("Kungl. Maj:ts Orden"))),
