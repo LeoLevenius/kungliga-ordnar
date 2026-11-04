@@ -131,6 +131,7 @@ FLAGGA_TEXT <- c(
   datum_fran_fodelsen_kalla = "Källan anger att graden gäller från födseln; datumet är födelsedatum",
   datum_saknas_sedan_tidigare = "Källan anger att hon sedan tidigare har graden (före 6 maj 2024); datum saknas",
   nationalitet_enligt_kmo = "Nationalitet enligt Kungl. Maj:ts Ordens förläningsdatabas; avviker från tidigare uppgift",
+  nationalitet_kmo_avviker_fran_wikidata = "Kungl. Maj:ts Ordens förläningsdatabas anger Sverige, men personen är lettisk medborgare enligt Wikidata; land är korrigerat",
   flera_medborgarskap = "Flera medborgarskap i Wikidata; land är inte angivet",
   land_wikidata_ej_verifierat = "Land i Wikidata är uppenbart felaktigt eller ej verifierat; land är inte angivet",
   grad_konflikt_kallor = "Källorna anger olika grad; den andra källan anges i flaggan i datafilen",
@@ -340,17 +341,15 @@ order_section <- function(orden, t, pfx = "") {
   finns <- function(kat, kungl) {
     nrow(t[orden == o & kategori == kat & (kunglig == "TRUE") == kungl & grad != "Herre och mästare"]) > 0
   }
+  avsnitt <- function(rubrik, kat, kungl, suffix) {
+    if (!finns(kat, kungl)) return(NULL)
+    tagList(h3(rubrik), order_table(t, orden, kat, pfx, paste0("tbl-", slug, "-", suffix), kungl = kungl))
+  }
   tagList(
-    h3("Svenska mottagare"),
-    order_table(t, orden, "svensk", pfx, paste0("tbl-", slug, "-svensk")),
-    h3("Utländska mottagare"),
-    order_table(t, orden, "utländsk", pfx, paste0("tbl-", slug, "-utlandsk")),
-    if (finns("svensk", TRUE)) tagList(
-      h3("Svenska kungligheter"),
-      order_table(t, orden, "svensk", pfx, paste0("tbl-", slug, "-svensk-kunglig"), kungl = TRUE)),
-    if (finns("utländsk", TRUE)) tagList(
-      h3("Utländska kungligheter"),
-      order_table(t, orden, "utländsk", pfx, paste0("tbl-", slug, "-utlandsk-kunglig"), kungl = TRUE))
+    avsnitt("Svenska kungligheter", "svensk", TRUE, "svensk-kunglig"),
+    avsnitt("Utländska kungligheter", "utländsk", TRUE, "utlandsk-kunglig"),
+    avsnitt("Svenska mottagare", "svensk", FALSE, "svensk"),
+    avsnitt("Utländska mottagare", "utländsk", FALSE, "utlandsk")
   )
 }
 

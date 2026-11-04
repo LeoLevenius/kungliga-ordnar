@@ -48,6 +48,8 @@ kontroll("ingen rad saknar källa_url", !is.na(t[["källa_url"]]) & grepl("^http
 kontroll("motivering_typ=statsbesök har ifyllt statsbesök", is.na(t$motivering_typ) | t$motivering_typ != "statsbesök" | !is.na(t[["statsbesök"]]), t$id)
 kontroll("orden är en av de fyra ordnarna", t$orden %in% c("Serafimerorden", "Svärdsorden", "Nordstjärneorden", "Vasaorden"), t$id)
 kontroll("kategori är svensk eller utländsk", t$kategori %in% c("svensk", "utländsk"), t$id)
+kontroll("kategori matchar land (svensk = Sverige eller okänt, utländsk = annat land eller okänt)",
+         (t$kategori == "svensk" & (is.na(t$land) | t$land == "Sverige")) | (t$kategori == "utländsk" & (is.na(t$land) | t$land != "Sverige")), paste(t$id, t$kategori, t$land))
 kontroll("kunglig är TRUE eller FALSE", t$kunglig %in% c("TRUE", "FALSE"), t$id)
 kontroll("källtyp är en tillåten typ", t[["källtyp"]] %in% c("kungahuset", "regeringen", "officiell_publikation", "tidning", "wikipedia"), t$id)
 kontroll("motivering_typ är officiell, statsbesök eller tom", is.na(t$motivering_typ) | t$motivering_typ %in% c("officiell", "statsbesök"), t$id)
