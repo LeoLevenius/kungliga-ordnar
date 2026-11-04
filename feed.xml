@@ -2,8 +2,15 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Kungliga ordnar: nya tilldelningar</title>
   <id>tag:kungliga-ordnar,feed</id>
-  <updated>2026-05-17T00:00:00Z</updated>
+  <updated>2026-07-17T00:00:00Z</updated>
   <link rel="self" href="https://leolevenius.github.io/kungliga-ordnar/feed.xml"/>
+  <entry>
+    <title>Anne L'Huillier Wahlström – Nordstjärneorden, Kommendör med stora korset</title>
+    <id>tag:kungliga-ordnar,2026:T004</id>
+    <link href="https://leolevenius.github.io/kungliga-ordnar/person/anne-lhuillier-wahlstrom.html"/>
+    <updated>2026-07-17T00:00:00Z</updated>
+    <summary>Nordstjärneorden, Kommendör med stora korset</summary>
+  </entry>
   <entry>
     <title>Narendra Modi – Nordstjärneorden, Kommendör med stora korset</title>
     <id>tag:kungliga-ordnar,2026:T041</id>
@@ -292,66 +299,59 @@
     <summary>Svärdsorden, Kommendör</summary>
   </entry>
   <entry>
-    <title>Frederik X av Danmark – Serafimerorden, Riddare med kedja</title>
-    <id>tag:kungliga-ordnar,2026:T098</id>
-    <link href="https://leolevenius.github.io/kungliga-ordnar/person/frederik-x-av-danmark.html"/>
-    <updated>2024-05-06T00:00:00Z</updated>
-    <summary>Serafimerorden, Riddare med kedja</summary>
-  </entry>
-  <entry>
-    <title>Mary av Danmark – Serafimerorden, Riddare</title>
-    <id>tag:kungliga-ordnar,2026:T099</id>
-    <link href="https://leolevenius.github.io/kungliga-ordnar/person/mary-av-danmark.html"/>
-    <updated>2024-05-06T00:00:00Z</updated>
-    <summary>Serafimerorden, Riddare</summary>
-  </entry>
-  <entry>
-    <title>Alexander Stubb – Serafimerorden, Riddare</title>
-    <id>tag:kungliga-ordnar,2026:T103</id>
-    <link href="https://leolevenius.github.io/kungliga-ordnar/person/alexander-stubb.html"/>
-    <updated>2024-04-23T00:00:00Z</updated>
-    <summary>Serafimerorden, Riddare</summary>
-  </entry>
-  <entry>
-    <title>Suzanne Innes-Stubb – Nordstjärneorden, Kommendör med stora korset</title>
-    <id>tag:kungliga-ordnar,2026:T107</id>
-    <link href="https://leolevenius.github.io/kungliga-ordnar/person/suzanne-innes-stubb.html"/>
-    <updated>2024-04-23T00:00:00Z</updated>
-    <summary>Nordstjärneorden, Kommendör med stora korset</summary>
-  </entry>
-  <entry>
-    <title>Elina Valtonen – Nordstjärneorden, Kommendör med stora korset</title>
-    <id>tag:kungliga-ordnar,2026:T399</id>
-    <link href="https://leolevenius.github.io/kungliga-ordnar/person/elina-valtonen.html"/>
-    <updated>2024-04-23T00:00:00Z</updated>
-    <summary>Nordstjärneorden, Kommendör med stora korset</summary>
-  </entry>
-  <entry>
-    <title>Anna-Maja Henriksson – Nordstjärneorden, Kommendör med stora korset</title>
-    <id>tag:kungliga-ordnar,2026:T407</id>
-    <link href="https://leolevenius.github.io/kungliga-ordnar/person/anna-maja-henriksson.html"/>
-    <updated>2024-04-23T00:00:00Z</updated>
-    <summary>Nordstjärneorden, Kommendör med stora korset</summary>
-  </entry>
-  <entry>
-    <title>Olli Rehn – Nordstjärneorden, Kommendör med stora korset</title>
-    <id>tag:kungliga-ordnar,2026:T408</id>
-    <link href="https://leolevenius.github.io/kungliga-ordnar/person/olli-rehn.html"/>
-    <updated>2024-04-23T00:00:00Z</updated>
-    <summary>Nordstjärneorden, Kommendör med stora korset</summary>
-  </entry>
-  <entry>
     <title>Dennis Gyllensporre – Svärdsorden, Kommendör med stora korset</title>
     <id>tag:kungliga-ordnar,2026:T001</id>
     <link href="https://leolevenius.github.io/kungliga-ordnar/person/dennis-gyllensporre.html"/>
-    <updated>2024-03-21T00:00:00Z</updated>
+    <updated>2024-05-31T00:00:00Z</updated>
     <summary>Svärdsorden, Kommendör med stora korset</summary>
   </entry>
   <entry>
     <title>Ulf Henricsson – Svärdsorden, Kommendör av första klassen</title>
     <id>tag:kungliga-ordnar,2026:T002</id>
     <link href="https://leolevenius.github.io/kungliga-ordnar/person/ulf-henricsson.html"/>
-    <updated>2024-03-21T00:00:00Z</updated>
+    <updated>2024-05-31T00:00:00Z</updated>
     <summary>Svärdsorden, Kommendör av första klassen</summary>
+  </entry>
+  <entry>
+    <title>Svante Pääbo – Nordstjärneorden, Kommendör med stora korset</title>
+    <id>tag:kungliga-ordnar,2026:T003</id>
+    <link href="https://leolevenius.github.io/kungliga-ordnar/person/svante-paabo.html"/>
+    <updated>2024-05-31T00:00:00Z</updated>
+    <summary>Nordstjärneorden, Kommendör med stora korset</summary>
+  </entry>
+  <entry>
+    <title>Catarina Wingren – Nordstjärneorden, Riddare av första klassen</title>
+    <id>tag:kungliga-ordnar,2026:T005</id>
+    <link href="https://leolevenius.github.io/kungliga-ordnar/person/catarina-wingren.html"/>
+    <updated>2024-05-31T00:00:00Z</updated>
+    <summary>Nordstjärneorden, Riddare av första klassen</summary>
+  </entry>
+  <entry>
+    <title>Antonia Ax:son Johnson – Vasaorden, Kommendör med stora korset</title>
+    <id>tag:kungliga-ordnar,2026:T006</id>
+    <link href="https://leolevenius.github.io/kungliga-ordnar/person/antonia-axson-johnson.html"/>
+    <updated>2024-05-31T00:00:00Z</updated>
+    <summary>Vasaorden, Kommendör med stora korset</summary>
+  </entry>
+  <entry>
+    <title>Benny Andersson – Vasaorden, Kommendör av första klassen</title>
+    <id>tag:kungliga-ordnar,2026:T007</id>
+    <link href="https://leolevenius.github.io/kungliga-ordnar/person/benny-andersson.html"/>
+    <updated>2024-05-31T00:00:00Z</updated>
+    <summary>Vasaorden, Kommendör av första klassen</summary>
+  </entry>
+  <entry>
+    <title>Agnetha Fältskog – Vasaorden, Kommendör av första klassen</title>
+    <id>tag:kungliga-ordnar,2026:T008</id>
+    <link href="https://leolevenius.github.io/kungliga-ordnar/person/agnetha-faltskog.html"/>
+    <updated>2024-05-31T00:00:00Z</updated>
+    <summary>Vasaorden, Kommendör av första klassen</summary>
+  </entry>
+  <entry>
+    <title>Anni-Frid Reuss – Vasaorden, Kommendör av första klassen</title>
+    <id>tag:kungliga-ordnar,2026:T009</id>
+    <link href="https://leolevenius.github.io/kungliga-ordnar/person/anni-frid-reuss.html"/>
+    <updated>2024-05-31T00:00:00Z</updated>
+    <summary>Vasaorden, Kommendör av första klassen</summary>
   </entry>
 </feed>
