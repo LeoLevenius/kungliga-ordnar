@@ -40,6 +40,16 @@ jobs:
             any::rmarkdown
 
       - uses: quarto-dev/quarto-actions/publish@v2
+        id: publicera
+        continue-on-error: true
+        with:
+          target: gh-pages
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Nytt försök om GitHub svarade med serverfel
+        if: steps.publicera.outcome == 'failure'
+        uses: quarto-dev/quarto-actions/publish@v2
         with:
           target: gh-pages
         env:
