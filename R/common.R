@@ -280,8 +280,13 @@ order_table <- function(t, orden, kat, pfx = "", tid, kungl = FALSE) {
   d <- t[orden == o & kategori == k & (kunglig == "TRUE") == kungl & grad != "Herre och mästare"]
   setorderv(d, "rang")
   d <- d[!duplicated(person_id)]
-  d[, visningsnamn := if (kungl) namn else efternamn_forst(namn)]
-  d[, sortnamn := sortnyckel(visningsnamn)]
+  d[, sortnamn := sortnyckel(if (kungl) namn else efternamn_forst(namn))]
+  if (kungl) {
+    titlar <- fread(file.path(data_dir, "kungliga_titlar.csv"), encoding = "UTF-8")
+    d[, visningsnamn := fifelse(person_id %in% titlar$person_id, titlar$titel_lang[match(person_id, titlar$person_id)], namn)]
+  } else {
+    d[, visningsnamn := efternamn_forst(namn)]
+  }
   setorderv(d, c("rang", "sortnamn"))
   d[, namn_html := link_person(person_id, visningsnamn, pfx)]
   d[, kalla_html := source_html(kalla_url, kalltyp, namn)]
@@ -289,7 +294,7 @@ order_table <- function(t, orden, kat, pfx = "", tid, kungl = FALSE) {
     sprintf('<a href="%sperson/%s.html"><img class="skold" src="%s%s" alt="Vapensköld för %s" loading="lazy"></a>',
             pfx, person_id, pfx, bild_url, htmlEscape(namn)), "–")]
   cols <- list(
-    skold_html = colDef(name = "Vapensköld", html = TRUE, minWidth = 90, sortable = FALSE),
+    skold_html = colDef(name = "Vapensköld", html = TRUE, minWidth = 90, sortable = FALSE, align = "center", headerStyle = list(textAlign = "center")),
     grad = colDef(name = "Grad", minWidth = 120),
     namn_html = colDef(name = "Namn", html = TRUE, minWidth = 150),
     yrke_txt = colDef(name = "Yrke/titel", minWidth = 130),
@@ -302,10 +307,9 @@ order_table <- function(t, orden, kat, pfx = "", tid, kungl = FALSE) {
   keep <- c("grad", "namn_html")
   d[, skold_html := fifelse(!is.na(bild_url) & grepl("^img/skold-", bild_url), skold_html, "–")]
   if ((o == "Serafimerorden" || (kungl && kat == "svensk")) && any(d$skold_html != "–")) keep <- c(keep, "skold_html")
-  keep <- c(keep, "yrke_txt")
+  if (!kungl) keep <- c(keep, "yrke_txt")
   if (kat == "utländsk") keep <- c(keep, "land_txt")
-  keep <- c(keep, "datum_txt", "motivering_txt", "kalla_html")
-  if (any(nzchar(d$flagga_txt))) keep <- c(keep, "flagga_txt")
+  keep <- c(keep, "datum_txt")
   rt <- reactable(
     as.data.frame(d)[, keep],
     groupBy = "grad",
