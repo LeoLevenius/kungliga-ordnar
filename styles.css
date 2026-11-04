@@ -316,3 +316,167 @@ img.skold {
     font-size: 0.8rem;
   }
 }
+
+.redigera-lank,
+.nav-footer a[href$="redigera.html"] {
+  display: none;
+}
+
+html.redigerare .redigera-lank {
+  display: block;
+  margin-top: 1rem;
+  font-size: 0.9rem;
+}
+
+html.redigerare .nav-footer a[href$="redigera.html"] {
+  display: inline;
+}
+
+.redigera {
+  max-width: 980px;
+}
+
+.rd-kort {
+  margin: 0 0 1.2rem;
+  padding: 1rem 1.3rem 1.2rem;
+  background: #fff;
+  border: 1px solid var(--linje);
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(20, 40, 75, 0.06);
+}
+
+.rd-kort h2,
+.rd-kort h3,
+.redigera > h2 {
+  margin-top: 0;
+}
+
+.rd-topp {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1.2rem;
+  padding: 0.5rem 0.9rem;
+  background: var(--bla-ton);
+  border-radius: 6px;
+}
+
+.rd-rad {
+  display: flex;
+  gap: 0.6rem;
+  margin-bottom: 1rem;
+}
+
+.rd-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 0.8rem 1.1rem;
+}
+
+.rd-fält {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  margin: 0;
+}
+
+.rd-etikett {
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--marin);
+}
+
+.rd-hjälp {
+  font-size: 0.78rem;
+  color: var(--text-dampad);
+}
+
+.rd-kryss {
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.rd-lista {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.rd-lista li {
+  border-bottom: 1px solid var(--linje);
+}
+
+.rd-länk {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  width: 100%;
+  padding: 0.45rem 0.3rem;
+  background: none;
+  border: 0;
+  color: var(--marin);
+  text-align: left;
+  cursor: pointer;
+}
+
+.rd-länk:hover {
+  background: var(--pergament);
+}
+
+p > .rd-länk {
+  display: inline;
+  width: auto;
+  padding: 0;
+  text-decoration: underline;
+  text-decoration-color: var(--guld);
+}
+
+.rd-höger {
+  float: right;
+}
+
+.rd-fel {
+  color: #a1262d;
+}
+
+.rd-status {
+  margin: 0.6rem 0 0;
+}
+
+#rd-granskning del {
+  color: #a1262d;
+}
+
+#rd-granskning ins {
+  color: #1a6b3c;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.rd-bildrad {
+  display: flex;
+  gap: 1.2rem;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+}
+
+.rd-bildrad > div {
+  flex: 1;
+}
+
+img.rd-bild {
+  max-width: 200px;
+  max-height: 200px;
+  object-fit: contain;
+  border: 1px solid var(--linje);
+  border-radius: 6px;
+  background: #fff;
+}
+
+img.rd-bild[src=""] {
+  display: none;
+}

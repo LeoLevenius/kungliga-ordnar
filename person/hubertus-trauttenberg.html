@@ -74,6 +74,7 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Sök"
   }
 }</script>
+<script>try{if(localStorage.getItem("kungliga-ordnar-token"))document.documentElement.classList.add("redigerare")}catch(e){}</script>
 
 
 <link rel="stylesheet" href="../styles.css">
@@ -214,6 +215,10 @@ ul.task-list li input[type="checkbox"] {
 </tr>
 </tbody>
 </table>
+
+<p class="redigera-lank">
+  <a href="../redigera.html#person=hubertus-trauttenberg">Redigera personen</a>
+</p>
 
 
 
@@ -698,13 +703,19 @@ ul.task-list li input[type="checkbox"] {
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left">
-      &nbsp;
-    </div>   
-    <div class="nav-footer-center">
 <p>Källor: kungahuset.se, regeringen.se, kungligmajestatsorden.se. Avlidna mottagare visas inte.</p>
-</div>
-    <div class="nav-footer-right">
+</div>   
+    <div class="nav-footer-center">
       &nbsp;
+    </div>
+    <div class="nav-footer-right">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item">
+    <a class="nav-link" href="../redigera.html">
+<p>Redigera</p>
+</a>
+  </li>  
+</ul>
     </div>
   </div>
 </footer>

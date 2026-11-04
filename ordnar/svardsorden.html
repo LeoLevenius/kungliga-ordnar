@@ -82,6 +82,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/htmlwidgets-1.6.4/htmlwidgets.js"></script>
 <link href="../site_libs/reactable-0.4.5/reactable.css" rel="stylesheet">
 <script src="../site_libs/reactable-binding-0.4.5/reactable.js"></script>
+<script>try{if(localStorage.getItem("kungliga-ordnar-token"))document.documentElement.classList.add("redigerare")}catch(e){}</script>
 
 
 <link rel="stylesheet" href="../styles.css">
@@ -850,13 +851,19 @@ Borodun
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left">
-      &nbsp;
-    </div>   
-    <div class="nav-footer-center">
 <p>Källor: kungahuset.se, regeringen.se, kungligmajestatsorden.se. Avlidna mottagare visas inte.</p>
-</div>
-    <div class="nav-footer-right">
+</div>   
+    <div class="nav-footer-center">
       &nbsp;
+    </div>
+    <div class="nav-footer-right">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item">
+    <a class="nav-link" href="../redigera.html">
+<p>Redigera</p>
+</a>
+  </li>  
+</ul>
     </div>
   </div>
 </footer>
