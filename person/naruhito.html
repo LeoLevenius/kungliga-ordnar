@@ -46,7 +46,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-63b5708e65d6cd79cd7618c58d0c21e7.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-8d3ad9c781c51ccd60b292c95058b2c2.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-cacb1aecbd62fc7f9d3c1ac286ee404f.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -200,9 +200,9 @@ Ja
 <tr class="odd">
 <td>Serafimerorden</td>
 <td>Ledamot</td>
-<td>26 mars 2003</td>
+<td>16 mars 2007</td>
 <td>uppgift saknas</td>
-<td><a href="https://sv.wikipedia.org/wiki/Naruhito" target="_blank" rel="noopener">Källa</a> <span class="kalltyp">Wikipedia</span></td>
+<td><a href="https://kungligmajestatsorden.se/medaljer/importera/2007/naruhitoavjapan.5.3c1f00dd19f6590092648923.html" target="_blank" rel="noopener">Källa</a> <span class="kalltyp">Officiell publikation</span></td>
 <td></td>
 </tr>
 </tbody>
@@ -286,7 +286,7 @@ Ja
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp("https:\/\/LeoLevenius\.github\.io\/kungliga-ordnar\/");
+        var filterRegex = new RegExp('/' + window.location.host + '/');
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
