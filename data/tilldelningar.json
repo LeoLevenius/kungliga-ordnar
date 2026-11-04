@@ -1211,9 +1211,9 @@
     "motivering": null,
     "motivering_typ": null,
     "statsbesök": null,
-    "källa_url": "https://sv.wikipedia.org/wiki/Kronprinsessan_Victoria",
-    "källtyp": "wikipedia",
-    "källa_hämtad": "2026-11-03",
+    "källa_url": "https://kungligmajestatsorden.se/medaljer/importera/1977/victoriaavsverigehertiginnaavvastergotland.5.3c1f00dd19f6590092648f21.html",
+    "källtyp": "officiell_publikation",
+    "källa_hämtad": "2026-11-04",
     "wikidata_qid": "Q156390",
     "dödsdatum": null,
     "flagga": "datum_fodelse_stadgar_25",
@@ -3583,9 +3583,9 @@
     "wikidata_qid": "Q37979",
     "dödsdatum": null,
     "flagga": null,
-    "bild_url": null,
-    "bild_licens": null,
-    "bild_upphov": null
+    "bild_url": "img/skold-emblem-of-japanese-emperor-seraphim-variant.png",
+    "bild_licens": "CC BY-SA 4.0",
+    "bild_upphov": "Heralder, elements by Philip Nilsson"
   },
   {
     "id": "T139",
@@ -9277,9 +9277,9 @@
     "wikidata_qid": "Q37979",
     "dödsdatum": null,
     "flagga": null,
-    "bild_url": null,
-    "bild_licens": null,
-    "bild_upphov": null
+    "bild_url": "img/skold-emblem-of-japanese-emperor-seraphim-variant.png",
+    "bild_licens": "CC BY-SA 4.0",
+    "bild_upphov": "Heralder, elements by Philip Nilsson"
   },
   {
     "id": "T360",
@@ -11542,5 +11542,31 @@
     "bild_url": "img/skold-coat-of-arms-of-queen-mary-of-denmark-order-of-seraphim.png",
     "bild_licens": "CC BY-SA 4.0",
     "bild_upphov": "Heralder"
+  },
+  {
+    "id": "T450",
+    "person_id": "kronprinsessan-victoria",
+    "namn": "Kronprinsessan Victoria",
+    "kön": "kvinna",
+    "kategori": "svensk",
+    "land": "Sverige",
+    "kunglig": "TRUE",
+    "yrke_titel": "Kronprinsessa",
+    "orden": "Serafimerorden",
+    "grad": "Ledamot med kedja",
+    "datum_tilldelning": "1995-07-14",
+    "datum_precision": "dag",
+    "motivering": null,
+    "motivering_typ": null,
+    "statsbesök": null,
+    "källa_url": "https://kungligmajestatsorden.se/medaljer/importera/1995/victoriaavsverigehertiginnaavvastergotland.5.3c1f00dd19f6590092648d21.html",
+    "källtyp": "officiell_publikation",
+    "källa_hämtad": "2026-11-04",
+    "wikidata_qid": "Q156390",
+    "dödsdatum": null,
+    "flagga": null,
+    "bild_url": "img/skold-kronprinsessan-victoria-vapen-med-serafimerorden.png",
+    "bild_licens": "CC BY-SA 2.5",
+    "bild_upphov": "Lokal_Profil"
   }
 ]
