@@ -55,8 +55,21 @@ FLAGGA_TEXT <- c(
   datum_fodelse_kungahuset_visar_dop_1946_06_07 = "Datum är födelsedatum; kungahuset.se anger att insignierna överlämnades vid dopet 7 juni 1946",
   datum_avviker_fran_vigsel_eller_fodelse = "Datum från svensk Wikipedia (6 maj 1976) avviker från födelse- och vigseldatum",
   flera_medborgarskap = "Flera medborgarskap i Wikidata; land är inte angivet",
-  land_wikidata_ej_verifierat = "Land i Wikidata är uppenbart felaktigt eller ej verifierat; land är inte angivet"
+  land_wikidata_ej_verifierat = "Land i Wikidata är uppenbart felaktigt eller ej verifierat; land är inte angivet",
+  grad_konflikt_kallor = "Källorna anger olika grad; den andra källan anges i flaggan i datafilen",
+  datum_endast_phaleristica = "Årtalet kommer enbart från Phaleristicas lista över levande ordensinnehavare (2016)",
+  kalla_oreferenserad_wikipedia = "Uppgiften saknar referens i svensk Wikipedia; årtalet stöds av Phaleristicas lista"
 )
+
+flagga_text <- function(x) {
+  vapply(x, function(f) {
+    if (is.na(f)) return("")
+    delar <- strsplit(f, ";", fixed = TRUE)[[1]]
+    txt <- unname(FLAGGA_TEXT[sub(":.*", "", delar)])
+    txt[is.na(txt)] <- "Se personsidan"
+    paste(txt, collapse = ". ")
+  }, character(1), USE.NAMES = FALSE)
+}
 
 SLUG <- c(
   "Serafimerorden" = "serafimerorden",
@@ -97,7 +110,7 @@ load_tilldelningar <- function() {
   t[, land_txt := fifelse(is.na(land), "uppgift saknas", land)]
   t[, yrke_txt := fifelse(is.na(yrke), "uppgift saknas", yrke)]
   t[, motivering_txt := fifelse(is.na(motivering), "uppgift saknas", motivering)]
-  t[, flagga_txt := fifelse(is.na(flagga), "", unname(FLAGGA_TEXT[sub(":.*", "", flagga)]))]
+  t[, flagga_txt := flagga_text(flagga)]
   t[is.na(flagga_txt), flagga_txt := "Se personsidan"]
   t[, datum_txt := fifelse(is.na(datum), "uppgift saknas", datum)]
   t[is.na(dod)]
@@ -219,7 +232,7 @@ person_page <- function(t, id, pfx = "../") {
       tags$td(r$motivering_txt),
       tags$td(tags$a(href = r$kalla_url, target = "_blank", rel = "noopener", "Källa"),
               " ", tags$span(class = "kalltyp", KALLTYP[r$kalltyp])),
-      tags$td(if (!is.na(r$flagga)) tags$span(class = "saknas", FLAGGA_TEXT[sub(":.*", "", r$flagga)]) else "")
+      tags$td(if (!is.na(r$flagga)) tags$span(class = "saknas", flagga_text(r$flagga)) else "")
     )
   })
   bild <- if (!is.na(first$bild_url)) {
