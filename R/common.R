@@ -54,6 +54,7 @@ FLAGGA_TEXT <- c(
   datum_vigsel_wikidata = "Datum är vigseldatum från Wikidata; källan anger inte datumet",
   datum_fodelse_kungahuset_visar_dop_1946_06_07 = "Datum är födelsedatum; kungahuset.se anger att insignierna överlämnades vid dopet 7 juni 1946",
   datum_avviker_fran_vigsel_eller_fodelse = "Datum från svensk Wikipedia (6 maj 1976) avviker från födelse- och vigseldatum",
+  datum_fran_fodelsen_kalla = "Källan anger att graden gäller från födseln; datumet är födelsedatum",
   flera_medborgarskap = "Flera medborgarskap i Wikidata; land är inte angivet",
   land_wikidata_ej_verifierat = "Land i Wikidata är uppenbart felaktigt eller ej verifierat; land är inte angivet",
   grad_konflikt_kallor = "Källorna anger olika grad; den andra källan anges i flaggan i datafilen",
@@ -202,7 +203,7 @@ select_filter <- function(tid) {
 order_table <- function(t, orden, kat, pfx = "", tid) {
   o <- orden
   k <- kat
-  d <- t[orden == o & kategori == k]
+  d <- t[orden == o & kategori == k & grad != "Herre och mästare"]
   d[, sortnamn := sortnyckel(namn)]
   setorderv(d, c("rang", "sortnamn"))
   d[, namn_html := link_person(person_id, namn, pfx)]
@@ -272,13 +273,15 @@ order_section <- function(orden, t, pfx = "") {
 person_page <- function(t, id, pfx = "../") {
   pid <- id
   d <- t[person_id == pid]
-  setorder(d, rang)
+  d[, orden_nr := match(orden, ORDNAR)]
+  setorderv(d, c("orden_nr", "rang"))
   first <- d[1]
   rows <- lapply(seq_len(nrow(d)), function(i) {
     r <- d[i]
     tags$tr(
       tags$td(r$orden),
       tags$td(r$grad),
+      tags$td(r$yrke_txt),
       tags$td(fmt_datum(r$datum_txt)),
       tags$td(r$motivering_txt),
       tags$td(tags$a(href = r$kalla_url, target = "_blank", rel = "noopener", "Källa"),
@@ -300,7 +303,7 @@ person_page <- function(t, id, pfx = "../") {
              tags$a(href = paste0("https://www.wikidata.org/wiki/", first$qid), first$qid))),
     bild,
     tags$table(class = "person-tabell",
-      tags$thead(tags$tr(tags$th("Orden"), tags$th("Grad"), tags$th("Datum"),
+      tags$thead(tags$tr(tags$th("Orden"), tags$th("Grad"), tags$th("Yrke/titel"), tags$th("Datum"),
                          tags$th("Motivering"), tags$th("Källa"), tags$th("Notering"))),
       tags$tbody(rows))
   )
