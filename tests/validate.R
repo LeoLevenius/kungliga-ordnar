@@ -54,6 +54,14 @@ kontroll("dödsdatum är en tolkbar tid eller tomt", is.na(t[["dödsdatum"]]) | 
 flera_person <- t[!is.na(wikidata_qid), .(n = uniqueN(person_id)), by = wikidata_qid][n > 1, wikidata_qid]
 kontroll("ett person_id per Wikidata-id", !(t$wikidata_qid %in% flera_person), paste(t$id, t$wikidata_qid))
 
+med_bild <- !is.na(t$bild_url)
+kontroll("rader med bild har licens, upphovsperson och en fil som finns",
+         !med_bild | (!is.na(t$bild_licens) & !is.na(t$bild_upphov) & file.exists(ifelse(med_bild, t$bild_url, "."))), t$id)
+b <- fread("data/bilder.csv", encoding = "UTF-8", colClasses = "character", na.strings = "")
+kontroll("bilder.csv: endast fria licenser, upphovsperson och fil finns",
+         b$licens %in% c("CC0", "Public domain", "CC BY-SA 2.5", "CC BY-SA 3.0", "CC BY-SA 4.0", "CC BY 2.5", "CC BY 3.0", "CC BY 4.0") &
+           !is.na(b$upphov) & file.exists(file.path("img", b$fil)), b$fil)
+
 l <- fread("data/andringslogg.csv", encoding = "UTF-8", colClasses = "character", na.strings = "")
 kontroll("ändringsloggen har datum, id och andring", all(c("datum", "id", "andring") %in% names(l)) & all(l$andring %in% c("tillagd", "ändrad")), l$id)
 

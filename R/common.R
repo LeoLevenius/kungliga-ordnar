@@ -130,6 +130,51 @@ load_logg <- function() {
         colClasses = "character", na.strings = "")
 }
 
+load_bilder <- function() {
+  fread(file.path(data_dir, "bilder.csv"), encoding = "UTF-8",
+        colClasses = "character", na.strings = "")
+}
+
+bild_kredit <- function(b) {
+  lic <- if (is.na(b$licens_url)) b$licens else
+    tags$a(href = b$licens_url, target = "_blank", rel = "noopener", b$licens)
+  tags$span(class = "bildkredit", "Bild: ", b$upphov, ", ", lic, ", ",
+            tags$a(href = b$commons_sida, target = "_blank", rel = "noopener", "Wikimedia Commons"))
+}
+
+bild_figur <- function(b, pfx = "") {
+  tags$figure(class = "bild",
+    tags$img(src = paste0(pfx, "img/", b$fil), alt = b$bildtext, loading = "lazy"),
+    tags$figcaption(b$bildtext, tags$br(), bild_kredit(b)))
+}
+
+ordensbilder <- function(orden, pfx = "") {
+  o <- orden
+  bl <- load_bilder()[orden == o & anvandning == "ordenstecken"]
+  tags$div(class = "bildgrid", lapply(seq_len(nrow(bl)), function(i) bild_figur(bl[i], pfx)))
+}
+
+ordenstecken_figur <- function(orden, pfx = "") {
+  o <- orden
+  bl <- load_bilder()[orden == o & anvandning == "ordenstecken"]
+  if (!nrow(bl)) return(NULL)
+  bild_figur(bl[1], pfx)
+}
+
+skold_allmanna <- function(pfx = "") {
+  bl <- load_bilder()[anvandning == "sköld" & is.na(person_qid)]
+  tags$div(class = "bildgrid", lapply(seq_len(nrow(bl)), function(i) bild_figur(bl[i], pfx)))
+}
+
+skold_kallor <- function(t) {
+  bl <- load_bilder()[anvandning == "sköld" & !is.na(person_qid) & person_qid %in% t$qid]
+  namn <- t$namn[match(bl$person_qid, t$qid)]
+  tags$details(
+    tags$summary("Bildkällor för vapensköldarna"),
+    tags$ul(lapply(seq_len(nrow(bl)), function(i) tags$li(namn[i], ": ", bild_kredit(bl[i]))))
+  )
+}
+
 link_person <- function(id, namn, pfx = "") {
   sprintf('<a href="%sperson/%s.html">%s</a>', pfx, id, htmlEscape(namn))
 }
@@ -162,7 +207,11 @@ order_table <- function(t, orden, kat, pfx = "", tid) {
   setorderv(d, c("rang", "sortnamn"))
   d[, namn_html := link_person(person_id, namn, pfx)]
   d[, kalla_html := source_html(kalla_url, kalltyp, namn)]
+  d[, skold_html := fifelse(!is.na(bild_url),
+    sprintf('<a href="%sperson/%s.html"><img class="skold" src="%s%s" alt="Vapensköld för %s" loading="lazy"></a>',
+            pfx, person_id, pfx, bild_url, htmlEscape(namn)), "–")]
   cols <- list(
+    skold_html = colDef(name = "Vapensköld", html = TRUE, minWidth = 90, sortable = FALSE),
     grad = colDef(name = "Grad", minWidth = 120),
     namn_html = colDef(name = "Namn", html = TRUE, minWidth = 150),
     yrke_txt = colDef(name = "Yrke/titel", minWidth = 130),
@@ -173,7 +222,9 @@ order_table <- function(t, orden, kat, pfx = "", tid) {
     kunglig_txt = colDef(name = "Kunglig", filterable = TRUE, filterInput = select_filter(tid), minWidth = 100),
     flagga_txt = colDef(name = "Notering", minWidth = 200, class = "saknas")
   )
-  keep <- c("grad", "namn_html", "yrke_txt")
+  keep <- c("grad", "namn_html")
+  if (o == "Serafimerorden" && any(!is.na(d$bild_url))) keep <- c(keep, "skold_html")
+  keep <- c(keep, "yrke_txt")
   if (kat == "utländsk") keep <- c(keep, "land_txt")
   keep <- c(keep, "datum_txt", "motivering_txt", "kalla_html")
   if (any(d$kunglig_txt == "Ja")) keep <- c(keep, "kunglig_txt")
@@ -196,7 +247,7 @@ order_table <- function(t, orden, kat, pfx = "", tid) {
   celler <- function(i) lapply(keep, function(col) {
     v <- d[[col]][i]
     tags$td(switch(col,
-      namn_html = , kalla_html = HTML(v),
+      namn_html = , kalla_html = , skold_html = HTML(v),
       datum_txt = fmt_datum(v),
       v))
   })
@@ -235,11 +286,10 @@ person_page <- function(t, id, pfx = "../") {
       tags$td(if (!is.na(r$flagga)) tags$span(class = "saknas", flagga_text(r$flagga)) else "")
     )
   })
-  bild <- if (!is.na(first$bild_url)) {
-    tags$figure(
-      tags$img(src = first$bild_url, alt = first$namn, style = "max-width:240px"),
-      tags$figcaption(paste(first$bild_licens, first$bild_upphov))
-    )
+  med_bild <- d[!is.na(bild_url)]
+  bild <- if (nrow(med_bild)) {
+    b <- load_bilder()[fil == basename(med_bild$bild_url[1])]
+    if (nrow(b)) bild_figur(b[1], pfx)
   }
   tagList(
     tags$p(tags$strong("Kön: "), first$kon_txt,

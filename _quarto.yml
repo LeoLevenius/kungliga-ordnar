@@ -3,6 +3,8 @@ project:
   output-dir: _site
   pre-render: Rscript R/build_persons.R
   post-render: Rscript R/export.R
+  resources:
+    - img
 
 website:
   title: "Kungliga ordnar"

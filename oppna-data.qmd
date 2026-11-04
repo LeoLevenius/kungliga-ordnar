@@ -8,6 +8,7 @@ Alla filer nedan innehåller bara levande mottagare. Avlidna mottagare tas bort 
 - [tilldelningar.json](data/tilldelningar.json): samma data som JSON
 - [grader.csv](data/grader.csv): ordenens grader med förkortningar och bärordning
 - [andringslogg.csv](data/andringslogg.csv): ändringslogg
+- [bilder.csv](data/bilder.csv): fritt licensierade bilder med upphovsperson och licens
 - [feed.xml](feed.xml): Atom-flöde med de senaste tilldelningarna
 
 Filen tilldelningar.csv är UTF-8 med BOM.

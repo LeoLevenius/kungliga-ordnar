@@ -17,6 +17,10 @@ Enligt prop. 2021/22:232 kan utm채rkelserna delas ut till b책de svenska och utl�
 Se 채ven [ordensguiden](../ordensguide.qmd), [Serafimerorden](serafimerorden.qmd), [Sv채rdsorden](svardsorden.qmd) och [Vasaorden](vasaorden.qmd).
 :::
 
+```{r}
+ordenstecken_figur("Nordstj채rneorden", pfx = "../")
+```
+
 ## Mottagare
 
 ```{r}

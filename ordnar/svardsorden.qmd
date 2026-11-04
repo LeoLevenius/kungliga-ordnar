@@ -13,6 +13,10 @@ Svärdsorden instiftades 1748 ([Kungl. Maj:ts Orden](https://kungligmajestatsord
 Enligt prop. 2021/22:232 kan utmärkelserna delas ut till både svenska och utländska medborgare. Förordningen (2022:1800) trädde i kraft 1 februari 2023 ([SFS 2022:1800](https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/forordning-20221800-om-sveriges-framsta_sfs-2022-1800/)).
 :::
 
+```{r}
+ordenstecken_figur("Svärdsorden", pfx = "../")
+```
+
 ## Mottagare
 
 ```{r}

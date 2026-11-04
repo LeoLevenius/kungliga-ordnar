@@ -36,4 +36,10 @@ tagList(lapply(ORDNAR, function(o) {
 
 **Vasaorden.** Kommendörstecknet är ett vitemaljerat åttaflikigt kors med öppna kronor i vinklarna. På mitten finns en vas av guld omgiven av en röd, guldkantad bård med inskriften GUSTAF D. III INSTIKTARE MDCCLXXII. Kedjan består av fyra vasar och fyra holsteinska nässelblad samt åtta blå sköldar. ([Instruktion, 2023](https://kungligmajestatsorden.se/download/18.948412019c47af39bcd3a34/1771230440986/Instruktion.pdf))
 
-Bilder av ordenstecknen är ännu inte tillagda.
+## Bilder av ordenstecknen
+
+Alla bilder är fritt licensierade och hämtade från Wikimedia Commons. Upphovsperson och licens anges under varje bild.
+
+```{r}
+tagList(lapply(ORDNAR, function(o) tagList(h3(o), ordensbilder(o))))
+```
