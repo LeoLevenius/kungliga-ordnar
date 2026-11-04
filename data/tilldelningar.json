@@ -434,12 +434,12 @@
     "källa_url": "https://www.regeringen.se/pressmeddelanden/2024/10/tio-utlandska-medborgare-tilldelas-nordstjarneorden/",
     "källtyp": "regeringen",
     "källa_hämtad": "2026-11-03",
-    "wikidata_qid": null,
+    "wikidata_qid": "Q7821917",
     "dödsdatum": null,
     "flagga": "motivering_formulering_skiljer:https://www.regeringen.se/pressmeddelanden/2024/12/kungliga-nordstjarneorden-overlamnas-till-utrikesminister-blinken/",
-    "bild_url": null,
-    "bild_licens": null,
-    "bild_upphov": null
+    "bild_url": "img/utdelning-secretary-blinken-is-presented-with-royal-order-of-the-polar.jpg",
+    "bild_licens": "Public domain",
+    "bild_upphov": "U.S. Department of State from United States"
   },
   {
     "id": "T018",
@@ -1217,9 +1217,9 @@
     "wikidata_qid": "Q156390",
     "dödsdatum": null,
     "flagga": "datum_fodelse_stadgar_25",
-    "bild_url": null,
-    "bild_licens": null,
-    "bild_upphov": null
+    "bild_url": "img/skold-kronprinsessan-victoria-vapen-med-serafimerorden.png",
+    "bild_licens": "CC BY-SA 2.5",
+    "bild_upphov": "Lokal_Profil"
   },
   {
     "id": "T048",
@@ -1243,9 +1243,9 @@
     "wikidata_qid": "Q15768416",
     "dödsdatum": null,
     "flagga": "datum_fodelse_stadgar_25",
-    "bild_url": null,
-    "bild_licens": null,
-    "bild_upphov": null
+    "bild_url": "img/skold-prinsessan-leonore-vapen-med-serafimerkors.png",
+    "bild_licens": "CC BY-SA 2.5",
+    "bild_upphov": "Lokal_Profil"
   },
   {
     "id": "T049",
@@ -1295,9 +1295,9 @@
     "wikidata_qid": "Q165241",
     "dödsdatum": null,
     "flagga": null,
-    "bild_url": null,
-    "bild_licens": null,
-    "bild_upphov": null
+    "bild_url": "img/skold-coat-of-arms-of-haakon-crown-prince-of-norway-order-of-the-s.png",
+    "bild_licens": "CC BY-SA 4.0",
+    "bild_upphov": "Heralder"
   },
   {
     "id": "T051",
@@ -1425,9 +1425,9 @@
     "wikidata_qid": "Q209449",
     "dödsdatum": null,
     "flagga": "datum_vigsel_wikidata",
-    "bild_url": null,
-    "bild_licens": null,
-    "bild_upphov": null
+    "bild_url": "img/skold-prins-daniel-vapen-med-serafimerorden.png",
+    "bild_licens": "CC BY-SA 2.5",
+    "bild_upphov": "Lokal_Profil"
   },
   {
     "id": "T056",
@@ -1451,9 +1451,9 @@
     "wikidata_qid": "Q212035",
     "dödsdatum": null,
     "flagga": "datum_vigsel_wikidata",
-    "bild_url": null,
-    "bild_licens": null,
-    "bild_upphov": null
+    "bild_url": "img/skold-prinsessan-madeleine-vapen-med-serafimerkors.png",
+    "bild_licens": "CC BY-SA 2.5",
+    "bild_upphov": "Lokal_Profil"
   },
   {
     "id": "T057",
@@ -1503,9 +1503,9 @@
     "wikidata_qid": "Q214704",
     "dödsdatum": null,
     "flagga": "datum_fodelse_stadgar_25",
-    "bild_url": null,
-    "bild_licens": null,
-    "bild_upphov": null
+    "bild_url": "img/skold-prins-carl-philip-vapen-med-serafimerorden.png",
+    "bild_licens": "CC BY-SA 2.5",
+    "bild_upphov": "Lokal_Profil"
   },
   {
     "id": "T059",
@@ -1607,9 +1607,9 @@
     "wikidata_qid": "Q23891303",
     "dödsdatum": null,
     "flagga": "datum_fodelse_stadgar_25",
-    "bild_url": null,
-    "bild_licens": null,
-    "bild_upphov": null
+    "bild_url": "img/skold-prins-alexander-vapen-med-serafimerorden.png",
+    "bild_licens": "CC BY-SA 3.0",
+    "bild_upphov": "Lokal_Profil"
   },
   {
     "id": "T063",
@@ -1659,9 +1659,9 @@
     "wikidata_qid": "Q29207",
     "dödsdatum": null,
     "flagga": null,
-    "bild_url": null,
-    "bild_licens": null,
-    "bild_upphov": null
+    "bild_url": "img/skold-coat-of-arms-of-sauli-niinisto-12th-president-of-finland-as.png",
+    "bild_licens": "CC BY-SA 4.0",
+    "bild_upphov": "AtlanteanAstorian"
   },
   {
     "id": "T065",
@@ -1685,9 +1685,9 @@
     "wikidata_qid": "Q29213",
     "dödsdatum": null,
     "flagga": null,
-    "bild_url": null,
-    "bild_licens": null,
-    "bild_upphov": null
+    "bild_url": "img/skold-coat-of-arms-of-tarja-halonen-order-of-seraphim.png",
+    "bild_licens": "CC BY-SA 3.0",
+    "bild_upphov": "Mimich"
   },
   {
     "id": "T066",
@@ -1711,9 +1711,9 @@
     "wikidata_qid": "Q31129",
     "dödsdatum": null,
     "flagga": "flera_medborgarskap",
-    "bild_url": null,
-    "bild_licens": null,
-    "bild_upphov": null
+    "bild_url": "img/skold-coat-of-arms-of-queen-paola-of-belgium-order-of-the-seraphim.png",
+    "bild_licens": "CC BY-SA 4.0",
+    "bild_upphov": "Heralder, elements by Sodacan"
   },
   {
     "id": "T067",
@@ -1789,9 +1789,9 @@
     "wikidata_qid": "Q38579198",
     "dödsdatum": null,
     "flagga": "datum_fodelse_stadgar_25",
-    "bild_url": null,
-    "bild_licens": null,
-    "bild_upphov": null
+    "bild_url": "img/skold-prins-gabriel-vapen-med-serafimerorden.png",
+    "bild_licens": "CC BY-SA 3.0",
+    "bild_upphov": "Lokal_Profil"
   },
   {
     "id": "T070",
@@ -1893,9 +1893,9 @@
     "wikidata_qid": "Q460960",
     "dödsdatum": null,
     "flagga": "flera_medborgarskap",
-    "bild_url": null,
-    "bild_licens": null,
-    "bild_upphov": null
+    "bild_url": "img/skold-coat-of-arms-of-queen-maxima-of-the-netherlands-order-of-ser.png",
+    "bild_licens": "CC BY-SA 4.0",
+    "bild_upphov": "Heralder"
   },
   {
     "id": "T074",
@@ -1945,9 +1945,9 @@
     "wikidata_qid": "Q4988701",
     "dödsdatum": null,
     "flagga": null,
-    "bild_url": null,
-    "bild_licens": null,
-    "bild_upphov": null
+    "bild_url": "img/skold-prinsessan-sofia-vapen-med-serafimerkors.png",
+    "bild_licens": "CC BY-SA 2.5",
+    "bild_upphov": "Lokal_Profil"
   },
   {
     "id": "T076",
@@ -1971,9 +1971,9 @@
     "wikidata_qid": "Q50411737",
     "dödsdatum": null,
     "flagga": "datum_fodelse_stadgar_25",
-    "bild_url": null,
-    "bild_licens": null,
-    "bild_upphov": null
+    "bild_url": "img/skold-prinsessan-adrienne-vapen-med-serafimerkors.png",
+    "bild_licens": "CC BY-SA 4.0",
+    "bild_upphov": "Lokal_Profil"
   },
   {
     "id": "T077",
@@ -1997,9 +1997,9 @@
     "wikidata_qid": "Q57289",
     "dödsdatum": null,
     "flagga": null,
-    "bild_url": null,
-    "bild_licens": null,
-    "bild_upphov": null
+    "bild_url": "img/skold-coat-of-arms-of-toomas-hendrik-ilves-order-of-the-seraphim.png",
+    "bild_licens": "CC BY-SA 4.0",
+    "bild_upphov": "Heralder"
   },
   {
     "id": "T078",
@@ -2101,9 +2101,9 @@
     "wikidata_qid": "Q45068",
     "dödsdatum": null,
     "flagga": "datum_fodelse_kungahuset_visar_dop_1946_06_07",
-    "bild_url": null,
-    "bild_licens": null,
-    "bild_upphov": null
+    "bild_url": "img/skold-serafimerskold-carl-xvi-gustaf-riddarholmen.png",
+    "bild_licens": "CC BY-SA 3.0",
+    "bild_upphov": "A.T-2014"
   },
   {
     "id": "T082",
@@ -2127,9 +2127,9 @@
     "wikidata_qid": "Q152308",
     "dödsdatum": null,
     "flagga": "datum_avviker_fran_vigsel_eller_fodelse",
-    "bild_url": null,
-    "bild_licens": null,
-    "bild_upphov": null
+    "bild_url": "img/skold-coat-of-arms-of-silvia-queen-of-sweden.png",
+    "bild_licens": "CC BY-SA 4.0",
+    "bild_upphov": "Sodacan"
   },
   {
     "id": "T083",
@@ -2439,9 +2439,9 @@
     "wikidata_qid": "Q154952",
     "dödsdatum": null,
     "flagga": null,
-    "bild_url": null,
-    "bild_licens": null,
-    "bild_upphov": null
+    "bild_url": "img/skold-coat-of-arms-of-willem-alexander-of-the-netherlands.png",
+    "bild_licens": "CC BY-SA 4.0",
+    "bild_upphov": "Heralder, elements by Sodacan"
   },
   {
     "id": "T095",
@@ -2465,9 +2465,9 @@
     "wikidata_qid": "Q154952",
     "dödsdatum": null,
     "flagga": null,
-    "bild_url": null,
-    "bild_licens": null,
-    "bild_upphov": null
+    "bild_url": "img/skold-coat-of-arms-of-willem-alexander-of-the-netherlands.png",
+    "bild_licens": "CC BY-SA 4.0",
+    "bild_upphov": "Heralder, elements by Sodacan"
   },
   {
     "id": "T096",
@@ -2491,9 +2491,9 @@
     "wikidata_qid": "Q191045",
     "dödsdatum": null,
     "flagga": null,
-    "bild_url": null,
-    "bild_licens": null,
-    "bild_upphov": null
+    "bild_url": "img/skold-coat-of-arms-of-felipe-of-spain-order-of-the-seraphim.png",
+    "bild_licens": "CC BY-SA 4.0",
+    "bild_upphov": "Heralder, fleur-de-lis by Sodacan"
   },
   {
     "id": "T097",
@@ -2517,9 +2517,9 @@
     "wikidata_qid": "Q201589",
     "dödsdatum": null,
     "flagga": null,
-    "bild_url": null,
-    "bild_licens": null,
-    "bild_upphov": null
+    "bild_url": "img/skold-coat-of-arms-of-queen-letiza-of-spain-order-of-seraphim.png",
+    "bild_licens": "CC BY-SA 4.0",
+    "bild_upphov": "Heralder"
   },
   {
     "id": "T098",
@@ -2569,9 +2569,9 @@
     "wikidata_qid": "Q208615",
     "dödsdatum": null,
     "flagga": null,
-    "bild_url": null,
-    "bild_licens": null,
-    "bild_upphov": null
+    "bild_url": "img/skold-coat-of-arms-of-queen-mary-of-denmark-order-of-seraphim.png",
+    "bild_licens": "CC BY-SA 4.0",
+    "bild_upphov": "Heralder"
   },
   {
     "id": "T100",
@@ -2647,9 +2647,9 @@
     "wikidata_qid": "Q191045",
     "dödsdatum": null,
     "flagga": null,
-    "bild_url": null,
-    "bild_licens": null,
-    "bild_upphov": null
+    "bild_url": "img/skold-coat-of-arms-of-felipe-of-spain-order-of-the-seraphim.png",
+    "bild_licens": "CC BY-SA 4.0",
+    "bild_upphov": "Heralder, fleur-de-lis by Sodacan"
   },
   {
     "id": "T103",
@@ -2725,9 +2725,9 @@
     "wikidata_qid": "Q22997937",
     "dödsdatum": null,
     "flagga": null,
-    "bild_url": null,
-    "bild_licens": null,
-    "bild_upphov": null
+    "bild_url": "img/skold-prins-oscar-vapen-med-serafimerorden.png",
+    "bild_licens": "CC BY-SA 3.0",
+    "bild_upphov": "Lokal_Profil"
   },
   {
     "id": "T106",
@@ -2751,9 +2751,9 @@
     "wikidata_qid": "Q132174048",
     "dödsdatum": null,
     "flagga": null,
-    "bild_url": null,
-    "bild_licens": null,
-    "bild_upphov": null
+    "bild_url": "img/skold-prinsessan-ines-vapen-med-serafimerkors.png",
+    "bild_licens": "CC BY-SA 4.0",
+    "bild_upphov": "Lokal_Profil"
   },
   {
     "id": "T107",
@@ -2985,9 +2985,9 @@
     "wikidata_qid": "Q155004",
     "dödsdatum": null,
     "flagga": null,
-    "bild_url": null,
-    "bild_licens": null,
-    "bild_upphov": null
+    "bild_url": "img/skold-coat-of-arms-of-philippe-king-of-the-belgians-order-of-the-s.png",
+    "bild_licens": "CC BY-SA 4.0",
+    "bild_upphov": "Heralder, elements by Sodacan"
   },
   {
     "id": "T116",
@@ -3011,9 +3011,9 @@
     "wikidata_qid": "Q57464",
     "dödsdatum": null,
     "flagga": null,
-    "bild_url": null,
-    "bild_licens": null,
-    "bild_upphov": null
+    "bild_url": "img/skold-coat-of-arms-of-abdullah-ii-king-of-jordan-order-of-the-sera.png",
+    "bild_licens": "CC BY-SA 4.0",
+    "bild_upphov": "Heralder, elements of Sodacan"
   },
   {
     "id": "T117",
@@ -3479,9 +3479,9 @@
     "wikidata_qid": "Q102139",
     "dödsdatum": null,
     "flagga": null,
-    "bild_url": null,
-    "bild_licens": null,
-    "bild_upphov": null
+    "bild_url": "img/skold-coat-of-arms-of-margrethe-ii-of-denmark-order-of-the-seraphi.png",
+    "bild_licens": "CC BY-SA 4.0",
+    "bild_upphov": "Heralder, elements by Sodacan"
   },
   {
     "id": "T135",
@@ -3505,9 +3505,9 @@
     "wikidata_qid": "Q16004",
     "dödsdatum": null,
     "flagga": null,
-    "bild_url": null,
-    "bild_licens": null,
-    "bild_upphov": null
+    "bild_url": "img/skold-coat-of-arms-of-hereditary-grand-duke-henri-of-luxembourg-or.png",
+    "bild_licens": "CC BY-SA 4.0",
+    "bild_upphov": "Heralder"
   },
   {
     "id": "T136",
@@ -3531,9 +3531,9 @@
     "wikidata_qid": "Q230644",
     "dödsdatum": null,
     "flagga": null,
-    "bild_url": null,
-    "bild_licens": null,
-    "bild_upphov": null
+    "bild_url": "img/skold-coat-of-arms-of-maria-teresa-grand-duchess-of-luxembourg-ord.png",
+    "bild_licens": "CC BY-SA 4.0",
+    "bild_upphov": "Heralder"
   },
   {
     "id": "T137",
@@ -3609,9 +3609,9 @@
     "wikidata_qid": "Q3911",
     "dödsdatum": null,
     "flagga": null,
-    "bild_url": null,
-    "bild_licens": null,
-    "bild_upphov": null
+    "bild_url": "img/skold-coat-of-arms-of-albert-of-belgium-order-of-the-seraphim.png",
+    "bild_licens": "CC BY-SA 4.0",
+    "bild_upphov": "Heralder, elements by Sodacan"
   },
   {
     "id": "T140",
@@ -3765,9 +3765,9 @@
     "wikidata_qid": "Q157",
     "dödsdatum": null,
     "flagga": null,
-    "bild_url": null,
-    "bild_licens": null,
-    "bild_upphov": null
+    "bild_url": "img/skold-coat-of-arms-of-francois-hollande-order-of-the-seraphim.png",
+    "bild_licens": "CC BY-SA 4.0",
+    "bild_upphov": "Heralder, leaves, lion and eagle heads by Sodacan"
   },
   {
     "id": "T146",
@@ -3791,9 +3791,9 @@
     "wikidata_qid": "Q43274",
     "dödsdatum": null,
     "flagga": null,
-    "bild_url": null,
-    "bild_licens": null,
-    "bild_upphov": null
+    "bild_url": "img/skold-coat-of-arms-of-charles-prince-of-wales-order-of-the-seraphi.png",
+    "bild_licens": "CC BY-SA 4.0",
+    "bild_upphov": "Heralder, elements by Sodacan"
   },
   {
     "id": "T147",
@@ -3817,9 +3817,9 @@
     "wikidata_qid": "Q189797",
     "dödsdatum": null,
     "flagga": null,
-    "bild_url": null,
-    "bild_licens": null,
-    "bild_upphov": null
+    "bild_url": "img/skold-coat-of-arms-of-vigdis-finnbogadottir-order-of-the-seraphim.png",
+    "bild_licens": "CC BY-SA 4.0",
+    "bild_upphov": "Heralder"
   },
   {
     "id": "T148",
@@ -3843,9 +3843,9 @@
     "wikidata_qid": "Q131045",
     "dödsdatum": null,
     "flagga": null,
-    "bild_url": null,
-    "bild_licens": null,
-    "bild_upphov": null
+    "bild_url": "img/skold-coat-of-arms-of-queen-sonja-of-norway-order-of-the-seraphim.png",
+    "bild_licens": "CC BY-SA 4.0",
+    "bild_upphov": "Heralder"
   },
   {
     "id": "T149",
@@ -3869,9 +3869,9 @@
     "wikidata_qid": "Q29574",
     "dödsdatum": null,
     "flagga": null,
-    "bild_url": null,
-    "bild_licens": null,
-    "bild_upphov": null
+    "bild_url": "img/skold-coat-of-arms-of-beatrix-of-the-netherlands-order-of-the-sera.png",
+    "bild_licens": "CC BY-SA 4.0",
+    "bild_upphov": "Heralder, elements by Sodacan"
   },
   {
     "id": "T150",
@@ -3895,9 +3895,9 @@
     "wikidata_qid": "Q19943",
     "dödsdatum": null,
     "flagga": null,
-    "bild_url": null,
-    "bild_licens": null,
-    "bild_upphov": null
+    "bild_url": "img/skold-coat-of-arms-of-juan-carlos-i-of-spain-order-of-the-seraphim.png",
+    "bild_licens": "CC BY-SA 4.0",
+    "bild_upphov": "Heralder, fleur-de-lis by Sodacan"
   },
   {
     "id": "T151",
@@ -3921,9 +3921,9 @@
     "wikidata_qid": "Q156548",
     "dödsdatum": null,
     "flagga": null,
-    "bild_url": null,
-    "bild_licens": null,
-    "bild_upphov": null
+    "bild_url": "img/skold-coat-of-arms-of-queen-sofia-of-spain-order-of-seraphim.png",
+    "bild_licens": "CC BY-SA 4.0",
+    "bild_upphov": "Heralder, some elements by Sodacan"
   },
   {
     "id": "T152",
@@ -5403,9 +5403,9 @@
     "wikidata_qid": "Q102139",
     "dödsdatum": null,
     "flagga": null,
-    "bild_url": null,
-    "bild_licens": null,
-    "bild_upphov": null
+    "bild_url": "img/skold-coat-of-arms-of-margrethe-ii-of-denmark-order-of-the-seraphi.png",
+    "bild_licens": "CC BY-SA 4.0",
+    "bild_upphov": "Heralder, elements by Sodacan"
   },
   {
     "id": "T211",
@@ -7093,9 +7093,9 @@
     "wikidata_qid": "Q3911",
     "dödsdatum": null,
     "flagga": null,
-    "bild_url": null,
-    "bild_licens": null,
-    "bild_upphov": null
+    "bild_url": "img/skold-coat-of-arms-of-albert-of-belgium-order-of-the-seraphim.png",
+    "bild_licens": "CC BY-SA 4.0",
+    "bild_upphov": "Heralder, elements by Sodacan"
   },
   {
     "id": "T276",
@@ -9979,9 +9979,9 @@
     "wikidata_qid": "Q16004",
     "dödsdatum": null,
     "flagga": null,
-    "bild_url": null,
-    "bild_licens": null,
-    "bild_upphov": null
+    "bild_url": "img/skold-coat-of-arms-of-hereditary-grand-duke-henri-of-luxembourg-or.png",
+    "bild_licens": "CC BY-SA 4.0",
+    "bild_upphov": "Heralder"
   },
   {
     "id": "T387",
@@ -11149,6 +11149,58 @@
     "wikidata_qid": "Q6230054",
     "dödsdatum": null,
     "flagga": "kalla_oreferenserad_wikipedia",
+    "bild_url": null,
+    "bild_licens": null,
+    "bild_upphov": null
+  },
+  {
+    "id": "T434",
+    "person_id": "kristina-kappelin",
+    "namn": "Kristina Kappelin",
+    "kön": "kvinna",
+    "kategori": "svensk",
+    "land": "Sverige",
+    "kunglig": "FALSE",
+    "yrke_titel": "honorärkonsul",
+    "orden": "Nordstjärneorden",
+    "grad": "Riddare av första klassen",
+    "datum_tilldelning": "2026-04-13",
+    "datum_precision": "dag",
+    "motivering": null,
+    "motivering_typ": null,
+    "statsbesök": null,
+    "källa_url": "https://kungligmajestatsorden.se/nyhetsarkiv/nyheter/2026-04-13-kungliga-riddarordnar-till-forsvarsattacheer-och-honorarkonsuler",
+    "källtyp": "officiell_publikation",
+    "källa_hämtad": "2026-11-04",
+    "wikidata_qid": "Q4957983",
+    "dödsdatum": null,
+    "flagga": null,
+    "bild_url": null,
+    "bild_licens": null,
+    "bild_upphov": null
+  },
+  {
+    "id": "T435",
+    "person_id": "amitabh-kant",
+    "namn": "Amitabh Kant",
+    "kön": "man",
+    "kategori": "utländsk",
+    "land": "Indien",
+    "kunglig": "FALSE",
+    "yrke_titel": "tjänsteman",
+    "orden": "Nordstjärneorden",
+    "grad": "Riddare av första klassen",
+    "datum_tilldelning": "2026-04-13",
+    "datum_precision": "dag",
+    "motivering": null,
+    "motivering_typ": null,
+    "statsbesök": null,
+    "källa_url": "https://kungligmajestatsorden.se/nyhetsarkiv/nyheter/2026-04-13-kungliga-riddarordnar-till-forsvarsattacheer-och-honorarkonsuler",
+    "källtyp": "officiell_publikation",
+    "källa_hämtad": "2026-11-04",
+    "wikidata_qid": "Q21928810",
+    "dödsdatum": null,
+    "flagga": null,
     "bild_url": null,
     "bild_licens": null,
     "bild_upphov": null

@@ -39,6 +39,40 @@ table.person-tabell td {
   vertical-align: top;
 }
 
+figure.bild {
+  margin: 0 0 1rem;
+  max-width: 420px;
+}
+
+figure.bild img {
+  max-width: 100%;
+  height: auto;
+  border: 1px solid #ddd;
+}
+
+figure.bild figcaption {
+  font-size: 0.8rem;
+  color: #444;
+}
+
+.bildgrid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: flex-start;
+}
+
+img.skold {
+  height: 56px;
+  width: auto;
+  max-width: 64px;
+  object-fit: contain;
+}
+
+.bildkredit {
+  color: #555;
+}
+
 .reactable {
   font-size: 0.9rem;
 }
