@@ -17,7 +17,7 @@ summ <- t[, .(mottagare = uniqueN(person_id),
               utlänningar = uniqueN(person_id[kategori == "utländsk"])), by = orden]
 summ <- summ[match(ORDNAR, orden)]
 summ[is.na(mottagare), `:=`(mottagare = 0L, svenskar = 0L, utlänningar = 0L)]
-summ[, sida := paste0('<a href="', SLUG[orden], '.html">', orden, "</a>")]
+summ[, sida := paste0('<a href="ordnar/', SLUG[orden], '.html">', orden, "</a>")]
 reactable(as.data.frame(summ)[, c("sida", "mottagare", "svenskar", "utlänningar")],
           columns = list(sida = colDef(name = "Orden", html = TRUE),
                          mottagare = colDef(name = "Mottagare"),
