@@ -132,6 +132,7 @@ FLAGGA_TEXT <- c(
   datum_saknas_sedan_tidigare = "Källan anger att hon sedan tidigare har graden (före 6 maj 2024); datum saknas",
   nationalitet_enligt_kmo = "Nationalitet enligt Kungl. Maj:ts Ordens förläningsdatabas; avviker från tidigare uppgift",
   nationalitet_kmo_avviker_fran_wikidata = "Kungl. Maj:ts Ordens förläningsdatabas anger Sverige, men personen är lettisk medborgare enligt Wikidata; land är korrigerat",
+  fodelsear_avviker_ett_ar_kmo = "Födelseåret i Kungl. Maj:ts Ordens förläningsdatabas avviker ett år från Wikipedia; personen är identifierad via fullständigt namn, nationalitet och yrke",
   flera_medborgarskap = "Flera medborgarskap i Wikidata; land är inte angivet",
   land_wikidata_ej_verifierat = "Land i Wikidata är uppenbart felaktigt eller ej verifierat; land är inte angivet",
   grad_konflikt_kallor = "Källorna anger olika grad; den andra källan anges i flaggan i datafilen",
