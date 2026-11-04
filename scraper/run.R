@@ -44,7 +44,7 @@ TITELORD <- c("direktör", "professor", "överste", "överstelöjtnant", "major"
               "chef", "ordförande", "kommendörkapten", "fänrik", "militär",
               "försvarsattaché", "riksdagsledamot", "artisten", "artist", "musiker",
               "tonsättare", "författare", "konstnär", "regissör", "forskare", "vd",
-              "rådgivare", "affärsområdeschef", "operachef", "justitieråd",
+              "rådgivare", "medicinsk", "affärsområdeschef", "operachef", "justitieråd",
               "riksarkivarie", "länsantikvarie", "teknologie", "hedersdoktor")
 
 skipped <- character()
@@ -177,6 +177,7 @@ kalltyp_av <- function(url) {
   h <- host_av(url)
   if (grepl("kungahuset\\.se$", h)) "kungahuset"
   else if (grepl("regeringen\\.se$", h)) "regeringen"
+  else if (grepl("kungligmajestatsorden\\.se$", h)) "officiell_publikation"
   else "tidning"
 }
 
@@ -273,6 +274,10 @@ tolka_strukturerad <- function(url, lines) {
       if (!is.na(o)) cur_orden <- o
       next
     }
+    if (nchar(l) < 60 && grepl("medalj|tecknet?$|militärkors", l, ignore.case = TRUE)) {
+      grad_b <- NA_character_
+      next
+    }
     if (ar_gradrad(l)) {
       if (i < n && !grepl("^För ", lines[i + 1])) grad_b <- l
       next
@@ -292,6 +297,48 @@ tolka_strukturerad <- function(url, lines) {
       d <- dela_namn(nm)
       rader[[length(rader) + 1]] <- ny_rad(d[["namn"]], d[["titel"]], orden, grad_normaliserad(grad),
                                            datum, l, url, kat$kategori, kat$flagga)
+    }
+  }
+  if (length(rader)) rbindlist(rader) else rad_tom()
+}
+
+LAND_ADJ <- c(svenska = "Sverige", danska = "Danmark", norska = "Norge", finske = "Finland",
+              finska = "Finland", isländske = "Island", isländska = "Island", estniske = "Estland",
+              estniska = "Estland", lettiske = "Lettland", lettiska = "Lettland", litauiske = "Litauen",
+              litauiska = "Litauen", polske = "Polen", polska = "Polen", tyske = "Tyskland",
+              tyska = "Tyskland", franske = "Frankrike", franska = "Frankrike", italienske = "Italien",
+              italienska = "Italien", grekiske = "Grekland", grekiska = "Grekland", spanske = "Spanien",
+              spanska = "Spanien", brittiske = "Storbritannien", brittiska = "Storbritannien",
+              amerikanske = "USA", amerikanska = "USA", kanadensiske = "Kanada", kanadensiska = "Kanada",
+              indiske = "Indien", indiska = "Indien", japanske = "Japan", japanska = "Japan",
+              australiensiske = "Australien", australiensiska = "Australien", nederländske = "Nederländerna",
+              nederländska = "Nederländerna", belgiske = "Belgien", belgiska = "Belgien",
+              schweiziske = "Schweiz", schweiziska = "Schweiz", österrikiske = "Österrike",
+              österrikiska = "Österrike", ukrainske = "Ukraina", ukrainska = "Ukraina")
+
+tolka_kmo <- function(url, lines) {
+  datum <- sidans_datum(url, lines)
+  rader <- list()
+  cur_orden <- NA_character_
+  cur_grad <- NA_character_
+  ctx <- paste0("till (Kommendör med stora korset|Kommendör av första klassen|Kommendör|",
+                "Riddare av första klassen|Riddare) av (Svärs?|Nordstjärne|Vasa|Serafimer)orden")
+  for (l in lines) {
+    m <- regmatches(l, regexec(ctx, l, perl = TRUE))[[1]]
+    if (length(m)) {
+      cur_grad <- m[2]
+      stam <- sub("^Svärs$", "Svärds", m[3])
+      cur_orden <- names(ORDEN_STAMM)[match(stam, ORDEN_STAMM)]
+      next
+    }
+    p <- regmatches(l, regexec("^([a-zåäö]+) medborgaren (.+)$", l, perl = TRUE))[[1]]
+    if (length(p) && !is.na(cur_grad) && !is.na(cur_orden)) {
+      d <- dela_namn(p[3])
+      land <- unname(LAND_ADJ[p[2]])
+      r <- ny_rad(d[["namn"]], d[["titel"]], cur_orden, cur_grad, datum, NA_character_, url,
+                  if (identical(land, "Sverige")) "svensk" else "utländsk")
+      if (!is.na(land)) set(r, 1L, "land", land)
+      rader[[length(rader) + 1]] <- r
     }
   }
   if (length(rader)) rbindlist(rader) else rad_tom()
@@ -332,6 +379,7 @@ tolka_sida <- function(url) {
   titel <- sidans_titel(html)
   if (!any(grepl(ORDEN_RE, c(titel, lines)))) return(list(rader = rad_tom(), utdrag = NULL))
   rader <- tolka_strukturerad(url, lines)
+  if (!nrow(rader)) rader <- tolka_kmo(url, lines)
   if (!nrow(rader)) rader <- tolka_mening(url, lines)
   utdrag <- if (!nrow(rader)) utdrag_rader(url, lines, titel) else NULL
   list(rader = rader, utdrag = utdrag)
@@ -507,6 +555,17 @@ regeringen_adresser <- function() {
   unique(adr)
 }
 
+kmo_adresser <- function() {
+  html <- hamta("https://kungligmajestatsorden.se/nyhetsarkiv", max_alder_h = 12)
+  if (is.null(html)) return(character())
+  lank <- html_attr(html_elements(read_html(html), "a"), "href")
+  lank <- unique(lank[!is.na(lank) & grepl("/nyhetsarkiv/nyheter/[0-9]{4}-[0-9]{2}-[0-9]{2}-", lank)])
+  datum <- as.Date(sub(".*/([0-9]{4}-[0-9]{2}-[0-9]{2})-.*", "\\1", lank))
+  ok <- datum >= Sys.Date() - FIND_DAYS & grepl("orden|forlan|riddar|honorarkonsul|attach", lank)
+  ut <- lank[ok]
+  ifelse(grepl("^https?://", ut), ut, paste0("https://kungligmajestatsorden.se", ut))
+}
+
 FLODEN <- c(DN = "https://www.dn.se/rss/", SvD = "https://www.svd.se/feed/articles.rss")
 
 skriv_ut <- function(rader, rubrik) {
@@ -534,7 +593,7 @@ kor <- function(args) {
 
   t <- las_csv(FILE_T)
   k <- if (file.exists(FILE_K)) las_csv(FILE_K) else data.table()
-  adresser <- if (!is.na(url_arg)) url_arg else c(kungahuset_adresser(), regeringen_adresser())
+  adresser <- if (!is.na(url_arg)) url_arg else c(kungahuset_adresser(), regeringen_adresser(), kmo_adresser())
   cat(sprintf("Sidor att undersöka: %d\n", length(adresser)))
 
   alla <- list()
@@ -556,7 +615,7 @@ kor <- function(args) {
   if (nrow(nya)) nya <- berika_wikidata(nya)
   if (nrow(nya)) {
     nya <- validera_grader(nya)
-    nya[, till_data := källtyp %in% c("kungahuset", "regeringen") & !is.na(kategori) & grad_ok & !is.na(datum_tilldelning)]
+    nya[, till_data := källtyp %in% c("kungahuset", "regeringen", "officiell_publikation") & !is.na(kategori) & grad_ok & !is.na(datum_tilldelning)]
   }
   till_t <- if (nrow(nya)) nya[till_data == TRUE] else nya
   till_k <- if (nrow(nya)) nya[till_data == FALSE] else nya
