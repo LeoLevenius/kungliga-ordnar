@@ -38,7 +38,7 @@ datum_ok <- function(d, p) {
 cat(sprintf("Rader i tilldelningar.csv: %d\n\n", nrow(t)))
 
 kontroll("id är unika och ifyllda", !is.na(t$id) & !duplicated(t$id), t$id)
-kontroll("varje grad finns i grader.csv för sin orden", paste(t$orden, t$grad) %in% paste(g$orden, g$grad), paste(t$orden, t$grad))
+kontroll("angiven grad finns i grader.csv för sin orden", is.na(t$grad) | paste(t$orden, t$grad) %in% paste(g$orden, g$grad), paste(t$orden, t$grad))
 kontroll("alla datum går att tolka enligt datum_precision (okänt datum: båda tomma)",
          datum_ok(t$datum_tilldelning, t$datum_precision) | (is.na(t$datum_tilldelning) & is.na(t$datum_precision)),
          paste(t$id, t$datum_tilldelning, t$datum_precision))

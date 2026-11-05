@@ -1,5 +1,7 @@
 source('R/common.R')
 t <- load_tilldelningar()
+stopifnot(t[person_id == 'thamnoon-wanglee', grad] == 'Grad inte angiven')
+stopifnot(grepl('Grad inte angiven', as.character(person_page(t, 'thamnoon-wanglee')), fixed = TRUE))
 stopifnot(as.character(datum_date('2023-05')) == '2023-05-01')
 stopifnot(!grepl('onmouseover="x"', source_html('https://example.org/" onmouseover="x', 'kungahuset'), fixed = TRUE))
 stopifnot(grepl('Lee</span> Myung-bak', namn_sc_html('Lee Myung-bak'), fixed = TRUE))

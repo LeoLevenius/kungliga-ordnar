@@ -138,6 +138,7 @@ FLAGGA_TEXT <- c(
   datum_avviker_fran_vigsel_eller_fodelse = "Datum från svensk Wikipedia (6 maj 1976) avviker från födelse- och vigseldatum",
   datum_fran_fodelsen_kalla = "Källan anger att graden gäller från födseln; datumet är födelsedatum",
   datum_saknas_sedan_tidigare = "Källan anger att hon sedan tidigare har graden (före 6 maj 2024); datum saknas",
+  datum_utdelning_enligt_motion = "Månaden avser utdelningen enligt riksdagsmotionen; beslutsdatum och ordensgrad anges inte där",
   nationalitet_enligt_kmo = "Nationalitet enligt Kungl. Maj:ts Ordens förläningsdatabas; avviker från tidigare uppgift",
   nationalitet_finsk_enligt_riksdagsmotion = "Land anges som Finland enligt en riksdagsmotion som beskriver mottagaren som finländsk medborgare 2010; Kungl. Maj:ts Ordens databas anger Sverige",
   nationalitet_brittisk_enligt_investor = "Land anges som Storbritannien enligt Investor AB:s årsredovisning; svensk Wikipedia anger också Sverige",
@@ -197,6 +198,7 @@ load_tilldelningar <- function() {
   g <- fread(file.path(data_dir, "grader.csv"), encoding = "UTF-8",
              colClasses = "character", na.strings = "")
   t[, rang := as.integer(g$rang[match(paste(orden, grad), paste(g$orden, g$grad))])]
+  t[is.na(grad), `:=`(grad = "Grad inte angiven", rang = 999L)]
   t[, kunglig_txt := fifelse(kunglig == "TRUE", "Ja", "Nej")]
   t[, kon_txt := fifelse(is.na(kon), "uppgift saknas", kon)]
   t[, land_txt := fifelse(is.na(land), "uppgift saknas", land)]
