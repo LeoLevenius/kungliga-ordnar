@@ -125,7 +125,7 @@ FLAGGA_TEXT <- c(
   motivering_formulering_skiljer = "Källorna formulerar motiveringen olika",
   beslutsdatum_ej_angivet = "Beslutsdatum saknas i källan; datumet är datumet för offentliggörandet",
   grad_ledamot_trots_kmo_riddare = "Graden är Ledamot, eftersom kvinnor hade benämningen Ledamot före reformen 1 februari 2023; Kungl. Maj:ts Ordens förläningsdatabas anger Riddare",
-  datum_saknas_kungahuset_anger_grad = "Kungahuset.se anger graden Kommendör med stora korset men inget datum; Kungl. Maj:ts Ordens förläningsdatabas anger Kommendör av första klassen 2013-10-01 för samma orden",
+  grad_storkors_kungahuset_kmo_forsta_klass = "Graden är Kommendör med stora korset enligt kungahuset.se; Kungl. Maj:ts Ordens förläningsdatabas anger Kommendör av första klassen oktober 2013",
   datum_fodelse_stadgar_25 = "Datum är födelsedatum: arvsberättigade prinsar och prinsessor är riddare från födseln enligt stadgarna 25 §",
   datum_vigsel_wikidata = "Datum är vigseldatum från Wikidata; källan anger inte datumet",
   datum_fodelse_kungahuset_visar_dop_1946_06_07 = "Datum är födelsedatum; kungahuset.se anger att insignierna överlämnades vid dopet 7 juni 1946",
