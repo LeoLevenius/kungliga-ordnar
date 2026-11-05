@@ -130,6 +130,8 @@ FLAGGA_TEXT <- c(
   beslutsdatum_ej_angivet = "Beslutsdatum saknas i källan; datumet är datumet för offentliggörandet",
   grad_ledamot_trots_kmo_riddare = "Graden är Ledamot, eftersom kvinnor hade benämningen Ledamot före reformen 1 februari 2023; Kungl. Maj:ts Ordens förläningsdatabas anger Riddare",
   grad_storkors_kungahuset_kmo_forsta_klass = "Graden är Kommendör med stora korset enligt kungahuset.se; Kungl. Maj:ts Ordens förläningsdatabas anger Kommendör av första klassen oktober 2013",
+  datum_stadgar_1975 = "Datumet avser när stadgarna började tillämpas; de fastställdes 17 december 1974 och ersatte benämningen herre och mästare med stormästare för Serafimer- och Nordstjärneordnarna",
+  datum_stadgar_2023 = "Datumet avser när 2023 års stadgar började gälla, inte ett fastställt tillträdesdatum. Kungahuset beskrev redan 2017 kungen som stormästare för alla fyra ordnarna",
   datum_fodelse_stadgar_25 = "Datum är födelsedatum: arvsberättigade prinsar och prinsessor är riddare från födseln enligt stadgarna 25 §",
   datum_vigsel_wikidata = "Datum är vigseldatum från Wikidata; källan anger inte datumet",
   datum_fodelse_kungahuset_visar_dop_1946_06_07 = "Datum är födelsedatum; kungahuset.se anger att insignierna överlämnades vid dopet 7 juni 1946",

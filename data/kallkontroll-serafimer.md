@@ -23,3 +23,8 @@ Datakonflikter för Maha Vajiralongkorn, Abdullah II och Aníbal Cavaco Silva an
 - Traian Băsescu: [CC BY 4.0](https://commons.wikimedia.org/wiki/File:Generic_Coat_of_Arms_of_the_Presidents_of_Romania_(Order_of_the_Seraphim).svg), Oritsu.me, delar av Ssolbergj, Heralder.
 - Queen Saleha of Brunei: [CC BY 4.0](https://commons.wikimedia.org/wiki/File:Emblem_of_Saleha,_Raja_Isteri_of_Brunei_(Order_of_the_Seraphim.svg), Oritsu.me, delar av Heralder.
 - Bronisław Komorowski: [CC BY-SA 4.0](https://commons.wikimedia.org/wiki/File:The_coat_of_arms_of_Bronislaw_Komorowski,_President_of_Poland..jpg), Kazimierz chlodwic.
+
+## Stormästare och stadgedatum
+
+- [Ordensstadgarna från 2023](https://kungligmajestatsorden.se/download/18.516d7c47186a1c5d5561fdc3/1678188499162/Ordensstadgar.pdf) fastställdes och började gälla 15 februari 2023. Datumet på Svärds- och Vasaordens poster avser dessa stadgar. [Kungahuset beskrev redan 2017](https://www.kungahuset.se/arkiv/aldre-nyheter/2017-05-03-kungen-vid-ordinarie-ordenskapitel) kungen som stormästare för samtliga fyra ordnar, varför stadgedatumet inte innebär att han först då blev stormästare.
+- Enligt [SOU 2021:74, bilaga, s. 360](https://www.regeringen.se/contentassets/e8a5d6e1921648fcb0c91f61359d65ad/ett-modernt-beloningssystem-de-allmanna-flaggdagarna-och-redovisningen-av-anslaget-till-hovet-sou-202174-bilaga.pdf) fastställdes de nya stadgarna för Serafimer- och Nordstjärneordnarna den 17 december 1974 och innehöll benämningen stormästare. [Svensk Numismatisk Tidskrift 1984, nr 2](https://numismatik.se/pdf/snt21984.pdf) anger att stadgarna började tillämpas den 1 januari 1975. Datumet avser alltså stadgarnas tillämpning.
