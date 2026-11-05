@@ -11646,5 +11646,31 @@
     "bild_url": null,
     "bild_licens": null,
     "bild_upphov": null
+  },
+  {
+    "id": "T454",
+    "person_id": "prins-daniel",
+    "namn": "Prins Daniel",
+    "kön": "man",
+    "kategori": "svensk",
+    "land": "Sverige",
+    "kunglig": "TRUE",
+    "yrke_titel": "Prins",
+    "orden": "Nordstjärneorden",
+    "grad": "Kommendör med stora korset",
+    "datum_tilldelning": null,
+    "datum_precision": null,
+    "motivering": null,
+    "motivering_typ": null,
+    "statsbesök": null,
+    "källa_url": "https://www.kungahuset.se/kungl.-huset/h.k.h.-prins-daniel",
+    "källtyp": "kungahuset",
+    "källa_hämtad": "2026-11-05",
+    "wikidata_qid": "Q209449",
+    "dödsdatum": null,
+    "flagga": "datum_saknas_kungahuset_anger_grad",
+    "bild_url": "img/skold-prins-daniel-vapen-med-serafimerorden.png",
+    "bild_licens": "CC BY-SA 2.5",
+    "bild_upphov": "Lokal_Profil"
   }
 ]
