@@ -1,47 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://LeoLevenius.github.io/kungliga-ordnar/index.html</loc>
-    <lastmod>2026-11-05T09:59:54.149Z</lastmod>
-  </url>
-  <url>
-    <loc>https://LeoLevenius.github.io/kungliga-ordnar/bevakning.html</loc>
-    <lastmod>2026-11-05T09:59:54.102Z</lastmod>
-  </url>
-  <url>
     <loc>https://LeoLevenius.github.io/kungliga-ordnar/statistik.html</loc>
-    <lastmod>2026-11-05T09:59:54.150Z</lastmod>
+    <lastmod>2026-11-05T10:08:50.673Z</lastmod>
   </url>
   <url>
     <loc>https://LeoLevenius.github.io/kungliga-ordnar/ordnar/vasaorden.html</loc>
-    <lastmod>2026-11-05T09:59:54.150Z</lastmod>
+    <lastmod>2026-11-05T10:08:50.673Z</lastmod>
   </url>
   <url>
     <loc>https://LeoLevenius.github.io/kungliga-ordnar/ordnar/serafimerorden.html</loc>
-    <lastmod>2026-11-05T09:59:54.150Z</lastmod>
-  </url>
-  <url>
-    <loc>https://LeoLevenius.github.io/kungliga-ordnar/ordensguide.html</loc>
-    <lastmod>2026-11-05T09:59:54.149Z</lastmod>
-  </url>
-  <url>
-    <loc>https://LeoLevenius.github.io/kungliga-ordnar/ordnar/svardsorden.html</loc>
-    <lastmod>2026-11-05T09:59:54.150Z</lastmod>
-  </url>
-  <url>
-    <loc>https://LeoLevenius.github.io/kungliga-ordnar/ordnar/nordstjarneorden.html</loc>
-    <lastmod>2026-11-05T09:59:54.149Z</lastmod>
-  </url>
-  <url>
-    <loc>https://LeoLevenius.github.io/kungliga-ordnar/mallar/person.html</loc>
-    <lastmod>2026-11-05T09:59:54.149Z</lastmod>
+    <lastmod>2026-11-05T10:08:50.673Z</lastmod>
   </url>
   <url>
     <loc>https://LeoLevenius.github.io/kungliga-ordnar/redigera.html</loc>
-    <lastmod>2026-11-05T09:59:54.150Z</lastmod>
+    <lastmod>2026-11-05T10:08:50.673Z</lastmod>
+  </url>
+  <url>
+    <loc>https://LeoLevenius.github.io/kungliga-ordnar/mallar/person.html</loc>
+    <lastmod>2026-11-05T10:08:50.671Z</lastmod>
+  </url>
+  <url>
+    <loc>https://LeoLevenius.github.io/kungliga-ordnar/ordensguide.html</loc>
+    <lastmod>2026-11-05T10:08:50.672Z</lastmod>
+  </url>
+  <url>
+    <loc>https://LeoLevenius.github.io/kungliga-ordnar/index.html</loc>
+    <lastmod>2026-11-05T10:08:50.671Z</lastmod>
+  </url>
+  <url>
+    <loc>https://LeoLevenius.github.io/kungliga-ordnar/bevakning.html</loc>
+    <lastmod>2026-11-05T10:08:50.621Z</lastmod>
   </url>
   <url>
     <loc>https://LeoLevenius.github.io/kungliga-ordnar/oppna-data.html</loc>
-    <lastmod>2026-11-05T09:59:54.149Z</lastmod>
+    <lastmod>2026-11-05T10:08:50.672Z</lastmod>
+  </url>
+  <url>
+    <loc>https://LeoLevenius.github.io/kungliga-ordnar/ordnar/svardsorden.html</loc>
+    <lastmod>2026-11-05T10:08:50.673Z</lastmod>
+  </url>
+  <url>
+    <loc>https://LeoLevenius.github.io/kungliga-ordnar/ordnar/nordstjarneorden.html</loc>
+    <lastmod>2026-11-05T10:08:50.672Z</lastmod>
   </url>
 </urlset>
