@@ -139,6 +139,8 @@ FLAGGA_TEXT <- c(
   datum_fran_fodelsen_kalla = "Källan anger att graden gäller från födseln; datumet är födelsedatum",
   datum_saknas_sedan_tidigare = "Källan anger att hon sedan tidigare har graden (före 6 maj 2024); datum saknas",
   nationalitet_enligt_kmo = "Nationalitet enligt Kungl. Maj:ts Ordens förläningsdatabas; avviker från tidigare uppgift",
+  nationalitet_finsk_enligt_riksdagsmotion = "Land anges som Finland enligt en riksdagsmotion som beskriver mottagaren som finländsk medborgare 2010; Kungl. Maj:ts Ordens databas anger Sverige",
+  nationalitet_brittisk_enligt_investor = "Land anges som Storbritannien enligt Investor AB:s årsredovisning; svensk Wikipedia anger också Sverige",
   nationalitet_kmo_avviker_fran_wikidata = "Kungl. Maj:ts Ordens förläningsdatabas anger Sverige, men personen är lettisk medborgare enligt Wikidata; land är korrigerat",
   fodelsear_avviker_ett_ar_kmo = "Födelseåret i Kungl. Maj:ts Ordens förläningsdatabas avviker ett år från Wikipedia; personen är identifierad via fullständigt namn, nationalitet och yrke",
   land_landet_de_var_president_i = "Land är landet där personen var president; medborgarskap i Wikidata är inte entydigt eller verifierat",
@@ -457,7 +459,11 @@ person_page <- function(t, id, pfx = "../") {
       tags$td(`data-label` = "Motivering", r$motivering_txt),
       tags$td(`data-label` = "Källa", tags$a(href = r$kalla_url, target = "_blank", rel = "noopener", "Källa"),
               " ", tags$span(class = "kalltyp", KALLTYP[r$kalltyp])),
-      tags$td(`data-label` = "Notering", if (!is.na(r$flagga)) tags$span(class = "saknas", flagga_text(r$flagga)) else ""),
+      tags$td(`data-label` = "Notering", if (!is.na(r$flagga)) tags$span(class = "saknas", flagga_text(r$flagga)) else "",
+        if (!is.na(r$flagga) && grepl("nationalitet_finsk_enligt_riksdagsmotion", r$flagga, fixed = TRUE))
+          tagList(" ", tags$a(href = "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/motion/ett-modernt-offentligt-beloningssystem_h5022835/", target = "_blank", rel = "noopener", "Källa till medborgarskap")),
+        if (!is.na(r$flagga) && grepl("nationalitet_brittisk_enligt_investor", r$flagga, fixed = TRUE))
+          tagList(" ", tags$a(href = "https://data.fca.org.uk/artefacts/NSM/Portal/NI-000117127/NI-000117127.pdf", target = "_blank", rel = "noopener", "Källa till nationalitet"))),
       tags$td(`data-label` = "Kungl. Maj:ts Orden", kmo_cell(r$id))
     )
   })
