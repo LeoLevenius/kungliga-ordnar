@@ -6,7 +6,7 @@ Säkerhet i bildjämförelsen: Commons-filerna nedan är angivna för de namngiv
 
 Macrons föreslagna Commons-fil [Blason Macron.jpg](https://commons.wikimedia.org/wiki/File:Blason_Macron.jpg) är märkt som felaktig av Commons och har inte använts. Wikipedias bilder för Haakon och Charles föreställer Harald V:s respektive Elizabeth II:s vapen; webbplatsens tidigare individuella bilder har behållits. Generiska statsvapen för Mattarella och Fox har inte använts som personliga serafimervapen utan oberoende bekräftelse. Hassanal Bolkiahs föreslagna fil saknar angiven upphovsperson och har inte använts.
 
-Datakonflikter för Maha Vajiralongkorn, Abdullah II och Aníbal Cavaco Silva anges på respektive personsida; KMO:s uppgifter har prioriterats. Datumet för Alar Karis är hämtat från Wikipedias förteckning och beslutets exakta dag är inte bekräftad av Kungahusets text. Prinsessan Chulabhorn har kvar årtalet då de granskade källorna inte visar en dag.
+Datakonflikter för Maha Vajiralongkorn, Abdullah II och Aníbal Cavaco Silva anges på respektive personsida; KMO:s uppgifter har prioriterats. Datumet för Alar Karis är hämtat från Wikipedias förteckning och beslutets exakta dag är inte bekräftad av Kungahusets text. Prinsessan Chulabhorns datum 11 februari 2003 har angetts av webbplatsens redaktör; KMO:s register visar endast årtalet 2003.
 
 ## Bilder som lagts till
 
