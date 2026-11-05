@@ -15,5 +15,5 @@ Atom-flödet med nya tilldelningar finns i [feed.xml](feed.xml).
 setorder(logg, -datum)
 reactable(as.data.frame(logg), columns = list(datum = colDef(name = "Datum"),
           id = colDef(name = "Id"), andring = colDef(name = "Ändring")),
-          searchable = TRUE, defaultPageSize = 50, compact = TRUE)
+          searchable = TRUE, defaultPageSize = 50, compact = TRUE, language = LANG_SV)
 ```

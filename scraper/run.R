@@ -227,6 +227,7 @@ ny_rad <- function(namn, titel, orden, grad, datum, motivering, url, kategori, f
 }
 
 slug <- function(x) {
+  x <- gsub("['’]", "", x)
   x <- iconv(x, to = "ASCII//TRANSLIT")
   x <- tolower(gsub("[^A-Za-z0-9]+", "-", x))
   gsub("^-|-$", "", x)
@@ -239,7 +240,8 @@ namnnyckel <- function(x) {
 
 kategori_fran_sida <- function(lines) {
   txt <- paste(lines, collapse = " ")
-  if (grepl("utländska medborgare", txt)) return(list(kategori = "utländsk", flagga = NA_character_))
+  if (grepl("svensk(a|ar|e)?.*utländsk|utländsk.*svensk(a|ar|e)?", txt, ignore.case = TRUE)) return(list(kategori = NA_character_, flagga = NA_character_))
+  if (grepl("utländska medborgare", txt)) return(list(kategori = "utländsk", flagga = "kategori_utan_individuell_kalla"))
   if (grepl("svenskar eller i Sverige bosatta", txt)) return(list(kategori = "svensk", flagga = "kategori_utan_individuell_kalla"))
   list(kategori = NA_character_, flagga = NA_character_)
 }
@@ -322,7 +324,7 @@ tolka_kmo <- function(url, lines) {
   cur_orden <- NA_character_
   cur_grad <- NA_character_
   ctx <- paste0("till (Kommendör med stora korset|Kommendör av första klassen|Kommendör|",
-                "Riddare av första klassen|Riddare) av (Svärs?|Nordstjärne|Vasa|Serafimer)orden")
+                "Riddare av första klassen|Riddare) av (Svärds|Svärs|Nordstjärne|Vasa|Serafimer)orden")
   for (l in lines) {
     m <- regmatches(l, regexec(ctx, l, perl = TRUE))[[1]]
     if (length(m)) {
@@ -613,6 +615,14 @@ kor <- function(args) {
   rader <- markera_dubbletter(rader, t)
   nya <- rader[dubblett == FALSE]
   if (nrow(nya)) nya <- berika_wikidata(nya)
+  if (nrow(nya)) {
+    for (i in seq_len(nrow(nya))) {
+      matches <- if (!is.na(nya$wikidata_qid[i])) unique(t[wikidata_qid == nya$wikidata_qid[i], person_id]) else character()
+      if (!length(matches)) matches <- unique(t[namnnyckel(namn) == namnnyckel(nya$namn[i]), person_id])
+      if (length(matches) == 1L) nya$person_id[i] <- matches
+      else if (length(matches) > 1L || nya$person_id[i] %in% t$person_id) nya$kategori[i] <- NA_character_
+    }
+  }
   if (nrow(nya)) {
     nya <- validera_grader(nya)
     nya[, till_data := källtyp %in% c("kungahuset", "regeringen", "officiell_publikation") & !is.na(kategori) & grad_ok & !is.na(datum_tilldelning)]

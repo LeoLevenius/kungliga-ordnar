@@ -8,7 +8,11 @@ data_dir <- if (dir.exists("data")) "data" else "../data"
 
 ORDNAR <- c("Serafimerorden", "Svärdsorden", "Nordstjärneorden", "Vasaorden")
 
-datum_date <- function(x) as.Date(ifelse(nchar(x) == 4, paste0(x, "-01-01"), x))
+datum_date <- function(x) {
+  y <- ifelse(is.na(x), NA_character_, ifelse(nchar(x) == 4, paste0(x, "-01-01"),
+       ifelse(nchar(x) == 7, paste0(x, "-01"), x)))
+  as.Date(y, format = "%Y-%m-%d")
+}
 
 MANADER <- c("januari", "februari", "mars", "april", "maj", "juni", "juli",
              "augusti", "september", "oktober", "november", "december")
@@ -149,7 +153,7 @@ flagga_text <- function(x) {
     if (is.na(f)) return("")
     delar <- strsplit(f, ";", fixed = TRUE)[[1]]
     txt <- unname(FLAGGA_TEXT[sub(":.*", "", delar)])
-    txt[is.na(txt)] <- "Se personsidan"
+    txt[is.na(txt)] <- delar[is.na(txt)]
     paste(txt, collapse = ". ")
   }, character(1), USE.NAMES = FALSE)
 }
@@ -282,6 +286,10 @@ namn_sc_html <- function(namn) {
   vapply(seq_along(namn), function(i) {
     if (!grepl(", ", x[i], fixed = TRUE)) return(htmlEscape(namn[i]))
     efter <- sub(",.*$", "", x[i])
+    # Preserve the source's name order, including East Asian family-name-first names.
+    if (startsWith(namn[i], paste0(efter, " "))) {
+      return(paste0(sc_span(efter), htmlEscape(substring(namn[i], nchar(efter) + 1))))
+    }
     rest <- sub("^[^,]*, ", "", x[i])
     suf <- if (grepl(" (f. ", rest, fixed = TRUE)) sub("^.*?( \\(f\\. .*\\))$", "\\1", rest, perl = TRUE) else ""
     fore <- sub(" \\(f\\. .*\\)$", "", rest)
@@ -316,9 +324,9 @@ namn_html_vec <- function(person_id, namn, kungl, bas = namn) {
 source_html <- function(url, typ, namn = NULL) {
   label <- KALLTYP[typ]
   label[is.na(label)] <- ""
-  aria <- if (is.null(namn)) "" else sprintf(' aria-label="Källa för %s"', htmlEscape(namn))
+  aria <- if (is.null(namn)) "" else sprintf(' aria-label="Källa för %s"', htmlEscape(namn, attribute = TRUE))
   sprintf('<a href="%s" target="_blank" rel="noopener"%s>Källa</a> <span class="kalltyp">%s</span>',
-          htmlEscape(url), aria, htmlEscape(label))
+          htmlEscape(url, attribute = TRUE), aria, htmlEscape(label))
 }
 
 order_table <- function(t, orden, kat, pfx = "", tid, kungl = FALSE) {
@@ -336,12 +344,12 @@ order_table <- function(t, orden, kat, pfx = "", tid, kungl = FALSE) {
   }
   d[, datumnyckel := fifelse(grepl("^[0-9]{4}", datum), datum, "9999")]
   setorderv(d, c("rang", "datumnyckel", "sortnamn"))
-  d[, namn_sort := visningsnamn]
+  d[, namn_sort := sortnyckel(visningsnamn)]
   d[, namn_html := link_person(person_id, namn_html_vec(person_id, namn, rep(kungl, .N), bas = visningsnamn), pfx, html = TRUE)]
   d[, kalla_html := source_html(kalla_url, kalltyp, namn)]
   d[, skold_html := fifelse(!is.na(bild_url),
     sprintf('<a href="%sperson/%s.html"><img class="skold" src="%s%s" alt="Vapensköld för %s" loading="lazy"></a>',
-            pfx, person_id, pfx, bild_url, htmlEscape(namn)), "–")]
+            pfx, person_id, pfx, htmlEscape(bild_url, attribute = TRUE), htmlEscape(namn, attribute = TRUE)), "–")]
   cols <- list(
     skold_html = colDef(name = "Vapensköld", html = TRUE, minWidth = 90, sortable = FALSE, align = "center", headerStyle = list(textAlign = "center")),
     grad = colDef(name = "Grad", minWidth = 120),
@@ -366,6 +374,7 @@ order_table <- function(t, orden, kat, pfx = "", tid, kungl = FALSE) {
     groupBy = "grad",
     columns = cols[keep],
     searchable = TRUE,
+    searchMethod = JS("function(rows, columns, query) { query = query.toLocaleLowerCase('sv'); return rows.filter(function(row) { return columns.some(function(id) { var v = id === 'namn_sort' ? row.original.namn_html : row.values[id]; return String(v || '').toLocaleLowerCase('sv').includes(query); }); }); }"),
     filterable = FALSE,
     sortable = TRUE,
     defaultPageSize = 50,
@@ -419,11 +428,18 @@ person_page <- function(t, id, pfx = "../") {
   first <- d[1]
   ids <- d$id
   kv <- load_kmo_verifierade()[id %in% ids]
+  # A recorded match applies only to the values that were present when checked.
+  if (nrow(kv) && all(c("kontroll_namn", "kontroll_orden", "kontroll_grad", "kontroll_datum", "kontroll_kalla") %in% names(kv))) {
+    current <- d[match(kv$id, id)]
+    same <- function(a, b) (is.na(a) & is.na(b)) | (!is.na(a) & !is.na(b) & a == b)
+    kv <- kv[same(kontroll_namn, current$namn) & same(kontroll_orden, current$orden) &
+             same(kontroll_grad, current$grad) & same(kontroll_datum, current$datum) & same(kontroll_kalla, current$kalla_url)]
+  } else if (nrow(kv)) kv <- kv[0]
   kmo_cell <- function(rid) {
     x <- kv[id == rid]
     if (nrow(x)) {
       tags$a(href = paste0("https://kungligmajestatsorden.se", sub("^https://kungligmajestatsorden.se", "", x$kmo_url[1])),
-             target = "_blank", rel = "noopener", "✓ Verifierad")
+             target = "_blank", rel = "noopener", "Visa post")
     } else {
       "–"
     }
@@ -431,20 +447,21 @@ person_page <- function(t, id, pfx = "../") {
   rows <- lapply(seq_len(nrow(d)), function(i) {
     r <- d[i]
     tags$tr(
-      tags$td(r$orden),
-      tags$td(r$grad),
-      tags$td(r$yrke_txt),
-      tags$td(fmt_datum(r$datum_txt)),
-      tags$td(r$motivering_txt),
-      tags$td(tags$a(href = r$kalla_url, target = "_blank", rel = "noopener", "Källa"),
+      tags$td(`data-label` = "Orden", r$orden),
+      tags$td(`data-label` = "Grad", r$grad),
+      tags$td(`data-label` = "Titel", r$yrke_txt),
+      tags$td(`data-label` = "Datum", fmt_datum(r$datum_txt)),
+      tags$td(`data-label` = "Motivering", r$motivering_txt),
+      tags$td(`data-label` = "Källa", tags$a(href = r$kalla_url, target = "_blank", rel = "noopener", "Källa"),
               " ", tags$span(class = "kalltyp", KALLTYP[r$kalltyp])),
-      tags$td(if (!is.na(r$flagga)) tags$span(class = "saknas", flagga_text(r$flagga)) else ""),
-      tags$td(kmo_cell(r$id))
+      tags$td(`data-label` = "Notering", if (!is.na(r$flagga)) tags$span(class = "saknas", flagga_text(r$flagga)) else ""),
+      tags$td(`data-label` = "Kungl. Maj:ts Orden", kmo_cell(r$id))
     )
   })
   verifierad <- if (nrow(kv)) {
-    tags$p(class = "verifierad", "✓ ", tags$strong("Verifierad mot Kungl. Maj:ts Ordens förläningsdatabas"),
-           paste0(" (", nrow(kv), " av ", nrow(d), if (nrow(d) == 1) " tilldelning)" else " tilldelningar)"))
+    tags$p(class = "verifierad", tags$strong("Post finns i Kungl. Maj:ts Ordens förläningsdatabas"),
+           paste0(" (", nrow(kv), " av ", nrow(d), if (nrow(d) == 1) " tilldelning)." else " tilldelningar)."),
+           " Uppgifterna kan skilja sig mellan källorna.")
   }
   med_bild <- d[!is.na(bild_url)]
   bild <- if (nrow(med_bild)) {

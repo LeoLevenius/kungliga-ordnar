@@ -38,6 +38,15 @@ jobs:
             any::ggplot2
             any::knitr
             any::rmarkdown
+            any::httr2
+            any::rvest
+            any::xml2
+
+      - name: Validera data
+        run: |
+          Rscript tests/validate.R
+          Rscript tests/regression.R
+          node tests/redigera.test.js
 
       - uses: quarto-dev/quarto-actions/publish@v2
         id: publicera

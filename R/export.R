@@ -15,23 +15,36 @@ invisible(file.copy(file.path(data_dir, "andringslogg.csv"), file.path(out, "dat
 invisible(file.copy(file.path(data_dir, "bilder.csv"), file.path(out, "data", "bilder.csv"), overwrite = TRUE))
 invisible(file.copy(file.path(data_dir, "kmo_verifierade.csv"), file.path(out, "data", "kmo_verifierade.csv"), overwrite = TRUE))
 
-base <- Sys.getenv("SITE_URL", "")
-latest <- t[!is.na(datum)][order(-datum_date(datum), id)][seq_len(min(50, .N))]
-esc <- function(x) gsub(">", "&gt;", gsub("<", "&lt;", gsub("&", "&amp;", x, fixed = TRUE), fixed = TRUE), fixed = TRUE)
+# Stamp every generated page after person profiles have been built.
+uppdaterad <- format(Sys.time(), "%Y-%m-%d %H:%M", tz = "Europe/Stockholm")
+for (f in list.files(out, pattern = "\\.html$", recursive = TRUE, full.names = TRUE)) {
+  html <- readLines(f, encoding = "UTF-8", warn = FALSE)
+  html <- gsub("UPPDATERINGSTIDMARKOR", paste0(uppdaterad, " (svensk tid)"), html, fixed = TRUE)
+  writeLines(html, f, useBytes = TRUE)
+}
+base <- Sys.getenv("SITE_URL", "https://leolevenius.github.io/kungliga-ordnar/")
+logg <- load_logg()
+added <- logg[andring == "tillagd", .(added = min(datum)), by = id]
+modified <- logg[, .(modified = max(datum)), by = id]
+latest <- merge(merge(t, added, by = "id", all.x = TRUE), modified, by = "id", all.x = TRUE)
+latest <- latest[!is.na(added)][order(-xtfrm(added), -xtfrm(id))][seq_len(min(50L, .N))]
+esc <- function(x) as.character(htmlEscape(x))
+attr_esc <- function(x) as.character(htmlEscape(x, attribute = TRUE))
 entries <- sprintf(
-  "  <entry>\n    <title>%s – %s, %s</title>\n    <id>tag:kungliga-ordnar,%s:%s</id>\n    <link href=\"%sperson/%s.html\"/>\n    <updated>%sT00:00:00Z</updated>\n    <summary>%s</summary>\n  </entry>",
-  esc(latest$namn), esc(latest$orden), esc(latest$grad), format(Sys.Date(), "%Y"), latest$id,
-  base, latest$person_id, as.character(datum_date(latest$datum)), esc(paste(latest$orden, latest$grad, sep = ", "))
+  "  <entry>\n    <title>%s – %s, %s</title>\n    <id>tag:leolevenius.github.io,2026:kungliga-ordnar/%s</id>\n    <link href=\"%sperson/%s.html\"/>\n    <published>%sT00:00:00Z</published>\n    <updated>%sT00:00:00Z</updated>\n    <summary>%s</summary>\n  </entry>",
+  esc(latest$namn), esc(latest$orden), esc(latest$grad), attr_esc(latest$id),
+  attr_esc(base), attr_esc(latest$person_id), latest$added, latest$modified,
+  esc(paste(latest$orden, latest$grad, ifelse(is.na(latest$datum), "", paste0(" (", latest$datum, ")")), sep = " "))
 )
 feed <- c(
   '<?xml version="1.0" encoding="utf-8"?>',
   '<feed xmlns="http://www.w3.org/2005/Atom">',
   '  <title>Kungliga ordnar: nya tilldelningar</title>',
-  sprintf('  <id>tag:kungliga-ordnar,feed</id>'),
-  sprintf('  <updated>%sT00:00:00Z</updated>', as.character(max(datum_date(t$datum), na.rm = TRUE))),
-  sprintf('  <link rel="self" href="%sfeed.xml"/>', base),
-  entries,
-  '</feed>'
+  '  <author><name>Leo G. Levenius</name></author>',
+  '  <id>tag:leolevenius.github.io,2026:kungliga-ordnar/feed</id>',
+  sprintf('  <updated>%sT00:00:00Z</updated>', max(latest$modified)),
+  sprintf('  <link rel="self" href="%sfeed.xml"/>', attr_esc(base)),
+  entries, '</feed>'
 )
 writeLines(feed, file.path(out, "feed.xml"), useBytes = TRUE)
 cat("export ok:", nrow(raw), "rows,", nrow(latest), "feed entries\n")

@@ -35,11 +35,12 @@ tot <- p[, .(mottagare = uniqueN(person_id)), by = orden]
 tot <- tot[match(ORDNAR, orden)]
 tot[is.na(mottagare), mottagare := 0L]
 reactable(as.data.frame(tot), columns = list(orden = colDef(name = "Orden"),
-          mottagare = colDef(name = "Mottagare")), pagination = FALSE, compact = TRUE, searchable = FALSE)
+          mottagare = colDef(name = "Mottagare")), pagination = FALSE, compact = TRUE, searchable = FALSE, language = LANG_SV)
 ```
 
 ```{r}
 #| fig-cap: "Mottagare per orden"
+#| fig-alt: "Stapeldiagram över antalet mottagare i de fyra ordnarna. Exakta värden finns i tabellen ovan."
 ggplot(tot, aes(x = factor(orden, levels = ORDNAR), y = mottagare)) +
   geom_col(fill = MARIN, width = 0.65) +
   labs(x = NULL, y = "Antal mottagare") +
@@ -52,11 +53,12 @@ ggplot(tot, aes(x = factor(orden, levels = ORDNAR), y = mottagare)) +
 pg <- p[, .(mottagare = uniqueN(person_id)), by = .(orden, grad)]
 reactable(as.data.frame(pg), columns = list(orden = colDef(name = "Orden"),
           grad = colDef(name = "Grad"), mottagare = colDef(name = "Mottagare")),
-          groupBy = "orden", defaultPageSize = 50, compact = TRUE, searchable = TRUE)
+          groupBy = "orden", defaultPageSize = 50, compact = TRUE, searchable = TRUE, language = LANG_SV)
 ```
 
 ```{r}
 #| fig-cap: "Mottagare per grad"
+#| fig-alt: "Stapeldiagram över antalet mottagare per grad och orden. Exakta värden finns i tabellen ovan."
 ggplot(pg, aes(x = grad, y = mottagare, fill = factor(orden, levels = ORDNAR))) +
   geom_col(width = 0.7) +
   coord_flip() +
@@ -74,11 +76,12 @@ ggplot(pg, aes(x = grad, y = mottagare, fill = factor(orden, levels = ORDNAR))) 
 pk <- p[, .(mottagare = uniqueN(person_id)), by = .(orden, kon_txt)]
 reactable(as.data.frame(pk), columns = list(orden = colDef(name = "Orden"),
           kon_txt = colDef(name = "Kön"), mottagare = colDef(name = "Mottagare")),
-          compact = TRUE, searchable = TRUE)
+          compact = TRUE, searchable = TRUE, language = LANG_SV)
 ```
 
 ```{r}
 #| fig-cap: "Mottagare per kön och orden"
+#| fig-alt: "Stapeldiagram som visar fördelningen av kön per orden, inklusive saknade uppgifter. Exakta värden finns i tabellen ovan."
 ggplot(pk, aes(x = factor(orden, levels = ORDNAR), y = mottagare, fill = factor(kon_txt, levels = names(PAL_KON)))) +
   geom_col(position = "stack", width = 0.65) +
   scale_fill_manual(values = PAL_KON) +
@@ -93,5 +96,5 @@ pl <- p[kategori == "utländsk", .(mottagare = uniqueN(person_id)), by = .(orden
 setorder(pl, orden, -mottagare)
 reactable(as.data.frame(pl), columns = list(orden = colDef(name = "Orden"),
           land_txt = colDef(name = "Land"), mottagare = colDef(name = "Mottagare")),
-          groupBy = "orden", compact = TRUE, searchable = TRUE)
+          groupBy = "orden", compact = TRUE, searchable = TRUE, language = LANG_SV)
 ```

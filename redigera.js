@@ -86,12 +86,12 @@
     var m;
     if ((m = /^(\d{4})-(\d{2})-(\d{2})$/.exec(d))) {
       var dt = new Date(Date.UTC(+m[1], +m[2] - 1, +m[3]));
-      if (dt.getUTCMonth() !== +m[2] - 1 || dt.getUTCDate() !== +m[3]) return "datumet finns inte";
+      if (+m[1] < 1700 || dt.getUTCFullYear() !== +m[1] || dt.getUTCMonth() !== +m[2] - 1 || dt.getUTCDate() !== +m[3]) return "datumet finns inte";
       return d > idag ? "datumet ligger i framtiden" : null;
     }
     if ((m = /^(\d{4})-(\d{2})$/.exec(d))) {
       if (+m[2] < 1 || +m[2] > 12) return "månaden måste vara 01–12";
-      return +m[1] > ar ? "året ligger i framtiden" : null;
+      return d > idag.slice(0, 7) ? "månaden ligger i framtiden" : (+m[1] < 1700 ? "året måste vara minst 1700" : null);
     }
     if ((m = /^(\d{4})$/.exec(d))) {
       return +m[1] < 1700 || +m[1] > ar ? "året måste vara 1700–" + ar : null;
@@ -132,7 +132,9 @@
       p(gradSet[r.orden + "\u0000" + r.grad], "graden \"" + r.grad + "\" finns inte i " + r.orden);
       var df = datumFel(r.datum_tilldelning);
       p(!df, "datum: " + df);
-      p(/^https?:\/\//.test(r["källa_url"]), "källa_url måste börja med http:// eller https://");
+      var validUrl = false;
+      try { var parsed = new URL(r["källa_url"]); validUrl = /^(http:|https:)$/.test(parsed.protocol) && !/[\s"<>]/.test(r["källa_url"]); } catch (_) {}
+      p(validUrl, "källa_url måste vara en giltig http(s)-adress");
       p(r.motivering_typ !== "statsbesök" || r["statsbesök"] !== "", "motivering_typ statsbesök kräver ifyllt statsbesök");
       p(r.kategori === "svensk" || r.kategori === "utländsk", "kategori måste vara svensk eller utländsk");
       p((r.kategori === "svensk" && (r.land === "" || r.land === "Sverige")) ||
@@ -142,7 +144,7 @@
       p(KALLTYPER[r["källtyp"]], "ogiltig källtyp");
       p(r.motivering_typ === "" || r.motivering_typ === "officiell" || r.motivering_typ === "statsbesök", "ogiltig motivering_typ");
       p(r["kön"] === "" || r["kön"] === "man" || r["kön"] === "kvinna", "kön måste vara man, kvinna eller tomt");
-      p(r["dödsdatum"] === "" || /^\d{4}(-\d{2}(-\d{2})?)?$/.test(r["dödsdatum"]), "dödsdatum måste vara ÅÅÅÅ, ÅÅÅÅ-MM eller ÅÅÅÅ-MM-DD");
+      p(!datumFel(r["dödsdatum"]), "dödsdatum: " + datumFel(r["dödsdatum"]));
       var k = nyckel(r.namn) + "|" + r.orden + "|" + r.grad + "|" + r.datum_tilldelning;
       p(nycklar[k].length === 1, "dubblett av " + nycklar[k].filter(function (x) { return x !== r.id; }).join(", ") + " (samma namn, orden, grad och datum)");
       p(!r.wikidata_qid || Object.keys(qid[r.wikidata_qid]).length === 1, "Wikidata-id " + r.wikidata_qid + " används av flera personer");
@@ -176,7 +178,7 @@
   function filnamn(S, ed, origFil) {
     var bas = (ed.bild.anvandning === "sköld" ? "skold-" : "utdelning-") + ed.pid;
     var ext = ed.bild.ny.ext, n = 1, f = bas + "." + ext;
-    while (S.bilder.some(function (x) { return x.fil === f && x.fil !== origFil; })) f = bas + "-" + (++n) + "." + ext;
+    while (S.bilder.some(function (x) { return x.fil === f && (x.fil !== origFil || S.rows.some(function (r) { return r.person_id !== ed.pid && r.bild_url === "img/" + x.fil; })); })) f = bas + "-" + (++n) + "." + ext;
     return f;
   }
 
@@ -210,13 +212,13 @@
       var i = bilder.indexOf(gammal);
       if (gammal && !bild.ny) bilder[i] = rad;
       else {
-        if (gammal) bilder.splice(i, 1);
+        if (gammal && !S.rows.some(function (r) { return r.person_id !== ed.pid && r.bild_url === "img/" + origFil; })) bilder.splice(i, 1);
         bilder.push(rad);
       }
       bildVärden = { bild_url: "img/" + fil, bild_licens: bild.licens, bild_upphov: bild.upphov };
     } else if (origFil) {
       var g = S.bilder.filter(function (x) { return x.fil === origFil; })[0];
-      if (g) bilder.splice(bilder.indexOf(g), 1);
+      if (g && !S.rows.some(function (r) { return r.person_id !== ed.pid && r.bild_url === "img/" + origFil; })) bilder.splice(bilder.indexOf(g), 1);
       bildFält.push({ k: "bild.fil", från: origFil, till: "" });
     }
     var ändringar = [];
@@ -303,8 +305,8 @@
     });
   }
 
-  function hämtaFil(token, path) {
-    return gh(token, "GET", "/repos/" + REPO + "/contents/" + path + "?ref=" + BRANCH).then(function (j) {
+  function hämtaFil(token, path, ref) {
+    return gh(token, "GET", "/repos/" + REPO + "/contents/" + path + "?ref=" + encodeURIComponent(ref || BRANCH)).then(function (j) {
       return { text: b64ToText(j.content), sha: j.sha };
     });
   }
@@ -331,15 +333,17 @@
     var loggText = logg + csvLines(["datum", "id", "andring"], nyaLoggrader);
     var bText = extra.bilder ? toCsv(S.bilderHeader, extra.bilder) : null;
     var base = "/repos/" + REPO;
-    return Promise.all([hämtaFil(token, PATH_T), hämtaFil(token, PATH_LOG), hämtaFil(token, PATH_B)]).then(function (nu) {
-      if (nu[0].sha !== S.shaT || nu[1].sha !== S.shaLog || nu[2].sha !== S.shaB) {
-        var e = new Error("Datan har ändrats på GitHub sedan sidan lästes in. Ladda om sidan och gör om ändringen.");
-        e.stale = true;
-        throw e;
-      }
-      return gh(token, "GET", base + "/git/ref/heads/" + BRANCH);
-    }).then(function (ref) {
+    return gh(token, "GET", base + "/git/ref/heads/" + BRANCH).then(function (ref) {
       var headSha = ref.object.sha;
+      return Promise.all([hämtaFil(token, PATH_T, headSha), hämtaFil(token, PATH_LOG, headSha), hämtaFil(token, PATH_B, headSha)]).then(function (nu) {
+        if (nu[0].sha !== S.shaT || nu[1].sha !== S.shaLog || nu[2].sha !== S.shaB) {
+          var e = new Error("Datan har ändrats på GitHub sedan sidan lästes in. Ladda om sidan och gör om ändringen.");
+          e.stale = true;
+          throw e;
+        }
+        return headSha;
+      });
+    }).then(function (headSha) {
       return gh(token, "GET", base + "/git/commits/" + headSha).then(function (c) {
         var jobb = [
           { path: PATH_T, body: { content: tText, encoding: "utf-8" } },
@@ -405,7 +409,11 @@
 
   var S = { token: null, user: null, ed: null, filter: "" };
 
-  function sparaToken(t) { try { if (t) localStorage.setItem(TOKEN_KEY, t); else localStorage.removeItem(TOKEN_KEY); } catch (e) {} }
+  function sparaToken(t) {
+    try { if (t) localStorage.setItem(TOKEN_KEY, t); else localStorage.removeItem(TOKEN_KEY); } catch (e) {}
+    document.documentElement.classList.toggle("redigerare", !!t);
+  }
+  root.addEventListener("storage", function (e) { if (e.key === TOKEN_KEY) document.documentElement.classList.toggle("redigerare", !!e.newValue); });
   function hämtaToken() { try { return localStorage.getItem(TOKEN_KEY); } catch (e) { return null; } }
 
   function visaLogin(fel) {
@@ -655,7 +663,7 @@
     var bildKort = bygg_bildkort();
     var granskning = h("section", { class: "rd-kort", id: "rd-granskning" });
     ersätt(mount, topp(),
-      h("p", null, h("button", { class: "rd-länk", onclick: function () { S.ed = null; location.hash = ""; visaLista(); } }, "← Tillbaka till listan"),
+      h("p", null, h("button", { class: "rd-länk", onclick: function () { if (harOsparat() && !root.confirm("Du har osparade ändringar. Vill du lämna utan att spara?")) return; S.ed = null; location.hash = ""; visaLista(); } }, "← Tillbaka till listan"),
         !ed.ny ? [" · ", h("a", { href: "person/" + ed.pid + ".html" }, "Visa personsidan")] : null),
       landlista, personKort, bildKort, radKort,
       h("p", null, h("button", { class: "btn btn-outline-primary", onclick: function () { ed.rader.push(tomRad()); visaForm(); } }, "Lägg till tilldelning")),
@@ -663,6 +671,10 @@
     uppdateraGranskning();
   }
 
+  function harOsparat() {
+    return !!(S.ed && S.ed.pid && beräknaÄndringar(S, S.ed).ändringar.length);
+  }
+  root.addEventListener("beforeunload", function (e) { if (harOsparat()) { e.preventDefault(); e.returnValue = ""; } });
   var senastFel = [];
   function uppdateraGranskning() {
     var ed = S.ed, box = document.getElementById("rd-granskning");
@@ -689,7 +701,8 @@
           return h("li", null, h("code", null, x.k), ": ", h("del", null, x.från || "(tomt)"), " → ", h("ins", null, x.till || "(tomt)"));
         })) : null);
     });
-    var msg = h("input", { type: "text", class: "form-control", id: "rd-msg", value: (ed.ny ? "Ny person via webben: " : "Redigering via webben: ") + ed.person.namn });
+    var msg = h("input", { type: "text", class: "form-control", id: "rd-msg", value: ed.meddelande == null ? (ed.ny ? "Ny person via webben: " : "Redigering via webben: ") + ed.person.namn : ed.meddelande });
+    msg.addEventListener("input", function () { ed.meddelande = msg.value; });
     var knapp = h("button", { class: "btn btn-primary", disabled: !res.ändringar.length || fel.length > 0, onclick: function () { sparaNu(res, msg.value, knapp, status); } }, "Spara på GitHub");
     var status = h("p", { class: "rd-status", role: "status" });
     ersätt(box, 

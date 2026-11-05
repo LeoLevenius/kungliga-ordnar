@@ -482,3 +482,17 @@ img.rd-bild[src=""] {
 }
 
 .efternamn{text-transform:uppercase;font-weight:700;}
+
+/* Compact cards keep each person's awards readable on a narrow screen. */
+@media (max-width: 700px) {
+  table.person-tabell.table, table.person-tabell.table tbody, table.person-tabell.table tr,
+  table.person-tabell.table td { display: block; width: 100%; }
+  table.person-tabell.table thead { display: none; }
+  table.person-tabell.table tr { border: 1px solid var(--linje); border-radius: 8px; margin-bottom: 1rem; overflow: hidden; }
+  table.person-tabell.table td { display: grid; grid-template-columns: minmax(7rem, 35%) minmax(0, 1fr); gap: .5rem; overflow-wrap: anywhere; }
+  table.person-tabell.table td::before { content: attr(data-label); font-weight: 700; color: var(--marin); }
+  table.person-tabell.table td:last-child { border-bottom: 0; }
+}
+.quarto-figure figcaption { color: #56616d; }
+.btn-primary { background-color: #145ba6; border-color: #145ba6; }
+.btn-primary:hover, .btn-primary:focus { background-color: #104b8a; border-color: #104b8a; }

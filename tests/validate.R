@@ -27,9 +27,9 @@ nyckel <- function(x) {
 datum_ok <- function(d, p) {
   ok <- rep(FALSE, length(d))
   dag <- !is.na(p) & p == "dag" & grepl("^[0-9]{4}-[0-9]{2}-[0-9]{2}$", d)
-  ok[dag] <- !is.na(as.Date(d[dag], format = "%Y-%m-%d")) & as.Date(d[dag], format = "%Y-%m-%d") <= Sys.Date()
+  ok[dag] <- !is.na(as.Date(d[dag], format = "%Y-%m-%d")) & as.Date(d[dag], format = "%Y-%m-%d") <= Sys.Date() & as.integer(substr(d[dag], 1, 4)) >= 1700
   man <- !is.na(p) & p == "månad" & grepl("^[0-9]{4}-(0[1-9]|1[0-2])$", d)
-  ok[man] <- as.integer(substr(d[man], 1, 4)) <= as.integer(format(Sys.Date(), "%Y"))
+  ok[man] <- substr(d[man], 1, 7) <= format(Sys.Date(), "%Y-%m") & as.integer(substr(d[man], 1, 4)) >= 1700
   ar <- !is.na(p) & p == "år" & grepl("^[0-9]{4}$", d)
   ok[ar] <- as.integer(d[ar]) >= 1700 & as.integer(d[ar]) <= as.integer(format(Sys.Date(), "%Y"))
   ok
@@ -54,7 +54,9 @@ kontroll("kunglig är TRUE eller FALSE", t$kunglig %in% c("TRUE", "FALSE"), t$id
 kontroll("källtyp är en tillåten typ", t[["källtyp"]] %in% c("kungahuset", "regeringen", "officiell_publikation", "tidning", "wikipedia"), t$id)
 kontroll("motivering_typ är officiell, statsbesök eller tom", is.na(t$motivering_typ) | t$motivering_typ %in% c("officiell", "statsbesök"), t$id)
 kontroll("kön är man, kvinna eller tomt", is.na(t[["kön"]]) | t[["kön"]] %in% c("man", "kvinna"), t$id)
-kontroll("dödsdatum är en tolkbar tid eller tomt", is.na(t[["dödsdatum"]]) | grepl("^[0-9]{4}(-[0-9]{2}(-[0-9]{2})?)?$", t[["dödsdatum"]]), t$id)
+dod <- t[["dödsdatum"]]
+dod_prec <- fifelse(is.na(dod), NA_character_, fifelse(nchar(dod) == 4, "år", fifelse(nchar(dod) == 7, "månad", "dag")))
+kontroll("dödsdatum är ett giltigt datum som inte ligger i framtiden", is.na(dod) | datum_ok(dod, dod_prec), t$id)
 flera_person <- t[!is.na(wikidata_qid), .(n = uniqueN(person_id)), by = wikidata_qid][n > 1, wikidata_qid]
 kontroll("ett person_id per Wikidata-id", !(t$wikidata_qid %in% flera_person), paste(t$id, t$wikidata_qid))
 

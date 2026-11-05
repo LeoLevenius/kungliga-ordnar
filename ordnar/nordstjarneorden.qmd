@@ -25,7 +25,7 @@ ordenstecken_figur("Nordstjärneorden", pfx = "../")
 
 ```{r}
 #| output: asis
-cat(sprintf("Listan omfattar %d levande mottagare som tilldelats orden %d–%d. Datum avser beslutsdatum om inget annat anges på personsidan; motivering, källa och noteringar finns på personsidorna.\n",
+cat(sprintf("Listan omfattar %d levande mottagare som tilldelats orden %d–%d. Datum avser beslutsdatum när det är känt, annars utdelningsdatum eller annan källuppgift enligt personsidan; motivering, källa och noteringar finns på personsidorna.\n",
             uniqueN(n$person_id), min(as.integer(substr(n$datum, 1, 4)), na.rm = TRUE), max(as.integer(substr(n$datum, 1, 4)), na.rm = TRUE)))
 ```
 

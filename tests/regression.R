@@ -1,0 +1,16 @@
+source('R/common.R')
+t <- load_tilldelningar()
+stopifnot(as.character(datum_date('2023-05')) == '2023-05-01')
+stopifnot(!grepl('onmouseover="x"', source_html('https://example.org/" onmouseover="x', 'kungahuset'), fixed = TRUE))
+stopifnot(grepl('Lee</span> Myung-bak', namn_sc_html('Lee Myung-bak'), fixed = TRUE))
+stopifnot(flagga_text('Egen anteckning') == 'Egen anteckning')
+stopifnot(grepl('Post finns', as.character(person_page(t, 'anne-lhuillier-wahlstrom')), fixed = TRUE))
+t[person_id == 'anne-lhuillier-wahlstrom', datum := '2024-03-22']
+stopifnot(!grepl('Post finns', as.character(person_page(t, 'anne-lhuillier-wahlstrom')), fixed = TRUE))
+source('scraper/run.R')
+x <- tolka_kmo('https://kungligmajestatsorden.se/nyhetsarkiv/nyheter/2026-04-13-test',
+               c('till Kommendör av Svärdsorden', 'finske medborgaren överste Juha Kilpi'))
+stopifnot(nrow(x) == 1, x$orden == 'Svärdsorden')
+stopifnot(is.na(kategori_fran_sida('Utmärkelser tilldelas svenska och utländska medborgare')$kategori))
+stopifnot(slug("Anne L'Huillier Wahlström") == 'anne-lhuillier-wahlstrom')
+cat('Databehandling och skraparens regressionsprov godkända.\n')
