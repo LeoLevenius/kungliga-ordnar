@@ -481,4 +481,4 @@ img.rd-bild[src=""] {
   display: none;
 }
 
-.efternamn{font-variant:small-caps;}
+.efternamn{text-transform:uppercase;font-weight:700;}
