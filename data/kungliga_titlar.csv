@@ -1,61 +1,61 @@
-person_id,titel_lang
-carl-xvi-gustaf,H.M. Konung Carl XVI Gustaf
-drottning-silvia,H.M. Drottning Silvia
-kronprinsessan-victoria,"H.K.H. Kronprinsessan Victoria, Hertiginna av Västergötland"
-prins-daniel,"H.K.H. Prins Daniel, Hertig av Västergötland"
-prins-carl-philip,"H.K.H. Prins Carl Philip, Hertig av Värmland"
-prinsessan-sofia,"H.K.H. Prinsessan Sofia, Hertiginna av Värmland"
-prinsessan-madeleine,"H.K.H. Prinsessan Madeleine, Hertiginna av Hälsingland och Gästrikland"
-prinsessan-leonore,"Prinsessan Leonore, Hertiginna av Gotland"
-prins-nicolas,"Prins Nicolas, Hertig av Ångermanland"
-prinsessan-estelle,"H.K.H. Prinsessan Estelle, Hertiginna av Östergötland"
-prins-oscar,"H.K.H. Prins Oscar, Hertig av Skåne"
-prins-alexander,"Prins Alexander, Hertig av Södermanland"
-prins-gabriel,"Prins Gabriel, Hertig av Dalarna"
-prinsessan-adrienne,"Prinsessan Adrienne, Hertiginna av Blekinge"
-prinsessan-ines,"Prinsessan Ines, Hertiginna av Västerbotten"
-prins-julian,"Prins Julian, Hertig av Halland"
-prinsessan-margaretha,"Prinsessan Margaretha, fru Ambler"
-prinsessan-christina-fru-magnuson,"Prinsessan Christina, fru Magnuson"
-frederik-x-av-danmark,H.M. Konung Frederik X
-mary-av-danmark,H.M. Drottning Mary
-margrethe-ii-av-danmark,H.M. Drottning Margrethe
-haakon-viii-av-norge,H.M. Konung Haakon VIII
-sonja-av-norge,H.M. Drottning Sonja
-willem-alexander-av-nederlanderna,H.M. Konung Willem-Alexander
-prinsessan-maxima,H.M. Drottning Máxima
-beatrix-av-nederlanderna,H.K.H. Prinsessan Beatrix
-felipe-vi-av-spanien,H.M. Konung Felipe VI
-letizia-av-spanien,H.M. Drottning Letizia
-juan-carlos-i-av-spanien,H.M. Konung Juan Carlos I
-sophia-av-grekland,H.M. Drottning Sofia
-philippe-av-belgien,H.M. Konung Philippe
-mathilde-av-belgien,H.M. Drottning Mathilde
-albert-ii-av-belgien,H.M. Konung Albert II
-paola-av-belgien,H.M. Drottning Paola
-henri-av-luxemburg,H.K.H. Storhertig Henri
-maria-teresa-av-luxemburg,H.K.H. Storhertiginnan Maria Teresa
-abdullah-ii-av-jordanien,H.M. Konung Abdullah II
-rania-av-jordanien,H.M. Drottning Rania
-noor-av-jordanien,H.M. Drottning Noor
-hussein-bin-abdullah,H.K.H. Kronprins Hussein bin Abdullah
-muna-al-hussein,H.K.H. Prinsessan Muna al-Hussein
-rym-ali,H.K.H. Prinsessan Rym Ali
-sumaya-bint-el-hassan,H.K.H. Prinsessan Sumaya bint El Hassan
-talal-bin-muhammad,H.K.H. Prins Talal bin Muhammad
-ghida-talal,H.K.H. Prinsessan Ghida Talal
-mired-bin-ra-ad,H.K.H. Prins Mired bin Ra'ad
-dana-firas,H.K.H. Prinsessan Dana Firas
-ra-ad-bin-zeid,H.K.H. Prins Ra'ad bin Zeid
-naruhito,H.M. Kejsar Naruhito
-akihito,H.M. Kejsar emeritus Akihito
-michiko,H.M. Kejsarinna emerita Michiko
-maha-vajiralongkorn,H.M. Konung Maha Vajiralongkorn
-chulabhorn-walailak,H.K.H. Prinsessan Chulabhorn Walailak
-maha-chakri-sirindhorn,H.K.H. Prinsessan Maha Chakri Sirindhorn
-tuanku-syed-sirajuddin,Raja Tuanku Syed Sirajuddin av Perlis
-queen-saleha-of-brunei,H.M. Raja Isteri Saleha
-hassanal-bolkiah,H.M. Sultan Hassanal Bolkiah
-charles-iii-av-storbritannien,H.M. Konung Charles III
-farah-pahlavi,H.M. Kejsarinnan Farah
-reza-pahlavi,H.K.H. Kronprins Reza
+person_id,titel_lang,namn_del
+carl-xvi-gustaf,H.M. Konung Carl XVI Gustaf,Carl XVI Gustaf
+drottning-silvia,H.M. Drottning Silvia,Silvia
+kronprinsessan-victoria,"H.K.H. Kronprinsessan Victoria, Hertiginna av Västergötland",Victoria
+prins-daniel,"H.K.H. Prins Daniel, Hertig av Västergötland",Daniel
+prins-carl-philip,"H.K.H. Prins Carl Philip, Hertig av Värmland",Carl Philip
+prinsessan-sofia,"H.K.H. Prinsessan Sofia, Hertiginna av Värmland",Sofia
+prinsessan-madeleine,"H.K.H. Prinsessan Madeleine, Hertiginna av Hälsingland och Gästrikland",Madeleine
+prinsessan-leonore,"Prinsessan Leonore, Hertiginna av Gotland",Leonore
+prins-nicolas,"Prins Nicolas, Hertig av Ångermanland",Nicolas
+prinsessan-estelle,"H.K.H. Prinsessan Estelle, Hertiginna av Östergötland",Estelle
+prins-oscar,"H.K.H. Prins Oscar, Hertig av Skåne",Oscar
+prins-alexander,"Prins Alexander, Hertig av Södermanland",Alexander
+prins-gabriel,"Prins Gabriel, Hertig av Dalarna",Gabriel
+prinsessan-adrienne,"Prinsessan Adrienne, Hertiginna av Blekinge",Adrienne
+prinsessan-ines,"Prinsessan Ines, Hertiginna av Västerbotten",Ines
+prins-julian,"Prins Julian, Hertig av Halland",Julian
+prinsessan-margaretha,"Prinsessan Margaretha, fru Ambler",Margaretha
+prinsessan-christina-fru-magnuson,"Prinsessan Christina, fru Magnuson",Christina
+frederik-x-av-danmark,H.M. Konung Frederik X,Frederik X
+mary-av-danmark,H.M. Drottning Mary,Mary
+margrethe-ii-av-danmark,H.M. Drottning Margrethe,Margrethe
+haakon-viii-av-norge,H.M. Konung Haakon VIII,Haakon VIII
+sonja-av-norge,H.M. Drottning Sonja,Sonja
+willem-alexander-av-nederlanderna,H.M. Konung Willem-Alexander,Willem-Alexander
+prinsessan-maxima,H.M. Drottning Máxima,Máxima
+beatrix-av-nederlanderna,H.K.H. Prinsessan Beatrix,Beatrix
+felipe-vi-av-spanien,H.M. Konung Felipe VI,Felipe VI
+letizia-av-spanien,H.M. Drottning Letizia,Letizia
+juan-carlos-i-av-spanien,H.M. Konung Juan Carlos I,Juan Carlos I
+sophia-av-grekland,H.M. Drottning Sofia,Sofia|Sophia
+philippe-av-belgien,H.M. Konung Philippe,Philippe
+mathilde-av-belgien,H.M. Drottning Mathilde,Mathilde
+albert-ii-av-belgien,H.M. Konung Albert II,Albert II
+paola-av-belgien,H.M. Drottning Paola,Paola
+henri-av-luxemburg,H.K.H. Storhertig Henri,Henri
+maria-teresa-av-luxemburg,H.K.H. Storhertiginnan Maria Teresa,Maria Teresa
+abdullah-ii-av-jordanien,H.M. Konung Abdullah II,Abdullah II
+rania-av-jordanien,H.M. Drottning Rania,Rania
+noor-av-jordanien,H.M. Drottning Noor,Noor
+hussein-bin-abdullah,H.K.H. Kronprins Hussein bin Abdullah,Hussein bin Abdullah
+muna-al-hussein,H.K.H. Prinsessan Muna al-Hussein,Muna al-Hussein
+rym-ali,H.K.H. Prinsessan Rym Ali,Rym Ali
+sumaya-bint-el-hassan,H.K.H. Prinsessan Sumaya bint El Hassan,Sumaya bint El Hassan
+talal-bin-muhammad,H.K.H. Prins Talal bin Muhammad,Talal bin Muhammad
+ghida-talal,H.K.H. Prinsessan Ghida Talal,Ghida Talal
+mired-bin-ra-ad,H.K.H. Prins Mired bin Ra'ad,Mired bin Ra'ad
+dana-firas,H.K.H. Prinsessan Dana Firas,Dana Firas
+ra-ad-bin-zeid,H.K.H. Prins Ra'ad bin Zeid,Ra'ad bin Zeid
+naruhito,H.M. Kejsar Naruhito,Naruhito
+akihito,H.M. Kejsar emeritus Akihito,Akihito
+michiko,H.M. Kejsarinna emerita Michiko,Michiko
+maha-vajiralongkorn,H.M. Konung Maha Vajiralongkorn,Maha Vajiralongkorn
+chulabhorn-walailak,H.K.H. Prinsessan Chulabhorn Walailak,Chulabhorn Walailak
+maha-chakri-sirindhorn,H.K.H. Prinsessan Maha Chakri Sirindhorn,Maha Chakri Sirindhorn
+tuanku-syed-sirajuddin,Raja Tuanku Syed Sirajuddin av Perlis,Syed Sirajuddin
+queen-saleha-of-brunei,H.M. Raja Isteri Saleha,Saleha
+hassanal-bolkiah,H.M. Sultan Hassanal Bolkiah,Hassanal Bolkiah
+charles-iii-av-storbritannien,H.M. Konung Charles III,Charles III
+farah-pahlavi,H.M. Kejsarinnan Farah,Farah
+reza-pahlavi,H.K.H. Kronprins Reza,Reza

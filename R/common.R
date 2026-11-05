@@ -263,8 +263,50 @@ skold_kallor <- function(t) {
   )
 }
 
-link_person <- function(id, namn, pfx = "") {
-  sprintf('<a href="%sperson/%s.html">%s</a>', pfx, id, htmlEscape(namn))
+link_person <- function(id, namn, pfx = "", html = FALSE) {
+  sprintf('<a href="%sperson/%s.html">%s</a>', pfx, id, if (html) namn else htmlEscape(namn))
+}
+
+load_kungl_titlar <- function() {
+  fread(file.path(data_dir, "kungliga_titlar.csv"), encoding = "UTF-8")
+}
+
+sc_span <- function(x) sprintf('<span class="efternamn">%s</span>', htmlEscape(x))
+
+namn_sc_html <- function(namn) {
+  x <- efternamn_forst(namn)
+  vapply(seq_along(namn), function(i) {
+    if (!grepl(", ", x[i], fixed = TRUE)) return(htmlEscape(namn[i]))
+    efter <- sub(",.*$", "", x[i])
+    rest <- sub("^[^,]*, ", "", x[i])
+    suf <- if (grepl(" (f. ", rest, fixed = TRUE)) sub("^.*?( \\(f\\. .*\\))$", "\\1", rest, perl = TRUE) else ""
+    fore <- sub(" \\(f\\. .*\\)$", "", rest)
+    svans <- if (grepl(", ", namn[i], fixed = TRUE)) sub("^[^,]*", "", namn[i]) else ""
+    paste0(htmlEscape(fore), " ", sc_span(efter), htmlEscape(suf), htmlEscape(svans))
+  }, character(1))
+}
+
+kunglig_sc_html <- function(text, del) {
+  vapply(seq_along(text), function(i) {
+    for (a in strsplit(if (is.na(del[i])) "" else del[i], "|", fixed = TRUE)[[1]]) {
+      p <- regexpr(a, text[i], fixed = TRUE)
+      if (p > 0) return(paste0(htmlEscape(substr(text[i], 1, p - 1)), sc_span(a),
+                               htmlEscape(substr(text[i], p + nchar(a), nchar(text[i])))))
+    }
+    htmlEscape(text[i])
+  }, character(1))
+}
+
+namn_html_vec <- function(person_id, namn, kungl, bas = namn) {
+  res <- character(length(namn))
+  n <- which(!kungl)
+  r <- which(kungl)
+  if (length(n)) res[n] <- namn_sc_html(namn[n])
+  if (length(r)) {
+    tt <- load_kungl_titlar()
+    res[r] <- kunglig_sc_html(bas[r], tt$namn_del[match(person_id[r], tt$person_id)])
+  }
+  res
 }
 
 source_html <- function(url, typ, namn = NULL) {
@@ -283,14 +325,15 @@ order_table <- function(t, orden, kat, pfx = "", tid, kungl = FALSE) {
   d <- d[!duplicated(person_id)]
   d[, sortnamn := sortnyckel(if (kungl) namn else efternamn_forst(namn))]
   if (kungl) {
-    titlar <- fread(file.path(data_dir, "kungliga_titlar.csv"), encoding = "UTF-8")
+    titlar <- load_kungl_titlar()
     d[, visningsnamn := fifelse(person_id %in% titlar$person_id, titlar$titel_lang[match(person_id, titlar$person_id)], namn)]
   } else {
     d[, visningsnamn := efternamn_forst(namn)]
   }
   d[, datumnyckel := fifelse(grepl("^[0-9]{4}", datum), datum, "9999")]
   setorderv(d, c("rang", "datumnyckel", "sortnamn"))
-  d[, namn_html := link_person(person_id, visningsnamn, pfx)]
+  d[, namn_sort := visningsnamn]
+  d[, namn_html := link_person(person_id, namn_html_vec(person_id, namn, rep(kungl, .N), bas = visningsnamn), pfx, html = TRUE)]
   d[, kalla_html := source_html(kalla_url, kalltyp, namn)]
   d[, skold_html := fifelse(!is.na(bild_url),
     sprintf('<a href="%sperson/%s.html"><img class="skold" src="%s%s" alt="Vapensköld för %s" loading="lazy"></a>',
@@ -298,7 +341,9 @@ order_table <- function(t, orden, kat, pfx = "", tid, kungl = FALSE) {
   cols <- list(
     skold_html = colDef(name = "Vapensköld", html = TRUE, minWidth = 90, sortable = FALSE, align = "center", headerStyle = list(textAlign = "center")),
     grad = colDef(name = "Grad", minWidth = 120),
-    namn_html = colDef(name = "Namn", html = TRUE, minWidth = 150),
+    namn_sort = colDef(name = "Namn", html = TRUE, minWidth = 150,
+                       cell = JS("function(cellInfo) { return cellInfo.row.namn_html }")),
+    namn_html = colDef(show = FALSE),
     yrke_txt = colDef(name = "Yrke/titel", minWidth = 130),
     land_txt = colDef(name = "Land", minWidth = 100),
     datum_txt = colDef(name = "Datum", minWidth = 120, cell = fmt_datum),
@@ -306,7 +351,7 @@ order_table <- function(t, orden, kat, pfx = "", tid, kungl = FALSE) {
     kalla_html = colDef(name = "Källa", html = TRUE, minWidth = 120),
     flagga_txt = colDef(name = "Notering", minWidth = 200, class = "saknas")
   )
-  keep <- c("grad", "namn_html")
+  keep <- c("grad", "namn_sort", "namn_html")
   d[, skold_html := fifelse(!is.na(bild_url) & grepl("^img/skold-", bild_url), skold_html, "–")]
   if ((o == "Serafimerorden" || (kungl && kat == "svensk")) && any(d$skold_html != "–")) keep <- c(keep, "skold_html")
   if (!kungl) keep <- c(keep, "yrke_txt")
@@ -326,11 +371,13 @@ order_table <- function(t, orden, kat, pfx = "", tid, kungl = FALSE) {
     defaultExpanded = TRUE,
     language = LANG_SV
   )
-  labels <- vapply(cols[keep], function(cd) cd$name, character(1))
-  celler <- function(i) lapply(keep, function(col) {
+  synliga <- setdiff(keep, "namn_html")
+  labels <- vapply(cols[synliga], function(cd) cd$name, character(1))
+  celler <- function(i) lapply(synliga, function(col) {
     v <- d[[col]][i]
     tags$td(switch(col,
-      namn_html = , kalla_html = , skold_html = HTML(v),
+      namn_sort = HTML(d$namn_html[i]),
+      kalla_html = , skold_html = HTML(v),
       datum_txt = fmt_datum(v),
       v))
   })

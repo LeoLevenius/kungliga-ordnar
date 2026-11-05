@@ -32,7 +32,7 @@ Sidorna för varje orden ligger under `ordnar/`. Vi har ännu inte samlat in all
 
 ```{r}
 senaste <- t[order(-datum_date(datum), id)][seq_len(min(10, .N))]
-senaste[, namn_html := link_person(person_id, namn, pfx = "")]
+senaste[, namn_html := link_person(person_id, namn_html_vec(person_id, namn, kunglig == "TRUE"), pfx = "", html = TRUE)]
 senaste[, kalla_html := source_html(kalla_url, kalltyp)]
 reactable(as.data.frame(senaste)[, c("namn_html", "orden", "grad", "datum_txt", "kalla_html")],
           columns = list(namn_html = colDef(name = "Namn", html = TRUE),

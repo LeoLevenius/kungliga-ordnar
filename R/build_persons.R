@@ -11,9 +11,12 @@ marker <- regmatches(mall, gregexpr("(PERSONTITELMARKOR|PERSONINNEHALLMARKOR)", 
 
 ids <- unique(t$person_id)
 namn <- t[, namn[1], by = person_id][match(ids, person_id), V1]
+info <- t[, .(kungl = kunglig[1] == "TRUE"), by = person_id][match(ids, person_id)]
+namn_h1 <- namn_html_vec(ids, namn, info$kungl)
 inneh <- vapply(ids, function(id) as.character(person_page(t, id, pfx = "../")), character(1))
 sida <- vapply(seq_along(ids), function(i) {
-  v <- ifelse(marker == "PERSONTITELMARKOR", htmlEscape(namn[i]), inneh[i])
+  h1 <- marker == "PERSONTITELMARKOR" & endsWith(delar[seq_along(marker)], '<h1 class="title">')
+  v <- ifelse(marker == "PERSONTITELMARKOR", ifelse(h1, namn_h1[i], htmlEscape(namn[i])), inneh[i])
   paste0(delar, c(v, ""), collapse = "")
 }, character(1))
 

@@ -480,3 +480,5 @@ img.rd-bild {
 img.rd-bild[src=""] {
   display: none;
 }
+
+.efternamn{font-variant:small-caps;}
