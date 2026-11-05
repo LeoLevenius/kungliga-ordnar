@@ -1231,7 +1231,7 @@
     "kunglig": "TRUE",
     "yrke_titel": "Prinsessa",
     "orden": "Serafimerorden",
-    "grad": "Riddare",
+    "grad": "Ledamot",
     "datum_tilldelning": "2014-02-20",
     "datum_precision": "dag",
     "motivering": null,
@@ -1242,7 +1242,7 @@
     "källa_hämtad": "2026-11-03",
     "wikidata_qid": "Q15768416",
     "dödsdatum": null,
-    "flagga": "datum_fodelse_stadgar_25",
+    "flagga": "datum_fodelse_stadgar_25;grad_ledamot_trots_kmo_riddare",
     "bild_url": "img/skold-prinsessan-leonore-vapen-med-serafimerkors.png",
     "bild_licens": "CC BY-SA 2.5",
     "bild_upphov": "Lokal_Profil"
