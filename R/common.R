@@ -142,6 +142,7 @@ FLAGGA_TEXT <- c(
   land_landet_de_var_president_i = "Land är landet där personen var president; medborgarskap i Wikidata är inte entydigt eller verifierat",
   land_landet_de_var_minister_i = "Land är landet där personen var minister eller statsminister; medborgarskap är inte angivet i källan",
   flera_medborgarskap = "Flera medborgarskap i Wikidata; land är inte angivet",
+  land_jordanskt_kungahus = "Jordanien anges utifrån tillhörigheten till det jordanska kungahuset och bosättningen där; personen är född i Libanon",
   land_wikidata_ej_verifierat = "Land i Wikidata är uppenbart felaktigt eller ej verifierat; land är inte angivet",
   grad_konflikt_kallor = "Källorna anger olika grad; den andra källan anges i flaggan i datafilen",
   datum_endast_phaleristica = "Årtalet kommer enbart från Phaleristicas lista över levande ordensinnehavare (2016)",
@@ -365,7 +366,7 @@ order_table <- function(t, orden, kat, pfx = "", tid, kungl = FALSE) {
   )
   keep <- c("grad", "namn_sort", "namn_html")
   d[, skold_html := fifelse(!is.na(bild_url) & grepl("^img/skold-", bild_url), skold_html, "–")]
-  if ((o == "Serafimerorden" || (kungl && kat == "svensk")) && any(d$skold_html != "–")) keep <- c(keep, "skold_html")
+  if (o == "Serafimerorden" && any(d$skold_html != "–")) keep <- c(keep, "skold_html")
   if (!kungl) keep <- c(keep, "yrke_txt")
   if (kat == "utländsk") keep <- c(keep, "land_txt")
   keep <- c(keep, "datum_txt")
@@ -463,7 +464,7 @@ person_page <- function(t, id, pfx = "../") {
            paste0(" (", nrow(kv), " av ", nrow(d), if (nrow(d) == 1) " tilldelning)." else " tilldelningar)."),
            " Uppgifterna kan skilja sig mellan källorna.")
   }
-  med_bild <- d[!is.na(bild_url)]
+  med_bild <- d[!is.na(bild_url) & !grepl("^img/skold-", bild_url)]
   bild <- if (nrow(med_bild)) {
     b <- load_bilder()[fil == basename(med_bild$bild_url[1])]
     if (nrow(b)) bild_figur(b[1], pfx)
