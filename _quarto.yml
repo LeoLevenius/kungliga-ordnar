@@ -1,8 +1,9 @@
 project:
   type: website
   output-dir: _site
-  pre-render: Rscript R/build_persons.R
-  post-render: Rscript R/export.R
+  post-render:
+    - Rscript R/build_persons.R
+    - Rscript R/export.R
   resources:
     - img
     - redigera.js
