@@ -139,6 +139,7 @@ FLAGGA_TEXT <- c(
   datum_fran_fodelsen_kalla = "Källan anger att graden gäller från födseln; datumet är födelsedatum",
   datum_saknas_sedan_tidigare = "Källan anger att hon sedan tidigare har graden (före 6 maj 2024); datum saknas",
   datum_utdelning_enligt_motion = "Månaden avser utdelningen enligt riksdagsmotionen; beslutsdatum och ordensgrad anges inte där",
+  vettier_ess_utdelning = "Grad och utdelningsdag enligt ESS pressmeddelande; beslutsdatum anges inte",
   nationalitet_enligt_kmo = "Nationalitet enligt Kungl. Maj:ts Ordens förläningsdatabas; avviker från tidigare uppgift",
   nationalitet_finsk_enligt_riksdagsmotion = "Land anges som Finland enligt en riksdagsmotion som beskriver mottagaren som finländsk medborgare 2010; Kungl. Maj:ts Ordens databas anger Sverige",
   nationalitet_brittisk_enligt_investor = "Land anges som Storbritannien enligt Investor AB:s årsredovisning; svensk Wikipedia anger också Sverige",
@@ -465,7 +466,9 @@ person_page <- function(t, id, pfx = "../") {
         if (!is.na(r$flagga) && grepl("nationalitet_finsk_enligt_riksdagsmotion", r$flagga, fixed = TRUE))
           tagList(" ", tags$a(href = "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/motion/ett-modernt-offentligt-beloningssystem_h5022835/", target = "_blank", rel = "noopener", "Källa till medborgarskap")),
         if (!is.na(r$flagga) && grepl("nationalitet_brittisk_enligt_investor", r$flagga, fixed = TRUE))
-          tagList(" ", tags$a(href = "https://data.fca.org.uk/artefacts/NSM/Portal/NI-000117127/NI-000117127.pdf", target = "_blank", rel = "noopener", "Källa till nationalitet"))),
+          tagList(" ", tags$a(href = "https://data.fca.org.uk/artefacts/NSM/Portal/NI-000117127/NI-000117127.pdf", target = "_blank", rel = "noopener", "Källa till nationalitet")),
+        if (!is.na(r$flagga) && grepl("vettier_ess_utdelning", r$flagga, fixed = TRUE))
+          tagList(" ", tags$a(href = "https://news.cision.com/european-spallation-source-eric/r/christian-vettier--ess--receives-royal-swedish-order-of-the-polar-star,c546107", target = "_blank", rel = "noopener", "ESS pressmeddelande"))),
       tags$td(`data-label` = "Kungl. Maj:ts Orden", kmo_cell(r$id))
     )
   })
