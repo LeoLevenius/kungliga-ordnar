@@ -346,7 +346,7 @@ order_table <- function(t, orden, kat, pfx = "", tid, kungl = FALSE) {
     namn_sort = colDef(name = "Namn", html = TRUE, minWidth = 150,
                        cell = JS("function(cellInfo) { return cellInfo.row.namn_html }")),
     namn_html = colDef(show = FALSE),
-    yrke_txt = colDef(name = "Yrke/titel", minWidth = 130),
+    yrke_txt = colDef(name = "Titel", minWidth = 130),
     land_txt = colDef(name = "Land", minWidth = 100),
     datum_txt = colDef(name = "Datum", minWidth = 120, cell = fmt_datum),
     motivering_txt = colDef(name = "Motivering", minWidth = 220),
@@ -460,7 +460,7 @@ person_page <- function(t, id, pfx = "../") {
     bild,
     tags$table(class = "person-tabell table table-sm table-striped small caption-top",
       tags$thead(tags$tr(class = "header", lapply(
-        c("Orden", "Grad", "Yrke/titel", "Datum", "Motivering", "Källa", "Notering", "Kungl. Maj:ts Orden"),
+        c("Orden", "Grad", "Titel", "Datum", "Motivering", "Källa", "Notering", "Kungl. Maj:ts Orden"),
         function(h) tags$th(`data-quarto-table-cell-role` = "th", h)))),
       tags$tbody(rows)),
     tags$p(class = "redigera-lank", tags$a(href = paste0(pfx, "redigera.html#person=", pid), "Redigera personen"))
