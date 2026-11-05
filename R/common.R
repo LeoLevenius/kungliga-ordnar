@@ -464,7 +464,7 @@ person_page <- function(t, id, pfx = "../") {
            paste0(" (", nrow(kv), " av ", nrow(d), if (nrow(d) == 1) " tilldelning)." else " tilldelningar)."),
            " Uppgifterna kan skilja sig mellan källorna.")
   }
-  med_bild <- d[!is.na(bild_url) & !grepl("^img/skold-", bild_url)]
+  med_bild <- d[!is.na(bild_url)]
   bild <- if (nrow(med_bild)) {
     b <- load_bilder()[fil == basename(med_bild$bild_url[1])]
     if (nrow(b)) bild_figur(b[1], pfx)
