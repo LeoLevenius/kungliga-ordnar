@@ -3,23 +3,31 @@
   <title>Kungliga ordnar: nya tilldelningar</title>
   <author><name>Leo G. Levenius</name></author>
   <id>tag:leolevenius.github.io,2026:kungliga-ordnar/feed</id>
-  <updated>2026-11-05T00:00:00Z</updated>
+  <updated>2026-11-06T00:00:00Z</updated>
   <link rel="self" href="https://leolevenius.github.io/kungliga-ordnar/feed.xml"/>
+  <entry>
+    <title>Karol Nawrocki – Serafimerorden, Riddare</title>
+    <id>tag:leolevenius.github.io,2026:kungliga-ordnar/T462</id>
+    <link href="https://leolevenius.github.io/kungliga-ordnar/person/karol-nawrocki.html"/>
+    <published>2026-11-06T00:00:00Z</published>
+    <updated>2026-11-06T00:00:00Z</updated>
+    <summary>Serafimerorden Riddare (2026-03-10)</summary>
+  </entry>
   <entry>
     <title>Christian Vettier – Nordstjärneorden, Kommendör av första klassen</title>
     <id>tag:leolevenius.github.io,2026:kungliga-ordnar/T461</id>
     <link href="https://leolevenius.github.io/kungliga-ordnar/person/christian-vettier.html"/>
     <published>2026-11-05T00:00:00Z</published>
     <updated>2026-11-05T00:00:00Z</updated>
-    <summary>Nordstjärneorden Kommendör av första klassen  (2011-02-10)</summary>
+    <summary>Nordstjärneorden Kommendör av första klassen (2011-02-10)</summary>
   </entry>
   <entry>
-    <title>Thamnoon Wanglee – Nordstjärneorden, Grad inte angiven</title>
+    <title>Thamnoon Wanglee – Nordstjärneorden, Kommendör av första klassen</title>
     <id>tag:leolevenius.github.io,2026:kungliga-ordnar/T460</id>
     <link href="https://leolevenius.github.io/kungliga-ordnar/person/thamnoon-wanglee.html"/>
     <published>2026-11-05T00:00:00Z</published>
-    <updated>2026-11-05T00:00:00Z</updated>
-    <summary>Nordstjärneorden Grad inte angiven  (2005-02)</summary>
+    <updated>2026-11-06T00:00:00Z</updated>
+    <summary>Nordstjärneorden Kommendör av första klassen (2005-02-17)</summary>
   </entry>
   <entry>
     <title>Anuwat Maytheewibulwut – Nordstjärneorden, Grad inte angiven</title>
@@ -27,7 +35,7 @@
     <link href="https://leolevenius.github.io/kungliga-ordnar/person/anuwat-maytheewibulwut.html"/>
     <published>2026-11-05T00:00:00Z</published>
     <updated>2026-11-05T00:00:00Z</updated>
-    <summary>Nordstjärneorden Grad inte angiven  (2005-02)</summary>
+    <summary>Nordstjärneorden Grad inte angiven (2005-02)</summary>
   </entry>
   <entry>
     <title>Juan Carlos I av Spanien – Serafimerorden, Riddare med kedja</title>
@@ -35,7 +43,7 @@
     <link href="https://leolevenius.github.io/kungliga-ordnar/person/juan-carlos-i-av-spanien.html"/>
     <published>2026-11-05T00:00:00Z</published>
     <updated>2026-11-05T00:00:00Z</updated>
-    <summary>Serafimerorden Riddare med kedja  (1983-03-11)</summary>
+    <summary>Serafimerorden Riddare med kedja (1983-03-11)</summary>
   </entry>
   <entry>
     <title>Ólafur Ragnar Grímsson – Serafimerorden, Riddare med kedja</title>
@@ -43,7 +51,7 @@
     <link href="https://leolevenius.github.io/kungliga-ordnar/person/olafur-ragnar-grimsson.html"/>
     <published>2026-11-05T00:00:00Z</published>
     <updated>2026-11-05T00:00:00Z</updated>
-    <summary>Serafimerorden Riddare med kedja  (2004-08-18)</summary>
+    <summary>Serafimerorden Riddare med kedja (2004-08-18)</summary>
   </entry>
   <entry>
     <title>Beatrix av Nederländerna – Serafimerorden, Ledamot med kedja</title>
@@ -51,7 +59,7 @@
     <link href="https://leolevenius.github.io/kungliga-ordnar/person/beatrix-av-nederlanderna.html"/>
     <published>2026-11-05T00:00:00Z</published>
     <updated>2026-11-05T00:00:00Z</updated>
-    <summary>Serafimerorden Ledamot med kedja  (1987-05-05)</summary>
+    <summary>Serafimerorden Ledamot med kedja (1987-05-05)</summary>
   </entry>
   <entry>
     <title>Vigdís Finnbogadóttir – Serafimerorden, Ledamot med kedja</title>
@@ -59,7 +67,7 @@
     <link href="https://leolevenius.github.io/kungliga-ordnar/person/vigdis-finnbogadottir.html"/>
     <published>2026-11-05T00:00:00Z</published>
     <updated>2026-11-05T00:00:00Z</updated>
-    <summary>Serafimerorden Ledamot med kedja  (1987-06-11)</summary>
+    <summary>Serafimerorden Ledamot med kedja (1987-06-11)</summary>
   </entry>
   <entry>
     <title>Magne Knut Hagen – Nordstjärneorden, Kommendör med stora korset</title>
@@ -67,15 +75,15 @@
     <link href="https://leolevenius.github.io/kungliga-ordnar/person/magne-knut-hagen.html"/>
     <published>2026-11-05T00:00:00Z</published>
     <updated>2026-11-05T00:00:00Z</updated>
-    <summary>Nordstjärneorden Kommendör med stora korset  (1992)</summary>
+    <summary>Nordstjärneorden Kommendör med stora korset (1992)</summary>
   </entry>
   <entry>
     <title>Magne Knut Hagen – Svärdsorden, Riddare av första klassen</title>
     <id>tag:leolevenius.github.io,2026:kungliga-ordnar/T452</id>
     <link href="https://leolevenius.github.io/kungliga-ordnar/person/magne-knut-hagen.html"/>
     <published>2026-11-05T00:00:00Z</published>
-    <updated>2026-11-05T00:00:00Z</updated>
-    <summary>Svärdsorden Riddare av första klassen  (1974-09-26)</summary>
+    <updated>2026-11-06T00:00:00Z</updated>
+    <summary>Svärdsorden Riddare av första klassen (1974-09-26)</summary>
   </entry>
   <entry>
     <title>Pekka Sakari Kärki – Vasaorden, Riddare av första klassen</title>
@@ -83,7 +91,7 @@
     <link href="https://leolevenius.github.io/kungliga-ordnar/person/pekka-sakari-karki.html"/>
     <published>2026-11-05T00:00:00Z</published>
     <updated>2026-11-05T00:00:00Z</updated>
-    <summary>Vasaorden Riddare av första klassen  (1974-11-08)</summary>
+    <summary>Vasaorden Riddare av första klassen (1974-11-08)</summary>
   </entry>
   <entry>
     <title>Kronprinsessan Victoria – Serafimerorden, Ledamot med kedja</title>
@@ -91,7 +99,7 @@
     <link href="https://leolevenius.github.io/kungliga-ordnar/person/kronprinsessan-victoria.html"/>
     <published>2026-11-04T00:00:00Z</published>
     <updated>2026-11-04T00:00:00Z</updated>
-    <summary>Serafimerorden Ledamot med kedja  (1995-07-14)</summary>
+    <summary>Serafimerorden Ledamot med kedja (1995-07-14)</summary>
   </entry>
   <entry>
     <title>Mary av Danmark – Nordstjärneorden, Kommendör med stora korset</title>
@@ -99,7 +107,7 @@
     <link href="https://leolevenius.github.io/kungliga-ordnar/person/mary-av-danmark.html"/>
     <published>2026-11-04T00:00:00Z</published>
     <updated>2026-11-05T00:00:00Z</updated>
-    <summary>Nordstjärneorden Kommendör med stora korset </summary>
+    <summary>Nordstjärneorden Kommendör med stora korset</summary>
   </entry>
   <entry>
     <title>Prinsessan Christina, fru Magnuson – Svärdsorden, Kommendör med stora korset</title>
@@ -107,7 +115,7 @@
     <link href="https://leolevenius.github.io/kungliga-ordnar/person/prinsessan-christina-fru-magnuson.html"/>
     <published>2026-11-04T00:00:00Z</published>
     <updated>2026-11-04T00:00:00Z</updated>
-    <summary>Svärdsorden Kommendör med stora korset  (1952)</summary>
+    <summary>Svärdsorden Kommendör med stora korset (1952)</summary>
   </entry>
   <entry>
     <title>Prinsessan Christina, fru Magnuson – Nordstjärneorden, Kommendör med stora korset</title>
@@ -115,7 +123,7 @@
     <link href="https://leolevenius.github.io/kungliga-ordnar/person/prinsessan-christina-fru-magnuson.html"/>
     <published>2026-11-04T00:00:00Z</published>
     <updated>2026-11-04T00:00:00Z</updated>
-    <summary>Nordstjärneorden Kommendör med stora korset  (1952)</summary>
+    <summary>Nordstjärneorden Kommendör med stora korset (1952)</summary>
   </entry>
   <entry>
     <title>Carl XVI Gustaf – Vasaorden, Herre och mästare</title>
@@ -123,7 +131,7 @@
     <link href="https://leolevenius.github.io/kungliga-ordnar/person/carl-xvi-gustaf.html"/>
     <published>2026-11-04T00:00:00Z</published>
     <updated>2026-11-05T00:00:00Z</updated>
-    <summary>Vasaorden Herre och mästare  (1973)</summary>
+    <summary>Vasaorden Herre och mästare (1973)</summary>
   </entry>
   <entry>
     <title>Carl XVI Gustaf – Nordstjärneorden, Herre och mästare</title>
@@ -131,7 +139,7 @@
     <link href="https://leolevenius.github.io/kungliga-ordnar/person/carl-xvi-gustaf.html"/>
     <published>2026-11-04T00:00:00Z</published>
     <updated>2026-11-05T00:00:00Z</updated>
-    <summary>Nordstjärneorden Herre och mästare  (1973)</summary>
+    <summary>Nordstjärneorden Herre och mästare (1973)</summary>
   </entry>
   <entry>
     <title>Carl XVI Gustaf – Svärdsorden, Herre och mästare</title>
@@ -139,7 +147,7 @@
     <link href="https://leolevenius.github.io/kungliga-ordnar/person/carl-xvi-gustaf.html"/>
     <published>2026-11-04T00:00:00Z</published>
     <updated>2026-11-05T00:00:00Z</updated>
-    <summary>Svärdsorden Herre och mästare  (1973)</summary>
+    <summary>Svärdsorden Herre och mästare (1973)</summary>
   </entry>
   <entry>
     <title>Carl XVI Gustaf – Serafimerorden, Herre och mästare</title>
@@ -147,7 +155,7 @@
     <link href="https://leolevenius.github.io/kungliga-ordnar/person/carl-xvi-gustaf.html"/>
     <published>2026-11-04T00:00:00Z</published>
     <updated>2026-11-05T00:00:00Z</updated>
-    <summary>Serafimerorden Herre och mästare  (1973)</summary>
+    <summary>Serafimerorden Herre och mästare (1973)</summary>
   </entry>
   <entry>
     <title>Carl XVI Gustaf – Vasaorden, Kommendör med stora korset</title>
@@ -155,7 +163,7 @@
     <link href="https://leolevenius.github.io/kungliga-ordnar/person/carl-xvi-gustaf.html"/>
     <published>2026-11-04T00:00:00Z</published>
     <updated>2026-11-05T00:00:00Z</updated>
-    <summary>Vasaorden Kommendör med stora korset  (1973-04-30)</summary>
+    <summary>Vasaorden Kommendör med stora korset (1973-04-30)</summary>
   </entry>
   <entry>
     <title>Carl XVI Gustaf – Nordstjärneorden, Kommendör med stora korset</title>
@@ -163,7 +171,7 @@
     <link href="https://leolevenius.github.io/kungliga-ordnar/person/carl-xvi-gustaf.html"/>
     <published>2026-11-04T00:00:00Z</published>
     <updated>2026-11-05T00:00:00Z</updated>
-    <summary>Nordstjärneorden Kommendör med stora korset  (1946-04-30)</summary>
+    <summary>Nordstjärneorden Kommendör med stora korset (1946-04-30)</summary>
   </entry>
   <entry>
     <title>Carl XVI Gustaf – Svärdsorden, Kommendör med stora korset</title>
@@ -171,7 +179,7 @@
     <link href="https://leolevenius.github.io/kungliga-ordnar/person/carl-xvi-gustaf.html"/>
     <published>2026-11-04T00:00:00Z</published>
     <updated>2026-11-05T00:00:00Z</updated>
-    <summary>Svärdsorden Kommendör med stora korset  (1946-04-30)</summary>
+    <summary>Svärdsorden Kommendör med stora korset (1946-04-30)</summary>
   </entry>
   <entry>
     <title>Carl XVI Gustaf – Vasaorden, Stormästare</title>
@@ -179,7 +187,7 @@
     <link href="https://leolevenius.github.io/kungliga-ordnar/person/carl-xvi-gustaf.html"/>
     <published>2026-11-04T00:00:00Z</published>
     <updated>2026-11-05T00:00:00Z</updated>
-    <summary>Vasaorden Stormästare  (2023-02-15)</summary>
+    <summary>Vasaorden Stormästare (2023-02-15)</summary>
   </entry>
   <entry>
     <title>Carl XVI Gustaf – Nordstjärneorden, Stormästare</title>
@@ -187,7 +195,7 @@
     <link href="https://leolevenius.github.io/kungliga-ordnar/person/carl-xvi-gustaf.html"/>
     <published>2026-11-04T00:00:00Z</published>
     <updated>2026-11-05T00:00:00Z</updated>
-    <summary>Nordstjärneorden Stormästare  (1975-01-01)</summary>
+    <summary>Nordstjärneorden Stormästare (1975-01-01)</summary>
   </entry>
   <entry>
     <title>Carl XVI Gustaf – Svärdsorden, Stormästare</title>
@@ -195,7 +203,7 @@
     <link href="https://leolevenius.github.io/kungliga-ordnar/person/carl-xvi-gustaf.html"/>
     <published>2026-11-04T00:00:00Z</published>
     <updated>2026-11-05T00:00:00Z</updated>
-    <summary>Svärdsorden Stormästare  (2023-02-15)</summary>
+    <summary>Svärdsorden Stormästare (2023-02-15)</summary>
   </entry>
   <entry>
     <title>Carl XVI Gustaf – Serafimerorden, Stormästare</title>
@@ -203,23 +211,23 @@
     <link href="https://leolevenius.github.io/kungliga-ordnar/person/carl-xvi-gustaf.html"/>
     <published>2026-11-04T00:00:00Z</published>
     <updated>2026-11-05T00:00:00Z</updated>
-    <summary>Serafimerorden Stormästare  (1975-01-01)</summary>
+    <summary>Serafimerorden Stormästare (1975-01-01)</summary>
   </entry>
   <entry>
     <title>Amitabh Kant – Nordstjärneorden, Riddare av första klassen</title>
     <id>tag:leolevenius.github.io,2026:kungliga-ordnar/T435</id>
     <link href="https://leolevenius.github.io/kungliga-ordnar/person/amitabh-kant.html"/>
     <published>2026-11-04T00:00:00Z</published>
-    <updated>2026-11-04T00:00:00Z</updated>
-    <summary>Nordstjärneorden Riddare av första klassen  (2026-04-13)</summary>
+    <updated>2026-11-06T00:00:00Z</updated>
+    <summary>Nordstjärneorden Riddare av första klassen (2026-04-13)</summary>
   </entry>
   <entry>
     <title>Kristina Kappelin – Nordstjärneorden, Riddare av första klassen</title>
     <id>tag:leolevenius.github.io,2026:kungliga-ordnar/T434</id>
     <link href="https://leolevenius.github.io/kungliga-ordnar/person/kristina-kappelin.html"/>
     <published>2026-11-04T00:00:00Z</published>
-    <updated>2026-11-04T00:00:00Z</updated>
-    <summary>Nordstjärneorden Riddare av första klassen  (2026-04-13)</summary>
+    <updated>2026-11-06T00:00:00Z</updated>
+    <summary>Nordstjärneorden Riddare av första klassen (2026-04-13)</summary>
   </entry>
   <entry>
     <title>Anders Wall – Vasaorden, Riddare</title>
@@ -227,7 +235,7 @@
     <link href="https://leolevenius.github.io/kungliga-ordnar/person/anders-wall.html"/>
     <published>2026-11-04T00:00:00Z</published>
     <updated>2026-11-04T00:00:00Z</updated>
-    <summary>Vasaorden Riddare  (1974)</summary>
+    <summary>Vasaorden Riddare (1974)</summary>
   </entry>
   <entry>
     <title>Tord Magnuson – Vasaorden, Kommendör</title>
@@ -235,7 +243,7 @@
     <link href="https://leolevenius.github.io/kungliga-ordnar/person/tord-magnuson.html"/>
     <published>2026-11-04T00:00:00Z</published>
     <updated>2026-11-04T00:00:00Z</updated>
-    <summary>Vasaorden Kommendör  (1974)</summary>
+    <summary>Vasaorden Kommendör (1974)</summary>
   </entry>
   <entry>
     <title>Ephraim Isaac – Nordstjärneorden, Riddare av första klassen</title>
@@ -243,7 +251,7 @@
     <link href="https://leolevenius.github.io/kungliga-ordnar/person/ephraim-isaac.html"/>
     <published>2026-11-04T00:00:00Z</published>
     <updated>2026-11-04T00:00:00Z</updated>
-    <summary>Nordstjärneorden Riddare av första klassen  (2013-12-05)</summary>
+    <summary>Nordstjärneorden Riddare av första klassen (2013-12-05)</summary>
   </entry>
   <entry>
     <title>Kaja Kallas – Nordstjärneorden, Kommendör med stora korset</title>
@@ -251,7 +259,7 @@
     <link href="https://leolevenius.github.io/kungliga-ordnar/person/kaja-kallas.html"/>
     <published>2026-11-04T00:00:00Z</published>
     <updated>2026-11-05T00:00:00Z</updated>
-    <summary>Nordstjärneorden Kommendör med stora korset  (2023)</summary>
+    <summary>Nordstjärneorden Kommendör med stora korset (2023)</summary>
   </entry>
   <entry>
     <title>Antti Kaikkonen – Nordstjärneorden, Kommendör med stora korset</title>
@@ -259,7 +267,7 @@
     <link href="https://leolevenius.github.io/kungliga-ordnar/person/antti-kaikkonen.html"/>
     <published>2026-11-04T00:00:00Z</published>
     <updated>2026-11-04T00:00:00Z</updated>
-    <summary>Nordstjärneorden Kommendör med stora korset  (2022)</summary>
+    <summary>Nordstjärneorden Kommendör med stora korset (2022)</summary>
   </entry>
   <entry>
     <title>Anne Hidalgo – Nordstjärneorden, Kommendör</title>
@@ -267,7 +275,7 @@
     <link href="https://leolevenius.github.io/kungliga-ordnar/person/anne-hidalgo.html"/>
     <published>2026-11-04T00:00:00Z</published>
     <updated>2026-11-04T00:00:00Z</updated>
-    <summary>Nordstjärneorden Kommendör  (2014)</summary>
+    <summary>Nordstjärneorden Kommendör (2014)</summary>
   </entry>
   <entry>
     <title>Nivaldo Luiz Rossato – Nordstjärneorden, Kommendör av första klassen</title>
@@ -275,15 +283,15 @@
     <link href="https://leolevenius.github.io/kungliga-ordnar/person/nivaldo-luiz-rossato.html"/>
     <published>2026-11-04T00:00:00Z</published>
     <updated>2026-11-04T00:00:00Z</updated>
-    <summary>Nordstjärneorden Kommendör av första klassen  (2019-12-10)</summary>
+    <summary>Nordstjärneorden Kommendör av första klassen (2019-12-10)</summary>
   </entry>
   <entry>
     <title>Kim Yoon-ok – Nordstjärneorden, Kommendör med stora korset</title>
     <id>tag:leolevenius.github.io,2026:kungliga-ordnar/T426</id>
     <link href="https://leolevenius.github.io/kungliga-ordnar/person/kim-yoon-ok.html"/>
     <published>2026-11-04T00:00:00Z</published>
-    <updated>2026-11-04T00:00:00Z</updated>
-    <summary>Nordstjärneorden Kommendör med stora korset  (2012-05-30)</summary>
+    <updated>2026-11-06T00:00:00Z</updated>
+    <summary>Nordstjärneorden Kommendör med stora korset (2012-05-30)</summary>
   </entry>
   <entry>
     <title>Estela Barnes de Carlotto – Nordstjärneorden, Kommendör med stora korset</title>
@@ -291,31 +299,31 @@
     <link href="https://leolevenius.github.io/kungliga-ordnar/person/estela-barnes-de-carlotto.html"/>
     <published>2026-11-04T00:00:00Z</published>
     <updated>2026-11-04T00:00:00Z</updated>
-    <summary>Nordstjärneorden Kommendör med stora korset  (2012-10-24)</summary>
+    <summary>Nordstjärneorden Kommendör med stora korset (2012-10-24)</summary>
   </entry>
   <entry>
     <title>Mauno Järvelä – Nordstjärneorden, Riddare av första klassen</title>
     <id>tag:leolevenius.github.io,2026:kungliga-ordnar/T423</id>
     <link href="https://leolevenius.github.io/kungliga-ordnar/person/mauno-jarvela.html"/>
     <published>2026-11-04T00:00:00Z</published>
-    <updated>2026-11-04T00:00:00Z</updated>
-    <summary>Nordstjärneorden Riddare av första klassen  (2010-02-01)</summary>
+    <updated>2026-11-06T00:00:00Z</updated>
+    <summary>Nordstjärneorden Riddare av första klassen (2010-02-01)</summary>
   </entry>
   <entry>
     <title>Colin Carlile – Nordstjärneorden, Kommendör</title>
     <id>tag:leolevenius.github.io,2026:kungliga-ordnar/T422</id>
     <link href="https://leolevenius.github.io/kungliga-ordnar/person/colin-carlile.html"/>
     <published>2026-11-04T00:00:00Z</published>
-    <updated>2026-11-04T00:00:00Z</updated>
-    <summary>Nordstjärneorden Kommendör  (2013-06-27)</summary>
+    <updated>2026-11-06T00:00:00Z</updated>
+    <summary>Nordstjärneorden Kommendör (2013-06-27)</summary>
   </entry>
   <entry>
     <title>Marta Nawrocka – Nordstjärneorden, Kommendör med stora korset</title>
     <id>tag:leolevenius.github.io,2026:kungliga-ordnar/T421</id>
     <link href="https://leolevenius.github.io/kungliga-ordnar/person/marta-nawrocka.html"/>
     <published>2026-11-04T00:00:00Z</published>
-    <updated>2026-11-04T00:00:00Z</updated>
-    <summary>Nordstjärneorden Kommendör med stora korset  (2026-03-10)</summary>
+    <updated>2026-11-06T00:00:00Z</updated>
+    <summary>Nordstjärneorden Kommendör med stora korset (2026-03-10)</summary>
   </entry>
   <entry>
     <title>Maria Cavaco Silva – Nordstjärneorden, Kommendör med stora korset</title>
@@ -323,7 +331,7 @@
     <link href="https://leolevenius.github.io/kungliga-ordnar/person/maria-cavaco-silva.html"/>
     <published>2026-11-04T00:00:00Z</published>
     <updated>2026-11-04T00:00:00Z</updated>
-    <summary>Nordstjärneorden Kommendör med stora korset  (2008-05-09)</summary>
+    <summary>Nordstjärneorden Kommendör med stora korset (2008-05-09)</summary>
   </entry>
   <entry>
     <title>Volker Wieker – Nordstjärneorden, Kommendör med stora korset</title>
@@ -331,7 +339,7 @@
     <link href="https://leolevenius.github.io/kungliga-ordnar/person/volker-wieker.html"/>
     <published>2026-11-04T00:00:00Z</published>
     <updated>2026-11-04T00:00:00Z</updated>
-    <summary>Nordstjärneorden Kommendör med stora korset  (2013)</summary>
+    <summary>Nordstjärneorden Kommendör med stora korset (2013)</summary>
   </entry>
   <entry>
     <title>Tom Johnstone – Nordstjärneorden, Kommendör</title>
@@ -339,23 +347,23 @@
     <link href="https://leolevenius.github.io/kungliga-ordnar/person/tom-johnstone.html"/>
     <published>2026-11-04T00:00:00Z</published>
     <updated>2026-11-05T00:00:00Z</updated>
-    <summary>Nordstjärneorden Kommendör  (2008)</summary>
+    <summary>Nordstjärneorden Kommendör (2008)</summary>
   </entry>
   <entry>
     <title>Radosław Sikorski – Nordstjärneorden, Kommendör med stora korset</title>
     <id>tag:leolevenius.github.io,2026:kungliga-ordnar/T416</id>
-    <link href="https://leolevenius.github.io/kungliga-ordnar/person/radosaw-sikorski.html"/>
+    <link href="https://leolevenius.github.io/kungliga-ordnar/person/radoslaw-sikorski.html"/>
     <published>2026-11-04T00:00:00Z</published>
-    <updated>2026-11-05T00:00:00Z</updated>
-    <summary>Nordstjärneorden Kommendör med stora korset  (2011)</summary>
+    <updated>2026-11-06T00:00:00Z</updated>
+    <summary>Nordstjärneorden Kommendör med stora korset (2011)</summary>
   </entry>
   <entry>
     <title>Aníbal Cavaco Silva – Nordstjärneorden, Kommendör med stora korset</title>
     <id>tag:leolevenius.github.io,2026:kungliga-ordnar/T415</id>
     <link href="https://leolevenius.github.io/kungliga-ordnar/person/anibal-cavaco-silva.html"/>
     <published>2026-11-04T00:00:00Z</published>
-    <updated>2026-11-04T00:00:00Z</updated>
-    <summary>Nordstjärneorden Kommendör med stora korset  (1986-09-16)</summary>
+    <updated>2026-11-06T00:00:00Z</updated>
+    <summary>Nordstjärneorden Kommendör med stora korset (1986-09-16)</summary>
   </entry>
   <entry>
     <title>Anand Panyarachun – Nordstjärneorden, Kommendör med stora korset</title>
@@ -363,7 +371,7 @@
     <link href="https://leolevenius.github.io/kungliga-ordnar/person/anand-panyarachun.html"/>
     <published>2026-11-04T00:00:00Z</published>
     <updated>2026-11-04T00:00:00Z</updated>
-    <summary>Nordstjärneorden Kommendör med stora korset  (2007)</summary>
+    <summary>Nordstjärneorden Kommendör med stora korset (2007)</summary>
   </entry>
   <entry>
     <title>Anders Fogh Rasmussen – Nordstjärneorden, Kommendör med stora korset</title>
@@ -371,7 +379,7 @@
     <link href="https://leolevenius.github.io/kungliga-ordnar/person/anders-fogh-rasmussen.html"/>
     <published>2026-11-04T00:00:00Z</published>
     <updated>2026-11-04T00:00:00Z</updated>
-    <summary>Nordstjärneorden Kommendör med stora korset  (2007)</summary>
+    <summary>Nordstjärneorden Kommendör med stora korset (2007)</summary>
   </entry>
   <entry>
     <title>Frans Timmermans – Nordstjärneorden, Kommendör</title>
@@ -379,7 +387,7 @@
     <link href="https://leolevenius.github.io/kungliga-ordnar/person/frans-timmermans.html"/>
     <published>2026-11-04T00:00:00Z</published>
     <updated>2026-11-04T00:00:00Z</updated>
-    <summary>Nordstjärneorden Kommendör  (2009)</summary>
+    <summary>Nordstjärneorden Kommendör (2009)</summary>
   </entry>
   <entry>
     <title>Margit Fischer – Nordstjärneorden, Kommendör med stora korset</title>
@@ -387,7 +395,7 @@
     <link href="https://leolevenius.github.io/kungliga-ordnar/person/margit-fischer.html"/>
     <published>2026-11-04T00:00:00Z</published>
     <updated>2026-11-04T00:00:00Z</updated>
-    <summary>Nordstjärneorden Kommendör med stora korset  (2007)</summary>
+    <summary>Nordstjärneorden Kommendör med stora korset (2007)</summary>
   </entry>
   <entry>
     <title>Sergej Stepasjin – Nordstjärneorden, Kommendör av första klassen</title>
@@ -395,14 +403,6 @@
     <link href="https://leolevenius.github.io/kungliga-ordnar/person/sergej-stepasjin.html"/>
     <published>2026-11-04T00:00:00Z</published>
     <updated>2026-11-05T00:00:00Z</updated>
-    <summary>Nordstjärneorden Kommendör av första klassen  (2002)</summary>
-  </entry>
-  <entry>
-    <title>Kim Jung-sook – Nordstjärneorden, Kommendör med stora korset</title>
-    <id>tag:leolevenius.github.io,2026:kungliga-ordnar/T409</id>
-    <link href="https://leolevenius.github.io/kungliga-ordnar/person/kim-jung-sook.html"/>
-    <published>2026-11-04T00:00:00Z</published>
-    <updated>2026-11-04T00:00:00Z</updated>
-    <summary>Nordstjärneorden Kommendör med stora korset  (2019-06-14)</summary>
+    <summary>Nordstjärneorden Kommendör av första klassen (2002)</summary>
   </entry>
 </feed>

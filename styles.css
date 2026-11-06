@@ -98,7 +98,9 @@ h3 {
 }
 
 h1.title {
-  font-size: 2.9rem;
+  font-size: clamp(1.9rem, 8vw, 2.9rem);
+  overflow-wrap: anywhere;
+  hyphens: auto;
   font-weight: 700;
   padding-bottom: 0.45rem;
   margin-bottom: 0;
@@ -304,6 +306,16 @@ img.skold {
 
 .reactable .rt-search {
   border-color: var(--linje);
+}
+
+.reactable .rt-search:focus-visible,
+.reactable .rt-th:focus-visible,
+.reactable .rt-page-button:focus-visible,
+.reactable .rt-select-input:focus-visible,
+.reactable .rt-expander-button:focus-visible {
+  outline: 3px solid var(--marin);
+  outline-offset: -3px;
+  box-shadow: none;
 }
 
 .reactable .rt-page-button-current,
