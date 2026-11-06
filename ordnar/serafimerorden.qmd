@@ -1,5 +1,6 @@
 ---
 title: "Serafimerorden"
+description-meta: "Levande mottagare av Serafimerorden, med grad, datum och källa. Titeln anges så som den löd när utmärkelsen förlänades."
 ---
 
 ```{r}

@@ -1,5 +1,6 @@
 ---
 title: "Bevakning"
+description-meta: "Ändringslogg och Atom-flöde med nya tilldelningar av kungliga ordnar."
 ---
 
 ```{r}

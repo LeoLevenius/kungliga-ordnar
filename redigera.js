@@ -1,3 +1,6 @@
+// Validation rules shared with tests/validate.R: today is the UTC date (as in CI), text fields are trimmed
+// (fread trims them), duplicates are judged on person, orden, grade rank and year, and an empty grade is
+// accepted only for an existing row that already had an empty grade. Slugs follow scraper/run.R (tests/slug-fall.csv).
 (function (root) {
   "use strict";
 
@@ -42,6 +45,7 @@
       else if (c === "\n") { row.push(f); rows.push(row); row = []; f = ""; }
       else if (c !== "\r") f += c;
     }
+    if (q) throw new Error("CSV-filen har ett citattecken som inte avslutas.");
     if (f !== "" || row.length) { row.push(f); rows.push(row); }
     return rows;
   }
@@ -61,7 +65,12 @@
 
   function csvToObjects(text) {
     var rows = parseCsv(text);
+    if (rows.length > 1 && rows[rows.length - 1].length === 1 && rows[rows.length - 1][0] === "") rows.pop();
     var header = rows[0];
+    if (!header) throw new Error("CSV-filen är tom.");
+    rows.forEach(function (r, i) {
+      if (r.length !== header.length) throw new Error("CSV-filen har fel antal fält på rad " + (i + 1) + ": " + r.length + " i stället för " + header.length + ".");
+    });
     var objs = rows.slice(1).map(function (r) {
       var o = {};
       header.forEach(function (k, i) { o[k] = r[i] == null ? "" : r[i]; });
@@ -71,7 +80,7 @@
   }
 
   function idagIso() {
-    return new Date().toLocaleDateString("sv-SE");
+    return new Date().toISOString().slice(0, 10);
   }
 
   function precisionFor(d) {
@@ -106,22 +115,30 @@
     return s.replace(/\s+/g, " ").trim();
   }
 
+  var SLUG_SÄRSKILT = { "ø": "o", "æ": "ae", "ð": "d", "þ": "th", "ß": "ss", "ł": "l", "đ": "d", "œ": "oe", "ı": "i", "ħ": "h", "ŧ": "t" };
+
   function slugify(namn) {
-    return nyckel(namn.replace(/['’]/g, "").replace(/-/g, " ")).replace(/ /g, "-");
+    var s = String(namn == null ? "" : namn).toLowerCase().replace(/['’‘ʼ:]/g, "");
+    s = s.replace(/[øæðþßłđœıħŧ]/g, function (c) { return SLUG_SÄRSKILT[c]; });
+    s = s.normalize("NFD").replace(/[̀-ͯ]/g, "");
+    return s.replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
   }
 
-  function validera(table, grader, rörda) {
+  function validera(table, grader, rörda, orig) {
     var fel = [];
     var rörd = {};
     rörda.forEach(function (id) { rörd[id] = true; });
-    var gradSet = {};
-    grader.forEach(function (g) { gradSet[g.orden + "\u0000" + g.grad] = true; });
-    var sedda = {}, nycklar = {}, qid = {};
+    var gradSet = {}, rang = {}, origGrad = {};
+    grader.forEach(function (g) { gradSet[g.orden + "\u0000" + g.grad] = true; rang[g.orden + "\u0000" + g.grad] = g.rang; });
+    (orig || []).forEach(function (o) { origGrad[o.id] = o.grad; });
+    var sedda = {}, nycklar = {}, qid = {}, rangNycklar = {};
     table.forEach(function (r) {
       if (sedda[r.id]) fel.push({ id: r.id, msg: "id används två gånger" });
       sedda[r.id] = true;
       var k = nyckel(r.namn) + "|" + r.orden + "|" + r.grad + "|" + r.datum_tilldelning;
       (nycklar[k] = nycklar[k] || []).push(r.id);
+      var rk = rang[r.orden + "\u0000" + r.grad];
+      if (rk !== undefined) (rangNycklar[r.person_id + "|" + r.orden + "|" + rk + "|" + r.datum_tilldelning.slice(0, 4)] = rangNycklar[r.person_id + "|" + r.orden + "|" + rk + "|" + r.datum_tilldelning.slice(0, 4)] || []).push(r.id);
       if (r.wikidata_qid) (qid[r.wikidata_qid] = qid[r.wikidata_qid] || {})[r.person_id] = true;
     });
     table.forEach(function (r) {
@@ -129,7 +146,8 @@
       var p = function (cond, msg) { if (!cond) fel.push({ id: r.id, msg: msg }); };
       p(r.namn.trim() !== "", "namn saknas");
       p(ORDNAR.indexOf(r.orden) >= 0, "orden måste vara en av de fyra ordnarna");
-      p(gradSet[r.orden + "\u0000" + r.grad], "graden \"" + r.grad + "\" finns inte i " + r.orden);
+      p(gradSet[r.orden + "\u0000" + r.grad] || (r.grad === "" && origGrad[r.id] === ""),
+        r.grad === "" ? "grad måste anges (en befintlig rad utan grad får lämnas som den är)" : "graden \"" + r.grad + "\" finns inte i " + r.orden);
       var df = datumFel(r.datum_tilldelning);
       p(!df, "datum: " + df);
       var validUrl = false;
@@ -137,8 +155,9 @@
       p(validUrl, "källa_url måste vara en giltig http(s)-adress");
       p(r.motivering_typ !== "statsbesök" || r["statsbesök"] !== "", "motivering_typ statsbesök kräver ifyllt statsbesök");
       p(r.kategori === "svensk" || r.kategori === "utländsk", "kategori måste vara svensk eller utländsk");
-      p((r.kategori === "svensk" && (r.land === "" || r.land === "Sverige")) ||
-        (r.kategori === "utländsk" && (r.land === "" || r.land !== "Sverige")),
+      var land = r.land.trim();
+      p((r.kategori === "svensk" && (land === "" || land === "Sverige")) ||
+        (r.kategori === "utländsk" && (land === "" || land !== "Sverige")),
         "kategori och land stämmer inte (svensk = Sverige eller okänt, utländsk = annat land eller okänt)");
       p(r.kunglig === "TRUE" || r.kunglig === "FALSE", "kunglig måste vara TRUE eller FALSE");
       p(KALLTYPER[r["källtyp"]], "ogiltig källtyp");
@@ -146,6 +165,9 @@
       p(r["kön"] === "" || r["kön"] === "man" || r["kön"] === "kvinna", "kön måste vara man, kvinna eller tomt");
       p(!datumFel(r["dödsdatum"]), "dödsdatum: " + datumFel(r["dödsdatum"]));
       var k = nyckel(r.namn) + "|" + r.orden + "|" + r.grad + "|" + r.datum_tilldelning;
+      var rk2 = rang[r.orden + "\u0000" + r.grad];
+      var rl = rk2 === undefined ? [r.id] : rangNycklar[r.person_id + "|" + r.orden + "|" + rk2 + "|" + r.datum_tilldelning.slice(0, 4)];
+      p(rl.length === 1, "dubblett av " + rl.filter(function (x) { return x !== r.id; }).join(", ") + " (samma person, orden, grad och år; gradnamn med samma rang räknas som samma grad)");
       p(nycklar[k].length === 1, "dubblett av " + nycklar[k].filter(function (x) { return x !== r.id; }).join(", ") + " (samma namn, orden, grad och datum)");
       p(!r.wikidata_qid || Object.keys(qid[r.wikidata_qid]).length === 1, "Wikidata-id " + r.wikidata_qid + " används av flera personer");
       p(!r.wikidata_qid || /^Q\d+$/.test(r.wikidata_qid), "Wikidata-id ska vara på formen Q12345");
@@ -181,6 +203,8 @@
     while (S.bilder.some(function (x) { return x.fil === f && (x.fil !== origFil || S.rows.some(function (r) { return r.person_id !== ed.pid && r.bild_url === "img/" + x.fil; })); })) f = bas + "-" + (++n) + "." + ext;
     return f;
   }
+
+  function trimma(v) { return typeof v === "string" ? v.trim() : v; }
 
   function beräknaÄndringar(S, ed) {
     var idag = idagIso();
@@ -222,16 +246,27 @@
       bildFält.push({ k: "bild.fil", från: origFil, till: "" });
     }
     var ändringar = [];
+    var spridBild = bild && !bild.ny && origFil && bild.fil === origFil;
     var ny = S.rows.map(function (r) {
       var j = orig.indexOf(r);
-      if (j < 0) return r;
+      if (j < 0) {
+        if (!spridBild || r.bild_url !== "img/" + origFil) return r;
+        var d = Object.assign({}, r), df = [];
+        [["bild_licens", bild.licens], ["bild_upphov", bild.upphov]].forEach(function (x) {
+          if (d[x[0]] !== x[1]) { df.push({ k: x[0], från: d[x[0]], till: x[1] }); d[x[0]] = x[1]; }
+        });
+        if (df.length) ändringar.push({ id: r.id, typ: "ändrad", fält: df, person: r.person_id });
+        return d;
+      }
       var o = Object.assign({}, r), fält = [];
       var rad = ed.rader.filter(function (x) { return x.id === r.id; })[0];
       PERSON_FALT.forEach(function (k) {
-        if (o[k] !== ed.person[k]) { fält.push({ k: k, från: o[k], till: ed.person[k] }); o[k] = ed.person[k]; }
+        var v = trimma(ed.person[k]);
+        if (o[k] !== v) { fält.push({ k: k, från: o[k], till: v }); o[k] = v; }
       });
       RAD_FALT.forEach(function (k) {
-        if (o[k] !== rad.f[k]) { fält.push({ k: k, från: o[k], till: rad.f[k] }); o[k] = rad.f[k]; }
+        var v = trimma(rad.f[k]);
+        if (o[k] !== v) { fält.push({ k: k, från: o[k], till: v }); o[k] = v; }
       });
       Object.keys(bildVärden).forEach(function (k) {
         if (o[k] !== bildVärden[k]) { fält.push({ k: k, från: o[k], till: bildVärden[k] }); o[k] = bildVärden[k]; }
@@ -246,8 +281,8 @@
       S.header.forEach(function (k) { o[k] = ""; });
       o.id = nastaId(ny.concat(tillagda));
       o.person_id = ed.pid;
-      PERSON_FALT.forEach(function (k) { o[k] = ed.person[k]; });
-      RAD_FALT.forEach(function (k) { o[k] = x.f[k]; });
+      PERSON_FALT.forEach(function (k) { o[k] = trimma(ed.person[k]); });
+      RAD_FALT.forEach(function (k) { o[k] = trimma(x.f[k]); });
       Object.keys(bildVärden).forEach(function (k) { o[k] = bildVärden[k]; });
       o.datum_precision = precisionFor(o.datum_tilldelning);
       tillagda.push(o);
@@ -286,6 +321,7 @@
   function gh(token, method, path, body) {
     return root.fetch(API + path, {
       method: method,
+      cache: "no-store",
       headers: {
         "Authorization": "Bearer " + token,
         "Accept": "application/vnd.github+json",
@@ -293,10 +329,14 @@
         "Content-Type": "application/json"
       },
       body: body ? JSON.stringify(body) : undefined
+    }).catch(function () {
+      var e = new Error("Kunde inte nå GitHub. Kontrollera nätverket och försök igen.");
+      e.nät = true;
+      throw e;
     }).then(function (res) {
       return res.json().catch(function () { return {}; }).then(function (j) {
         if (!res.ok) {
-          var e = new Error((j && j.message) || ("HTTP " + res.status));
+          var e = new Error(res.status >= 500 ? "GitHub svarade med serverfel (HTTP " + res.status + "). Försök igen om en stund." : (j && j.message) || ("HTTP " + res.status));
           e.status = res.status;
           throw e;
         }
@@ -372,7 +412,7 @@
   var lib = {
     parseCsv: parseCsv, toCsv: toCsv, csvToObjects: csvToObjects, csvLines: csvLines,
     validera: validera, valideraBild: valideraBild, nyBild: nyBild, bildFrån: bildFrån, beräknaÄndringar: beräknaÄndringar, precisionFor: precisionFor,
-    datumFel: datumFel, slugify: slugify, nastaId: nastaId, spara: spara, läsData: läsData,
+    datumFel: datumFel, slugify: slugify, idagIso: idagIso, nastaId: nastaId, spara: spara, läsData: läsData,
     PERSON_FALT: PERSON_FALT, RAD_FALT: RAD_FALT
   };
 
@@ -427,6 +467,7 @@
           h("li", null, "Välj under Repository access: ", h("strong", null, "Only select repositories"), " och därefter ", h("code", null, "kungliga-ordnar"), "."),
           h("li", null, "Klistra in token här:")),
         fel ? h("p", { class: "rd-fel" }, fel) : null,
+        h("label", { for: "rd-token", class: "rd-etikett" }, "Personlig åtkomsttoken"),
         h("div", { class: "rd-rad" }, inp,
           h("button", { class: "btn btn-primary", onclick: function () { loggaIn(inp.value.trim()); } }, "Logga in"))));
   }
@@ -435,16 +476,36 @@
     if (!token) return;
     ersätt(mount, h("p", null, "Kontrollerar token…"));
     Promise.all([gh(token, "GET", "/user"), gh(token, "GET", "/repos/" + REPO)]).then(function (r) {
-      if (r[0].login.toLowerCase() !== OWNER.toLowerCase()) throw new Error("Bara " + OWNER + " har tillgång till redigeringen.");
-      if (!r[1].permissions || !r[1].permissions.push) throw new Error("Token saknar skrivrätt till " + REPO + ".");
+      if (r[0].login.toLowerCase() !== OWNER.toLowerCase()) throw Object.assign(new Error("Bara " + OWNER + " har tillgång till redigeringen."), { tokenFel: true });
+      if (!r[1].permissions || !r[1].permissions.push) throw Object.assign(new Error("Token saknar skrivrätt till " + REPO + "."), { tokenFel: true });
       sparaToken(token);
       S.token = token;
       S.user = r[0].login;
       return laddaData();
     }).catch(function (e) {
-      sparaToken(null);
-      visaLogin(e.status === 401 ? "GitHub avvisade token." : e.message);
+      if (e.status === 401 || e.tokenFel) {
+        sparaToken(null);
+        visaLogin(e.status === 401 ? "GitHub avvisade token." : e.message);
+      } else {
+        visaFel(e, token);
+      }
     });
+  }
+
+  function visaFel(e, token) {
+    ersätt(mount,
+      h("div", { class: "rd-kort" },
+        h("h2", null, "Redigeraren kunde inte startas"),
+        h("p", { class: "rd-fel", role: "alert" }, e.message),
+        h("div", { class: "rd-rad" },
+          h("button", { class: "btn btn-primary", onclick: function () { loggaIn(token); } }, "Försök igen"),
+          h("button", { class: "btn btn-outline-secondary", onclick: function () { sparaToken(null); visaLogin(); } }, "Logga in med en annan token"))));
+  }
+
+  function personFrånHash() {
+    var m = /^#person=(.+)$/.exec(location.hash);
+    if (!m) return null;
+    try { return decodeURIComponent(m[1]); } catch (_) { return null; }
   }
 
   function laddaData() {
@@ -452,14 +513,16 @@
     return läsData(S.token).then(function (d) {
       Object.assign(S, d);
       S.ed = null;
-      var m = /^#person=(.+)$/.exec(location.hash);
-      if (m && S.rows.some(function (r) { return r.person_id === decodeURIComponent(m[1]); })) väljPerson(decodeURIComponent(m[1]));
+      var pid = personFrånHash();
+      if (pid && S.rows.some(function (r) { return r.person_id === pid; })) väljPerson(pid);
       else if (location.hash === "#ny") nyPerson();
       else visaLista();
     });
   }
 
   function logout() {
+    if (harOsparat() && !root.confirm("Du har osparade ändringar. Vill du logga ut utan att spara?")) return;
+    S.ed = null;
     sparaToken(null);
     S.token = null;
     visaLogin();
@@ -531,6 +594,7 @@
     person.kategori = "utländsk";
     person.kunglig = "FALSE";
     S.ed = { pid: null, ny: true, person: person, rader: [tomRad()], bild: null };
+    S.ed.start = ögonblick(S.ed);
     visaForm();
   }
 
@@ -671,8 +735,15 @@
     uppdateraGranskning();
   }
 
+  function ögonblick(ed) {
+    return JSON.stringify({ person: ed.person, rader: ed.rader, bild: ed.bild });
+  }
+
   function harOsparat() {
-    return !!(S.ed && S.ed.pid && beräknaÄndringar(S, S.ed).ändringar.length);
+    var ed = S.ed;
+    if (!ed) return false;
+    if (ed.ny) return ögonblick(ed) !== ed.start;
+    return !!(ed.pid && beräknaÄndringar(S, ed).ändringar.length);
   }
   root.addEventListener("beforeunload", function (e) { if (harOsparat()) { e.preventDefault(); e.returnValue = ""; } });
   var senastFel = [];
@@ -693,10 +764,10 @@
     }
     var res = beräknaÄndringar(S, ed);
     var rörda = res.ändringar.map(function (a) { return a.id; });
-    var fel = validera(res.tabell, S.grader, rörda).concat(valideraBild(ed, res));
+    var fel = validera(res.tabell, S.grader, rörda, S.rows).concat(valideraBild(ed, res));
     senastFel = fel;
     var delar = res.ändringar.map(function (a) {
-      return h("li", null, h("strong", null, a.id), " ", a.typ === "tillagd" ? "tillagd" : "ändrad",
+      return h("li", null, h("strong", null, a.id), a.person ? " (" + a.person + ", delad bild)" : "", " ", a.typ === "tillagd" ? "tillagd" : "ändrad",
         a.fält.length ? h("ul", null, a.fält.map(function (x) {
           return h("li", null, h("code", null, x.k), ": ", h("del", null, x.från || "(tomt)"), " → ", h("ins", null, x.till || "(tomt)"));
         })) : null);

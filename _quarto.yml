@@ -1,6 +1,15 @@
 project:
   type: website
   output-dir: _site
+  render:
+    - index.qmd
+    - bevakning.qmd
+    - oppna-data.qmd
+    - ordensguide.qmd
+    - redigera.qmd
+    - statistik.qmd
+    - ordnar/*.qmd
+    - mallar/person.qmd
   post-render:
     - Rscript R/build_persons.R
     - Rscript R/export.R
@@ -11,6 +20,7 @@ project:
 
 website:
   title: "Kungliga ordnar"
+  description: "Levande mottagare av de fyra kungliga riddarordnarna, med grad, datum och källa."
   navbar:
     left:
       - text: Start

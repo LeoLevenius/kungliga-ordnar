@@ -1,5 +1,6 @@
 ---
 title: "Statistik"
+description-meta: "Statistik över levande mottagare av kungliga ordnar: antal per orden, grad, kön och land."
 ---
 
 ```{r}

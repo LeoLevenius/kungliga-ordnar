@@ -1,5 +1,6 @@
 ---
 title: "Svärdsorden"
+description-meta: "Levande mottagare av Svärdsorden, med grad och datum. Motivering och källa finns på personsidorna."
 ---
 
 ```{r}

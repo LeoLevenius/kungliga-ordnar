@@ -1,5 +1,6 @@
 ---
 title: "Vasaorden"
+description-meta: "Levande mottagare av Vasaorden, med grad och datum. Motivering och källa finns på personsidorna."
 ---
 
 ```{r}

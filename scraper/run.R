@@ -10,7 +10,7 @@ UA <- "kungliga-ordnar-research/0.1 (generic client)"
 CACHE_DIR <- "cache/scraper"
 FIND_DAYS <- 120
 MIN_DELAY <- 2.1
-IDAG <- as.character(Sys.Date())
+IDAG <- format(Sys.time(), "%Y-%m-%d", tz = "UTC")
 FILE_T <- "data/tilldelningar.csv"
 FILE_K <- "data/kandidater.csv"
 FILE_L <- "data/andringslogg.csv"
@@ -226,10 +226,20 @@ ny_rad <- function(namn, titel, orden, grad, datum, motivering, url, kategori, f
              bild_upphov = NA_character_)
 }
 
+# Slug rules are shared with slugify() in redigera.js; tests/slug-fall.csv holds the fixed cases both must satisfy.
+SLUG_TECKEN <- local({
+  grupper <- c(a = "àáâãäåāăąǎǻȧ", c = "çćčĉċ", d = "ďđð", e = "èéêëēĕėęěȩ", g = "ğĝġģ", h = "ĥħ",
+               i = "ìíîïĩīĭįǐı", j = "ĵ", k = "ķ", l = "ĺļľł", n = "ñńņň", o = "òóôõöøōŏőǒ",
+               r = "ŕŗř", s = "śŝşšș", t = "ţťŧț", u = "ùúûüũūŭůűųǔ", w = "ŵ", y = "ýÿŷ", z = "źżž")
+  list(fran = paste(unlist(strsplit(unname(grupper), "")), collapse = ""),
+       till = paste(rep(names(grupper), nchar(unname(grupper))), collapse = ""))
+})
+
 slug <- function(x) {
-  x <- gsub("['’]", "", x)
-  x <- iconv(x, to = "ASCII//TRANSLIT")
-  x <- tolower(gsub("[^A-Za-z0-9]+", "-", x))
+  x <- tolower(gsub("['’‘ʼ:]", "", x))
+  for (e in list(c("æ", "ae"), c("œ", "oe"), c("ß", "ss"), c("þ", "th"))) x <- gsub(e[1], e[2], x, fixed = TRUE)
+  x <- chartr(SLUG_TECKEN$fran, SLUG_TECKEN$till, x)
+  x <- gsub("[^a-z0-9]+", "-", x)
   gsub("^-|-$", "", x)
 }
 
@@ -304,7 +314,8 @@ tolka_strukturerad <- function(url, lines) {
   if (length(rader)) rbindlist(rader) else rad_tom()
 }
 
-LAND_ADJ <- c(svenska = "Sverige", danska = "Danmark", norska = "Norge", finske = "Finland",
+LAND_ADJ <- c(svenska = "Sverige", svenske = "Sverige", danska = "Danmark", danske = "Danmark",
+              norska = "Norge", norske = "Norge", finske = "Finland",
               finska = "Finland", isländske = "Island", isländska = "Island", estniske = "Estland",
               estniska = "Estland", lettiske = "Lettland", lettiska = "Lettland", litauiske = "Litauen",
               litauiska = "Litauen", polske = "Polen", polska = "Polen", tyske = "Tyskland",
@@ -337,8 +348,8 @@ tolka_kmo <- function(url, lines) {
     if (length(p) && !is.na(cur_grad) && !is.na(cur_orden)) {
       d <- dela_namn(p[3])
       land <- unname(LAND_ADJ[p[2]])
-      r <- ny_rad(d[["namn"]], d[["titel"]], cur_orden, cur_grad, datum, NA_character_, url,
-                  if (identical(land, "Sverige")) "svensk" else "utländsk")
+      kategori <- if (is.na(land)) NA_character_ else if (identical(land, "Sverige")) "svensk" else "utländsk"
+      r <- ny_rad(d[["namn"]], d[["titel"]], cur_orden, cur_grad, datum, NA_character_, url, kategori)
       if (!is.na(land)) set(r, 1L, "land", land)
       rader[[length(rader) + 1]] <- r
     }
@@ -402,6 +413,15 @@ wd_api <- function(params) {
   NULL
 }
 
+wd_varden <- function(claims) {
+  ok <- Filter(function(z) !identical(z$rank, "deprecated"), claims)
+  v <- vapply(ok, function(z) {
+    id <- if (identical(z$mainsnak$snaktype, "value")) z$mainsnak$datavalue$value$id else NULL
+    if (is.null(id)) NA_character_ else id
+  }, character(1))
+  list(id = v[!is.na(v)], okanda = sum(is.na(v)))
+}
+
 wd_matcha <- function(namn) {
   s <- wd_api(list(action = "wbsearchentities", search = namn, language = "sv", type = "item", limit = 8))
   if (is.null(s)) return(NULL)
@@ -416,20 +436,25 @@ wd_matcha <- function(namn) {
   }, e$entities)
   if (length(traff) != 1) return(NULL)
   x <- traff[[1]]
-  p27 <- vapply(x$claims$P27, function(z) z$mainsnak$datavalue$value$id, character(1))
-  p21 <- if (length(x$claims$P21)) x$claims$P21[[1]]$mainsnak$datavalue$value$id else NA_character_
+  p27 <- wd_varden(x$claims$P27)
+  p21 <- wd_varden(x$claims$P21)$id[1]
   land <- NA_character_
-  if (length(p27) == 1) {
-    l <- wd_api(list(action = "wbgetentities", ids = p27, props = "labels", languages = "sv"))
-    if (!is.null(l)) land <- l$entities[[p27]]$labels$sv$value
+  if (length(p27$id) == 1 && p27$okanda == 0) {
+    l <- wd_api(list(action = "wbgetentities", ids = p27$id, props = "labels", languages = "sv|en"))
+    lab <- if (!is.null(l)) l$entities[[p27$id]]$labels else NULL
+    land <- if (!is.null(lab$sv$value)) lab$sv$value else if (!is.null(lab$en$value)) lab$en$value else NA_character_
   }
+  kategori <- if ("Q34" %in% p27$id) "svensk" else if (length(p27$id) && p27$okanda == 0) "utländsk" else NA_character_
   list(qid = x$id, kon = c(Q6581097 = "man", Q6581072 = "kvinna")[p21],
-       land = land, kategori = if (length(p27)) (if ("Q34" %in% p27) "svensk" else "utländsk") else NA_character_)
+       land = land, kategori = kategori)
 }
 
 berika_wikidata <- function(rader) {
   for (i in seq_len(nrow(rader))) {
-    w <- wd_matcha(rader$namn[i])
+    w <- tryCatch(wd_matcha(rader$namn[i]), error = function(e) {
+      notera_hoppat(rader$namn[i], paste("Wikidata-svaret kunde inte tolkas:", conditionMessage(e)))
+      NULL
+    })
     if (is.null(w)) next
     set(rader, i, "wikidata_qid", w$qid)
     if (!is.na(w$kon)) set(rader, i, "kön", unname(w$kon))
@@ -441,18 +466,39 @@ berika_wikidata <- function(rader) {
 
 las_csv <- function(f) fread(f, encoding = "UTF-8", colClasses = "character", na.strings = "")
 
-dubblettnyckel <- function(namn, orden, grad, datum) {
-  paste(namnnyckel(namn), orden, grad, substr(datum, 1, 4))
+rang_av <- function(orden, grad, g) {
+  r <- as.integer(g$rang[match(paste(orden, grad), paste(g$orden, g$grad))])
+  ifelse(is.na(r), paste0("?", grad), as.character(r))
 }
 
-markera_dubbletter <- function(rader, befintliga) {
+person_for_namn <- function(namn, befintliga) {
+  nk <- namnnyckel(befintliga$namn)
+  per_nyckel <- tapply(befintliga$person_id, nk, function(x) unique(x))
+  nr <- namnnyckel(namn)
+  pid <- vapply(nr, function(k) {
+    p <- per_nyckel[[k]]
+    if (length(p) == 1L) p else if (length(p) > 1L) paste0("?", k) else NA_character_
+  }, character(1))
+  ifelse(is.na(pid), slug(namn), unname(pid))
+}
+
+dubblettnyckel <- function(person, orden, rang, datum) {
+  paste(person, orden, rang, substr(datum, 1, 4), sep = "|")
+}
+
+markera_dubbletter <- function(rader, befintliga, g = las_csv(FILE_G)) {
   if (!nrow(rader)) {
-    rader[, dubblett := logical()]
+    rader[, `:=`(dubblett = logical(), grad_konflikt = character())]
     return(rader)
   }
-  nyckel_b <- dubblettnyckel(befintliga$namn, befintliga$orden, befintliga$grad, befintliga$datum_tilldelning)
-  nyckel_r <- dubblettnyckel(rader$namn, rader$orden, rader$grad, rader$datum_tilldelning)
+  pid_b <- befintliga$person_id
+  pid_r <- person_for_namn(rader$namn, befintliga)
+  nyckel_b <- dubblettnyckel(pid_b, befintliga$orden, rang_av(befintliga$orden, befintliga$grad, g), befintliga$datum_tilldelning)
+  nyckel_r <- dubblettnyckel(pid_r, rader$orden, rang_av(rader$orden, rader$grad, g), rader$datum_tilldelning)
   rader[, dubblett := nyckel_r %in% nyckel_b | duplicated(nyckel_r)]
+  grov_b <- paste(pid_b, befintliga$orden, substr(befintliga$datum_tilldelning, 1, 4))
+  grov_r <- paste(pid_r, rader$orden, substr(rader$datum_tilldelning, 1, 4))
+  rader[, grad_konflikt := ifelse(!dubblett & grov_r %in% grov_b, befintliga$grad[match(grov_r, grov_b)], NA_character_)]
   rader
 }
 
@@ -468,26 +514,55 @@ logga <- function(ids, typ) {
   fwrite(data.table(datum = IDAG, id = ids, andring = typ), FILE_L, append = TRUE)
 }
 
+tolka_p570 <- function(claims) {
+  p <- Filter(function(z) !identical(z$rank, "deprecated"), claims$P570)
+  if (!length(p)) return(NULL)
+  pref <- Filter(function(z) identical(z$rank, "preferred"), p)
+  z <- if (length(pref)) pref[[1]] else p[[1]]
+  v <- if (identical(z$mainsnak$snaktype, "value")) z$mainsnak$datavalue$value else NULL
+  if (is.null(v$time)) return(list(datum = NA_character_))
+  d <- sub("^\\+", "", sub("T.*$", "", v$time))
+  prec <- suppressWarnings(as.integer(v$precision))
+  d <- if (is.na(prec) || prec < 9) NA_character_ else if (prec == 9) substr(d, 1, 4) else if (prec == 10) substr(d, 1, 7) else d
+  full <- if (is.na(d)) NA_character_ else if (nchar(d) == 4) paste0(d, "-01-01") else if (nchar(d) == 7) paste0(d, "-01") else d
+  giltigt <- !is.na(d) && grepl("^[0-9]{4}(-[0-9]{2}(-[0-9]{2})?)?$", d) && !grepl("-00", d) &&
+    !is.na(as.Date(full, format = "%Y-%m-%d")) && as.Date(full, format = "%Y-%m-%d") <= as.Date(IDAG) &&
+    as.integer(substr(d, 1, 4)) >= 1700
+  list(datum = if (isTRUE(giltigt)) d else NA_character_)
+}
+
 dodskontroll <- function(t) {
-  qid <- unique(t[is.na(dödsdatum) & !is.na(wikidata_qid), wikidata_qid])
   andrade <- character()
+  okanda <- list()
+  harDod <- t[!is.na(dödsdatum), .(dod = dödsdatum[1]), by = person_id]
+  rad <- which(is.na(t$dödsdatum) & t$person_id %in% harDod$person_id)
+  if (length(rad)) {
+    set(t, rad, "dödsdatum", harDod$dod[match(t$person_id[rad], harDod$person_id)])
+    andrade <- c(andrade, t$id[rad])
+  }
+  qid <- unique(t[is.na(dödsdatum) & !is.na(wikidata_qid), wikidata_qid])
   for (i in seq(1, max(length(qid), 1), by = 50)[seq_len(ceiling(length(qid) / 50))]) {
     delar <- qid[i:min(i + 49, length(qid))]
     e <- wd_api(list(action = "wbgetentities", ids = paste(delar, collapse = "|"), props = "claims"))
     if (is.null(e)) next
     for (q in names(e$entities)) {
-      p570 <- e$entities[[q]]$claims$P570
-      if (is.null(p570)) next
-      v <- p570[[1]]$mainsnak$datavalue$value
-      if (is.null(v$time)) next
-      d <- sub("^\\+", "", sub("T.*$", "", v$time))
-      d <- switch(as.character(v$precision), "9" = substr(d, 1, 4), "10" = substr(d, 1, 7), d)
-      rader <- which(t$wikidata_qid == q & is.na(t$dödsdatum))
-      set(t, rader, "dödsdatum", d)
+      p <- tolka_p570(e$entities[[q]]$claims)
+      if (is.null(p)) next
+      pids <- unique(t$person_id[which(t$wikidata_qid == q)])
+      if (is.na(p$datum)) {
+        okanda[[length(okanda) + 1]] <- data.table(
+          datum = IDAG, källa_url = paste0("https://www.wikidata.org/wiki/", q), källtyp = "wikipedia",
+          utdrag = sprintf("Wikidata (%s) anger att %s är avliden, men saknar ett fullständigt dödsdatum. Kontrollera och sätt dödsdatum i tilldelningar.csv.",
+                           q, t$namn[match(pids[1], t$person_id)]),
+          flagga = "wikidata_dodsdatum_okant")
+        next
+      }
+      rader <- which(t$person_id %in% pids & is.na(t$dödsdatum))
+      set(t, rader, "dödsdatum", p$datum)
       andrade <- c(andrade, t$id[rader])
     }
   }
-  list(tabell = t, andrade = andrade)
+  list(tabell = t, andrade = unique(andrade), okanda = if (length(okanda)) rbindlist(okanda) else NULL)
 }
 
 feed_traffar <- function(url, namn) {
@@ -532,11 +607,16 @@ kungahuset_adresser <- function() {
       writeBin(kropp, f)
     }
     x <- read_xml(f)
-    loc <- xml_text(xml_find_all(x, "//*[local-name()='url']/*[local-name()='loc']"))
-    mod <- as.Date(substr(xml_text(xml_find_all(x, "//*[local-name()='url']/*[local-name()='lastmod']")), 1, 10))
-    slugdatum <- suppressWarnings(as.Date(sub(".*/([0-9]{4}-[0-9]{2}-[0-9]{2})-.*", "\\1", loc)))
-    ok <- grepl("/arkiv/(nyheter|pressmeddelanden)/", loc) &
-      ifelse(!is.na(slugdatum), slugdatum >= gransdatum, mod >= gransdatum) &
+    noder <- xml_find_all(x, "//*[local-name()='url']")
+    loc <- xml_text(xml_find_first(noder, "*[local-name()='loc']"))
+    mod <- suppressWarnings(as.Date(substr(xml_text(xml_find_first(noder, "*[local-name()='lastmod']")), 1, 10), format = "%Y-%m-%d"))
+    slugdatum <- suppressWarnings(as.Date(ifelse(grepl("/[0-9]{4}-[0-9]{2}-[0-9]{2}-", loc),
+                                                 sub(".*/([0-9]{4}-[0-9]{2}-[0-9]{2})-.*", "\\1", loc), NA_character_),
+                                          format = "%Y-%m-%d"))
+    datum <- mod
+    datum[!is.na(slugdatum)] <- slugdatum[!is.na(slugdatum)]
+    ok <- !is.na(loc) & !is.na(datum) & datum >= gransdatum &
+      grepl("/arkiv/(nyheter|pressmeddelanden)/", loc) &
       grepl("orden|riddarordn|forlan|statsbesok|honorarkonsul|tilldel", loc)
     adr <- c(adr, loc[ok])
   }
@@ -587,6 +667,22 @@ validera_grader <- function(rader) {
   rader
 }
 
+PERSON_KOLUMNER <- c("person_id", "namn", "kön", "kategori", "land", "kunglig", "wikidata_qid", "dödsdatum")
+
+koppla_personer <- function(nya, t) {
+  for (i in seq_len(nrow(nya))) {
+    matches <- if (!is.na(nya$wikidata_qid[i])) unique(t[wikidata_qid == nya$wikidata_qid[i], person_id]) else character()
+    if (!length(matches)) matches <- unique(t[namnnyckel(namn) == namnnyckel(nya$namn[i]), person_id])
+    if (length(matches) == 1L) {
+      kalla <- t[person_id == matches][1]
+      for (k in PERSON_KOLUMNER) set(nya, i, k, kalla[[k]])
+    } else if (length(matches) > 1L || nya$person_id[i] %in% t$person_id) {
+      set(nya, i, "kategori", NA_character_)
+    }
+  }
+  nya
+}
+
 kor <- function(args) {
   dry <- "--dry-run" %in% args
   auto <- "--auto" %in% args
@@ -615,17 +711,12 @@ kor <- function(args) {
   rader <- markera_dubbletter(rader, t)
   nya <- rader[dubblett == FALSE]
   if (nrow(nya)) nya <- berika_wikidata(nya)
-  if (nrow(nya)) {
-    for (i in seq_len(nrow(nya))) {
-      matches <- if (!is.na(nya$wikidata_qid[i])) unique(t[wikidata_qid == nya$wikidata_qid[i], person_id]) else character()
-      if (!length(matches)) matches <- unique(t[namnnyckel(namn) == namnnyckel(nya$namn[i]), person_id])
-      if (length(matches) == 1L) nya$person_id[i] <- matches
-      else if (length(matches) > 1L || nya$person_id[i] %in% t$person_id) nya$kategori[i] <- NA_character_
-    }
-  }
+  if (nrow(nya)) nya <- koppla_personer(nya, t)
   if (nrow(nya)) {
     nya <- validera_grader(nya)
-    nya[, till_data := källtyp %in% c("kungahuset", "regeringen", "officiell_publikation") & !is.na(kategori) & grad_ok & !is.na(datum_tilldelning)]
+    nya[!is.na(grad_konflikt) & is.na(flagga), flagga := paste0("grad_konflikt_kallor:", grad_konflikt)]
+    nya[, till_data := källtyp %in% c("kungahuset", "regeringen", "officiell_publikation") & !is.na(kategori) & grad_ok &
+          !is.na(datum_tilldelning) & is.na(grad_konflikt)]
   }
   till_t <- if (nrow(nya)) nya[till_data == TRUE] else nya
   till_k <- if (nrow(nya)) nya[till_data == FALSE] else nya
@@ -639,8 +730,17 @@ kor <- function(args) {
     print(u[, .(datum, källtyp, källa_url, utdrag = substr(utdrag, 1, 110))], row.names = FALSE, trunc.cols = FALSE)
   } else u <- NULL
 
-  dod <- if (auto) dodskontroll(copy(t)) else list(tabell = t, andrade = character())
-  if (auto) cat(sprintf("\nMottagare med nytt dödsdatum i Wikidata: %d\n", length(dod$andrade)))
+  t_ny <- copy(t)
+  if (nrow(till_t)) {
+    till_t[, id := ny_id(t, .N)]
+    t_ny <- rbindlist(list(t_ny, till_t[, ..KOLUMNER]), fill = TRUE)
+  }
+  dod <- if (auto) dodskontroll(t_ny) else list(tabell = t_ny, andrade = character(), okanda = NULL)
+  if (auto) cat(sprintf("\nMottagare med nytt dödsdatum i Wikidata: %d rader, avlidna utan fullständigt datum: %d\n",
+                        length(dod$andrade), if (is.null(dod$okanda)) 0L else nrow(dod$okanda)))
+  if (!is.null(dod$okanda)) {
+    u <- rbindlist(list(u, dod$okanda), fill = TRUE)
+  }
 
   if (length(skipped)) cat("\n== Hoppade över\n", paste0(" - ", unique(skipped), collapse = "\n"), "\n", sep = "")
   if (dry) {
@@ -649,15 +749,13 @@ kor <- function(args) {
   }
 
   t <- dod$tabell
-  if (nrow(till_t)) {
-    till_t[, id := ny_id(t, .N)]
-    t <- rbindlist(list(t, till_t[, ..KOLUMNER]), fill = TRUE)
-    logga(till_t$id, "tillagd")
-  }
+  if (nrow(till_t)) logga(till_t$id, "tillagd")
   if (length(dod$andrade)) logga(dod$andrade, "ändrad")
   skriv_csv(t, FILE_T)
 
-  kand <- rbindlist(list(k, if (nrow(till_k)) till_k[, ..KOLUMNER], if (!is.null(u)) u[, .(källa_url, källtyp, datum_tilldelning = datum, utdrag)]), fill = TRUE)
+  kand_u <- if (!is.null(u)) u[, .(källa_url, källtyp, datum_tilldelning = datum, utdrag,
+                                   flagga = if ("flagga" %in% names(u)) flagga else NA_character_)]
+  kand <- rbindlist(list(k, if (nrow(till_k)) till_k[, ..KOLUMNER], kand_u), fill = TRUE)
   if (nrow(kand)) {
     for (kol in c(KOLUMNER, "utdrag")) if (!kol %in% names(kand)) kand[, (kol) := NA_character_]
     kand <- kand[!duplicated(paste(källa_url, namn, orden, grad, utdrag))]

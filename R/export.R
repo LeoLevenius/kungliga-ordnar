@@ -6,14 +6,27 @@ source("R/common.R")
 out <- "_site"
 dir.create(file.path(out, "data"), showWarnings = FALSE, recursive = TRUE)
 t <- load_tilldelningar()
-raw <- fread(file.path(data_dir, "tilldelningar.csv"), encoding = "UTF-8", colClasses = "character", na.strings = "")
-raw <- raw[is.na(dödsdatum)]
+alla <- fread(file.path(data_dir, "tilldelningar.csv"), encoding = "UTF-8", colClasses = "character", na.strings = "")
+doda_personer <- unique(alla[!is.na(dödsdatum), person_id])
+raw <- alla[!person_id %in% doda_personer]
 fwrite(raw, file.path(out, "data", "tilldelningar.csv"), bom = TRUE)
 write_json(as.data.frame(raw), file.path(out, "data", "tilldelningar.json"), pretty = TRUE, na = "null")
 invisible(file.copy(file.path(data_dir, "grader.csv"), file.path(out, "data", "grader.csv"), overwrite = TRUE))
-invisible(file.copy(file.path(data_dir, "andringslogg.csv"), file.path(out, "data", "andringslogg.csv"), overwrite = TRUE))
-invisible(file.copy(file.path(data_dir, "bilder.csv"), file.path(out, "data", "bilder.csv"), overwrite = TRUE))
-invisible(file.copy(file.path(data_dir, "kmo_verifierade.csv"), file.path(out, "data", "kmo_verifierade.csv"), overwrite = TRUE))
+
+levande_fil <- function(namn, behall) {
+  x <- fread(file.path(data_dir, namn), encoding = "UTF-8", colClasses = "character", na.strings = "")
+  if (all(behall(x))) {
+    invisible(file.copy(file.path(data_dir, namn), file.path(out, "data", namn), overwrite = TRUE))
+  } else {
+    fwrite(x[behall(x)], file.path(out, "data", namn), na = "")
+  }
+}
+levande_fil("andringslogg.csv", function(x) x$id %in% raw$id | !x$id %in% alla$id)
+levande_fil("kmo_verifierade.csv", function(x) x$id %in% raw$id | !x$id %in% alla$id)
+levande_bilder <- unique(basename(raw$bild_url[!is.na(raw$bild_url)]))
+doda_bilder <- setdiff(basename(alla$bild_url[!is.na(alla$bild_url)]), levande_bilder)
+doda_qid <- setdiff(alla$wikidata_qid[alla$person_id %in% doda_personer & !is.na(alla$wikidata_qid)], raw$wikidata_qid)
+levande_fil("bilder.csv", function(x) !(x$fil %in% doda_bilder | (x$person_qid %in% doda_qid & !x$fil %in% levande_bilder)))
 
 # Stamp every generated page after person profiles have been built.
 uppdaterad <- format(Sys.time(), "%Y-%m-%d %H:%M", tz = "Europe/Stockholm")
@@ -34,7 +47,7 @@ entries <- sprintf(
   "  <entry>\n    <title>%s – %s, %s</title>\n    <id>tag:leolevenius.github.io,2026:kungliga-ordnar/%s</id>\n    <link href=\"%sperson/%s.html\"/>\n    <published>%sT00:00:00Z</published>\n    <updated>%sT00:00:00Z</updated>\n    <summary>%s</summary>\n  </entry>",
   esc(latest$namn), esc(latest$orden), esc(latest$grad), attr_esc(latest$id),
   attr_esc(base), attr_esc(latest$person_id), latest$added, latest$modified,
-  esc(paste(latest$orden, latest$grad, ifelse(is.na(latest$datum), "", paste0(" (", latest$datum, ")")), sep = " "))
+  esc(paste0(latest$orden, " ", latest$grad, ifelse(is.na(latest$datum), "", paste0(" (", latest$datum, ")"))))
 )
 feed <- c(
   '<?xml version="1.0" encoding="utf-8"?>',

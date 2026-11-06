@@ -1,5 +1,6 @@
 ---
 title: "Öppna data"
+description-meta: "Öppna data: CSV, JSON och Atom-flöde med levande mottagare av kungliga ordnar."
 ---
 
 Alla filer nedan innehåller bara levande mottagare. Avlidna mottagare tas bort från exporten men finns kvar i den interna datakällan.

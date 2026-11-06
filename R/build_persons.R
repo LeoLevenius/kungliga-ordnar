@@ -6,17 +6,20 @@ source("R/common.R")
 t <- load_tilldelningar()
 mall_fil <- "_site/mallar/person.html"
 mall <- paste(readLines(mall_fil, encoding = "UTF-8", warn = FALSE), collapse = "\n")
-delar <- regmatches(mall, gregexpr("(PERSONTITELMARKOR|PERSONINNEHALLMARKOR)", mall), invert = TRUE)[[1]]
-marker <- regmatches(mall, gregexpr("(PERSONTITELMARKOR|PERSONINNEHALLMARKOR)", mall))[[1]]
+MARKORER <- "(PERSONTITELMARKOR|PERSONINNEHALLMARKOR|PERSONBESKRIVNINGSMARKOR)"
+delar <- regmatches(mall, gregexpr(MARKORER, mall), invert = TRUE)[[1]]
+marker <- regmatches(mall, gregexpr(MARKORER, mall))[[1]]
 
 ids <- unique(t$person_id)
 namn <- t[, namn[1], by = person_id][match(ids, person_id), V1]
 info <- t[, .(kungl = kunglig[1] == "TRUE"), by = person_id][match(ids, person_id)]
 namn_h1 <- namn_html_vec(ids, namn, info$kungl)
 inneh <- vapply(ids, function(id) as.character(person_page(t, id, pfx = "../")), character(1))
+beskrivning <- vapply(ids, function(id) person_beskrivning(t, id), character(1))
 sida <- vapply(seq_along(ids), function(i) {
   h1 <- marker == "PERSONTITELMARKOR" & endsWith(delar[seq_along(marker)], '<h1 class="title">')
-  v <- ifelse(marker == "PERSONTITELMARKOR", ifelse(h1, namn_h1[i], htmlEscape(namn[i])), inneh[i])
+  v <- ifelse(marker == "PERSONTITELMARKOR", ifelse(h1, namn_h1[i], htmlEscape(namn[i])),
+              ifelse(marker == "PERSONBESKRIVNINGSMARKOR", htmlEscape(beskrivning[i], attribute = TRUE), inneh[i]))
   paste0(delar, c(v, ""), collapse = "")
 }, character(1))
 
@@ -33,4 +36,13 @@ ny <- lapply(seq_along(ids), function(i) {
   list(objectID = h, href = h, title = namn[i], section = "", text = text[i])
 })
 write_json(c(sok, ny), "_site/search.json", auto_unbox = TRUE, pretty = FALSE)
+
+bas <- Sys.getenv("SITE_URL", "https://leolevenius.github.io/kungliga-ordnar/")
+sidor <- list.files("_site", pattern = "\\.html$", recursive = TRUE)
+sidor <- sidor[!grepl("^(site_libs|mallar|person)/|_files/|^redigera\\.html$|^404\\.html$", sidor)]
+adresser <- c(sidor, paste0("person/", ids, ".html"))
+sitemap <- c('<?xml version="1.0" encoding="UTF-8"?>',
+  '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">',
+  sprintf("  <url><loc>%s</loc></url>", htmlEscape(paste0(bas, adresser))), "</urlset>")
+writeLines(sitemap, "_site/sitemap.xml", useBytes = TRUE)
 cat("person pages:", length(ids), "\n")

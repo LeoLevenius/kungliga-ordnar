@@ -1,5 +1,6 @@
 ---
 title: "Ordensguide"
+description-meta: "Ordnarnas grader med förkortningar och bärordning, samt bilder av ordenstecknen."
 ---
 
 ```{r}

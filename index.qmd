@@ -1,5 +1,6 @@
 ---
 title: "Kungliga ordnar"
+description-meta: "Levande mottagare av de fyra kungliga riddarordnarna Serafimerorden, Svärdsorden, Nordstjärneorden och Vasaorden, med grad, datum och källa."
 ---
 
 ```{r}

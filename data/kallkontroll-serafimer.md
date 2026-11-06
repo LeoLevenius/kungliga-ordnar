@@ -21,7 +21,7 @@ Datakonflikter för Maha Vajiralongkorn, Abdullah II och Aníbal Cavaco Silva an
 - Reza Pahlavi: [CC BY 4.0](https://commons.wikimedia.org/wiki/File:Coat_of_Arms_of_Reza_Pahlavi,_Crown_Prince_of_Iran_(Order_of_the_Seraphim).svg), Oritsu.me, delar av Sodacan, Ssolbergj.
 - Noor av Jordanien: [CC BY 4.0](https://commons.wikimedia.org/wiki/File:Coat_of_Arms_of_Queen_Noor_of_Jordan_(Order_of_the_Seraphim).svg), Oritsu.me, delar av Ssolbergj, Heralder.
 - Traian Băsescu: [CC BY 4.0](https://commons.wikimedia.org/wiki/File:Generic_Coat_of_Arms_of_the_Presidents_of_Romania_(Order_of_the_Seraphim).svg), Oritsu.me, delar av Ssolbergj, Heralder.
-- Queen Saleha of Brunei: [CC BY 4.0](https://commons.wikimedia.org/wiki/File:Emblem_of_Saleha,_Raja_Isteri_of_Brunei_(Order_of_the_Seraphim.svg), Oritsu.me, delar av Heralder.
+- Saleha av Brunei: [CC BY 4.0](https://commons.wikimedia.org/wiki/File:Emblem_of_Saleha,_Raja_Isteri_of_Brunei_%28Order_of_the_Seraphim.svg), Oritsu.me, delar av Heralder.
 - Bronisław Komorowski: [CC BY-SA 4.0](https://commons.wikimedia.org/wiki/File:The_coat_of_arms_of_Bronislaw_Komorowski,_President_of_Poland..jpg), Kazimierz chlodwic.
 
 ## Stormästare och stadgedatum

@@ -1,5 +1,6 @@
 ---
 title: "Redigera"
+description-meta: "Inloggning och redigering av uppgifterna på Kungliga ordnar. Kräver behörighet."
 include-in-header:
   - text: |
       <meta name="robots" content="noindex, nofollow">

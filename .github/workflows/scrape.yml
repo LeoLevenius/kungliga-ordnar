@@ -33,6 +33,19 @@ jobs:
             any::xml2
             any::jsonlite
 
+      - name: Hämta kandidater från en öppen kandidat-PR
+        id: oppen
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          set -euo pipefail
+          gren=$(gh pr list --state open --json headRefName --jq '[.[] | select(.headRefName | startswith("kandidater/"))][0].headRefName // empty')
+          if [ -n "$gren" ]; then
+            git fetch origin "$gren"
+            git show "origin/$gren:data/kandidater.csv" > data/kandidater.csv
+          fi
+          echo "gren=$gren" >> "$GITHUB_OUTPUT"
+
       - name: Skrapa nya tilldelningar och kontrollera dödsfall
         run: Rscript scraper/run.R --auto
 
@@ -42,6 +55,7 @@ jobs:
       - name: Committa nya tilldelningar
         id: commit
         run: |
+          set -euo pipefail
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add data/tilldelningar.csv data/andringslogg.csv
@@ -49,7 +63,17 @@ jobs:
             echo "changed=false" >> "$GITHUB_OUTPUT"
           else
             git commit -m "Skrapning: nya tilldelningar och dödsdatum"
-            git push
+            for forsok in 1 2 3; do
+              if git pull --rebase --autostash origin main && git push origin HEAD:main; then
+                break
+              fi
+              git rebase --abort 2>/dev/null || true
+              if [ "$forsok" = 3 ]; then
+                echo "Kunde inte pusha efter tre försök (samtidig ändring på main)." >&2
+                exit 1
+              fi
+              sleep $((forsok * 10))
+            done
             echo "changed=true" >> "$GITHUB_OUTPUT"
           fi
 
@@ -59,15 +83,30 @@ jobs:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: gh workflow run publish.yml --ref main
 
-      - name: Öppna PR för kandidater
+      - name: Öppna eller uppdatera PR för kandidater
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          OPPEN_GREN: ${{ steps.oppen.outputs.gren }}
         run: |
+          set -euo pipefail
+          if [ -n "$OPPEN_GREN" ]; then
+            if git diff --quiet "origin/$OPPEN_GREN" -- data/kandidater.csv; then
+              echo "Inga nya kandidater utöver den öppna PR:en."
+              exit 0
+            fi
+            cp data/kandidater.csv "$RUNNER_TEMP/kandidater.csv"
+            git checkout -f -B "$OPPEN_GREN" "origin/$OPPEN_GREN"
+            cp "$RUNNER_TEMP/kandidater.csv" data/kandidater.csv
+            git add data/kandidater.csv
+            git commit -m "Fler kandidater från skrapning"
+            git push origin "$OPPEN_GREN"
+            exit 0
+          fi
           if git diff --quiet -- data/kandidater.csv; then
             echo "Inga nya kandidater."
             exit 0
           fi
-          gren="kandidater/$(date +%Y-%m-%d)"
+          gren="kandidater/$(date -u +%Y-%m-%d)-${GITHUB_RUN_ID}-${GITHUB_RUN_ATTEMPT}"
           git checkout -b "$gren"
           git add data/kandidater.csv
           git commit -m "Kandidater från skrapning"
@@ -75,5 +114,5 @@ jobs:
           gh pr create \
             --base main \
             --head "$gren" \
-            --title "Kandidater $(date +%Y-%m-%d)" \
+            --title "Kandidater $(date -u +%Y-%m-%d)" \
             --body "Fynd från andra källor än kungahuset.se och regeringen.se. Granska varje rad och flytta godkända till data/tilldelningar.csv."

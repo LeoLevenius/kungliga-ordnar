@@ -26,22 +26,22 @@ fmt_datum <- function(x) {
   fifelse(ok, out, x)
 }
 
+SORT_TECKEN <- local({
+  grupper <- c(
+    a = "àáâãāăąǎǻȧ", c = "çćčĉċ", d = "ďđð", e = "èéêëēĕėěȩ", g = "ğĝġģ", h = "ĥħ",
+    i = "ìíîïĩīĭįǐı", j = "ĵ", k = "ķ", l = "ĺļľŀł", n = "ñńņňŉ", o = "òóôõōŏőǒ",
+    r = "ŕŗř", s = "śŝşšș", t = "ţťŧț", u = "ùúûũūŭůųǔ", w = "ŵ", y = "ýÿŷüű", z = "źżž",
+    "{" = "å", "|" = "äæę", "}" = "öøœ"
+  )
+  fran <- unlist(strsplit(unname(grupper), ""))
+  till <- rep(names(grupper), nchar(unname(grupper)))
+  list(fran = paste(fran, collapse = ""), till = paste(till, collapse = ""))
+})
+
 sortnyckel <- function(x) {
-  par <- c("Å" = "{", "å" = "{", "Ä" = "|", "ä" = "|", "Æ" = "|", "æ" = "|",
-           "Ö" = "}", "ö" = "}", "Ø" = "}", "ø" = "}",
-           "Á" = "A", "À" = "A", "Â" = "A", "Ã" = "A", "á" = "a", "à" = "a", "â" = "a", "ã" = "a",
-           "É" = "E", "È" = "E", "Ê" = "E", "Ë" = "E", "é" = "e", "è" = "e", "ê" = "e", "ë" = "e",
-           "Í" = "I", "Ì" = "I", "Î" = "I", "Ï" = "I", "í" = "i", "ì" = "i", "î" = "i", "ï" = "i",
-           "Ó" = "O", "Ò" = "O", "Ô" = "O", "Õ" = "O", "ó" = "o", "ò" = "o", "ô" = "o", "õ" = "o",
-           "Ú" = "U", "Ù" = "U", "Û" = "U", "Ü" = "U", "ú" = "u", "ù" = "u", "û" = "u", "ü" = "u",
-           "Ý" = "Y", "ý" = "y", "ÿ" = "y", "Ñ" = "N", "ñ" = "n", "Ç" = "C", "ç" = "c",
-           "Š" = "S", "š" = "s", "Ž" = "Z", "ž" = "z", "Ł" = "L", "ł" = "l", "Ć" = "C", "ć" = "c",
-           "Ń" = "N", "ń" = "n", "Ś" = "S", "ś" = "s", "Ź" = "Z", "ź" = "z", "Ż" = "Z", "ż" = "z",
-           "Č" = "C", "č" = "c", "Ř" = "R", "ř" = "r", "Ě" = "E", "ě" = "e", "Ő" = "O", "ő" = "o",
-           "Ð" = "D", "ð" = "d", "Þ" = "T", "þ" = "t", "Ğ" = "G", "ğ" = "g", "ı" = "i",
-           "ā" = "a", "ē" = "e", "ī" = "i", "ū" = "u", "ķ" = "k", "ģ" = "g", "ļ" = "l", "ņ" = "n",
-           "ė" = "e", "ų" = "u", "ą" = "a", "ę" = "e", "į" = "i", "ž" = "z", "’" = "'")
-  tolower(chartr(paste(names(par), collapse = ""), paste(par, collapse = ""), x))
+  x <- chartr(SORT_TECKEN$fran, SORT_TECKEN$till, tolower(gsub("[’‘]", "'", x)))
+  x <- gsub("ß", "ss", x, fixed = TRUE)
+  gsub("þ", "th", x, fixed = TRUE)
 }
 
 EFTERNAMN_OVERSTYR <- c(
@@ -208,7 +208,7 @@ load_tilldelningar <- function() {
   t[, flagga_txt := flagga_text(flagga)]
   t[is.na(flagga_txt), flagga_txt := "Se personsidan"]
   t[, datum_txt := fifelse(is.na(datum), "uppgift saknas", datum)]
-  t[is.na(dod)]
+  t[!person_id %in% person_id[!is.na(dod)]]
 }
 
 load_grader <- function() {
@@ -271,8 +271,12 @@ skold_allmanna <- function(pfx = "") {
 }
 
 skold_kallor <- function(t) {
-  bl <- load_bilder()[anvandning == "sköld" & !is.na(person_qid) & person_qid %in% t$qid]
-  namn <- t$namn[match(bl$person_qid, t$qid)]
+  visade <- t[grepl("^img/skold-", bild_url)]
+  fil_visad <- basename(visade$bild_url)
+  bl <- load_bilder()[anvandning == "sköld" & fil %in% fil_visad]
+  namn <- visade$namn[match(bl$fil, fil_visad)]
+  agare <- match(bl$person_qid, t$qid, incomparables = NA)
+  namn[!is.na(agare)] <- t$namn[agare[!is.na(agare)]]
   tags$details(
     tags$summary("Bildkällor för vapensköldarna"),
     tags$ul(lapply(seq_len(nrow(bl)), function(i) tags$li(namn[i], ": ", bild_kredit(bl[i]))))
@@ -337,6 +341,19 @@ source_html <- function(url, typ, namn = NULL) {
           htmlEscape(url, attribute = TRUE), aria, htmlEscape(label))
 }
 
+html_text_enkel <- function(x) {
+  x <- gsub("<[^>]+>", "", x)
+  for (e in list(c("&lt;", "<"), c("&gt;", ">"), c("&quot;", "\""), c("&#39;", "'"), c("&amp;", "&"))) x <- gsub(e[1], e[2], x, fixed = TRUE)
+  x
+}
+
+SOK_JS <- "function(rows, columns, query) {
+  var norm = function(s) { return String(s == null ? '' : s).toLocaleLowerCase('sv').replace(/[\\u2018\\u2019]/g, \"'\").replace(/\\s+/g, ' ').trim(); };
+  query = norm(query);
+  if (!query) return rows;
+  return rows.filter(function(row) { return norm(row.original.sok_txt).indexOf(query) >= 0; });
+}"
+
 order_table <- function(t, orden, kat, pfx = "", tid, kungl = FALSE) {
   o <- orden
   k <- kat
@@ -369,7 +386,8 @@ order_table <- function(t, orden, kat, pfx = "", tid, kungl = FALSE) {
     datum_txt = colDef(name = "Datum", minWidth = 120, cell = fmt_datum),
     motivering_txt = colDef(name = "Motivering", minWidth = 220),
     kalla_html = colDef(name = "Källa", html = TRUE, minWidth = 120),
-    flagga_txt = colDef(name = "Notering", minWidth = 200, class = "saknas")
+    flagga_txt = colDef(name = "Notering", minWidth = 200, class = "saknas"),
+    sok_txt = colDef(show = FALSE)
   )
   keep <- c("grad", "namn_sort", "namn_html")
   d[, skold_html := fifelse(!is.na(bild_url) & grepl("^img/skold-", bild_url), skold_html, "–")]
@@ -377,12 +395,16 @@ order_table <- function(t, orden, kat, pfx = "", tid, kungl = FALSE) {
   if (!kungl) keep <- c(keep, "yrke_txt")
   if (kat == "utländsk") keep <- c(keep, "land_txt")
   keep <- c(keep, "datum_txt")
+  sok_delar <- c(list(html_text_enkel(d$namn_html), d$namn, d$visningsnamn, d$grad),
+                 lapply(intersect(c("yrke_txt", "land_txt"), keep), function(k) d[[k]]),
+                 list(fmt_datum(d$datum_txt), d$datum_txt))
+  d[, sok_txt := do.call(paste, c(sok_delar, sep = " "))]
   rt <- reactable(
-    as.data.frame(d)[, keep],
+    as.data.frame(d)[, c(keep, "sok_txt")],
     groupBy = "grad",
-    columns = cols[keep],
+    columns = cols[c(keep, "sok_txt")],
     searchable = TRUE,
-    searchMethod = JS("function(rows, columns, query) { query = query.toLocaleLowerCase('sv'); return rows.filter(function(row) { return columns.some(function(id) { var v = id === 'namn_sort' ? row.original.namn_html : row.values[id]; return String(v || '').toLocaleLowerCase('sv').includes(query); }); }); }"),
+    searchMethod = JS(SOK_JS),
     filterable = FALSE,
     sortable = TRUE,
     defaultPageSize = 50,
@@ -426,6 +448,16 @@ order_section <- function(orden, t, pfx = "") {
     avsnitt("Svenska mottagare", "svensk", FALSE, "svensk"),
     avsnitt("Utländska mottagare", "utländsk", FALSE, "utlandsk")
   )
+}
+
+person_beskrivning <- function(t, id) {
+  pid <- id
+  d <- t[person_id == pid]
+  d[, orden_nr := match(orden, ORDNAR)]
+  setorderv(d, c("orden_nr", "rang"))
+  delar <- paste0(d$orden, ifelse(d$grad == "Grad inte angiven", "", paste0(", ", d$grad)),
+                  ifelse(is.na(d$datum), "", paste0(" (", fmt_datum(d$datum), ")")))
+  paste0(d$namn[1], ": ", paste(delar, collapse = "; "), ". Tilldelning av kunglig orden, med källa.")
 }
 
 person_page <- function(t, id, pfx = "../") {

@@ -3,7 +3,11 @@ suppressMessages({
   library(httr2)
 })
 
+# Shared rules with redigera.js (validera): dates are compared against today in UTC, text fields are trimmed
+# (fread strips surrounding blanks), and an empty grade is accepted only as a legacy state of existing rows;
+# the editor requires a grade for new rows and never lets an existing row go from graded to empty.
 args <- commandArgs(trailingOnly = TRUE)
+IDAG <- as.Date(format(Sys.time(), "%Y-%m-%d", tz = "UTC"))
 UA <- "kungliga-ordnar-research/0.1 (generic client)"
 
 t <- fread("data/tilldelningar.csv", encoding = "UTF-8", colClasses = "character", na.strings = "")
@@ -11,6 +15,7 @@ g <- fread("data/grader.csv", encoding = "UTF-8", colClasses = "character", na.s
 
 fel <- 0L
 kontroll <- function(namn, ok, offenders = NULL) {
+  ok <- ok & !is.na(ok)
   cat(sprintf("[%s] %s\n", if (all(ok)) "OK  " else "FEL ", namn))
   if (!all(ok)) {
     fel <<- fel + 1L
@@ -27,11 +32,11 @@ nyckel <- function(x) {
 datum_ok <- function(d, p) {
   ok <- rep(FALSE, length(d))
   dag <- !is.na(p) & p == "dag" & grepl("^[0-9]{4}-[0-9]{2}-[0-9]{2}$", d)
-  ok[dag] <- !is.na(as.Date(d[dag], format = "%Y-%m-%d")) & as.Date(d[dag], format = "%Y-%m-%d") <= Sys.Date() & as.integer(substr(d[dag], 1, 4)) >= 1700
+  ok[dag] <- !is.na(as.Date(d[dag], format = "%Y-%m-%d")) & as.Date(d[dag], format = "%Y-%m-%d") <= IDAG & as.integer(substr(d[dag], 1, 4)) >= 1700
   man <- !is.na(p) & p == "månad" & grepl("^[0-9]{4}-(0[1-9]|1[0-2])$", d)
-  ok[man] <- substr(d[man], 1, 7) <= format(Sys.Date(), "%Y-%m") & as.integer(substr(d[man], 1, 4)) >= 1700
+  ok[man] <- substr(d[man], 1, 7) <= format(IDAG, "%Y-%m") & as.integer(substr(d[man], 1, 4)) >= 1700
   ar <- !is.na(p) & p == "år" & grepl("^[0-9]{4}$", d)
-  ok[ar] <- as.integer(d[ar]) >= 1700 & as.integer(d[ar]) <= as.integer(format(Sys.Date(), "%Y"))
+  ok[ar] <- as.integer(d[ar]) >= 1700 & as.integer(d[ar]) <= as.integer(format(IDAG, "%Y"))
   ok
 }
 
@@ -44,6 +49,15 @@ kontroll("alla datum går att tolka enligt datum_precision (okänt datum: båda 
          paste(t$id, t$datum_tilldelning, t$datum_precision))
 nyck <- paste(nyckel(t$namn), t$orden, t$grad, t$datum_tilldelning)
 kontroll("inga dubbletter (normaliserat namn + orden + grad + datum)", !duplicated(nyck) & !duplicated(nyck, fromLast = TRUE), t$id)
+t[, rang := as.integer(g$rang[match(paste(orden, grad), paste(g$orden, g$grad))])]
+dubb <- t[!is.na(rang), .(n = .N), by = .(person_id, orden, rang, ar = substr(datum_tilldelning, 1, 4))][n > 1]
+kontroll("inga dubbletter per person, orden, rang och år (olika gradnamn med samma rang räknas som samma grad)",
+         !paste(t$person_id, t$orden, t$rang, substr(t$datum_tilldelning, 1, 4)) %in% dubb[, paste(person_id, orden, rang, ar)] | is.na(t$rang), t$id)
+personfalt <- c("namn", "kön", "kategori", "land", "kunglig", "wikidata_qid", "dödsdatum")
+for (f in personfalt) {
+  avvikande <- t[, .(n = uniqueN(get(f), na.rm = FALSE)), by = person_id][n > 1, person_id]
+  kontroll(sprintf("personfältet %s är lika på alla en persons rader", f), !t$person_id %in% avvikande, t$person_id)
+}
 kontroll("ingen rad saknar källa_url", !is.na(t[["källa_url"]]) & grepl("^https?://", t[["källa_url"]]), t$id)
 kontroll("motivering_typ=statsbesök har ifyllt statsbesök", is.na(t$motivering_typ) | t$motivering_typ != "statsbesök" | !is.na(t[["statsbesök"]]), t$id)
 kontroll("orden är en av de fyra ordnarna", t$orden %in% c("Serafimerorden", "Svärdsorden", "Nordstjärneorden", "Vasaorden"), t$id)
@@ -67,6 +81,13 @@ b <- fread("data/bilder.csv", encoding = "UTF-8", colClasses = "character", na.s
 kontroll("bilder.csv: endast fria licenser, upphovsperson och fil finns",
          b$licens %in% c("CC0", "Public domain", "CC BY-SA 2.5", "CC BY-SA 3.0", "CC BY-SA 4.0", "CC BY 2.5", "CC BY 3.0", "CC BY 4.0") &
            !is.na(b$upphov) & file.exists(file.path("img", b$fil)), b$fil)
+
+skold <- !is.na(t$bild_url) & grepl("^img/skold-", t$bild_url)
+kontroll("varje bild i tilldelningar.csv finns i bilder.csv (så att Bildkällor kan krediteras utan person_qid)",
+         is.na(t$bild_url) | basename(ifelse(is.na(t$bild_url), "", t$bild_url)) %in% b$fil, t$id)
+kontroll("varje visad sköld har bilder.csv-rad med anvandning sköld, upphovsperson, licens och commons-sida",
+         !skold | (b$anvandning[match(basename(t$bild_url), b$fil)] %in% "sköld" & !is.na(b$upphov[match(basename(t$bild_url), b$fil)]) &
+                   !is.na(b$licens[match(basename(t$bild_url), b$fil)]) & !is.na(b$commons_sida[match(basename(t$bild_url), b$fil)])), t$id)
 
 kv <- fread("data/kmo_verifierade.csv", encoding = "UTF-8", colClasses = "character", na.strings = "")
 kontroll("kmo_verifierade.csv: id och person_id finns i tilldelningar.csv, med länk",
